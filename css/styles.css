@@ -93,6 +93,11 @@ footer {
   margin-right: 0;
 }
 
+#projects h2 {
+  margin-bottom: 12rem;
+  margin-top: 03rem;
+}
+
 #contact {
   display: flex;
   flex-direction: column;
@@ -117,10 +122,11 @@ footer {
   justify-content: space-between;
 }
 
-#contact-form h2 {
+#contact h2 {
   color: #161718;
   font-size: 4rem;
-  margin: 0rem;
+  margin-bottom: 5rem;
+  margin-top: 0;
 }
 
 #contact-form p {
@@ -131,10 +137,17 @@ footer {
   margin: 0rem;
 }
 
+#contact-form {
+  margin-bottom: 2rem;
+}
+
 #contact-title {
   margin-top: 12rem;
 }
 
+#img-wip {
+  width: 20%;
+}
 .buttons {
   background-color: transparent;
   border-color: transparent;
@@ -161,6 +174,23 @@ footer p {
   text-align: center;
 }
 
+textarea {
+  width: 15.5rem;
+}
+
+.all-projects {
+  display: flex;
+  margin-top: 4rem;
+}
+
+.project-tile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 3rem;
+  margin-bottom: 8rem;
+}
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
   h1 {

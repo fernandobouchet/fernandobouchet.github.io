@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Fernando Bouchet portfolio site">
     <title>Fernando Bouchet portfolio</title>
     <link href="css/styles.css" rel="stylesheet" />
     <script src="https://kit.fontawesome.com/897a9d19c7.js" crossorigin="anonymous"></script>
@@ -20,7 +19,7 @@
     <a id="top"></a>
     <nav id="navbar">
         <ul id="list">
-            <li><a href="#top">Home</a></li>
+            <li><a href="">Home</a></li>
             <li><a href="#welcome-section">About</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#contact">Contact</a></li>
@@ -28,54 +27,56 @@
     </nav>
     <section id="welcome-section">
         <h1>I´m Fernando Bouchet</h1>
-        <p>I´m from Buenos Aires, Argentina, computing enthusiast, currently I'm studying a degree in computing at UNAHUR university, 
-            I am also learning self-taught way html, css, javascript and python while still working as a manager in a furniture factory. 
-            I am looking for an IT job where I can show my skills and to keep getting more knowledge. 
-            I´m an android fan and build my own custom kernel for the devices I owned and share it with the community. 
+        <p>I´m from Buenos Aires, Argentina, computing enthusiast, currently I'm studying a degree in computing at
+            UNAHUR university,
+            I am also learning self-taught way html, css, javascript and python while still working as a manager in a
+            furniture factory.
+            I am looking for an IT job where I can show my skills and to keep getting more knowledge.
+            I´m an android fan and build my own custom kernel for the devices I owned and share it with the community.
             I love spending time with my family, travel, watch soccer games and movies.</p>
     </section>
-    <section id="projects" class="project-title">
-        <h2>This are some of my projects:</h2>
+    <section id="projects" class="project">
+        <h2 id="project-title">This are some of my projects:</h2>
         <div class="all-projects">
-            <a class="project-tile" href="https://codepen.io/fernandobouchet/full/BadyRzE" target="_blank">
-                <p class="project-title">Website1</p>
+            <a class="project-tile" href="">
+                <img id="img-wip" src="assets/wip.png">
             </a>
-            <a class="project-tile" href="https://codepen.io/fernandobouchet/full/BadyRzE" target="_blank">
-                <p class="project-title">Website2</p>
+            <a class="project-tile" href="">
+                <img id="img-wip" src="assets/wip.png">
             </a>
-            <a class="project-tile" href="https://codepen.io/fernandobouchet/full/BadyRzE" target="_blank">
-                <p class="project-title">Website3</p>
+            <a class="project-tile" href="">
+                <img id="img-wip" src="assets/wip.png">
             </a>
-            <a class="project-tile" href="https://codepen.io/fernandobouchet/full/BadyRzE" target="_blank">
-                <p class="project-title">Website4</p>
+            <a class="project-tile" href="">
+                <img id="img-wip" src="assets/wip.png">
             </a>
         </div>
     </section>
     <section id="contact">
+        <h2 id="contact-title">Contact</h2>
         <div id="contact-form">
-            <h2 id="contact-title">Contact</h2>
-            <form id="mail-form" method="post" action="/form" autocomplete="off">
+            <form id="mail-form" action="mailto: fernandobouchet@gmail.com" method="POST" enctype="multipart/form-data">
                 <label id=" name-label" for="name">Name:</label>
-                <input type="text" name="name" placeholder="Enter your name" required autocomplete="off"/>
+                <input type="text" name="name" placeholder="Enter your name" required />
                 <label id="email-label" for="email">Email:</label>
-                <input type="email" name="email" placeholder="Enter your name" required autocomplete="off"/>
+                <input type="email" name="email" placeholder="Enter your name" required />
                 <p>Message:</p>
-                <textarea id="message" placeholder="Insert your message" autocomplete="off"/></textarea>
+                <textarea id="message" placeholder="Insert your message"></textarea>
                 <button type="submit" id="submit" class="submit-button" aria-hidden="true">Submit</button>
             </form>
         </div>
         <div id="contact-buttons">
-            <button id="button-mail" class="buttons" aria-hidden="true"> <a href="mailto: fernandobouchet@gmail.com" target="_blank" rel="noopener"><i
-                        class="fas fa-envelope"></i>
+            <button id="button-mail" class="buttons" aria-hidden="true"> <a href="mailto: fernandobouchet@gmail.com"
+                    target="_blank"><i class="fas fa-envelope"></i>
                 </a></button>
-            <button id="button-linkedin" class="buttons" aria-hidden="true"> <a href="https://www.linkedin.com/in/fernando-bouchet"
-                    target="_blank" rel="noopener"><i class="fab fa-linkedin"></i>
+            <button id="button-linkedin" class="buttons" aria-hidden="true"> <a
+                    href="https://www.linkedin.com/in/fernando-bouchet" target="_blank"><i class="fab fa-linkedin"></i>
                 </a></button>
-            <button id="button-telegram" class="buttons" aria-hidden="true"> <a href="https://t.me/fernandobouchet" target="_blank" rel="noopener"><i
-                        class="fab fa-telegram"></i>
+            <button id="button-telegram" class="buttons" aria-hidden="true"> <a href="https://t.me/fernandobouchet"
+                    target="_blank"><i class="fab fa-telegram"></i>
                 </a></button>
-            <button id="button-github" class="buttons" aria-hidden="true"> <a href="https://github.com/fernandobouchet" target="_blank" rel="noopener"><i
-                        class="fab fa-github"></i>
+            <button id="button-github" class="buttons" aria-hidden="true" s> <a
+                    href="https://github.com/fernandobouchet" target="_blank"><i class="fab fa-github"></i>
                 </a></button>
         </div>
     </section>
