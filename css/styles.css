@@ -16,6 +16,7 @@ ul {
 
 li {
   padding-left: 1rem;
+  cursor: pointer;
 }
 
 #list {
@@ -30,9 +31,9 @@ h1 {
 }
 
 h2 {
-  color: white;
+  color: black;
   font-size: 4rem;
-  text-align: justify;
+  text-align: center;
   margin: 1rem;
 }
 
@@ -94,11 +95,12 @@ footer {
 }
 
 #projects h2 {
+  color: white;
   margin-bottom: 12rem;
   margin-top: 03rem;
 }
 
-#contact {
+#skills {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -118,36 +120,30 @@ footer {
   margin: 0rem;
 }
 
-#contact-buttons {
+#skill-icons {
   justify-content: space-between;
 }
 
-#contact h2 {
+#contact-buttons {
+  justify-content: space-evenly;
+  display: flex;
+}
+
+#skills h2 {
   color: #161718;
   font-size: 4rem;
   margin-bottom: 5rem;
   margin-top: 0;
 }
 
-#contact-form p {
-  color: #161718;
-  font-size: 2rem;
-  text-align: justify;
-  font-size: 2rem;
-  margin: 0rem;
-}
-
-#contact-form {
-  margin-bottom: 2rem;
-}
-
-#contact-title {
+#skills-title {
   margin-top: 12rem;
 }
 
 #img-wip {
   width: 20%;
 }
+
 .buttons {
   background-color: transparent;
   border-color: transparent;
@@ -159,6 +155,7 @@ footer {
   font-size: 3rem;
   color: #33373b;
 }
+
 .fas {
   font-size: 3rem;
   color: #33373b;
@@ -174,10 +171,6 @@ footer p {
   text-align: center;
 }
 
-textarea {
-  width: 15.5rem;
-}
-
 .all-projects {
   display: flex;
   margin-top: 4rem;
@@ -191,6 +184,48 @@ textarea {
   margin-top: 3rem;
   margin-bottom: 8rem;
 }
+
+.modal {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+  color: black;
+  align-items: center;
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 50%;
+  align-items: center;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
   h1 {
