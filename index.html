@@ -20,11 +20,10 @@
     <a id="top"></a>
     <nav id="navbar">
         <ul id="list">
-            <li><a href="#top">Home</a></li>
+            <li><a href="">Home</a></li>
             <li><a href="#welcome-section">About</a></li>
             <li><a href="#projects">Projects</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a id="contact-modal">Contact</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
     <section id="welcome-section">
@@ -54,41 +53,37 @@
             </a>
         </div>
     </section>
-    <div id="contact_modal" class="modal">
-        <div class="modal-content">
-            <span class="close">&times;</span>
-            <h2>Contact me</h2>
-            <div id="contact-buttons">
-                <button id="button-mail" class="buttons" aria-hidden="true"> <a href="mailto: fernandobouchet@gmail.com"
-                        target="_blank"><i class="fas fa-envelope"></i>
-                    </a></button>
-                <button id="button-linkedin" class="buttons" aria-hidden="true"> <a
-                        href="https://www.linkedin.com/in/fernandobouchet" target="_blank"><i
-                            class="fab fa-linkedin"></i>
-                    </a></button>
-                <button id="button-telegram" class="buttons" aria-hidden="true"> <a href="https://t.me/fernandobouchet"
-                        target="_blank"><i class="fab fa-telegram"></i>
-                    </a></button>
-                <button id="button-github" class="buttons" aria-hidden="true" s> <a
-                        href="https://github.com/fernandobouchet" target="_blank"><i class="fab fa-github"></i>
-                    </a></button>
-            </div>
+    <section id="contact">
+        <h2 id="contact-title">Contact</h2>
+        <div id="contact-form">
+            <form id="mail-form" action="mailto: fernandobouchet@gmail.com" method="POST" enctype="multipart/form-data">
+                <label id=" name-label" for="name">Name:</label>
+                <input type="text" name="name" placeholder="Enter your name" required />
+                <label id="email-label" for="email">Email:</label>
+                <input type="email" name="email" placeholder="Enter your name" required />
+                <p>Message:</p>
+                <textarea id="message" placeholder="Insert your message"></textarea>
+                <button type="submit" id="submit" class="submit-button" aria-hidden="true">Submit</button>
+            </form>
         </div>
-    </div>
-    <section id="skills">
-        <h2 id="skills-title">Skills</h2>
-        <div id="skill-icons">
-            <i class="fab fa-html5" alt="HMTL5"></i>
-            <i class="fab fa-css3-alt"></i>
-            <i class="fab fa-js"></i>
-            <i class="fab fa-github"></i>
-            <i class="fab fa-python"></i>
+        <div id="contact-buttons">
+            <button id="button-mail" class="buttons" aria-hidden="true"> <a href="mailto: fernandobouchet@gmail.com"
+                    target="_blank"><i class="fas fa-envelope"></i>
+                </a></button>
+            <button id="button-linkedin" class="buttons" aria-hidden="true"> <a
+                    href="https://www.linkedin.com/in/fernando-bouchet" target="_blank"><i class="fab fa-linkedin"></i>
+                </a></button>
+            <button id="button-telegram" class="buttons" aria-hidden="true"> <a href="https://t.me/fernandobouchet"
+                    target="_blank"><i class="fab fa-telegram"></i>
+                </a></button>
+            <button id="button-github" class="buttons" aria-hidden="true" s> <a
+                    href="https://github.com/fernandobouchet" target="_blank"><i class="fab fa-github"></i>
+                </a></button>
         </div>
     </section>
     <footer>
         <p><small>Copyright 2021 - Fernando Bouchet</small></p>
     </footer>
-    <script src="js/main.js"></script>
 </body>
 
 </html>
