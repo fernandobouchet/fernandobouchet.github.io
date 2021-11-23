@@ -1,10 +1,12 @@
 html,
 body {
   scroll-behavior: smooth;
-  font-family: "Montserrat", sans-serif;
-  font-family: "Raleway", sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   margin: 0;
   overflow-x: hidden;
+  color: white;
+  background-color: #090a0b;
 }
 
 ul {
@@ -24,14 +26,14 @@ li {
 }
 
 h1 {
-  font-size: 5rem;
-  text-align: justify;
+  font-size: 3.5rem;
+  font-weight: 600;
+  line-height: normal;
   margin: 1rem;
 }
 
 h2 {
-  color: white;
-  font-size: 4rem;
+  font-size: 2.5rem;
   text-align: justify;
   margin: 1rem;
 }
@@ -39,11 +41,11 @@ h2 {
 p {
   text-align: justify;
   font-size: 2rem;
-  margin: 5rem;
+  color: #828383;
+  margin: 10rem;
 }
 
 footer {
-  color: white;
   font-size: 0.1rem;
   text-align: center;
   background-color: #161718;
@@ -58,8 +60,7 @@ footer {
   align-items: center;
   width: 100%;
   height: 100vh;
-  background-color: white;
-  color: #161718;
+  background-color: #090a0b;
   margin-right: 0;
 }
 
@@ -105,7 +106,7 @@ footer {
   align-items: center;
   width: 100%;
   height: 100vh;
-  background-color: white;
+  background-color: #090a0b;
   font-size: 2rem;
   margin-right: 0;
   margin-bottom: 1rem;
@@ -123,14 +124,12 @@ footer {
 }
 
 #contact h2 {
-  color: #161718;
   font-size: 4rem;
   margin-bottom: 5rem;
   margin-top: 0;
 }
 
 #contact-form p {
-  color: #161718;
   font-size: 2rem;
   text-align: justify;
   font-size: 2rem;
@@ -157,11 +156,11 @@ footer {
 
 .fab {
   font-size: 3rem;
-  color: #33373b;
+  color: white;
 }
 .fas {
   font-size: 3rem;
-  color: #33373b;
+  color: white;
 }
 
 .buttons :hover {
@@ -219,7 +218,7 @@ textarea {
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
   h1 {
-    font-size: 4.5rem;
+    font-size: 3.5rem;
   }
 
   h2 {
