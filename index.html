@@ -9,9 +9,6 @@
     <link rel="shortcut icon" href="assets/terminal.svg">
     <link href="css/styles.css" rel="stylesheet" />
     <script src="https://kit.fontawesome.com/897a9d19c7.js" crossorigin="anonymous"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -20,7 +17,7 @@
         <ul id="list">
             <li><a href="#welcome-section">ABOUT</a></li>
             <li><a href="#projects">PROJECTS</a></li>
-            <li><a href="#contact">CONTACT</a></li>
+            <li><a href="#footer">CONTACT</a></li>
         </ul>
     </nav>
     <section id="welcome-section">
@@ -58,7 +55,7 @@
                 <input type="text" name="name" placeholder="Enter your name" required />
                 <label id="email-label" for="email">Email:</label>
                 <input type="email" name="email" placeholder="Enter your name" required />
-                <p>Message:</p>
+                <p id="message_text">Message:</p>
                 <textarea id="message" placeholder="Insert your message"></textarea>
                 <button type="submit" id="submit" class="submit-button" aria-hidden="true">Submit</button>
             </form>
@@ -78,7 +75,7 @@
                 </a></button>
         </div>
     </section>
-    <footer>
+    <footer id="footer">
         <p><small>Copyright 2021 - Fernando Bouchet</small></p>
     </footer>
 </body>
