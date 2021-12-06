@@ -50,13 +50,16 @@
     <section id="contact">
         <h2 id="contact-title">Contact</h2>
         <div id="contact-form">
-            <form id="mail-form" action="https://formsubmit.co/fernandobouchet@gmail.com" method="POST">
+            <form id="mail-form" action="https://formsubmit.co/b0b332c987f92be7b0fb5ad3079d5478" method="POST">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_template" value="box">
+                <input type="hidden" name="_subject" value="Check it! Someone wants to contact you!">
                 <label id="name-label" for="name">Name:</label>
                 <input type="text" name="name" placeholder="Enter your name" required />
                 <label id="email-label" for="email">Email:</label>
                 <input type="email" name="email" placeholder="Enter your name" required />
-                <p id="message_text">Message:</p>
-                <textarea id="message" placeholder="Insert your message"></textarea>
+                <label id="message-label">Message:</label>
+                <input type="text" name="text" placeholder="Enter your message" required />
                 <button type="submit" id="submit" class="submit-button" aria-hidden="true">Submit</button>
             </form>
         </div>
