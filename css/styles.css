@@ -190,6 +190,10 @@ textarea {
   margin-bottom: 8rem;
 }
 
+textarea {
+  resize: none;
+  height: 8rem;
+}
 .submit-button {
   padding: 8px 15px;
   background: #21262d;
@@ -198,6 +202,7 @@ textarea {
   -webkit-border-radius: 5px;
   border-radius: 5px;
   color: #c9d1d9;
+  margin-top: 1rem;
 }
 
 /* Extra small devices (phones, 600px and down) */
