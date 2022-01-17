@@ -42,9 +42,10 @@ h2 {
 
 p {
   text-align: justify;
-  font-size: 2rem;
+  font-size: 1.5rem;
   color: #f0f6fc;
-  margin: 10rem;
+  margin-left: 10rem;
+  margin-right: 10rem;
 }
 
 footer {
@@ -85,6 +86,17 @@ footer {
   color: gray;
 }
 
+#about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background-color: #0d1117;
+  margin-right: 0;
+}
+
 #projects {
   display: flex;
   flex-direction: column;
@@ -97,8 +109,7 @@ footer {
 }
 
 #projects h2 {
-  margin-bottom: 12rem;
-  margin-top: 03rem;
+  margin-top: 7rem;
 }
 
 #contact {
@@ -126,9 +137,8 @@ footer {
 }
 
 #contact h2 {
-  font-size: 4rem;
-  margin-bottom: 5rem;
-  margin-top: 0;
+  font-size: 3rem;
+  margin-top: 4rem;
 }
 
 #contact-form {
@@ -139,9 +149,13 @@ footer {
   margin-top: 12rem;
 }
 
-#img-wip {
-  width: 20%;
+img {
+  width: 25rem;
+  height: 25rem;
+  vertical-align: middle;
+  border-radius: 15px;
 }
+
 .buttons {
   background-color: transparent;
   border-color: transparent;
@@ -177,8 +191,13 @@ textarea {
 }
 
 .all-projects {
-  display: flex;
-  margin-top: 4rem;
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+.projects-slide {
+  display: none;
 }
 
 .project-tile {
@@ -187,7 +206,7 @@ textarea {
   align-items: center;
   width: 100%;
   margin-top: 3rem;
-  margin-bottom: 8rem;
+  margin-bottom: 5rem;
 }
 
 textarea {
@@ -233,29 +252,33 @@ textarea {
   }
 }
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
-  h1 {
-    font-size: 3.5rem;
-  }
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
 
-  h2 {
-    font-size: 2rem;
-  }
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
 
-  p {
-    text-align: justify;
-    font-size: 2rem;
-    margin: 1rem;
-  }
-
-  ul {
-    padding: 0rem;
-    font-size: 1rem;
-  }
-  li {
-    padding-left: 1rem;
-  }
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 /* Medium devices (landscape tablets, 768px and up) */

@@ -9,6 +9,7 @@
     <link rel="shortcut icon" href="assets/terminal.svg">
     <link href="css/styles.css" rel="stylesheet" />
     <script src="https://kit.fontawesome.com/897a9d19c7.js" crossorigin="anonymous"></script>
+    <script src="js/main.js" defer></script>
 </head>
 
 <body>
@@ -20,31 +21,36 @@
             <li><a href="#contact">CONTACT</a></li>
         </ul>
     </nav>
-    <section id="welcome-section">
+    <hero id="welcome-section">
         <h1>Hi, I´m Fernando</h1>
-        <p>I´m from Buenos Aires, Argentina, computing enthusiast, currently I'm studying a degree in computing at
+        <p>
+            I'm from Buenos Aires, Argentina, computing enthusiast, currently I'm studying a degree in computing at
             UNAHUR university,
-            I am also learning self-taught way html, css, javascript and python while still working as a manager in a
+            I am also learning self-taught way javascript and React while still working as a manager in a
             furniture factory.
+            I'm an android fan and build my own custom kernel for the devices I owned and share it with the community.
+            I love spending time with my family, travel, play videogames, watch soccer games and movies.
             I am looking for an IT job where I can show my skills and to keep getting more knowledge.
-            I´m an android fan and build my own custom kernel for the devices I owned and share it with the community.
-            I love spending time with my family, travel, watch soccer games and movies.</p>
-    </section>
+            My goal is to become a Full stack developer.
+        </p>
+    </hero>
     <section id="projects" class="project">
         <h2 id="project-title">This are some of my projects:</h2>
         <div class="all-projects">
-            <a class="project-tile" href="">
+            <div class="projects-slide fade">
+                <img id="img-wip" src="assets/img/calculator.png">
+            </div>
+            <div class="projects-slide fade">
+                <img id="img-wip" src="assets/img/rsp.png">
+            </div>
+            <div class="projects-slide fade">
+                <img id="img-wip" src="assets/img/sketch.png">
+            </div>
+            <div class="projects-slide fade">
                 <img id="img-wip" src="assets/wip.png">
-            </a>
-            <a class="project-tile" href="">
-                <img id="img-wip" src="assets/wip.png">
-            </a>
-            <a class="project-tile" href="">
-                <img id="img-wip" src="assets/wip.png">
-            </a>
-            <a class="project-tile" href="">
-                <img id="img-wip" src="assets/wip.png">
-            </a>
+            </div>
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
         </div>
     </section>
     <section id="contact">
