@@ -258,7 +258,7 @@ textarea {
 }
 
 #dot-container {
-  text-align:center"
+  text-align: center;
 }
 .dot {
   cursor: pointer;
@@ -305,6 +305,7 @@ textarea {
 #cv-button:hover {
   background-color: #3464cc6c;
 }
+
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
   h1 {
@@ -316,7 +317,8 @@ textarea {
   }
 
   #projects h2 {
-text-align: center;  }
+    text-align: center;
+  }
 
   p {
     text-align: justify;
@@ -332,9 +334,14 @@ text-align: center;  }
     padding-left: 1rem;
   }
 
+  #list {
+    padding: 0;
+    margin-top: 2rem;
+  }
+
   #cv-button {
-    width: 11rem;
-    height: 1.3rem;
+    width: 8rem;
+    height: 3rem;
     font-size: 1rem;
   }
 }
