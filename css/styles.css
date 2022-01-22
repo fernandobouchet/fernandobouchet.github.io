@@ -7,6 +7,7 @@ body {
   overflow-x: hidden;
   color: #c9d1d9;
   background-color: #0d1117;
+  text-align: center;
 }
 
 ul {
@@ -148,6 +149,14 @@ footer {
 
 #contact-title {
   margin-top: 12rem;
+}
+
+#skills-container {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 img {
@@ -306,6 +315,17 @@ textarea {
   background-color: #3464cc6c;
 }
 
+.skills {
+  gap: 10px;
+}
+
+#skills-icons {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+  width: 30rem;
+}
+
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
   h1 {
@@ -343,6 +363,12 @@ textarea {
     width: 6rem;
     height: 3rem;
     font-size: 1rem;
+  }
+
+  #skills-icons {
+    display: flex;
+    justify-content: space-between;
+    width: 20rem;
   }
 }
 
