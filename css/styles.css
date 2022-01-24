@@ -7,7 +7,6 @@ body {
   overflow-x: hidden;
   color: #c9d1d9;
   background-color: #0d1117;
-  text-align: center;
 }
 
 ul {
@@ -60,6 +59,7 @@ footer {
 #welcome-section {
   display: flex;
   flex-direction: column;
+  text-align:center;
   justify-content: center;
   align-items: center;
   width: 100%;
