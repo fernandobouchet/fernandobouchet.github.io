@@ -5,6 +5,7 @@ function Contact() {
   return (
     <>
       <StyledContainer id="Contact">
+        <h2>Contact</h2>
         <Row>
           <Form>
             <Form.Group className="mb-3" controlId="formBasicEmail">
