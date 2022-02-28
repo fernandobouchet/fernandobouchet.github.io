@@ -5,7 +5,7 @@ import ControlledCarousel from "./ControlledCarousel";
 function Projects() {
   return (
     <>
-      <StyledContainer>
+      <StyledContainer id="Projects">
         <Row>
           <h2>These are some projects I've been working on:</h2>
         </Row>
@@ -20,6 +20,9 @@ export default Projects;
 
 const StyledContainer = styled(Container)`
   height: 100vh;
+  display: flex;
+  flex-direction: column;
   text-align: center;
+  justify-content: center;
   padding: 1rem;
 `;

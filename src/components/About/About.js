@@ -4,7 +4,7 @@ import styled from "styled-components";
 function About() {
   return (
     <>
-      <StyledContainer>
+      <StyledContainer id="About">
         <Row>
           <h1>Hi, I'm Fernando</h1>
           <p>
@@ -41,6 +41,9 @@ export default About;
 
 const StyledContainer = styled(Container)`
   height: 100vh;
+  display: flex;
+  flex-direction: column;
   text-align: center;
+  justify-content: center;
   padding: 1rem;
 `;
