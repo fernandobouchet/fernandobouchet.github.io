@@ -15,12 +15,12 @@ function ControlledCarousel() {
       <Carousel.Item key={project.id}>
         <img className="d-block w-100" src={project.image} alt="First slide" />
         <Carousel.Caption>
-          <StyledButton variant="dark">
+          <StyledButton variant="primary">
             <a href={project.demo} target="_blank" rel="noreferrer">
               Live Preview
             </a>
           </StyledButton>
-          <StyledButton variant="dark">
+          <StyledButton variant="primary">
             <a href={project.github} target="_blank" rel="noreferrer">
               Github Sources
             </a>
@@ -34,6 +34,7 @@ function ControlledCarousel() {
     <StyledCarousel
       variant="dark"
       pause="hover"
+      fade="true"
       activeIndex={index}
       onSelect={handleSelect}
     >
@@ -45,6 +46,7 @@ function ControlledCarousel() {
 export default ControlledCarousel;
 
 const StyledCarousel = styled(Carousel)`
+  margin: 2rem;
   @media (min-width: 1024px) {
     width: 50rem;
     align-self: center;
@@ -52,7 +54,7 @@ const StyledCarousel = styled(Carousel)`
 `;
 
 const StyledButton = styled(Button)`
-  margin: 0.2rem;
+  margin: 1rem;
 
   > a {
     color: white;
@@ -64,7 +66,7 @@ const StyledButton = styled(Button)`
     padding: 0;
     text-align: center;
     font-size: 0.6rem;
-    width: 5.8rem;
-    height: 1.2rem;
+    width: 4.5rem;
+    height: 1rem;
   }
 `;

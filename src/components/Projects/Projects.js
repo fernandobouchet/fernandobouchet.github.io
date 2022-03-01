@@ -10,7 +10,17 @@ function Projects() {
           <h2>These are some projects I've been working on:</h2>
         </Row>
         <ControlledCarousel />
-        <h2>You can find more on my Github.</h2>
+        <h2>
+          You can find more on my&nbsp;
+          <a
+            href="https://github.com/fernandobouchet?tab=repositories"
+            target="_blank"
+            rel="noreferrer"
+          >
+            github
+          </a>
+          .
+        </h2>
       </StyledContainer>
     </>
   );
