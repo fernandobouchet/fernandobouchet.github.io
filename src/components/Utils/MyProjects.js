@@ -11,7 +11,7 @@ export const Projects = [
     id: 1,
     project: "Dev Finder",
     image:
-      "https://github.com/fernandobouchet/dev-finder/raw/main/project_preview.png?raw=true",
+      "https://github.com/fernandobouchet/dev-finder/blob/main/dev-finder_preview.jpg?raw=true",
     demo: "https://fernandobouchet.github.io/dev-finder",
     github: "https://github.com/fernandobouchet/dev-finder",
   },
@@ -19,7 +19,7 @@ export const Projects = [
     id: 2,
     project: "Memory Game",
     image:
-      "https://github.com/fernandobouchet/memory-game/raw/main/memory-game_preview.png?raw=true",
+      "https://github.com/fernandobouchet/memory-game/blob/main/memory-game_preview.jpg?raw=true",
     demo: "https://fernandobouchet.github.io/memory-game",
     github: "https://github.com/fernandobouchet/memory-game",
   },
@@ -27,8 +27,16 @@ export const Projects = [
     id: 3,
     project: "Quizzical",
     image:
-      "https://github.com/fernandobouchet/quizzical/raw/main/quizzical_preview.png?raw=true",
+      "https://github.com/fernandobouchet/quizzical/blob/main/quizzical_preview.jpg?raw=true",
     demo: "https://github.com/fernandobouchet/quizzical",
     github: "https://fernandobouchet.github.io/quizzical",
+  },
+  {
+    id: 4,
+    project: "My Travel Journal",
+    image:
+      "https://github.com/fernandobouchet/travel-journal/blob/main/travel-journal_preview.jpg?raw=true",
+    demo: "https://fernandobouchet.github.io/travel-journal",
+    github: "https://github.com/fernandobouchet/travel-journal",
   },
 ];
