@@ -4,7 +4,7 @@ import styled from "styled-components";
 function NavBar() {
   return (
     <>
-      <StyledNavbar variant="dark" sticky="top">
+      <StyledNavbar variant="dark" fixed="top">
         <Container>
           <Nav className="me-auto">
             <Nav.Link href="#About">About</Nav.Link>
@@ -20,5 +20,5 @@ function NavBar() {
 export default NavBar;
 
 const StyledNavbar = styled(Navbar)`
-  background-color: #161b22;
+  background-color: #070708;
 `;

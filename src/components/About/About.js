@@ -55,7 +55,7 @@ function About() {
 export default About;
 
 const StyledContainer = styled(Container)`
-  background-color: #0d1118;
+  background-color: #070708;
   color: aliceblue;
   height: 100vh;
   display: flex;
