@@ -56,7 +56,7 @@ export default About;
 
 const StyledContainer = styled(Container)`
   background-color: #070708;
-  color: aliceblue;
+  color: silver;
   height: 100vh;
   display: flex;
   flex-direction: column;
