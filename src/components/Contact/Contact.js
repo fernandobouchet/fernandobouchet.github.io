@@ -10,16 +10,16 @@ import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
 function Contact() {
   const IconLinkedin = (
-    <FontAwesomeIcon icon={faLinkedin} className="fa-3x" color="white" />
+    <FontAwesomeIcon icon={faLinkedin} className="fa-2x" color="white" />
   );
   const IconTelegram = (
-    <FontAwesomeIcon icon={faTelegram} className="fa-3x" color="white" />
+    <FontAwesomeIcon icon={faTelegram} className="fa-2x" color="white" />
   );
   const IconGithub = (
-    <FontAwesomeIcon icon={faGithub} className="fa-3x" color="white" />
+    <FontAwesomeIcon icon={faGithub} className="fa-2x" color="white" />
   );
   const IconMail = (
-    <FontAwesomeIcon icon={faEnvelope} className="fa-3x" color="white" />
+    <FontAwesomeIcon icon={faEnvelope} className="fa-2x" color="white" />
   );
 
   return (
@@ -59,7 +59,7 @@ function Contact() {
               name="text"
               style={{ height: "10rem", resize: "none" }}
             />
-            <StyledSubmitButton variant="primary" type="submit" size="lg">
+            <StyledSubmitButton variant="primary" type="submit">
               Send message!
             </StyledSubmitButton>
           </StyledForm>
@@ -141,7 +141,7 @@ const StyledButton = styled(Button)`
 `;
 
 const StyledForm = styled(Form)`
-  width: 20rem;
+  width: 16rem;
   margin: 2rem auto;
 
   .Control {
@@ -150,5 +150,5 @@ const StyledForm = styled(Form)`
 `;
 
 const StyledH2 = styled.h2`
-  font-size: 2.5rem;
+  font-size: 2rem;
 `;
