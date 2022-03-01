@@ -52,15 +52,23 @@ function Contact() {
             />
             <Form.Group className="mb-3" controlId="formBasicEmail">
               <Form.Label>Email address</Form.Label>
-              <Form.Control type="email" placeholder="Enter email" />
+              <Form.Control
+                type="email"
+                placeholder="Enter email"
+                name="email"
+              />
             </Form.Group>
             <Form.Group className="mb-3" controlId="formBasicName">
               <Form.Label>Name</Form.Label>
-              <Form.Control type="name" placeholder="Enter name" />
+              <Form.Control type="name" placeholder="Enter name" name="name" />
             </Form.Group>
             <Form.Label>Comments</Form.Label>
             <FloatingLabel controlId="floatingTextarea2" label="Comments">
-              <Form.Control as="textarea" placeholder="Leave a comment here" />
+              <Form.Control
+                as="textarea"
+                placeholder="Leave a comment here"
+                name="text"
+              />
             </FloatingLabel>
             <Button variant="primary" type="submit">
               Submit
