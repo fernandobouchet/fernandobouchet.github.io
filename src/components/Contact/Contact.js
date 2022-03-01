@@ -1,11 +1,4 @@
-import {
-  Row,
-  Container,
-  Form,
-  Button,
-  FloatingLabel,
-  Col,
-} from "react-bootstrap";
+import { Row, Container, Form, Button, Col } from "react-bootstrap";
 import styled from "styled-components";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -17,22 +10,22 @@ import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
 function Contact() {
   const IconLinkedin = (
-    <FontAwesomeIcon icon={faLinkedin} size="2xl" color="white" />
+    <FontAwesomeIcon icon={faLinkedin} className="fa-3x" color="white" />
   );
   const IconTelegram = (
-    <FontAwesomeIcon icon={faTelegram} size="2xl" color="white" />
+    <FontAwesomeIcon icon={faTelegram} className="fa-3x" color="white" />
   );
   const IconGithub = (
-    <FontAwesomeIcon icon={faGithub} size="2xl" color="white" />
+    <FontAwesomeIcon icon={faGithub} className="fa-3x" color="white" />
   );
   const IconMail = (
-    <FontAwesomeIcon icon={faEnvelope} size="2xl" color="white" />
+    <FontAwesomeIcon icon={faEnvelope} className="fa-3x" color="white" />
   );
 
   return (
     <>
       <StyledContainer id="Contact" fluid>
-        <h2>Contact</h2>
+        <StyledH2>Contact me</StyledH2>
         <Row>
           <StyledForm
             action="https://formsubmit.co/b0b332c987f92be7b0fb5ad3079d5478"
@@ -51,7 +44,6 @@ function Contact() {
               value="Check it! Someone wants to contact you!"
             />
             <Form.Group className="mb-3" controlId="formBasicEmail">
-              <Form.Label>Email address</Form.Label>
               <Form.Control
                 type="email"
                 placeholder="Enter email"
@@ -59,25 +51,22 @@ function Contact() {
               />
             </Form.Group>
             <Form.Group className="mb-3" controlId="formBasicName">
-              <Form.Label>Name</Form.Label>
               <Form.Control type="name" placeholder="Enter name" name="name" />
             </Form.Group>
-            <Form.Label>Comments</Form.Label>
-            <FloatingLabel controlId="floatingTextarea2" label="Comments">
-              <Form.Control
-                as="textarea"
-                placeholder="Leave a comment here"
-                name="text"
-              />
-            </FloatingLabel>
-            <Button variant="primary" type="submit">
-              Submit
-            </Button>
+            <Form.Control
+              as="textarea"
+              placeholder="Enter message"
+              name="text"
+              style={{ height: "10rem", resize: "none" }}
+            />
+            <StyledSubmitButton variant="primary" type="submit" size="lg">
+              Send message!
+            </StyledSubmitButton>
           </StyledForm>
         </Row>
         <Row>
-          <Col id="contact-buttons">
-            <StyledButton variant="dark">
+          <Col>
+            <StyledButton>
               <a
                 href="mailto: fernandobouchet@gmail.com"
                 target="_blank"
@@ -86,7 +75,7 @@ function Contact() {
                 {IconMail}
               </a>
             </StyledButton>
-            <StyledButton variant="dark">
+            <StyledButton>
               <a
                 href="https://www.linkedin.com/in/fernando-bouchet"
                 target="_blank"
@@ -95,7 +84,7 @@ function Contact() {
                 {IconLinkedin}
               </a>
             </StyledButton>
-            <StyledButton variant="dark">
+            <StyledButton>
               <a
                 href="https://t.me/fernandobouchet"
                 target="_blank"
@@ -104,7 +93,7 @@ function Contact() {
                 {IconTelegram}
               </a>
             </StyledButton>
-            <StyledButton variant="dark">
+            <StyledButton>
               <a
                 href="https://github.com/fernandobouchet"
                 target="_blank"
@@ -133,11 +122,33 @@ const StyledContainer = styled(Container)`
   padding: 1rem;
 `;
 
+const StyledSubmitButton = styled(Button)`
+  margin-top: 1.5rem;
+`;
+
 const StyledButton = styled(Button)`
-  margin: 1rem;
+  background-color: transparent;
+  border-color: transparent;
+  transition: 0.1s linear;
+  margin: 0 0.3rem;
+
+  &:hover {
+    background-color: transparent;
+    border-color: transparent;
+    transform: scale(1.2);
+    color: #2f353c;
+  }
 `;
 
 const StyledForm = styled(Form)`
   width: 20rem;
-  margin: auto;
+  margin: 2rem auto;
+
+  .Control {
+    resize: none;
+  }
+`;
+
+const StyledH2 = styled.h2`
+  font-size: 2.5rem;
 `;
