@@ -14,7 +14,7 @@ function ControlledCarousel() {
     return (
       <Carousel.Item key={project.id}>
         <img className="d-block w-100" src={project.image} alt="First slide" />
-        <Carousel.Caption>
+        <StyledCarouselCaption>
           <StyledButton variant="primary">
             <a href={project.demo} target="_blank" rel="noreferrer">
               Live Preview
@@ -25,7 +25,7 @@ function ControlledCarousel() {
               Github Sources
             </a>
           </StyledButton>
-        </Carousel.Caption>
+        </StyledCarouselCaption>
       </Carousel.Item>
     );
   });
@@ -46,15 +46,19 @@ function ControlledCarousel() {
 export default ControlledCarousel;
 
 const StyledCarousel = styled(Carousel)`
-  margin: 2rem;
+  margin: 2rem 0;
   @media (min-width: 1024px) {
     width: 50rem;
     align-self: center;
   }
 `;
+const StyledCarouselCaption = styled(Carousel.Caption)`
+  padding: 1rem;
+`;
 
 const StyledButton = styled(Button)`
-  margin: 1rem;
+  margin: 0.4rem;
+  padding: 0.4rem;
 
   > a {
     color: white;
