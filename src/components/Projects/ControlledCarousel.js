@@ -31,18 +31,25 @@ function ControlledCarousel() {
   });
 
   return (
-    <Carousel
+    <StyledCarousel
       variant="dark"
       pause="hover"
       activeIndex={index}
       onSelect={handleSelect}
     >
       {ProjectsCarousel}
-    </Carousel>
+    </StyledCarousel>
   );
 }
 
 export default ControlledCarousel;
+
+const StyledCarousel = styled(Carousel)`
+  @media (min-width: 1024px) {
+    width: 50rem;
+    align-self: center;
+  }
+`;
 
 const StyledButton = styled(Button)`
   margin: 0.2rem;
