@@ -42,6 +42,11 @@ function Contact() {
             <input type="hidden" name="_template" value="box" />
             <input
               type="hidden"
+              name="_next"
+              value="https://fernandobouchet.github.io"
+            />
+            <input
+              type="hidden"
               name="_subject"
               value="Check it! Someone wants to contact you!"
             />
