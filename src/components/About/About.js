@@ -32,14 +32,15 @@ function About() {
         <Row>
           <h1>Hi, I'm Fernando</h1>
           <p>
-            I'm from Bs As, Argentina. Currently I'm studying a technical degree
-            in programming at UNAHUR university, I am also learning self-taught
-            way React while still working as a manager in a furniture factory.
-            I'm an android fan and build my own custom kernel for the devices I
-            own and share it with the community. I love spending time with my
-            family, travel, play videogames, watch soccer games and movies. I am
-            looking for an IT job where I can show my skills and to keep getting
-            more knowledge. My goal is to become a Full stack developer.
+            I'm from Buenos Aires, Argentina, computer and technology fan,
+            currently studying a technical degree in programming at UNAHUR
+            university, I am also learning self-taught way React while still
+            working as a manager in a furniture factory. I'm an android fan and
+            build my own custom kernel for the devices I own and share it with
+            the community. I love spending time with my family, travel, play
+            videogames, watch soccer games and movies. I am looking for an IT
+            job where I can show my skills and to keep getting more knowledge.
+            My goal is to become a Full stack JS developer.
           </p>
         </Row>
         <Row>
