@@ -19,8 +19,6 @@ function Projects() {
 export default Projects;
 
 const StyledContainer = styled(Container)`
-  background-color: #161b22;
-  color: aliceblue;
   height: 100vh;
   display: flex;
   flex-direction: column;
