@@ -27,7 +27,7 @@ function About() {
 
   return (
     <>
-      <StyledContainer id="About">
+      <StyledContainer id="About" fluid>
         <Row>
           <h1>Hi, I'm Fernando</h1>
           <p>
@@ -53,6 +53,8 @@ function About() {
 export default About;
 
 const StyledContainer = styled(Container)`
+  background-color: #0d1118;
+  color: aliceblue;
   height: 100vh;
   display: flex;
   flex-direction: column;

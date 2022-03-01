@@ -31,7 +31,7 @@ function Contact() {
 
   return (
     <>
-      <StyledContainer id="Contact">
+      <StyledContainer id="Contact" fluid>
         <h2>Contact</h2>
         <Row>
           <Form>
@@ -100,6 +100,8 @@ function Contact() {
 export default Contact;
 
 const StyledContainer = styled(Container)`
+  background-color: #0d1118;
+  color: aliceblue;
   height: 100vh;
   display: flex;
   flex-direction: column;

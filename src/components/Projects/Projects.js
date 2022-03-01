@@ -5,7 +5,7 @@ import ControlledCarousel from "./ControlledCarousel";
 function Projects() {
   return (
     <>
-      <StyledContainer id="Projects">
+      <StyledContainer id="Projects" fluid>
         <Row>
           <h2>These are some projects I've been working on:</h2>
         </Row>
@@ -19,6 +19,8 @@ function Projects() {
 export default Projects;
 
 const StyledContainer = styled(Container)`
+  background-color: #161b22;
+  color: aliceblue;
   height: 100vh;
   display: flex;
   flex-direction: column;
