@@ -55,6 +55,8 @@ function About() {
 export default About;
 
 const StyledContainer = styled(Container)`
+  background-color: #0d1118;
+  color: aliceblue;
   height: 100vh;
   display: flex;
   flex-direction: column;

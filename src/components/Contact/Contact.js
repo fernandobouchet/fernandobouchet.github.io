@@ -10,16 +10,16 @@ import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
 function Contact() {
   const IconLinkedin = (
-    <FontAwesomeIcon icon={faLinkedin} className="fa-3x" color="#212529" />
+    <FontAwesomeIcon icon={faLinkedin} className="fa-3x" color="white" />
   );
   const IconTelegram = (
-    <FontAwesomeIcon icon={faTelegram} className="fa-3x" color="#212529" />
+    <FontAwesomeIcon icon={faTelegram} className="fa-3x" color="white" />
   );
   const IconGithub = (
-    <FontAwesomeIcon icon={faGithub} className="fa-3x" color="#212529" />
+    <FontAwesomeIcon icon={faGithub} className="fa-3x" color="white" />
   );
   const IconMail = (
-    <FontAwesomeIcon icon={faEnvelope} className="fa-3x" color="#212529" />
+    <FontAwesomeIcon icon={faEnvelope} className="fa-3x" color="white" />
   );
 
   return (
@@ -112,6 +112,8 @@ function Contact() {
 export default Contact;
 
 const StyledContainer = styled(Container)`
+  background-color: #0d1118;
+  color: aliceblue;
   height: 100vh;
   display: flex;
   flex-direction: column;

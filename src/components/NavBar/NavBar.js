@@ -1,9 +1,10 @@
 import { Navbar, Container, Nav } from "react-bootstrap";
+import styled from "styled-components";
 
 function NavBar() {
   return (
     <>
-      <Navbar bg="dark" variant="dark" sticky="top">
+      <StyledNavbar variant="dark" sticky="top">
         <Container>
           <Nav className="me-auto">
             <Nav.Link href="#About">About</Nav.Link>
@@ -11,9 +12,13 @@ function NavBar() {
             <Nav.Link href="#Contact">Contact</Nav.Link>
           </Nav>
         </Container>
-      </Navbar>
+      </StyledNavbar>
     </>
   );
 }
 
 export default NavBar;
+
+const StyledNavbar = styled(Navbar)`
+  background-color: #161b22;
+`;
