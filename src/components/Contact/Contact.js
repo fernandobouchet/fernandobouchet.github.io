@@ -1,7 +1,34 @@
-import { Row, Container, Form, Button, FloatingLabel } from "react-bootstrap";
+import {
+  Row,
+  Container,
+  Form,
+  Button,
+  FloatingLabel,
+  Col,
+} from "react-bootstrap";
 import styled from "styled-components";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faLinkedin,
+  faTelegram,
+  faGithub,
+} from "@fortawesome/free-brands-svg-icons";
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
 function Contact() {
+  const IconLinkedin = (
+    <FontAwesomeIcon icon={faLinkedin} size="2xl" color="white" />
+  );
+  const IconTelegram = (
+    <FontAwesomeIcon icon={faTelegram} size="2xl" color="white" />
+  );
+  const IconGithub = (
+    <FontAwesomeIcon icon={faGithub} size="2xl" color="white" />
+  );
+  const IconMail = (
+    <FontAwesomeIcon icon={faEnvelope} size="2xl" color="white" />
+  );
+
   return (
     <>
       <StyledContainer id="Contact">
@@ -26,44 +53,44 @@ function Contact() {
           </Form>
         </Row>
         <Row>
-          <div id="contact-buttons">
-            <button id="button-mail" className="buttons" aria-hidden="true">
+          <Col id="contact-buttons">
+            <StyledButton>
               <a
                 href="mailto: fernandobouchet@gmail.com"
                 target="_blank"
                 rel="noreferrer"
               >
-                <i className="fas fa-envelope"></i>
+                {IconMail}
               </a>
-            </button>
-            <button id="button-linkedin" className="buttons" aria-hidden="true">
+            </StyledButton>
+            <StyledButton>
               <a
                 href="https://www.linkedin.com/in/fernando-bouchet"
                 target="_blank"
                 rel="noreferrer"
               >
-                <i className="fab fa-linkedin"></i>
+                {IconLinkedin}
               </a>
-            </button>
-            <button id="button-telegram" className="buttons" aria-hidden="true">
+            </StyledButton>
+            <StyledButton>
               <a
                 href="https://t.me/fernandobouchet"
                 target="_blank"
                 rel="noreferrer"
               >
-                <i className="fab fa-telegram"></i>
+                {IconTelegram}
               </a>
-            </button>
-            <button id="button-github" className="buttons" aria-hidden="true">
+            </StyledButton>
+            <StyledButton>
               <a
                 href="https://github.com/fernandobouchet"
                 target="_blank"
                 rel="noreferrer"
               >
-                <i className="fab fa-github"></i>
+                {IconGithub}
               </a>
-            </button>
-          </div>
+            </StyledButton>
+          </Col>
         </Row>
       </StyledContainer>
     </>
@@ -79,4 +106,8 @@ const StyledContainer = styled(Container)`
   text-align: center;
   justify-content: center;
   padding: 1rem;
+`;
+
+const StyledButton = styled(Button)`
+  margin: 1rem;
 `;
