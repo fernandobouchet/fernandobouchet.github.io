@@ -54,7 +54,7 @@ function Contact() {
         </Row>
         <Row>
           <Col id="contact-buttons">
-            <StyledButton>
+            <StyledButton variant="dark">
               <a
                 href="mailto: fernandobouchet@gmail.com"
                 target="_blank"
@@ -63,7 +63,7 @@ function Contact() {
                 {IconMail}
               </a>
             </StyledButton>
-            <StyledButton>
+            <StyledButton variant="dark">
               <a
                 href="https://www.linkedin.com/in/fernando-bouchet"
                 target="_blank"
@@ -72,7 +72,7 @@ function Contact() {
                 {IconLinkedin}
               </a>
             </StyledButton>
-            <StyledButton>
+            <StyledButton variant="dark">
               <a
                 href="https://t.me/fernandobouchet"
                 target="_blank"
@@ -81,7 +81,7 @@ function Contact() {
                 {IconTelegram}
               </a>
             </StyledButton>
-            <StyledButton>
+            <StyledButton variant="dark">
               <a
                 href="https://github.com/fernandobouchet"
                 target="_blank"
