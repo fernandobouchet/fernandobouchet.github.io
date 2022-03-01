@@ -8,6 +8,7 @@ import {
   faJs,
   faCss3Alt,
 } from "@fortawesome/free-brands-svg-icons";
+import { nanoid } from "nanoid";
 
 function About() {
   const IconGithub = (
@@ -22,7 +23,7 @@ function About() {
   const Icons = [IconGithub, IconHtml, IconCss, IconJs, IconReact];
 
   const SkillIcons = Icons.map((icon) => {
-    return <>{icon}</>;
+    return <div key={nanoid()}>{icon}</div>;
   });
 
   return (
@@ -66,5 +67,6 @@ const StyledContainer = styled(Container)`
 const StyledRowIcons = styled(Col)`
   margin-top: 1rem;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
+  gap: 4rem;
 `;
