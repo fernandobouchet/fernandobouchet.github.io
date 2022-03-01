@@ -142,7 +142,7 @@ const StyledButton = styled(Button)`
   &:hover {
     background-color: transparent;
     border-color: transparent;
-    transform: scale(1.1);
+    transform: scale(1.2);
     color: #2f353c;
   }
 `;
