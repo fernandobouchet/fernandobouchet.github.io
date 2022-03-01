@@ -34,7 +34,17 @@ function Contact() {
       <StyledContainer id="Contact" fluid>
         <h2>Contact</h2>
         <Row>
-          <Form>
+          <StyledForm
+            action="https://formsubmit.co/b0b332c987f92be7b0fb5ad3079d5478"
+            method="POST"
+          >
+            <input type="hidden" name="_captcha" value="false" />
+            <input type="hidden" name="_template" value="box" />
+            <input
+              type="hidden"
+              name="_subject"
+              value="Check it! Someone wants to contact you!"
+            />
             <Form.Group className="mb-3" controlId="formBasicEmail">
               <Form.Label>Email address</Form.Label>
               <Form.Control type="email" placeholder="Enter email" />
@@ -50,7 +60,7 @@ function Contact() {
             <Button variant="primary" type="submit">
               Submit
             </Button>
-          </Form>
+          </StyledForm>
         </Row>
         <Row>
           <Col id="contact-buttons">
@@ -112,4 +122,9 @@ const StyledContainer = styled(Container)`
 
 const StyledButton = styled(Button)`
   margin: 1rem;
+`;
+
+const StyledForm = styled(Form)`
+  width: 20rem;
+  margin: auto;
 `;
