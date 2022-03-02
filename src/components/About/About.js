@@ -1,4 +1,4 @@
-import { Row, Container, Col } from "react-bootstrap";
+import { Row, Container, Col, Button } from "react-bootstrap";
 import styled from "styled-components";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -58,6 +58,17 @@ function About() {
           <h2>My skills</h2>
           <StyledRowIcons>{SkillIcons}</StyledRowIcons>
         </Row>
+        <div>
+          <Button variant="primary" size="lg">
+            <StyledAnchor
+              href="https://drive.google.com/file/d/17b35ZLaDUIMIkJgrgb3vkW_5C7VhqtDL/view?usp=sharing"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Get CV
+            </StyledAnchor>
+          </Button>
+        </div>
       </StyledContainer>
     </>
   );
@@ -95,6 +106,15 @@ const StyledRowIcons = styled(Col)`
 
 const StyledSpan = styled.span`
   color: #376ffd;
+`;
+
+const StyledAnchor = styled.a`
+  color: silver;
+  text-decoration: none;
+
+  &:hover {
+    color: silver;
+  }
 `;
 
 const Styledh1 = styled.h1`
