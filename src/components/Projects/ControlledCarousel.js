@@ -1,4 +1,4 @@
-import { Carousel, Button } from "react-bootstrap";
+import { Carousel, Button, Image } from "react-bootstrap";
 import styled from "styled-components";
 import { useState } from "react";
 import { Projects } from "../Utils/MyProjects";
@@ -13,7 +13,12 @@ function ControlledCarousel() {
   const ProjectsCarousel = Projects.map((project) => {
     return (
       <Carousel.Item key={project.id}>
-        <img className="d-block w-100" src={project.image} alt="First slide" />
+        <Image
+          rounded
+          className="d-block w-100"
+          src={project.image}
+          alt="First slide"
+        />
         <StyledCarouselCaption>
           <StyledButton variant="primary">
             <a href={project.demo} target="_blank" rel="noreferrer">
