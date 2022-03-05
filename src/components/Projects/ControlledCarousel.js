@@ -12,8 +12,8 @@ function ControlledCarousel() {
 
   const ProjectsCarousel = Projects.map((project) => {
     return (
-      <Carousel.Item key={project.id}>
-        <Image
+      <StyledCarouselItem key={project.id}>
+        <StyledImage
           rounded
           className="d-block w-100"
           src={project.image}
@@ -31,7 +31,7 @@ function ControlledCarousel() {
             </a>
           </StyledButton>
         </StyledCarouselCaption>
-      </Carousel.Item>
+      </StyledCarouselItem>
     );
   });
 
@@ -52,17 +52,40 @@ export default ControlledCarousel;
 
 const StyledCarousel = styled(Carousel)`
   margin: 2rem 0;
+
+  @media (max-width: 480px) {
+    height: 20rem;
+  }
+
   @media (min-width: 1024px) {
     width: 50rem;
     align-self: center;
   }
 `;
+
 const StyledCarouselCaption = styled(Carousel.Caption)`
-  padding: 1rem;
+  margin: 0;
+  padding-bottom: 1rem;
+  right: 10%;
+  left: 10%;
+`;
+
+const StyledImage = styled(Image)`
+  @media (max-width: 480px) {
+    height: 20rem;
+    width: 100%;
+    object-fit: cover;
+  }
+`;
+
+const StyledCarouselItem = styled(Carousel.Item)`
+  @media (max-width: 480px) {
+    height: 100%;
+  }
 `;
 
 const StyledButton = styled(Button)`
-  margin: 0.4rem;
+  margin: 0.6rem;
   padding: 0.4rem;
 
   > a {
@@ -74,8 +97,8 @@ const StyledButton = styled(Button)`
     margin-bottom: 0;
     padding: 0;
     text-align: center;
-    font-size: 0.6rem;
-    width: 4.5rem;
-    height: 1rem;
+    font-size: 0.8rem;
+    width: 6rem;
+    height: 2rem;
   }
 `;
