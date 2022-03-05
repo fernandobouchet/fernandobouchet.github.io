@@ -28,8 +28,8 @@ export const Projects = [
     project: "Quizzical",
     image:
       "https://github.com/fernandobouchet/quizzical/blob/main/quizzical_preview.jpg?raw=true",
-    demo: "https://github.com/fernandobouchet/quizzical",
-    github: "https://fernandobouchet.github.io/quizzical",
+    demo: "https://fernandobouchet.github.io/quizzical",
+    github: "https://github.com/fernandobouchet/quizzical",
   },
   {
     id: 4,

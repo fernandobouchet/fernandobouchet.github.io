@@ -109,7 +109,7 @@ const StyledSpan = styled.span`
 `;
 
 const StyledAnchor = styled.a`
-  color: silver;
+  color: white;
   text-decoration: none;
 
   &:hover {
