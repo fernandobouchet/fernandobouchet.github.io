@@ -33,6 +33,14 @@ export const Projects = [
   },
   {
     id: 4,
+    project: "Random Quotes",
+    image:
+      "https://github.com/fernandobouchet/random-quotes/blob/main/random-quotes_preview.jpg?raw=true",
+    demo: "https://fernandobouchet.github.io/random-quotes",
+    github: "https://github.com/fernandobouchet/random-quotes",
+  },
+  {
+    id: 5,
     project: "My Travel Journal",
     image:
       "https://github.com/fernandobouchet/travel-journal/blob/main/travel-journal_preview.jpg?raw=true",
