@@ -5,7 +5,7 @@ import { Projects } from "../Utils/MyProjects";
 function Cards() {
   const ProjectsCards = Projects.map((project) => {
     return (
-      <StyledCard bg="dark">
+      <StyledCard bg="dark" key={project.id}>
         <Card.Img variant="top" src={project.image} />
         <StyledCardImgOverlay>
           <StyledButton variant="primary">
