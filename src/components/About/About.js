@@ -39,7 +39,7 @@ function About() {
   });
 
   return (
-    <>
+    <MainContainer fluid>
       <StyledContainer id="About" fluid>
         <Row>
           <Styledh1>Hi, I'm Fernando</Styledh1>
@@ -58,7 +58,7 @@ function About() {
           <h2>My skills</h2>
           <StyledRowIcons>{SkillIcons}</StyledRowIcons>
         </Row>
-        <div>
+        <Container>
           <Button variant="primary" size="lg">
             <StyledAnchor
               href="https://drive.google.com/file/d/17b35ZLaDUIMIkJgrgb3vkW_5C7VhqtDL/view?usp=sharing"
@@ -68,13 +68,17 @@ function About() {
               Get CV
             </StyledAnchor>
           </Button>
-        </div>
+        </Container>
       </StyledContainer>
-    </>
+    </MainContainer>
   );
 }
 
 export default About;
+
+const MainContainer = styled(Container)`
+  background-color: #070708;
+`;
 
 const StyledContainer = styled(Container)`
   background-color: #070708;
@@ -84,11 +88,8 @@ const StyledContainer = styled(Container)`
   flex-direction: column;
   text-align: center;
   justify-content: center;
-  padding: 0 10rem;
-
-  @media (max-width: 480px) {
-    padding: 0 1rem;
-  }
+  max-width: 80rem;
+  padding-top: 4rem;
 `;
 
 const StyledRowIcons = styled(Col)`

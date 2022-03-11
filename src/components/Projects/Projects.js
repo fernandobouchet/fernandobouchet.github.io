@@ -1,15 +1,15 @@
 import { Row, Container } from "react-bootstrap";
 import styled from "styled-components";
-import ControlledCarousel from "./ControlledCarousel";
+import Cards from "./Cards";
 
 function Projects() {
   return (
-    <>
+    <MainContainer fluid>
       <StyledContainer id="Projects" fluid>
         <Row>
           <h2>These are some projects I've been working on:</h2>
         </Row>
-        <ControlledCarousel />
+        <Cards />
         <h2>
           You can find more on my&nbsp;
           <a
@@ -22,11 +22,15 @@ function Projects() {
           .
         </h2>
       </StyledContainer>
-    </>
+    </MainContainer>
   );
 }
 
 export default Projects;
+
+const MainContainer = styled(Container)`
+  background-color: #17191c;
+`;
 
 const StyledContainer = styled(Container)`
   background-color: #17191c;
@@ -36,5 +40,12 @@ const StyledContainer = styled(Container)`
   flex-direction: column;
   text-align: center;
   justify-content: center;
-  padding: 1rem;
+  max-width: 80rem;
+  padding-top: 4rem;
+
+  @media (max-width: 480px) {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    height: auto;
+  }
 `;

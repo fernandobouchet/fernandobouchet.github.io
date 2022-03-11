@@ -23,7 +23,7 @@ function Contact() {
   );
 
   return (
-    <>
+    <MainContainer fluid>
       <StyledContainer id="Contact" fluid>
         <h2>Contact me</h2>
         <Row>
@@ -106,11 +106,15 @@ function Contact() {
           </StyledButton>
         </IconsContainer>
       </StyledContainer>
-    </>
+    </MainContainer>
   );
 }
 
 export default Contact;
+
+const MainContainer = styled(Container)`
+  background-color: #1d1f23;
+`;
 
 const StyledContainer = styled(Container)`
   background-color: #1d1f23;
@@ -121,6 +125,8 @@ const StyledContainer = styled(Container)`
   text-align: center;
   justify-content: center;
   padding: 1rem;
+  max-width: 80rem;
+  padding-top: 4rem;
 `;
 
 const StyledSubmitButton = styled(Button)`
