@@ -36,9 +36,6 @@ const StyledCard = styled(Card)`
   @media (max-width: 768px) {
     width: 20rem;
   }
-  @media (max-width: 480px) {
-    width: 17rem;
-  }
 `;
 
 const StyledCardImgOverlay = styled(Card.ImgOverlay)`
