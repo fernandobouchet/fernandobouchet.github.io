@@ -119,7 +119,7 @@ const MainContainer = styled(Container)`
 const StyledContainer = styled(Container)`
   background-color: #1d1f23;
   color: silver;
-  height: 100vh;
+  height: calc(100vh - 1.5rem);
   display: flex;
   flex-direction: column;
   text-align: center;

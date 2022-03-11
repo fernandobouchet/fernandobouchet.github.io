@@ -32,6 +32,11 @@ const StyledCard = styled(Card)`
   width: 25rem;
   padding: 0;
   margin: 1rem;
+  transition: 0.1s linear;
+
+  &:hover {
+    transform: scale(1.1);
+  }
 
   @media (max-width: 768px) {
     width: 20rem;

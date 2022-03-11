@@ -4,7 +4,7 @@ function FooterContainer() {
   return (
     <>
       <StyledFooter>
-        <span>Made by Fernando Bouchet - {new Date().getFullYear()} </span>
+        <span>© Fernando Bouchet - {new Date().getFullYear()} </span>
       </StyledFooter>
     </>
   );
