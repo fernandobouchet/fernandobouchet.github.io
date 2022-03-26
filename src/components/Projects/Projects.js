@@ -35,7 +35,7 @@ const MainContainer = styled(Container)`
 const StyledContainer = styled(Container)`
   background-color: #17191c;
   color: silver;
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   text-align: center;
