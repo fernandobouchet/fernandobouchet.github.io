@@ -50,26 +50,27 @@ const StyledCardImgOverlay = styled(Card.ImgOverlay)`
 `;
 
 const StyledCardImg = styled(Card.Img)`
-  transition: 0.3s;
+  transition: transform 750ms cubic-bezier(0.5, 0, 0.5, 1), opacity 250ms linear;
 `;
 
 const StyledCard = styled(Card)`
-  width: 25rem;
+  width: 20rem;
   padding: 0;
   margin: 1rem;
-  transition: 0.3s;
+  background: red;
+  overflow: hidden;
 
   &:hover {
-    transform: scale(1.1);
     border-style: solid;
     border-color: #17191c;
+
     > ${StyledCardImgOverlay} {
       display: block;
     }
 
-    ${StyledCardImg}.card-img-top {
-      -webkit-filter: brightness(50%) blur(2px);
-      filter: brightness(50%) blur(2px);
+    ${StyledCardImg} {
+      transform: scale(1.2);
+      opacity: 0.5;
     }
   }
 
