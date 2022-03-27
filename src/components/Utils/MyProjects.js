@@ -1,11 +1,11 @@
 export const Projects = [
   {
     id: 0,
-    project: "Shopping Cart",
+    project: "Movies",
     image:
-      "https://github.com/fernandobouchet/shopping-cart/raw/main/fake-store_preview.jpg?raw=true",
-    demo: "https://fernandobouchet.github.io/shopping-cart/",
-    github: "https://github.com/fernandobouchet/shopping-cart",
+      "https://github.com/fernandobouchet/movies/blob/main/movies_preview.jpg?raw=true",
+    demo: "https://fernandobouchet.github.io/movies",
+    github: "https://github.com/fernandobouchet/movies",
   },
   {
     id: 1,
@@ -30,5 +30,21 @@ export const Projects = [
       "https://github.com/fernandobouchet/quizzical/blob/main/quizzical_preview.jpg?raw=true",
     demo: "https://fernandobouchet.github.io/quizzical",
     github: "https://github.com/fernandobouchet/quizzical",
+  },
+  {
+    id: 4,
+    project: "Random Quotes",
+    image:
+      "https://github.com/fernandobouchet/random-quotes/blob/main/random-quotes_preview.jpg?raw=true",
+    demo: "https://fernandobouchet.github.io/random-quotes",
+    github: "https://github.com/fernandobouchet/random-quotes",
+  },
+  {
+    id: 5,
+    project: "Shopping Cart",
+    image:
+      "https://github.com/fernandobouchet/shopping-cart/raw/main/fake-store_preview.jpg?raw=true",
+    demo: "https://fernandobouchet.github.io/shopping-cart/",
+    github: "https://github.com/fernandobouchet/shopping-cart",
   },
 ];

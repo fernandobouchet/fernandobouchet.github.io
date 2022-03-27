@@ -54,9 +54,9 @@ const StyledCardImg = styled(Card.Img)`
 `;
 
 const StyledCard = styled(Card)`
-  width: 20rem;
+  width: 24rem;
   padding: 0;
-  margin: 1rem;
+  margin: 5px;
   background: red;
   overflow: hidden;
 
@@ -81,7 +81,7 @@ const StyledCard = styled(Card)`
 
 const StyledRow = styled(Row)`
   justify-content: center;
-  padding: 1rem 0;
+  padding: 2rem 0;
 `;
 
 const StyledButton = styled(Button)`

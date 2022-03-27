@@ -10,17 +10,19 @@ function Projects() {
           <h2>These are some projects I've been working on:</h2>
         </Row>
         <Cards />
-        <h2>
-          You can find more on my&nbsp;
-          <a
-            href="https://github.com/fernandobouchet?tab=repositories"
-            target="_blank"
-            rel="noreferrer"
-          >
-            github
-          </a>
-          .
-        </h2>
+        <Row>
+          <h2>
+            You can find more on my&nbsp;
+            <a
+              href="https://github.com/fernandobouchet?tab=repositories"
+              target="_blank"
+              rel="noreferrer"
+            >
+              github
+            </a>
+            .
+          </h2>
+        </Row>
       </StyledContainer>
     </MainContainer>
   );
@@ -40,11 +42,10 @@ const StyledContainer = styled(Container)`
   flex-direction: column;
   text-align: center;
   justify-content: center;
-  max-width: 80rem;
-  padding-top: 4rem;
+  max-width: 1200px;
+  padding-top: 5rem;
 
   @media (max-width: 480px) {
-    padding-top: 5rem;
     padding-bottom: 5rem;
     height: auto;
   }

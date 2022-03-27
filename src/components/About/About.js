@@ -43,7 +43,7 @@ function About() {
       <StyledContainer id="About" fluid>
         <Row>
           <Styledh1>Hi, I'm Fernando</Styledh1>
-          <p>
+          <StyledP>
             I'm a <StyledSpan>frontend developer</StyledSpan>, currently
             studying a technical degree in programming while I'm learning
             self-taught.
@@ -52,7 +52,7 @@ function About() {
             learning more.
             <br />
             My goal is to become a Full Stack JS developer.
-          </p>
+          </StyledP>
         </Row>
         <Row>
           <h2>My skills</h2>
@@ -90,6 +90,7 @@ const StyledContainer = styled(Container)`
   justify-content: center;
   max-width: 80rem;
   padding-top: 4rem;
+  max-width: 1200px;
 `;
 
 const StyledRowIcons = styled(Col)`
@@ -119,8 +120,20 @@ const StyledAnchor = styled.a`
 `;
 
 const Styledh1 = styled.h1`
-  font-size: 2.8rem;
+  font-size: 3rem;
   font-weight: 600;
+
+  @media (max-width: 480px) {
+    font-size: 2rem;
+  }
+`;
+
+const StyledP = styled.p`
+  font-size: 1.5rem;
+
+  @media (max-width: 480px) {
+    font-size: 1rem;
+  }
 `;
 
 const StyledIconContainer = styled.div`
