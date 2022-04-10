@@ -33,11 +33,11 @@ export const Projects = [
   },
   {
     id: 4,
-    project: "Random Quotes",
+    project: "Taskify",
     image:
-      "https://github.com/fernandobouchet/random-quotes/blob/main/random-quotes_preview.jpg?raw=true",
-    demo: "https://fernandobouchet.github.io/random-quotes",
-    github: "https://github.com/fernandobouchet/random-quotes",
+      "https://github.com/fernandobouchet/taskify/blob/main/taskify_preview.jpg?raw=true",
+    demo: "https://fernandobouchet.github.io/taskify",
+    github: "https://github.com/fernandobouchet/taskify",
   },
   {
     id: 5,
