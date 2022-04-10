@@ -44,14 +44,12 @@ function About() {
         <Row>
           <Styledh1>Hi, I'm Fernando</Styledh1>
           <StyledP>
-            I'm a <StyledSpan>frontend developer</StyledSpan>, currently
-            studying a technical degree in programming while I'm learning
-            self-taught.
+            I'm a <StyledSpan>frontend developer</StyledSpan>, at present
+            studying a technical degree in programming <br />
+            while I'm learning self-taught, currently learning Typescript and
+            improving my React skills.
             <br />
-            I'm looking for a job where I can showcase my skills and continue
-            learning more.
-            <br />
-            My goal is to become a Full Stack JS developer.
+            I'm looking for my first professional experience in the IT world.
           </StyledP>
         </Row>
         <Row>
