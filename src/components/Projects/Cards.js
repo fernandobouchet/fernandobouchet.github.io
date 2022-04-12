@@ -61,6 +61,8 @@ const StyledCardImgOverlay = styled(Card.ImgOverlay)`
 
 const StyledCardImg = styled(Card.Img)`
   transition: transform 750ms cubic-bezier(0.5, 0, 0.5, 1), opacity 250ms linear;
+  width: 100%;
+  height: auto;
 `;
 
 const ProjectTitle = styled(Card.Title)`

@@ -73,6 +73,7 @@ function Contact() {
               href="mailto: fernandobouchet@gmail.com"
               target="_blank"
               rel="noreferrer"
+              aria-hidden="true"
             >
               {IconMail}
             </a>
@@ -82,6 +83,7 @@ function Contact() {
               href="https://www.linkedin.com/in/fernando-bouchet"
               target="_blank"
               rel="noreferrer"
+              aria-hidden="true"
             >
               {IconLinkedin}
             </a>
@@ -91,6 +93,7 @@ function Contact() {
               href="https://t.me/fernandobouchet"
               target="_blank"
               rel="noreferrer"
+              aria-hidden="true"
             >
               {IconTelegram}
             </a>
@@ -100,6 +103,7 @@ function Contact() {
               href="https://github.com/fernandobouchet"
               target="_blank"
               rel="noreferrer"
+              aria-hidden="true"
             >
               {IconGithub}
             </a>
