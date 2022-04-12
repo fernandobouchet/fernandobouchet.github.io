@@ -25,7 +25,7 @@ function Contact() {
   return (
     <MainContainer fluid>
       <StyledContainer id="Contact" fluid>
-        <h2>Contact me</h2>
+        <ContactTitle>Contact me</ContactTitle>
         <Row>
           <StyledForm
             action="https://formsubmit.co/b0b332c987f92be7b0fb5ad3079d5478"
@@ -114,6 +114,10 @@ export default Contact;
 
 const MainContainer = styled(Container)`
   background-color: #1d1f23;
+`;
+
+const ContactTitle = styled.h2`
+  color: white;
 `;
 
 const StyledContainer = styled(Container)`

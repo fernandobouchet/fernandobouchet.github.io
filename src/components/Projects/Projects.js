@@ -7,11 +7,11 @@ function Projects() {
     <MainContainer fluid>
       <StyledContainer id="Projects" fluid>
         <Row>
-          <h2>These are some projects I've been working on:</h2>
+          <h3>These are some projects I've been working on:</h3>
         </Row>
         <Cards />
         <Row>
-          <h2>
+          <h3>
             You can find more on my&nbsp;
             <a
               href="https://github.com/fernandobouchet?tab=repositories"
@@ -21,7 +21,7 @@ function Projects() {
               github
             </a>
             .
-          </h2>
+          </h3>
         </Row>
       </StyledContainer>
     </MainContainer>
@@ -36,7 +36,7 @@ const MainContainer = styled(Container)`
 
 const StyledContainer = styled(Container)`
   background-color: #17191c;
-  color: silver;
+  color: white;
   min-height: 100vh;
   display: flex;
   flex-direction: column;

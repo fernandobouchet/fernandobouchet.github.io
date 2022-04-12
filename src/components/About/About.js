@@ -120,7 +120,7 @@ const StyledAnchor = styled.a`
 const Styledh1 = styled.h1`
   font-size: 3rem;
   font-weight: 600;
-
+  color: white;
   @media (max-width: 480px) {
     font-size: 2rem;
   }
