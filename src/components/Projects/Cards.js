@@ -6,7 +6,11 @@ function Cards() {
   const ProjectsCards = Projects.map((project) => {
     return (
       <StyledCard bg="dark" key={project.id}>
-        <StyledCardImg variant="top" src={project.image} />
+        <StyledCardImg
+          variant="top"
+          src={project.image}
+          alt={`${project.title} website preview image`}
+        />
         <StyledCardImgOverlay>
           <CardInfoContainer>
             <ProjectTitle>{project.title}</ProjectTitle>

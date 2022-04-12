@@ -68,7 +68,7 @@ function Contact() {
           </StyledForm>
         </Row>
         <IconsContainer>
-          <StyledButton>
+          <StyledButton aria-label="mail">
             <a
               href="mailto: fernandobouchet@gmail.com"
               target="_blank"
@@ -77,7 +77,7 @@ function Contact() {
               {IconMail}
             </a>
           </StyledButton>
-          <StyledButton>
+          <StyledButton aria-label="linkedin">
             <a
               href="https://www.linkedin.com/in/fernando-bouchet"
               target="_blank"
@@ -86,7 +86,7 @@ function Contact() {
               {IconLinkedin}
             </a>
           </StyledButton>
-          <StyledButton>
+          <StyledButton aria-label="telegram">
             <a
               href="https://t.me/fernandobouchet"
               target="_blank"
@@ -95,7 +95,7 @@ function Contact() {
               {IconTelegram}
             </a>
           </StyledButton>
-          <StyledButton>
+          <StyledButton aria-label="github">
             <a
               href="https://github.com/fernandobouchet"
               target="_blank"
