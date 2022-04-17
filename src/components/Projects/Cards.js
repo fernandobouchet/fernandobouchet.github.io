@@ -79,7 +79,6 @@ const StyledCard = styled(Card)`
   width: 24rem;
   padding: 0;
   margin: 5px;
-  background: red;
   overflow: hidden;
 
   &:hover {

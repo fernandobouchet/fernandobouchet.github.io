@@ -39,7 +39,7 @@ function About() {
   });
 
   return (
-    <MainContainer fluid>
+    <Container fluid>
       <StyledContainer id="About" fluid>
         <Row>
           <Styledh1>Hi, I'm Fernando</Styledh1>
@@ -68,19 +68,13 @@ function About() {
           </Button>
         </Container>
       </StyledContainer>
-    </MainContainer>
+    </Container>
   );
 }
 
 export default About;
 
-const MainContainer = styled(Container)`
-  background-color: #070708;
-`;
-
 const StyledContainer = styled(Container)`
-  background-color: #070708;
-  color: silver;
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -120,7 +114,6 @@ const StyledAnchor = styled.a`
 const Styledh1 = styled.h1`
   font-size: 3rem;
   font-weight: 600;
-  color: white;
   @media (max-width: 480px) {
     font-size: 2rem;
   }
@@ -144,6 +137,5 @@ const StyledFontAwesomeIcon = styled(FontAwesomeIcon)`
   &:hover {
     cursor: pointer;
     transform: scale(1.2);
-    color: #2f353c;
   }
 `;

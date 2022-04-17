@@ -30,13 +30,9 @@ function Projects() {
 
 export default Projects;
 
-const MainContainer = styled(Container)`
-  background-color: #17191c;
-`;
+const MainContainer = styled(Container)``;
 
 const StyledContainer = styled(Container)`
-  background-color: #17191c;
-  color: white;
   min-height: 100vh;
   display: flex;
   flex-direction: column;

@@ -14,8 +14,6 @@ export default FooterContainer;
 
 const StyledFooter = styled.footer`
   height: 1.5rem;
-  background-color: #070708;
   text-align: center;
-  color: silver;
   font-size: 0.8rem;
 `;

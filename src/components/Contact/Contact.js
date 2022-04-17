@@ -8,18 +8,36 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
-function Contact() {
+function Contact(props) {
+  const { theme } = props;
+
   const IconLinkedin = (
-    <FontAwesomeIcon icon={faLinkedin} className="fa-2x" color="silver" />
+    <FontAwesomeIcon
+      icon={faLinkedin}
+      className="fa-2x"
+      color={theme === "light" ? "#242930" : "#f0f6fd"}
+    />
   );
   const IconTelegram = (
-    <FontAwesomeIcon icon={faTelegram} className="fa-2x" color="silver" />
+    <FontAwesomeIcon
+      icon={faTelegram}
+      className="fa-2x"
+      color={theme === "light" ? "#242930" : "#f0f6fd"}
+    />
   );
   const IconGithub = (
-    <FontAwesomeIcon icon={faGithub} className="fa-2x" color="silver" />
+    <FontAwesomeIcon
+      icon={faGithub}
+      className="fa-2x"
+      color={theme === "light" ? "#242930" : "#f0f6fd"}
+    />
   );
   const IconMail = (
-    <FontAwesomeIcon icon={faEnvelope} className="fa-2x" color="silver" />
+    <FontAwesomeIcon
+      icon={faEnvelope}
+      className="fa-2x"
+      color={theme === "light" ? "#242930" : "#f0f6fd"}
+    />
   );
 
   return (
@@ -112,17 +130,11 @@ function Contact() {
 
 export default Contact;
 
-const MainContainer = styled(Container)`
-  background-color: #1d1f23;
-`;
+const MainContainer = styled(Container)``;
 
-const ContactTitle = styled.h2`
-  color: white;
-`;
+const ContactTitle = styled.h2``;
 
 const StyledContainer = styled(Container)`
-  background-color: #1d1f23;
-  color: silver;
   height: calc(100vh - 1.5rem);
   display: flex;
   flex-direction: column;
@@ -163,15 +175,18 @@ const StyledForm = styled(Form)`
 `;
 
 const StyledFormControl = styled(Form.Control)`
-  background-color: #17191c;
+  background-color: inherit;
+  color: inherit;
   width: 15rem;
   resize: none;
   margin: auto;
   border-color: grey;
-  color: silver;
+  border-radius: 5px;
 
   &:focus {
-    background-color: #17191c;
-    color: white;
+    background-color: inherit;
+    color: inherit;
+    box-shadow: inherit;
+    border-color: inherit;
   }
 `;
