@@ -27,7 +27,7 @@ function NavBar(props) {
             <Nav.Link href="#Projects">Projects</Nav.Link>
             <Nav.Link href="#Contact">Contact</Nav.Link>
           </Nav>
-          <StyledThemeButton onClick={() => changeTheme()}>
+          <StyledThemeButton onClick={() => changeTheme()} aria-label="theme">
             {ThemeIcon}
           </StyledThemeButton>
         </Container>
