@@ -1,6 +1,6 @@
-import { Button, Row, Card } from "react-bootstrap";
-import styled, { keyframes } from "styled-components";
-import { Projects } from "../Utils/MyProjects";
+import { Button, Row, Card } from 'react-bootstrap';
+import styled, { keyframes } from 'styled-components';
+import { Projects } from '../Utils/MyProjects';
 
 function Cards() {
   const ProjectsCards = Projects.map((project) => {

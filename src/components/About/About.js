@@ -1,14 +1,15 @@
-import { Row, Container, Col, Button } from "react-bootstrap";
-import styled from "styled-components";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { Row, Container, Col, Button } from 'react-bootstrap';
+import styled from 'styled-components';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   faGitSquare,
   faReact,
   faHtml5,
   faJs,
   faCss3Alt,
-} from "@fortawesome/free-brands-svg-icons";
-import { nanoid } from "nanoid";
+} from '@fortawesome/free-brands-svg-icons';
+import { nanoid } from 'nanoid';
+import { Fade } from 'react-awesome-reveal';
 
 function About() {
   const IconGithub = (
@@ -39,36 +40,38 @@ function About() {
   });
 
   return (
-    <Container fluid>
-      <StyledContainer id="About" fluid>
-        <Row>
-          <Styledh1>Hi, I'm Fernando</Styledh1>
-          <StyledP>
-            I'm a <StyledSpan>frontend developer</StyledSpan>, at present
-            studying a technical degree in programming <br />
-            while I'm learning self-taught, currently learning Typescript and
-            improving my React skills.
-            <br />
-            I'm looking for my first professional experience in the IT world.
-          </StyledP>
-        </Row>
-        <Row>
-          <h2>My skills</h2>
-          <StyledRowIcons>{SkillIcons}</StyledRowIcons>
-        </Row>
-        <Container>
-          <Button variant="primary" size="lg">
-            <StyledAnchor
-              href="https://drive.google.com/file/d/17b35ZLaDUIMIkJgrgb3vkW_5C7VhqtDL/view?usp=sharing"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Get CV
-            </StyledAnchor>
-          </Button>
-        </Container>
-      </StyledContainer>
-    </Container>
+    <Fade duration={2000} fraction="0.4">
+      <Container fluid>
+        <StyledContainer id="About" fluid>
+          <Row>
+            <Styledh1>Hi, I'm Fernando</Styledh1>
+            <StyledP>
+              I'm a <StyledSpan>frontend developer</StyledSpan>, at present
+              studying a technical degree in programming <br />
+              while I'm learning self-taught, currently learning Typescript and
+              improving my React skills.
+              <br />
+              I'm looking for my first professional experience in the IT world.
+            </StyledP>
+          </Row>
+          <Row>
+            <h2>My skills</h2>
+            <StyledRowIcons>{SkillIcons}</StyledRowIcons>
+          </Row>
+          <Container>
+            <Button variant="primary" size="lg">
+              <StyledAnchor
+                href="https://drive.google.com/file/d/17b35ZLaDUIMIkJgrgb3vkW_5C7VhqtDL/view?usp=sharing"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Get CV
+              </StyledAnchor>
+            </Button>
+          </Container>
+        </StyledContainer>
+      </Container>
+    </Fade>
   );
 }
 

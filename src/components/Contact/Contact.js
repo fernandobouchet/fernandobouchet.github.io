@@ -1,12 +1,13 @@
-import { Row, Container, Form, Button } from "react-bootstrap";
-import styled from "styled-components";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { Row, Container, Form, Button } from 'react-bootstrap';
+import styled from 'styled-components';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   faLinkedin,
   faTelegram,
   faGithub,
-} from "@fortawesome/free-brands-svg-icons";
-import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+} from '@fortawesome/free-brands-svg-icons';
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import { Fade } from 'react-awesome-reveal';
 
 function Contact(props) {
   const { theme } = props;
@@ -15,116 +16,118 @@ function Contact(props) {
     <FontAwesomeIcon
       icon={faLinkedin}
       className="fa-2x"
-      color={theme === "light" ? "#242930" : "#f0f6fd"}
+      color={theme === 'light' ? '#242930' : '#f0f6fd'}
     />
   );
   const IconTelegram = (
     <FontAwesomeIcon
       icon={faTelegram}
       className="fa-2x"
-      color={theme === "light" ? "#242930" : "#f0f6fd"}
+      color={theme === 'light' ? '#242930' : '#f0f6fd'}
     />
   );
   const IconGithub = (
     <FontAwesomeIcon
       icon={faGithub}
       className="fa-2x"
-      color={theme === "light" ? "#242930" : "#f0f6fd"}
+      color={theme === 'light' ? '#242930' : '#f0f6fd'}
     />
   );
   const IconMail = (
     <FontAwesomeIcon
       icon={faEnvelope}
       className="fa-2x"
-      color={theme === "light" ? "#242930" : "#f0f6fd"}
+      color={theme === 'light' ? '#242930' : '#f0f6fd'}
     />
   );
 
   return (
-    <MainContainer fluid>
-      <StyledContainer id="Contact" fluid>
-        <ContactTitle>Contact me</ContactTitle>
-        <Row>
-          <StyledForm
-            action="https://formsubmit.co/b0b332c987f92be7b0fb5ad3079d5478"
-            method="POST"
-          >
-            <input type="hidden" name="_captcha" value="false" />
-            <input type="hidden" name="_template" value="box" />
-            <input
-              type="hidden"
-              name="_next"
-              value="https://fernandobouchet.github.io"
-            />
-            <input
-              type="hidden"
-              name="_subject"
-              value="Check it! Someone wants to contact you!"
-            />
-            <Form.Group className="mb-3" controlId="formBasicEmail">
-              <StyledFormControl
-                type="email"
-                placeholder="Enter email"
-                name="email"
+    <Fade duration={2000} fraction="0.4">
+      <MainContainer fluid>
+        <StyledContainer id="Contact" fluid>
+          <ContactTitle>Contact me</ContactTitle>
+          <Row>
+            <StyledForm
+              action="https://formsubmit.co/b0b332c987f92be7b0fb5ad3079d5478"
+              method="POST"
+            >
+              <input type="hidden" name="_captcha" value="false" />
+              <input type="hidden" name="_template" value="box" />
+              <input
+                type="hidden"
+                name="_next"
+                value="https://fernandobouchet.github.io"
               />
-            </Form.Group>
-            <Form.Group className="mb-3" controlId="formBasicName">
-              <StyledFormControl
-                type="name"
-                placeholder="Enter name"
-                name="name"
+              <input
+                type="hidden"
+                name="_subject"
+                value="Check it! Someone wants to contact you!"
               />
-            </Form.Group>
-            <StyledFormControl
-              as="textarea"
-              placeholder="Enter message"
-              name="text"
-            />
-            <StyledSubmitButton variant="primary" type="submit">
-              Send message!
-            </StyledSubmitButton>
-          </StyledForm>
-        </Row>
-        <IconsContainer>
-          <StyledButton aria-label="mail">
-            <a
-              href="mailto: fernandobouchet@gmail.com"
-              target="_blank"
-              rel="noreferrer"
-            >
-              {IconMail}
-            </a>
-          </StyledButton>
-          <StyledButton aria-label="linkedin">
-            <a
-              href="https://www.linkedin.com/in/fernando-bouchet"
-              target="_blank"
-              rel="noreferrer"
-            >
-              {IconLinkedin}
-            </a>
-          </StyledButton>
-          <StyledButton aria-label="telegram">
-            <a
-              href="https://t.me/fernandobouchet"
-              target="_blank"
-              rel="noreferrer"
-            >
-              {IconTelegram}
-            </a>
-          </StyledButton>
-          <StyledButton aria-label="github">
-            <a
-              href="https://github.com/fernandobouchet"
-              target="_blank"
-              rel="noreferrer"
-            >
-              {IconGithub}
-            </a>
-          </StyledButton>
-        </IconsContainer>
-      </StyledContainer>
-    </MainContainer>
+              <Form.Group className="mb-3" controlId="formBasicEmail">
+                <StyledFormControl
+                  type="email"
+                  placeholder="Enter email"
+                  name="email"
+                />
+              </Form.Group>
+              <Form.Group className="mb-3" controlId="formBasicName">
+                <StyledFormControl
+                  type="name"
+                  placeholder="Enter name"
+                  name="name"
+                />
+              </Form.Group>
+              <StyledFormControl
+                as="textarea"
+                placeholder="Enter message"
+                name="text"
+              />
+              <StyledSubmitButton variant="primary" type="submit">
+                Send message!
+              </StyledSubmitButton>
+            </StyledForm>
+          </Row>
+          <IconsContainer>
+            <StyledButton aria-label="mail">
+              <a
+                href="mailto: fernandobouchet@gmail.com"
+                target="_blank"
+                rel="noreferrer"
+              >
+                {IconMail}
+              </a>
+            </StyledButton>
+            <StyledButton aria-label="linkedin">
+              <a
+                href="https://www.linkedin.com/in/fernando-bouchet"
+                target="_blank"
+                rel="noreferrer"
+              >
+                {IconLinkedin}
+              </a>
+            </StyledButton>
+            <StyledButton aria-label="telegram">
+              <a
+                href="https://t.me/fernandobouchet"
+                target="_blank"
+                rel="noreferrer"
+              >
+                {IconTelegram}
+              </a>
+            </StyledButton>
+            <StyledButton aria-label="github">
+              <a
+                href="https://github.com/fernandobouchet"
+                target="_blank"
+                rel="noreferrer"
+              >
+                {IconGithub}
+              </a>
+            </StyledButton>
+          </IconsContainer>
+        </StyledContainer>
+      </MainContainer>
+    </Fade>
   );
 }
 
