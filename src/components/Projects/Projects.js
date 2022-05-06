@@ -5,7 +5,7 @@ import { Fade } from 'react-awesome-reveal';
 
 function Projects() {
   return (
-    <Fade duration={2000} fraction="0.4">
+    <Fade duration={2000} fraction="0.1">
       <MainContainer fluid>
         <StyledContainer id="Projects" fluid>
           <Row>

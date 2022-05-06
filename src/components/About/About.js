@@ -40,7 +40,7 @@ function About() {
   });
 
   return (
-    <Fade duration={2000} fraction="0.4">
+    <Fade duration={2000} fraction="0.1">
       <Container fluid>
         <StyledContainer id="About" fluid>
           <Row>
