@@ -17,6 +17,7 @@ function Contact(props) {
       icon={faLinkedin}
       className="fa-2x"
       color={theme === 'light' ? '#242930' : '#f0f6fd'}
+      title="Linkedin Icon"
     />
   );
   const IconTelegram = (
@@ -24,6 +25,7 @@ function Contact(props) {
       icon={faTelegram}
       className="fa-2x"
       color={theme === 'light' ? '#242930' : '#f0f6fd'}
+      title="Telegram Icon"
     />
   );
   const IconGithub = (
@@ -31,6 +33,7 @@ function Contact(props) {
       icon={faGithub}
       className="fa-2x"
       color={theme === 'light' ? '#242930' : '#f0f6fd'}
+      title="Github Icon"
     />
   );
   const IconMail = (
@@ -38,6 +41,7 @@ function Contact(props) {
       icon={faEnvelope}
       className="fa-2x"
       color={theme === 'light' ? '#242930' : '#f0f6fd'}
+      title="Email Icon"
     />
   );
 

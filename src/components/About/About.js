@@ -46,8 +46,8 @@ function About() {
           <Row>
             <Styledh1>Hi, I'm Fernando</Styledh1>
             <StyledP>
-              I'm a <StyledSpan>frontend developer</StyledSpan>, at present
-              studying a technical degree in programming <br />
+              I'm a <span>frontend developer</span>, at present studying a
+              technical degree in programming <br />
               while I'm learning self-taught, currently learning Typescript and
               improving my React skills.
               <br />
@@ -59,15 +59,15 @@ function About() {
             <StyledRowIcons>{SkillIcons}</StyledRowIcons>
           </Row>
           <Container>
-            <Button variant="primary" size="lg">
-              <StyledAnchor
-                href="https://drive.google.com/file/d/17b35ZLaDUIMIkJgrgb3vkW_5C7VhqtDL/view?usp=sharing"
-                target="_blank"
-                rel="noreferrer"
-              >
+            <StyledAnchor
+              href="https://drive.google.com/file/d/17b35ZLaDUIMIkJgrgb3vkW_5C7VhqtDL/view?usp=sharing"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <Button variant="primary" size="lg">
                 Get CV
-              </StyledAnchor>
-            </Button>
+              </Button>
+            </StyledAnchor>
           </Container>
         </StyledContainer>
       </Container>
@@ -99,10 +99,6 @@ const StyledRowIcons = styled(Col)`
   @media (max-width: 480px) {
     padding: 0 1rem;
   }
-`;
-
-const StyledSpan = styled.span`
-  color: #376ffd;
 `;
 
 const StyledAnchor = styled.a`
