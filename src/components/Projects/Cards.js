@@ -1,7 +1,6 @@
 import { Button, Row, Card } from 'react-bootstrap';
 import styled, { keyframes } from 'styled-components';
 import { Projects } from '../Utils/MyProjects';
-import { Fade } from 'react-awesome-reveal';
 
 function Cards() {
   const ProjectsCards = Projects.map((project) => {
@@ -33,12 +32,7 @@ function Cards() {
     );
   });
 
-  return (
-    <StyledRow>
-      {' '}
-      <StyledAnimation cascade>{ProjectsCards}</StyledAnimation>{' '}
-    </StyledRow>
-  );
+  return <StyledRow>{ProjectsCards}</StyledRow>;
 }
 
 export default Cards;
@@ -50,16 +44,6 @@ const fadeIn = keyframes`
 	100% {
 		opacity: 1;
 	}
-`;
-
-const StyledAnimation = styled(Fade)`
-  max-width: none;
-  width: 25rem;
-  padding: 0;
-
-  @media (max-width: 768px) {
-    width: auto;
-  }
 `;
 
 const StyledCardImgOverlay = styled(Card.ImgOverlay)`

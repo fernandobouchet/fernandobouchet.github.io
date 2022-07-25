@@ -1,9 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex&display=swap');
+
 body {
   margin: 0;
-  font-family: "Ubuntu", sans-serif;
-}
-
-* {
-  overflow-x: hidden;
-  font-family: "Ubuntu", sans-serif;
+  font-family: 'Roboto Flex', sans-serif;
 }

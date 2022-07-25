@@ -133,6 +133,7 @@ const StyledIconContainer = styled.div`
 `;
 
 const StyledFontAwesomeIcon = styled(FontAwesomeIcon)`
+  transition: 0.1s linear;
   &:hover {
     cursor: pointer;
     transform: scale(1.2);
