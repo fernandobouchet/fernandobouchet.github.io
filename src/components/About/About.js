@@ -48,8 +48,9 @@ function About() {
             <StyledP>
               I'm a <span>frontend developer</span>, at present studying a
               technical degree in programming <br />
-              while I'm learning self-taught, currently learning Typescript and
-              improving my React skills.
+              while I'm learning self-taught, currently learning backend with
+              <br />
+              Node, Express and MongoDB to become a Full-Stack dev.
               <br />
               I'm looking for my first professional experience in the IT world.
             </StyledP>
