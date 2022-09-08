@@ -189,6 +189,7 @@ const StyledFormControl = styled(Form.Control)`
   margin: auto;
   border-color: grey;
   border-radius: 5px;
+  padding: 6px 12px;
 
   &:focus {
     background-color: inherit;
