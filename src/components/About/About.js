@@ -61,7 +61,7 @@ function About() {
           </Row>
           <Container>
             <StyledAnchor
-              href="https://drive.google.com/file/d/17b35ZLaDUIMIkJgrgb3vkW_5C7VhqtDL/view?usp=sharing"
+              href="https://drive.google.com/file/d/11poMinD31GRKFtp15tk8JNMRFcUBNftb/view?usp=sharing"
               target="_blank"
               rel="noreferrer"
             >
