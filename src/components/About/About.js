@@ -1,15 +1,15 @@
-import { Row, Container, Col, Button } from 'react-bootstrap';
-import styled from 'styled-components';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { Row, Container, Col, Button } from "react-bootstrap";
+import styled from "styled-components";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faGitSquare,
   faReact,
   faHtml5,
   faJs,
   faCss3Alt,
-} from '@fortawesome/free-brands-svg-icons';
-import { nanoid } from 'nanoid';
-import { Fade } from 'react-awesome-reveal';
+} from "@fortawesome/free-brands-svg-icons";
+import { nanoid } from "nanoid";
+import { Fade } from "react-awesome-reveal";
 
 function About() {
   const IconGithub = (
@@ -46,11 +46,10 @@ function About() {
           <Row>
             <Styledh1>Hi, I'm Fernando</Styledh1>
             <StyledP>
-              I'm a <span>frontend developer</span>, at present studying a
+              I'm a <span>full-stack developer</span>, at present studying a
               technical degree in programming <br />
-              while I'm learning self-taught, currently learning backend with
-              <br />
-              Node, Express and MongoDB to become a Full-Stack dev.
+              while I'm learning self-taught MERN stack, <br /> currently
+              creating and colaborating in projects to improve my skills.
               <br />
               I'm looking for my first professional experience in the IT world.
             </StyledP>
