@@ -1,3 +1,10 @@
 export const Contact = () => {
-  return <div>Contact</div>;
+  return (
+    <div
+      id="contact"
+      className="h-screen flex flex-col justify-center items-center"
+    >
+      Contact
+    </div>
+  );
 };
