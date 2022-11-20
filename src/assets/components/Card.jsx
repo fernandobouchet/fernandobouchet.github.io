@@ -6,9 +6,9 @@ const Card = ({ data }) => {
         <img
           src={image}
           alt={title}
-          className="group-hover/item:opacity-25 transition duration-700"
+          className="group-hover/item:opacity-10 transition duration-700"
         />
-        <div className="invisible absolute w-full h-full flex flex-col top-0 items-center justify-around group-hover/item:visible transition duration-700">
+        <div className="invisible absolute w-full h-full flex flex-col top-0 items-center justify-around group-hover/item:visible">
           <h2 className="mb-2 font-bold tracking-tight text-gray-900 dark:text-white">
             {title}
           </h2>
@@ -16,14 +16,14 @@ const Card = ({ data }) => {
             <a
               href={demo}
               target="_blank"
-              className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+              className="inline-flex items-center px-3 py-2 text-sm font-medium text-center transition bg-sky-500 text-white rounded-lg hover:bg-sky-700"
             >
               Demo
             </a>
             <a
               href={github}
               target="_blank"
-              className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+              className="inline-flex items-center px-3 py-2 text-sm font-medium text-center transition bg-sky-500 text-white rounded-lg hover:bg-sky-700"
             >
               Source
             </a>
