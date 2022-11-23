@@ -1,3 +1,4 @@
+import StyledLinkButton from "./StyledLinkButton";
 import Badge from "./Badge";
 
 const About = () => {
@@ -15,7 +16,7 @@ const About = () => {
         <div>
           <p className="md:text-xl max-w-2xl text-center font-light">
             I'm a{" "}
-            <span className="font-normal text-sky-500">
+            <span className="font-normal text-cyan-500">
               full-stack developer
             </span>
             , at present studying a technical degree in programming while I'm
@@ -37,15 +38,11 @@ const About = () => {
             <Badge text="MY SQL" />
           </div>
         </div>
-        <div>
-          <a
+        <div className="flex">
+          <StyledLinkButton
             href="https://drive.google.com/file/d/1U6ObryGK9yXwLtXGHUxjpji0cY1MPwar/view?usp=sharing"
-            target="_blank"
-            rel="noreferrer"
-            className="md:text-lg py-3 px-4 font-semibold rounded-md bg-sky-500 text-white hover:bg-sky-700 transition"
-          >
-            Get Resume
-          </a>
+            text="Get Resume"
+          />
         </div>
       </div>
     </>

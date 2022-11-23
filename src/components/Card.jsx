@@ -1,3 +1,5 @@
+import StyledLinkButton from "./StyledLinkButton";
+
 const Card = ({ data }) => {
   const { title, image, demo, github } = data;
   return (
@@ -13,20 +15,8 @@ const Card = ({ data }) => {
             {title}
           </h2>
           <div className="flex gap-8">
-            <a
-              href={demo}
-              target="_blank"
-              className="inline-flex items-center px-3 py-2 text-sm font-medium text-center transition bg-sky-500 text-white rounded-lg hover:bg-sky-700"
-            >
-              Demo
-            </a>
-            <a
-              href={github}
-              target="_blank"
-              className="inline-flex items-center px-3 py-2 text-sm font-medium text-center transition bg-sky-500 text-white rounded-lg hover:bg-sky-700"
-            >
-              Source
-            </a>
+            <StyledLinkButton href={demo} text="Demo" />
+            <StyledLinkButton href={github} text="Source" />
           </div>
         </div>
       </div>

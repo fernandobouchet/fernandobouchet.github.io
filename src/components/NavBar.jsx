@@ -1,7 +1,7 @@
 const NavBar = () => {
   return (
     <>
-      <div className="max-w-5xl fixed w-full top-0 left-1/2 -translate-x-1/2 p-5 bg-inherit">
+      <div className="max-w-5xl h-16 fixed w-full top-0 left-1/2 -translate-x-1/2 p-5 bg-inherit">
         <ul className="flex flex-row gap-4">
           <li>
             <a href="#about" className="hover:text-stone-400">
