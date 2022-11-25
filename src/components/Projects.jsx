@@ -5,13 +5,13 @@ const Projects = () => {
   return (
     <div
       id="projects"
-      className="max-w-5xl mx-auto min-h-[calc(100vh_+_40rem)] md:min-h-screen flex flex-col justify-center items-center"
+      className="max-w-5xl mx-auto min-h-screen flex flex-col items-center pt-20"
     >
       <h2 className="font-semibold text-1xl md:text-3xl">
         These are some projects I've been working on:
       </h2>
-      <div className="p-5 grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 content-center">
-        {ProjectsData.map((data) => (
+      <div className="pt-10 flex flex-col gap-10">
+        {ProjectsData.slice(0, 5).map((data) => (
           <Card key={data.id} data={data} />
         ))}
       </div>
