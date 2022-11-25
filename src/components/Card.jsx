@@ -4,7 +4,7 @@ const Card = ({ data }) => {
   const { title, image, demo, github } = data;
   return (
     <>
-      <div className="md:text-xl h-max max-w-lg rounded-lg cursor-pointer origin-center translate-x-0 group/item">
+      <div className="md:text-xl h-max max-w-sm sm:max-w-xl rounded-lg cursor-pointer origin-center translate-x-0 group/item">
         <img
           src={image}
           alt={title}
