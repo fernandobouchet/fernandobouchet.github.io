@@ -9,10 +9,10 @@ const About = () => {
         className="max-w-5xl mx-auto h-screen flex flex-col gap-14 justify-center items-center p-5"
       >
         <div>
-          <h1 className="font-medium text-3xl md:text-5xl">Hi, I'm Fernando</h1>
+          <h1 className="font-medium text-4xl md:text-5xl">Hi, I'm Fernando</h1>
         </div>
         <div>
-          <p className="md:text-xl max-w-2xl text-center font-light">
+          <p className="text-sm md:text-base max-w-2xl text-center font-light">
             I'm a{" "}
             <span className="font-normal text-sky-300">
               full-stack developer
@@ -22,7 +22,7 @@ const About = () => {
             in projects to improve my skills. I'm looking for my first
             professional experience in the IT world.
           </p>
-          <p className="md:text-xl max-w-2xl text-center font-light">
+          <p className="text-sm md:text-base max-w-2xl text-center font-light">
             Here are some technologies I've been working with recently:
           </p>
           <div className="max-w-md flex justify-center m-auto pt-5 flex-wrap">

@@ -6,10 +6,10 @@ const Contact = () => {
       id="contact"
       className="max-w-5xl mx-auto h-screen flex flex-col gap-14 justify-center items-center p-5"
     >
-      <h2 className="font-medium text-2xl md:text-3xl">Contact</h2>
+      <h2 className="font-medium text-3xl md:text-4xl">Contact</h2>
       <div>
         <div>
-          <p className="md:text-xl max-w-2xl text-center font-light p-4">
+          <p className="text-sm md:text-base max-w-2xl text-center font-light p-4">
             Thanks for your interest in getting in touch! The best way to reach
             me is by email at{" "}
             <a
