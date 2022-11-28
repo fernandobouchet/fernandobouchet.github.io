@@ -14,7 +14,7 @@ const About = () => {
         <div>
           <p className="text-sm md:text-base max-w-2xl text-center font-light">
             I'm a{" "}
-            <span className="font-normal text-sky-300">
+            <span className="font-medium text-sky-400">
               full-stack developer
             </span>
             , at present studying a technical degree in programming while I'm
