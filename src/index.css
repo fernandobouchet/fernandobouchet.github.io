@@ -12,3 +12,10 @@ html {
   background-color: #1f1f1f;
   color: #e3e3e3;
 }
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus {
+  transition: background-color 5000s;
+  -webkit-text-fill-color: #e3e3e3;
+}
