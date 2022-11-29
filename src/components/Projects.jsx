@@ -12,7 +12,7 @@ const Projects = () => {
         These are some projects I've been working on:
       </p>
       <div className="pt-10 flex flex-col gap-10">
-        {ProjectsData.slice(0, 5).map((data) => (
+        {ProjectsData.slice(0, 3).map((data) => (
           <Card key={data.id} data={data} />
         ))}
       </div>

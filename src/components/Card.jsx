@@ -1,4 +1,4 @@
-import StyledLinkButton from "./StyledLinkButton";
+import LinkButtonSecondary from "./LinkButtonSecondary";
 
 const Card = ({ data }) => {
   const { title, info, image, demo, github } = data;
@@ -12,8 +12,8 @@ const Card = ({ data }) => {
             <p className="text-sm md:text-base p-2">{info}</p>
           </div>
           <div className="flex gap-8">
-            <StyledLinkButton href={demo} text="Preview" />
-            <StyledLinkButton href={github} text="Source" />
+            <LinkButtonSecondary href={demo} text="Preview" />
+            <LinkButtonSecondary href={github} text="Source" />
           </div>
         </div>
       </div>
