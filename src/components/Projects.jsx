@@ -24,8 +24,21 @@ const Projects = () => {
           <Card key={data.id} data={data} />
         ))}
       </div>
-      {ProjectsData.length > projectsToShow && (
+      {ProjectsData.length > projectsToShow ? (
         <Button text={"Load more"} onClick={handleOnClick}></Button>
+      ) : (
+        <p className="text-sm md:text-base max-w-2xl text-center font-light">
+          You can find more on my{" "}
+          <a
+            className="font-normal text-blue-300"
+            href="https://github.com/fernandobouchet?tab=repositories"
+            target="_blank"
+            rel="noreferrer"
+          >
+            github
+          </a>
+          !
+        </p>
       )}
     </div>
   );
