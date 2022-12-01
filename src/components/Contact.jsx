@@ -23,7 +23,7 @@ const Contact = () => {
             .
           </p>
           <p className="text-sm md:text-base max-w-2xl text-center font-light">
-            I'll get back to you asap!
+            I'll try to get back to you asap!
           </p>
           <div>
             <form
@@ -43,12 +43,22 @@ const Contact = () => {
                 name="_subject"
                 value="Message from your website!"
               />
+              <label htmlFor="name">
+                <input
+                  required
+                  className="bg-neutral-800 p-2 border-b border-stone-700 w-full rounded-t focus:rounded-b focus:outline-none focus:ring-1 focus:ring-sky-700 valid:border-sky-700"
+                  type="text"
+                  placeholder="Name"
+                  name="name"
+                  id="name"
+                />
+              </label>
               <label htmlFor="email">
                 <input
                   required
                   className="bg-neutral-800 p-2 border-b border-stone-700 w-full rounded-t focus:rounded-b focus:outline-none focus:ring-1 focus:ring-sky-700 valid:border-sky-700"
                   type="email"
-                  placeholder="Your email"
+                  placeholder="Email"
                   name="email"
                   id="email"
                 />
