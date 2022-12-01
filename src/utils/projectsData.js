@@ -22,7 +22,7 @@ export const ProjectsData = [
     title: "Career progress",
     info: "Website to keep track and record the progress of my university career. Used React, React-router, Bootstrap and Firebase as BasS.",
     image:
-      "https://github.com/fernandobouchet/ProgresoLicenciaturaInformatica/blob/main/progresolicenciatura_preview.webp",
+      "https://github.com/fernandobouchet/ProgresoLicenciaturaInformatica/raw/main/progresolicenciatura_preview.webp",
     demo: "https://progreso-licenciatura-informatica.vercel.app",
     github:
       "https://github.com/fernandobouchet/ProgresoLicenciaturaInformatica",
