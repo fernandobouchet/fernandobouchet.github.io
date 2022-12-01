@@ -4,7 +4,7 @@ export const ProjectsData = [
     title: "Blog .",
     info: "Blog website, created a Client page, a CMS page for admin and an API rest connected to mongoDB database. Used React, React-router, Bootstrap, Express, MongoDB.",
     image:
-      "https://github.com/fernandobouchet/TOP_Blog-Client/raw/main/project_preview.png?raw=true",
+      "https://github.com/fernandobouchet/TOP_Blog-Client/raw/main/project_preview.webp",
     demo: "https://blog-top.vercel.app",
     github: "https://github.com/fernandobouchet/TOP_Blog-Client",
   },
@@ -22,7 +22,7 @@ export const ProjectsData = [
     title: "Career progress",
     info: "Website to keep track and record the progress of my university career. Used React, React-router, Bootstrap and Firebase as BasS.",
     image:
-      "https://github.com/fernandobouchet/ProgresoLicenciaturaInformatica/raw/main/progresolicenciatura_preview.png?raw=true",
+      "https://github.com/fernandobouchet/ProgresoLicenciaturaInformatica/blob/main/progresolicenciatura_preview.webp",
     demo: "https://progreso-licenciatura-informatica.vercel.app",
     github:
       "https://github.com/fernandobouchet/ProgresoLicenciaturaInformatica",
