@@ -1,4 +1,4 @@
-import Button from "./Button";
+import Button from './Button';
 
 const Contact = () => {
   return (
@@ -9,11 +9,11 @@ const Contact = () => {
       <h2 className="font-medium text-3xl md:text-4xl">Contact</h2>
       <div>
         <div>
-          <p className="text-sm md:text-base max-w-2xl text-center font-light">
+          <p className="text-sm md:text-base max-w-2xl text-center">
             Thanks for your interest in getting in touch!
           </p>
-          <p className="text-sm md:text-base max-w-2xl text-center font-light">
-            The best way to reach me is by email at{" "}
+          <p className="text-sm md:text-base max-w-2xl text-center">
+            The best way to reach me is by email at{' '}
             <a
               href="mailto:fernandobouchet@gmail.com"
               className="font-normal text-blue-300"
@@ -22,7 +22,7 @@ const Contact = () => {
             </a>
             .
           </p>
-          <p className="text-sm md:text-base max-w-2xl text-center font-light">
+          <p className="text-sm md:text-base max-w-2xl text-center">
             I'll try to get back to you asap!
           </p>
           <div>
@@ -74,7 +74,7 @@ const Contact = () => {
                   id="text"
                 />
               </label>
-              <Button text={"Send"} type="submit">
+              <Button text={'Send'} type="submit">
                 Send!
               </Button>
             </form>

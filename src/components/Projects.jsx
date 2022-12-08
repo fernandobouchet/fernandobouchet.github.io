@@ -1,7 +1,7 @@
-import { useState } from "react";
-import { ProjectsData } from "../utils/projectsData";
-import Button from "./Button";
-import Card from "./Card";
+import { useState } from 'react';
+import { ProjectsData } from '../utils/projectsData';
+import Button from './Button';
+import Card from './Card';
 
 const Projects = () => {
   const [projectsToShow, setprojectsToShow] = useState(3);
@@ -25,10 +25,10 @@ const Projects = () => {
         ))}
       </div>
       {ProjectsData.length > projectsToShow ? (
-        <Button text={"Load more"} onClick={handleOnClick}></Button>
+        <Button text={'Load more'} onClick={handleOnClick}></Button>
       ) : (
-        <p className="text-sm md:text-base max-w-2xl text-center font-light">
-          You can find more on my{" "}
+        <p className="text-sm md:text-base max-w-2xl text-center">
+          You can find more on my{' '}
           <a
             className="font-normal text-blue-300"
             href="https://github.com/fernandobouchet?tab=repositories"
