@@ -26,7 +26,7 @@ const Contact = () => {
         </p>
         <div>
           <form
-            className="flex flex-col mx-auto gap-5 w-64 pt-8"
+            className="flex flex-col mx-auto gap-5 w-64 pt-8 text-sm md:text-base"
             action="https://formsubmit.co/b0b332c987f92be7b0fb5ad3079d5478"
             method="POST"
           >
