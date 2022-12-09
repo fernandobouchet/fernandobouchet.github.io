@@ -19,7 +19,7 @@ const About = () => {
             in projects to improve my skills. I'm looking for my first
             professional experience in the IT world.
           </p>
-          <p className="text-sm md:text-base max-w-2xl text-center font-light">
+          <p className="text-sm md:text-base max-w-2xl text-center">
             Here are some technologies I've been working with recently:
           </p>
           <div className="max-w-md flex justify-center m-auto pt-5 flex-wrap">
