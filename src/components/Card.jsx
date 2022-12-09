@@ -1,10 +1,10 @@
-import LinkButtonSecondary from "./LinkButtonSecondary";
+import LinkButtonSecondary from './LinkButtonSecondary';
 
 const Card = ({ data }) => {
   const { title, info, image, demo, github } = data;
   return (
     <>
-      <div className="flex flex-col md:flex-row max-w-sm md:max-w-2xl lg:max-w-3xl items-center rounded-lg cursor-pointer bg-neutral-800 animate-fadeIn">
+      <div className="flex flex-col md:flex-row max-w-sm md:max-w-2xl lg:max-w-3xl items-center rounded-lg bg-neutral-800 animate-fadeIn hover:bg-sky-900 transition">
         <img src={image} alt={title} className="w-82 md:w-96 rounded-lg" />
         <div className="w-full h-full flex flex-col items-center p-3">
           <div>
