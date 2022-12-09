@@ -84,6 +84,7 @@ const Contact = () => {
           href="https://www.linkedin.com/in/fernando-bouchet"
           target="_blank"
           rel="noreferrer"
+          aria-label="Link to my linkedin profile"
         >
           <div className="bg-neutral-800 hover:bg-neutral-700 transition py-2 px-2 rounded-full">
             <svg
@@ -99,6 +100,7 @@ const Contact = () => {
           href="https://github.com/fernandobouchet"
           target="_blank"
           rel="noreferrer"
+          aria-label="Link to my github profile"
         >
           <div className="bg-neutral-800 hover:bg-neutral-700 transition py-2 px-2 rounded-full">
             <svg
@@ -110,7 +112,12 @@ const Contact = () => {
             </svg>
           </div>
         </a>
-        <a href="https://t.me/fernandobouchet" target="_blank" rel="noreferrer">
+        <a
+          href="https://t.me/fernandobouchet"
+          target="_blank"
+          rel="noreferrer"
+          aria-label="Link to my telegram account"
+        >
           <div className="bg-neutral-800 hover:bg-neutral-700 transition py-2 px-2 rounded-full">
             <svg
               className="stroke-sky-200 w-[2rem]"
