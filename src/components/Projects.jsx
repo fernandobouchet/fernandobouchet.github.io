@@ -13,7 +13,7 @@ const Projects = () => {
   return (
     <div
       id="projects"
-      className="max-w-5xl mx-auto min-h-screen flex flex-col items-center pt-20"
+      className="max-w-5xl mx-auto min-h-screen flex flex-col items-center pt-16"
     >
       <h2 className="font-medium text-3xl md:text-4xl pb-5">Projects</h2>
       <p className="text-sm md:text-base">
