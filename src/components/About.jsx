@@ -13,8 +13,11 @@ const About = () => {
         </div>
         <div>
           <p className="text-sm md:text-base max-w-2xl text-center">
-            I'm a <span className="font-medium">full-stack developer</span>, at
-            present studying a technical degree in programming while I'm
+            I'm a{' '}
+            <span className="font-medium text-blue-300">
+              full-stack developer
+            </span>
+            , at present studying a technical degree in programming while I'm
             learning self-taught MERN stack, currently creating and colaborating
             in projects to improve my skills. I'm looking for my first
             professional experience in the IT world.

@@ -1,14 +1,14 @@
 const LinkButtonSecondary = ({ text, href }) => {
   return (
     <a
-      className="group flex text-sm md:text-base text-sky-300 px-1 py-2 hover:border-b border-sky-200 hover:text-sky-200 transition"
+      className="group flex text-sm md:text-base font-medium text-blue-300 px-1 py-1 border-b border-transparent hover:border-blue-200 hover:text-blue-200 transition"
       href={href}
       target="_blank"
       rel="noreferrer"
     >
       {text}
       <svg
-        className="fill-sky-300 w-[1rem] ml-1 group-hover:stroke-sky-200 transition"
+        className="fill-blue-300 w-[0.7rem] md:w-[0.9rem] ml-1 group-hover:stroke-blue-200 transition"
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 24 24"
       >
