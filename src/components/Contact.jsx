@@ -8,7 +8,7 @@ const Contact = () => {
   return (
     <div
       id="contact"
-      className="max-w-5xl mx-auto min-h-screen flex flex-col gap-14 justify-center items-center p-5 pt-16"
+      className="max-w-5xl mx-auto min-h-screen flex flex-col gap-14 justify-center items-center p-5 pt-16 animate-fadeIn transition"
     >
       <div className="flex flex-col items-center">
         <h2 className="font-medium text-3xl md:text-4xl pb-5">
