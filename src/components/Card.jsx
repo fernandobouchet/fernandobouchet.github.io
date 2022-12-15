@@ -3,9 +3,9 @@ import LanguageContext from '../context/LanguageContext';
 import LinkButtonSecondary from './LinkButtonSecondary';
 
 const Card = ({ data }) => {
-  const { title, info, image, demo, github } = data;
+  const { title, info_en, info_es, image, demo, github } = data;
 
-  const { texts } = useContext(LanguageContext);
+  const { texts, language } = useContext(LanguageContext);
 
   return (
     <>
@@ -14,7 +14,9 @@ const Card = ({ data }) => {
         <div className="w-full h-full flex flex-col items-center p-3">
           <div>
             <h3 className="mb-2 font-medium">{title}</h3>
-            <p className="text-sm md:text-base p-2">{info}</p>
+            <p className="text-sm md:text-base p-2">
+              {language === 'EN' ? info_en : info_es}
+            </p>
           </div>
           <div className="flex gap-8">
             <LinkButtonSecondary
