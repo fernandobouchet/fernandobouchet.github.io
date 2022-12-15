@@ -1,5 +1,6 @@
 import { useContext } from 'react';
 import LanguageContext from '../context/LanguageContext';
+import ThemeButton from './ThemeButton';
 
 const NavBar = () => {
   const { texts, handleChangeLanguage, language } = useContext(LanguageContext);
@@ -7,7 +8,7 @@ const NavBar = () => {
     <>
       <div className="z-10 max-w-5xl h-16 fixed w-full top-0 left-1/2 -translate-x-1/2 p-5 bg-inherit animate-fadeIn transition">
         <nav className="flex">
-          <ul className="flex flex-row gap-4 text-xs md:text-sm font-medium">
+          <ul className="flex flex-row gap-4 text-xs md:text-sm font-medium items-center">
             <li>
               <a href="#about" className="hover:text-stone-400">
                 {texts.navbar.about}
@@ -24,7 +25,7 @@ const NavBar = () => {
               </a>
             </li>
           </ul>
-          <ul className="flex flex-row gap-4 text-xs md:text-sm font-medium ml-auto">
+          <ul className="flex flex-row gap-4 text-xs md:text-sm font-medium ml-auto items-center">
             <li>
               <button
                 onClick={() => handleChangeLanguage()}
@@ -33,10 +34,9 @@ const NavBar = () => {
                 {language}
               </button>
             </li>
-            {/*
-              <li>
-                <button className="hover:text-stone-400">TODO THEME TOGGLE</button>
-              </li>*/}
+            <li>
+              <ThemeButton />
+            </li>
           </ul>
         </nav>
       </div>

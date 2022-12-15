@@ -37,7 +37,7 @@ const Projects = () => {
         <p className="text-sm md:text-base max-w-2xl text-center">
           {texts.projects.p2}{' '}
           <a
-            className="font-normal text-blue-300"
+            className="font-normal text-blue-600 dark:text-blue-300"
             href="https://github.com/fernandobouchet?tab=repositories"
             target="_blank"
             rel="noreferrer"

@@ -5,16 +5,27 @@
 html {
   scroll-behavior: smooth;
   font-family: 'Product Sans', sans-serif, system-ui;
+  background-color: #ffffff;
+  color: #1f1f1f;
 }
 
-#root {
+.dark {
   background-color: #1f1f1f;
   color: #e3e3e3;
 }
 
-input:-webkit-autofill,
+body {
+}
+
+.dark input:-webkit-autofill,
 input:-webkit-autofill:hover,
 input:-webkit-autofill:focus {
   transition: background-color 5000s;
   -webkit-text-fill-color: #e3e3e3;
+}
+.light input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus {
+  transition: background-color 5000s;
+  -webkit-text-fill-color: #1f1f1f;
 }
