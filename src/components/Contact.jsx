@@ -1,28 +1,35 @@
+import { useContext } from 'react';
+import LanguageContext from '../context/LanguageContext';
 import Button from './Button';
 
 const Contact = () => {
+  const { texts } = useContext(LanguageContext);
+
   return (
     <div
       id="contact"
       className="max-w-5xl mx-auto min-h-screen flex flex-col gap-14 justify-center items-center p-5 pt-16"
     >
-      <h2 className="font-medium text-3xl md:text-4xl">Contact</h2>
-      <div>
+      <div className="flex flex-col items-center">
+        <h2 className="font-medium text-3xl md:text-4xl pb-5">
+          {texts.contact.title}
+        </h2>
+
         <p className="text-sm md:text-base max-w-2xl text-center">
-          Thanks for your interest in getting in touch!
+          {texts.contact.p1}
         </p>
         <p className="text-sm md:text-base max-w-2xl text-center">
-          The best way to reach me is by email at{' '}
+          {texts.contact.p2}{' '}
           <a
             href="mailto:fernandobouchet@gmail.com"
             className="font-normal text-blue-300"
           >
             fernandobouchet@gmail.com
           </a>
-          .
+          ,
         </p>
         <p className="text-sm md:text-base max-w-2xl text-center">
-          I'll try to get back to you asap!
+          {texts.contact.p3}
         </p>
         <div>
           <form
@@ -46,8 +53,8 @@ const Contact = () => {
               <input
                 required
                 className="bg-neutral-800 p-2 border-b border-stone-700 w-full rounded-t focus:rounded-b focus:outline-none focus:ring-1 focus:ring-sky-700 valid:border-sky-700"
-                type="text"
-                placeholder="Name"
+                type="name"
+                placeholder={texts.contact.namePlaceholder}
                 name="name"
                 id="name"
               />
@@ -57,7 +64,7 @@ const Contact = () => {
                 required
                 className="bg-neutral-800 p-2 border-b border-stone-700 w-full rounded-t focus:rounded-b focus:outline-none focus:ring-1 focus:ring-sky-700 valid:border-sky-700"
                 type="email"
-                placeholder="Email"
+                placeholder={texts.contact.emailPlaceholder}
                 name="email"
                 id="email"
               />
@@ -68,14 +75,12 @@ const Contact = () => {
                 className="bg-neutral-800 p-2 border-b border-stone-700 h-36 w-full rounded-t focus:rounded-b resize-none focus:outline-none focus:ring-1 focus:ring-sky-700 valid:border-sky-700"
                 rows="15"
                 as="textarea"
-                placeholder="Message"
+                placeholder={texts.contact.messagePlaceholder}
                 name="text"
                 id="text"
               />
             </label>
-            <Button text={'Send'} type="submit">
-              Send!
-            </Button>
+            <Button text={texts.contact.sendButton} type="submit"></Button>
           </form>
         </div>
       </div>

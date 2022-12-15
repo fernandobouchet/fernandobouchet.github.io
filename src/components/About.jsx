@@ -1,7 +1,11 @@
 import StyledLinkButton from './StyledLinkButton';
 import Badge from './Badge';
+import LanguageContext from '../context/LanguageContext';
+import { useContext } from 'react';
 
 const About = () => {
+  const { texts, language } = useContext(LanguageContext);
+
   return (
     <>
       <div
@@ -9,26 +13,26 @@ const About = () => {
         className="max-w-5xl mx-auto h-screen flex flex-col gap-14 justify-center items-center p-5 pt-16"
       >
         <div>
-          <h1 className="font-medium text-4xl md:text-5xl">Hi, I'm Fernando</h1>
+          <h1 className="font-medium text-4xl md:text-5xl">
+            {texts.about.hero}
+          </h1>
         </div>
         <div>
           <p className="text-sm md:text-base max-w-2xl text-center">
-            I'm a{' '}
+            {texts.about.p1}{' '}
             <span className="font-medium text-blue-300">
-              full-stack developer
+              {texts.about.span}
             </span>
-            , at present studying a technical degree in programming while I'm
-            learning self-taught MERN stack, currently creating and colaborating
-            in projects to improve my skills. I'm looking for my first
-            professional experience in the IT world.
+            {texts.about.p2}
           </p>
           <p className="text-sm md:text-base max-w-2xl text-center">
-            Here are some technologies I've been working with recently:
+            {texts.about.p3}
           </p>
           <div className="max-w-md flex justify-center m-auto pt-5 flex-wrap">
             <Badge text="HTML" />
             <Badge text="CSS" />
             <Badge text="JAVASCRIPT" />
+            <Badge text="TYPESCRIPT" />
             <Badge text="REACT" />
             <Badge text="NODEJS" />
             <Badge text="EXPRESS" />
@@ -38,8 +42,12 @@ const About = () => {
         </div>
         <div className="flex">
           <StyledLinkButton
-            href="https://drive.google.com/file/d/1U6ObryGK9yXwLtXGHUxjpji0cY1MPwar/view?usp=sharing"
-            text="Get Resume"
+            href={
+              language === 'EN'
+                ? 'https://drive.google.com/file/d/1U6ObryGK9yXwLtXGHUxjpji0cY1MPwar/view?usp=sharing'
+                : 'https://drive.google.com/file/d/1LlCYRFeAQ5b2uRnIuw4_nVFK9MMpEwCV/view?usp=sharing'
+            }
+            text={texts.about.resumeButton}
           />
         </div>
       </div>

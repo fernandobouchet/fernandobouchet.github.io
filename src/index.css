@@ -4,7 +4,7 @@
 
 html {
   scroll-behavior: smooth;
-  font-family: 'Product Sans', sans-serif;
+  font-family: 'Product Sans', sans-serif, system-ui;
 }
 
 #root {

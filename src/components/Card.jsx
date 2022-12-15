@@ -1,7 +1,12 @@
+import { useContext } from 'react';
+import LanguageContext from '../context/LanguageContext';
 import LinkButtonSecondary from './LinkButtonSecondary';
 
 const Card = ({ data }) => {
   const { title, info, image, demo, github } = data;
+
+  const { texts } = useContext(LanguageContext);
+
   return (
     <>
       <div className="flex flex-col md:flex-row max-w-sm md:max-w-2xl lg:max-w-3xl items-center rounded-lg bg-neutral-800 animate-fadeIn hover:bg-sky-900 transition">
@@ -12,8 +17,14 @@ const Card = ({ data }) => {
             <p className="text-sm md:text-base p-2">{info}</p>
           </div>
           <div className="flex gap-8">
-            <LinkButtonSecondary href={demo} text="Preview" />
-            <LinkButtonSecondary href={github} text="Source" />
+            <LinkButtonSecondary
+              href={demo}
+              text={texts.cardProjects.preview}
+            />
+            <LinkButtonSecondary
+              href={github}
+              text={texts.cardProjects.source}
+            />
           </div>
         </div>
       </div>
