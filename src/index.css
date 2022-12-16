@@ -14,15 +14,13 @@ html {
   color: #e3e3e3;
 }
 
-body {
-}
-
 .dark input:-webkit-autofill,
 input:-webkit-autofill:hover,
 input:-webkit-autofill:focus {
   transition: background-color 5000s;
   -webkit-text-fill-color: #e3e3e3;
 }
+
 .light input:-webkit-autofill,
 input:-webkit-autofill:hover,
 input:-webkit-autofill:focus {
