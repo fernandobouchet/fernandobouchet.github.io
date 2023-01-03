@@ -38,6 +38,18 @@ export const ProjectsData = [
   },
   {
     id: 3,
+    title: 'Image Uploader',
+    info_en:
+      'Fullstack App that allows to upload, store an image and get his url. Used Typescript, React, Express, MongoDB.',
+    info_es:
+      'Aplicación fullstack que permite subir, almacenar una imagen y obtener su url. Utilizado Typescript, React, Express, MongoDB.',
+    image:
+      'https://raw.githubusercontent.com/fernandobouchet/image-uploader/main/project_preview.webp',
+    demo: 'http://image-uploader-beryl.vercel.app',
+    github: 'https://github.com/fernandobouchet/image-uploader',
+  },
+  {
+    id: 4,
     title: 'Notebook Store Arg',
     info_en:
       "Simple SPA that displays electronics and allows the user to add them to cart and then 'buy' them. Used React, Bootstrap.",
@@ -49,7 +61,7 @@ export const ProjectsData = [
     github: 'https://github.com/fernandobouchet/notebookShop',
   },
   {
-    id: 4,
+    id: 5,
     title: 'Quizzical',
     info_en:
       'SPA that show random movies questions using the OPEN TDB API. Used React, Vanilla CSS.',
@@ -61,7 +73,7 @@ export const ProjectsData = [
     github: 'https://github.com/fernandobouchet/quizzical',
   },
   {
-    id: 5,
+    id: 6,
     title: 'Taskify',
     info_en: 'Simple TODO list with CRUD functions. Used React, Tailwindcss.',
     info_es:
@@ -73,7 +85,7 @@ export const ProjectsData = [
   },
 
   {
-    id: 6,
+    id: 7,
     title: 'Pokémon Memory Game',
     info_en:
       "A classic memory game using the 'PokeApi' to fetch the characters of the famous serie. Used React, Vanilla CSS.",
