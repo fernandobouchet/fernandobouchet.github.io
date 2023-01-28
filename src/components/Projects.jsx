@@ -8,10 +8,10 @@ import Card from './Card';
 const Projects = () => {
   const { texts } = useContext(LanguageContext);
 
-  const [projectsToShow, setprojectsToShow] = useState(3);
+  const [projectsToShow, setprojectsToShow] = useState(4);
 
   const handleOnClick = () => {
-    setprojectsToShow((prevState) => prevState + 3);
+    setprojectsToShow((prevState) => prevState + 2);
   };
 
   return (
@@ -23,7 +23,7 @@ const Projects = () => {
         {texts.projects.title}
       </h2>
       <p className="text-sm md:text-base">{texts.projects.p1}</p>
-      <div className="pt-10 flex flex-col gap-10 pb-10">
+      <div className="pt-10 grid grid-cols-1 md:grid-cols-2 grid-rows-auto gap-8 pb-10">
         {ProjectsData.slice(0, projectsToShow).map((data) => (
           <Card key={data.id} data={data} />
         ))}
