@@ -27,6 +27,27 @@ export const ProjectsData = [
   },
   {
     id: 2,
+    title: 'My Unsplash',
+    info_en:
+      'Application where you can add images (by setting a url and a tag for it), data is stored in a database.',
+    info_es:
+      "Aplicación donde puedes agregar imagenes (colocando una url y un 'tag'), los datos se almacenan en una base de datos.",
+    image:
+      'https://raw.githubusercontent.com/fernandobouchet/my-unsplash/main/project_preview.webp',
+    demo: 'https://my-unsplash-gray.vercel.app',
+    github: 'https://github.com/fernandobouchet/my-unsplash',
+    techstack: [
+      'React',
+      'React-bootstrap',
+      'Typescript',
+      'React-router',
+      'Axios',
+      'Express',
+      'Mongoose',
+    ],
+  },
+  {
+    id: 3,
     title: 'Career progress',
     info_en:
       'Website to keep track and record the progress of my university career.',
@@ -40,7 +61,7 @@ export const ProjectsData = [
     techstack: ['React', 'React-router', 'Bootstrap', 'Firebase'],
   },
   {
-    id: 3,
+    id: 4,
     title: 'Image Uploader',
     info_en:
       'Fullstack App that allows to upload, store an image and get his url.',
@@ -53,7 +74,7 @@ export const ProjectsData = [
     techstack: ['React', 'Typescript', 'Express', 'MongoDB'],
   },
   {
-    id: 4,
+    id: 5,
     title: 'Notebook Store Arg',
     info_en:
       "Simple SPA that displays electronics and allows the user to add them to cart and then 'buy' them.",
@@ -66,7 +87,7 @@ export const ProjectsData = [
     techstack: ['React', 'Bootstrap'],
   },
   {
-    id: 5,
+    id: 6,
     title: 'Quizzical',
     info_en: 'SPA that show random movies questions using the OPEN TDB API.',
     info_es:
@@ -78,7 +99,7 @@ export const ProjectsData = [
     techstack: ['React', 'CSS'],
   },
   {
-    id: 6,
+    id: 7,
     title: 'Taskify',
     info_en: 'Simple TODO list with CRUD functions.',
     info_es: 'Simple lista de "cosas para hacer", con funciones "CRUD".',
@@ -88,9 +109,8 @@ export const ProjectsData = [
     github: 'https://github.com/fernandobouchet/taskify',
     techstack: ['React', 'Tailwind'],
   },
-
   {
-    id: 7,
+    id: 8,
     title: 'Pokémon Memory Game',
     info_en:
       "A classic memory game using the 'PokeApi' to fetch the characters of the famous serie.",
