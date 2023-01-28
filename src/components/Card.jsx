@@ -26,7 +26,9 @@ const Card = ({ data }) => {
           </div>
           <div className="w-full h-full flex flex-col items-center p-2">
             <div className="h-full flex flex-col">
-              <h3 className="font-medium text-center">{title}</h3>
+              <h3 className="text-base md:text-lg font-medium text-center">
+                {title}
+              </h3>
               <p className="text-sm md:text-base p-2 text-center">
                 {language === 'EN' ? info_en : info_es}
               </p>
