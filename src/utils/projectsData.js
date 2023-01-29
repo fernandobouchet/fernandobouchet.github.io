@@ -21,7 +21,7 @@ export const ProjectsData = [
       "Se utiliza la API de OpenAI y su función 'Generador de imágenes', que con el modelo de sistema OpenAI DALL-E AI puede generar fácilmente imágenes personalizadas basadas en indicaciones de texto.",
     image:
       'https://github.com/fernandobouchet/OpenAiImages/raw/main/project_preview.webp',
-    demo: 'https://my-unsplash-gray.vercel.app',
+    demo: 'https://my-openai-images.vercel.app/',
     github: 'https://github.com/fernandobouchet/OpenAiImages',
     techstack: [
       'React',
