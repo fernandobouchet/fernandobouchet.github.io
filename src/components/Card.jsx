@@ -14,7 +14,7 @@ const Card = ({ data }) => {
   return (
     <>
       {isLoaded && (
-        <div className="flex flex-col max-w-sm items-center rounded-lg bg-neutral-100 dark:bg-neutral-800 animate-fadeIn hover:bg-sky-100 dark:hover:bg-sky-900 transition">
+        <div className="flex flex-col max-w-sm items-center rounded-xl bg-neutral-100 dark:bg-neutral-800 animate-fadeIn hover:bg-sky-100 dark:hover:bg-sky-900 transition shadow-lg">
           <div>
             <a href={demo} target="_blank">
               <img
@@ -29,12 +29,17 @@ const Card = ({ data }) => {
               <h3 className="text-base md:text-lg font-medium text-center">
                 {title}
               </h3>
-              <p className="text-sm md:text-base p-2 text-center">
+              <p className="text-xs md:text-sm p-2 text-center">
                 {language === 'EN' ? info_en : info_es}
               </p>
               <div className="flex flex-wrap justify-center mt-auto">
                 {techstack.map((item, index) => (
-                  <Badge key={index} text={item} />
+                  <span
+                    className="text-xs md:text-sm px-2 text-blue-600 text-opacity-75 dark:text-blue-300 dark:text-opacity-75"
+                    key={index}
+                  >
+                    #{item}
+                  </span>
                 ))}
               </div>
             </div>
