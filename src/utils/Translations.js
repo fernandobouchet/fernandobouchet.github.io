@@ -20,7 +20,7 @@ export const Translations = {
       p3: 'o completando el formulario a continuación, intentaré responder a la brevedad!',
       sendButton: 'Enviar',
       namePlaceholder: 'Nombre',
-      emailPlaceholder: ' Correo',
+      emailPlaceholder: 'Correo',
       messagePlaceholder: 'Mensaje',
     },
     projects: {
@@ -55,7 +55,7 @@ export const Translations = {
       p3: "or filling out the form below, I'll try to get back to you asap!",
       sendButton: 'Send',
       namePlaceholder: 'Name',
-      emailPlaceholder: ' Email',
+      emailPlaceholder: 'Email',
       messagePlaceholder: 'Message',
     },
     projects: {
