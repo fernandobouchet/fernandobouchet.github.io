@@ -14,13 +14,13 @@ const Card = ({ data }) => {
   return (
     <>
       {isLoaded && (
-        <div className="flex flex-col max-w-sm items-center rounded-xl bg-neutral-100 dark:bg-neutral-800 animate-fadeIn hover:bg-sky-100 dark:hover:bg-sky-900 transition shadow-lg">
+        <div className="flex flex-col max-w-sm items-center rounded-2xl bg-light-surfaceSecondary dark:bg-dark-surfaceSecondary hover:bg-light-secondaryContainer dark:hover:bg-dark-secondaryContainer shadow-lg transition">
           <div>
             <a href={demo} target="_blank">
               <img
                 src={image}
                 alt={title}
-                className="w-82 md:w-96 rounded-lg"
+                className="w-82 md:w-96 rounded-2xl"
               />
             </a>
           </div>
@@ -35,11 +35,9 @@ const Card = ({ data }) => {
               <div className="flex flex-wrap justify-center mt-auto">
                 {techstack.map((item, index) => (
                   <span
-                    className="text-xs md:text-sm px-2 text-blue-600 text-opacity-75 dark:text-blue-300 dark:text-opacity-75"
+                    className="text-xs md:text-sm px-2 text-light-fontSurface dark:text-dark-fontSurface transition"
                     key={index}
-                  >
-                    #{item}
-                  </span>
+                  >{`#${item}`}</span>
                 ))}
               </div>
             </div>

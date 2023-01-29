@@ -6,7 +6,7 @@ import Projects from '../components/Projects';
 
 const Home = () => {
   return (
-    <div className="bg-light-background text-light-font dark:bg-dark-background dark:text-dark-font">
+    <div className="bg-light-background text-light-font dark:bg-dark-background dark:text-dark-font transition">
       <NavBar />
       <About />
       <Projects />

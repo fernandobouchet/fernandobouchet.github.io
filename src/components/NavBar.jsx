@@ -6,7 +6,7 @@ const NavBar = () => {
   const { texts, handleChangeLanguage, language } = useContext(LanguageContext);
   return (
     <>
-      <div className="z-10 h-14 fixed w-full top-0 left-1/2 -translate-x-1/2 p-5 text-light-fontSurface dark:text-dark-fontSurface bg-light-surface dark:bg-dark-surface animate-fadeIn transition">
+      <div className="z-10 h-14 fixed w-full top-0 left-1/2 -translate-x-1/2 p-5 text-light-fontSurface dark:text-dark-fontSurface bg-light-surface dark:bg-dark-surface transition">
         <nav className="flex max-w-5xl m-auto">
           <ul className="flex flex-row gap-4 text-xs md:text-sm font-medium items-center">
             <li>
