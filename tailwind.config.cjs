@@ -7,7 +7,8 @@ module.exports = {
       light: {
         font: '#1f1f1f',
         background: '#ffffff',
-        primaryContainer: '#0b57d0',
+        fontColored: '#0b57d0',
+        container: '#0b57d0',
         secondaryContainer: '#c2e7ff',
         fontContainer: '#ffffff',
         surface: '#f3f6fc',
@@ -15,10 +16,11 @@ module.exports = {
         fontSurface: '#444746',
       },
       dark: {
-        primaryContainer: '#a8c7fa',
+        container: '#a8c7fa',
         secondaryContainer: '#004a77',
         background: '#1f1f1f',
         font: '#e3e3e3',
+        fontColored: '#a8c7fa',
         fontContainer: '#062e6f',
         surface: '#2d2f31',
         surfaceSecondary: '#28292a',

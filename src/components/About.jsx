@@ -20,7 +20,7 @@ const About = () => {
         <div>
           <p className="text-sm md:text-base max-w-2xl text-center">
             {texts.about.p1}{' '}
-            <span className="font-medium text-blue-600 dark:text-blue-300">
+            <span className="font-medium text-light-fontColored dark:text-dark-fontColored">
               {texts.about.span}
             </span>
             {texts.about.p2}
