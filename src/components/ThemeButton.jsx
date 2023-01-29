@@ -16,7 +16,11 @@ const ThemeButton = () => {
 
   return (
     <>
-      <button className="align-middle" onClick={handleOnClick}>
+      <button
+        className="align-middle"
+        aria-label="theme"
+        onClick={handleOnClick}
+      >
         <svg
           xmlns="http://www.w3.org/2000/svg"
           height="24"
