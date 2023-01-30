@@ -1,7 +1,6 @@
 import { useContext } from 'react';
 import LanguageContext from '../context/LanguageContext';
 import LinkButtonSecondary from './LinkButtonSecondary';
-import Badge from './Badge';
 import imageIsLoaded from '../hooks/imageIsLoaded';
 
 const Card = ({ data }) => {
@@ -31,16 +30,16 @@ const Card = ({ data }) => {
         </div>
         <div className="w-full h-full flex flex-col items-center p-2">
           <div className="h-full flex flex-col">
-            <h3 className="text-base md:text-lg font-medium text-center">
+            <h3 className="text-xl md:text-2xl font-medium text-center">
               {title}
             </h3>
-            <p className="text-xs md:text-sm p-2 text-center">
+            <p className="text-sm md:text-base leading-5 md:leading-6 p-2 text-center">
               {language === 'EN' ? info_en : info_es}
             </p>
             <div className="flex flex-wrap justify-center mt-auto">
               {techstack.map((item, index) => (
                 <span
-                  className="text-xs md:text-sm px-2 text-light-fontSurface dark:text-dark-fontSurface transition"
+                  className="text-xs md:text-sm leading-4 md:leading-5 px-2 text-light-fontSurface dark:text-dark-fontSurface transition"
                   key={index}
                 >{`#${item}`}</span>
               ))}

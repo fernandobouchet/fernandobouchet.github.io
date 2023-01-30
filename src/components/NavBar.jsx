@@ -8,7 +8,7 @@ const NavBar = () => {
     <>
       <div className="z-10 h-14 fixed w-full top-0 left-1/2 -translate-x-1/2 p-5 text-light-fontSurface dark:text-dark-fontSurface bg-light-surface dark:bg-dark-surface transition">
         <nav className="flex max-w-5xl m-auto">
-          <ul className="flex flex-row gap-4 text-xs md:text-sm font-medium items-center">
+          <ul className="flex flex-row gap-4 text-sm md:text-base leading-5 md:leading-6 font-medium items-center">
             <li>
               <a
                 href="#about"
@@ -34,7 +34,7 @@ const NavBar = () => {
               </a>
             </li>
           </ul>
-          <ul className="flex flex-row gap-4 text-xs md:text-sm font-medium ml-auto items-center">
+          <ul className="flex flex-row gap-4 text-sm md:text-base leading-5 md:leading-6 font-medium ml-auto items-center">
             <li>
               <button
                 onClick={() => handleChangeLanguage()}

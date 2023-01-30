@@ -19,10 +19,12 @@ const Projects = () => {
       id="projects"
       className="max-w-5xl mx-auto min-h-screen flex flex-col items-center p-5 pt-24"
     >
-      <h2 className="font-medium text-3xl md:text-4xl pb-5">
+      <h2 className="font-medium text-4xl md:text-5xl pb-5">
         {texts.projects.title}
       </h2>
-      <p className="text-sm md:text-base">{texts.projects.p1}</p>
+      <p className="text-sm md:text-base leading-5 md:leading-6">
+        {texts.projects.p1}
+      </p>
       <div className="pt-10 grid grid-cols-1 md:grid-cols-2 grid-rows-auto gap-8 pb-10">
         {ProjectsData.slice(0, projectsToShow).map((data) => (
           <Card key={data.id} data={data} />
@@ -34,7 +36,7 @@ const Projects = () => {
           onClick={handleOnClick}
         ></Button>
       ) : (
-        <p className="text-sm md:text-base max-w-2xl text-center">
+        <p className="text-sm md:text-base leading-5 md:leading-6 max-w-2xl text-center">
           {texts.projects.p2}{' '}
           <a
             className="font-medium text-light-fontColored dark:text-dark-fontColored hover:underline hover:decoration-from-font"

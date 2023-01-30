@@ -11,29 +11,29 @@ const Contact = () => {
       className="max-w-5xl mx-auto min-h-screen flex flex-col gap-14 justify-center items-center p-5 pt-16"
     >
       <div className="flex flex-col items-center">
-        <h2 className="font-medium text-3xl md:text-4xl pb-5">
+        <h2 className="font-medium text-4xl md:text-5xl pb-5">
           {texts.contact.title}
         </h2>
 
-        <p className="text-sm md:text-base max-w-2xl text-center">
+        <p className="text-sm md:text-base leading-5 md:leading-6 max-w-2xl text-center">
           {texts.contact.p1}
         </p>
-        <p className="text-sm md:text-base max-w-2xl text-center">
+        <p className="text-sm md:text-base leading-5 md:leading-6 max-w-2xl text-center">
           {texts.contact.p2}{' '}
           <a
             href="mailto:fernandobouchet@gmail.com"
-            className="font-normal text-light-fontColored dark:text-dark-fontColored font-medium"
+            className="text-light-fontColored dark:text-dark-fontColored font-medium"
           >
             fernandobouchet@gmail.com
           </a>
           ,
         </p>
-        <p className="text-sm md:text-base max-w-2xl text-center">
+        <p className="text-sm md:text-base leading-5 md:leading-6 max-w-2xl text-center">
           {texts.contact.p3}
         </p>
         <div>
           <form
-            className="flex flex-col mx-auto gap-5 w-64 pt-8 text-sm md:text-base"
+            className="flex flex-col mx-auto gap-5 w-64 pt-8 text-sm md:text-base leading-5 md:leading-6 "
             action="https://formsubmit.co/b0b332c987f92be7b0fb5ad3079d5478"
             method="POST"
           >
