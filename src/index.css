@@ -22,14 +22,6 @@
     url(./fonts/ProductSans-Medium.ttf) format('truetype');
   font-display: swap;
 }
-@font-face {
-  font-family: product sans black;
-  font-style: normal;
-  font-weight: 900;
-  src: local('Product Sans Black'),
-    url(./fonts/ProductSans-Black.ttf) format('truetype');
-  font-display: swap;
-}
 
 @tailwind base;
 @tailwind components;
