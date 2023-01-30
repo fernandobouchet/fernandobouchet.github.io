@@ -29,6 +29,7 @@ module.exports = {
     },
     fontFamily: {
       light: 'Product Sans Light',
+      regular: 'Product Sans',
       medium: 'Product Sans Medium',
       bolder: 'Product Sans Black',
     },
