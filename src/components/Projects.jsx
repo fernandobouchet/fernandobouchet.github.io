@@ -22,7 +22,7 @@ const Projects = () => {
       <h2 className="font-medium text-4xl md:text-5xl pb-5">
         {texts.projects.title}
       </h2>
-      <p className="text-sm md:text-base leading-5 md:leading-6">
+      <p className="text-sm md:text-base leading-5 md:leading-6 text-center">
         {texts.projects.p1}
       </p>
       <div className="pt-10 grid grid-cols-1 md:grid-cols-2 grid-rows-auto gap-8 pb-10">

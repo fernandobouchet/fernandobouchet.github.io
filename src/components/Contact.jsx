@@ -86,7 +86,7 @@ const Contact = () => {
       </div>
       <div className="flex items-center justify-between gap-12">
         <a
-          href="https://www.linkedin.com/in/fernando-bouchet"
+          href="https://www.linkedin.com/in/fernandobouchet"
           target="_blank"
           rel="noreferrer"
           aria-label="Link to my linkedin profile"
