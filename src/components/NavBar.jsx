@@ -23,7 +23,7 @@ const NavBar = () => {
             <div
               className={`${
                 isNavOpen
-                  ? 'flex flex-col absolute bg-light-surface dark:bg-dark-surface left-0 w-3/4 h-screen overflow-y-scroll top-0 z-10 rounded-r-xl p-5 transition'
+                  ? 'flex flex-col absolute bg-light-surface dark:bg-dark-surface left-0 w-3/4 min-h-screen overflow-y-scroll top-0 z-10 rounded-r-xl p-5 transition'
                   : 'hidden'
               }`}
             >
