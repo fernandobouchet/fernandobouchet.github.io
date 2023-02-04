@@ -10,7 +10,7 @@ const NavBar = () => {
     <>
       <div className="z-10 h-14 fixed w-full top-0 left-1/2 -translate-x-1/2 p-5 text-light-font dark:text-dark-font bg-light-background dark:bg-dark-background transition">
         <nav className="flex max-w-5xl m-auto">
-          <section className="flex lg:hidden w-full">
+          <section className="flex  lg:hidden">
             <svg
               onClick={() => setIsNavOpen((prev) => !prev)}
               className="fill-light-font dark:fill-dark-font"
@@ -23,7 +23,7 @@ const NavBar = () => {
             <div
               className={`${
                 isNavOpen
-                  ? 'flex flex-col absolute bg-light-surface dark:bg-dark-surface left-0 w-3/4 min-h-screen overflow-y-scroll top-0 z-10 rounded-r-xl p-5 transition'
+                  ? 'flex flex-col absolute bg-light-surface dark:bg-dark-surface left-0 w-3/4 h-[100dvh] overflow-y-scroll top-0 z-10 rounded-r-xl p-5 transition'
                   : 'hidden'
               }`}
             >
@@ -38,7 +38,7 @@ const NavBar = () => {
               </svg>
               <ul
                 className={
-                  'flex flex-col gap-8 text-base leading-5 md:leading-6 font-medium items-center h-full pt-10'
+                  'flex flex-col gap-8 text-base leading-5 md:leading-6 font-medium items-center pt-10'
                 }
               >
                 <li>

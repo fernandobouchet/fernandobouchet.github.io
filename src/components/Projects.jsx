@@ -17,7 +17,7 @@ const Projects = () => {
   return (
     <div
       id="projects"
-      className="max-w-5xl mx-auto min-h-screen flex flex-col items-center p-5 pt-16"
+      className="max-w-5xl mx-auto min-h-[100dvh] lg:min-h-screen flex flex-col items-center p-5 pt-16"
     >
       <h2 className="font-medium text-4xl md:text-5xl pb-5">
         {texts.projects.title}
