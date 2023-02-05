@@ -5,7 +5,7 @@ import ThemeButton from './ThemeButton';
 
 const NavBar = () => {
   const { texts, handleChangeLanguage, language } = useContext(LanguageContext);
-  const [isNavOpen, setIsNavOpen] = useState(false);
+  const [isNavOpen, setIsNavOpen] = useState(null);
 
   const handleNavBar = () => {
     setIsNavOpen((prev) => !prev);
@@ -28,8 +28,10 @@ const NavBar = () => {
             </svg>
             <div
               className={`${
-                isNavOpen
-                  ? 'flex flex-col absolute bg-light-surface dark:bg-dark-surface left-0 w-3/4 h-[100dvh] top-0 z-10 rounded-r-xl p-5 pointer-events-auto transition origin-left animate-openMenu'
+                isNavOpen === true
+                  ? 'flex flex-col absolute bg-light-surface dark:bg-dark-surface left-0 w-3/4 h-[100dvh] top-0 z-10 rounded-r-xl p-5 pointer-events-auto transition animate-openMenu'
+                  : isNavOpen === false
+                  ? 'flex flex-col absolute bg-light-surface dark:bg-dark-surface left-0 w-3/4 h-[100dvh] top-0 z-10 rounded-r-xl p-5 pointer-events-auto transition animate-closeMenu'
                   : 'hidden'
               }`}
             >

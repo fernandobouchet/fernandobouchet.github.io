@@ -35,20 +35,21 @@ module.exports = {
     extend: {
       animation: {
         fadeIn: 'fadeIn 2s ease-in-out',
+        openMenu: 'openMenu 0.4s ease-in-out forwards',
+        closeMenu: 'closeMenu 0.4s ease-in-out forwards',
       },
       keyframes: {
         fadeIn: {
           '0%': { opacity: 0 },
           '100%': { opacity: 1 },
         },
-      },
-      animation: {
-        openMenu: 'openMenu 0.5s ease-in-out forwards',
-      },
-      keyframes: {
         openMenu: {
           '0%': { transform: 'translateX(-100%)' },
           '100%': { transform: 'translateX(0%)' },
+        },
+        closeMenu: {
+          '0%': { transform: 'translateX(0%)' },
+          '100%': { transform: 'translateX(-100%)' },
         },
       },
     },
