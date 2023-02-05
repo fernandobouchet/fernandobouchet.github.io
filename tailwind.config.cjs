@@ -42,6 +42,15 @@ module.exports = {
           '100%': { opacity: 1 },
         },
       },
+      animation: {
+        openMenu: 'openMenu 0.5s ease-in-out forwards',
+      },
+      keyframes: {
+        openMenu: {
+          '0%': { transform: 'translateX(-100%)' },
+          '100%': { transform: 'translateX(0%)' },
+        },
+      },
     },
   },
   plugins: [],
