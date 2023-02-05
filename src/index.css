@@ -32,6 +32,13 @@ html {
   font-family: 'Product Sans', sans-serif, system-ui;
 }
 
+@media (max-width: 1023px) {
+  .no-interact {
+    overflow: hidden;
+    pointer-events: none;
+  }
+}
+
 .dark input:-webkit-autofill,
 input:-webkit-autofill:hover,
 input:-webkit-autofill:focus {

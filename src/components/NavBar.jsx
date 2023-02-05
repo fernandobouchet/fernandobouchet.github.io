@@ -1,10 +1,16 @@
 import { useContext, useState } from 'react';
 import LanguageContext from '../context/LanguageContext';
+import { disableInteraction, enableInteraction } from '../utils/theme';
 import ThemeButton from './ThemeButton';
 
 const NavBar = () => {
   const { texts, handleChangeLanguage, language } = useContext(LanguageContext);
   const [isNavOpen, setIsNavOpen] = useState(false);
+
+  const handleNavBar = () => {
+    setIsNavOpen((prev) => !prev);
+    isNavOpen ? enableInteraction() : disableInteraction();
+  };
 
   return (
     <>
@@ -12,7 +18,7 @@ const NavBar = () => {
         <nav className="flex max-w-5xl m-auto">
           <section className="flex  lg:hidden">
             <svg
-              onClick={() => setIsNavOpen((prev) => !prev)}
+              onClick={handleNavBar}
               className="fill-light-font dark:fill-dark-font"
               xmlns="http://www.w3.org/2000/svg"
               height="24"
@@ -23,7 +29,7 @@ const NavBar = () => {
             <div
               className={`${
                 isNavOpen
-                  ? 'flex flex-col absolute bg-light-surface dark:bg-dark-surface left-0 w-3/4 h-[100dvh] overflow-y-scroll top-0 z-10 rounded-r-xl p-5 transition'
+                  ? 'flex flex-col absolute bg-light-surface dark:bg-dark-surface left-0 w-3/4 h-[100dvh] top-0 z-10 rounded-r-xl p-5 transition pointer-events-auto'
                   : 'hidden'
               }`}
             >
@@ -32,7 +38,7 @@ const NavBar = () => {
                 xmlns="http://www.w3.org/2000/svg"
                 height="24"
                 width="24"
-                onClick={() => setIsNavOpen((prev) => !prev)}
+                onClick={handleNavBar}
               >
                 <path d="M3 18v-2h13v2Zm16.6-1-5-5 5-5L21 8.4 17.4 12l3.6 3.6ZM3 13v-2h10v2Zm0-5V6h13v2Z" />
               </svg>
@@ -45,7 +51,7 @@ const NavBar = () => {
                   <a
                     href="#about"
                     className="hover:text-light-font dark:hover:text-dark-font"
-                    onClick={() => setIsNavOpen(false)}
+                    onClick={handleNavBar}
                   >
                     {texts.navbar.about}
                   </a>
@@ -54,7 +60,7 @@ const NavBar = () => {
                   <a
                     href="#projects"
                     className="hover:text-light-font dark:hover:text-dark-font"
-                    onClick={() => setIsNavOpen(false)}
+                    onClick={handleNavBar}
                   >
                     {texts.navbar.projects}
                   </a>
@@ -63,7 +69,7 @@ const NavBar = () => {
                   <a
                     href="#contact"
                     className="hover:text-light-font dark:hover:text-dark-font"
-                    onClick={() => setIsNavOpen(false)}
+                    onClick={handleNavBar}
                   >
                     {texts.navbar.contact}
                   </a>

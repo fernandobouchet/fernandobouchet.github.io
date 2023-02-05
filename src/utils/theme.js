@@ -17,4 +17,12 @@ const saveTheme = (theme) => {
       localStorage.setItem('theme', JSON.stringify('light')));
 };
 
-export { saveTheme, getTheme };
+const disableInteraction = () => {
+  document.body.classList.add('no-interact');
+};
+
+const enableInteraction = () => {
+  document.body.classList.remove('no-interact');
+};
+
+export { saveTheme, getTheme, disableInteraction, enableInteraction };
