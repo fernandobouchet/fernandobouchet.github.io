@@ -1,35 +1,10 @@
-@font-face {
-  font-family: product sans;
-  font-style: normal;
-  font-weight: 400;
-  src: local('Product Sans'),
-    url(./fonts/ProductSans-Regular.ttf) format('truetype');
-  font-display: swap;
-}
-@font-face {
-  font-family: product sans light;
-  font-style: normal;
-  font-weight: 300;
-  src: local('Product Sans Light'),
-    url(./fonts/ProductSans-Light.ttf) format('truetype');
-  font-display: swap;
-}
-@font-face {
-  font-family: product sans medium;
-  font-style: normal;
-  font-weight: 500;
-  src: local('Product Sans Medium'),
-    url(./fonts/ProductSans-Medium.ttf) format('truetype');
-  font-display: swap;
-}
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 html {
   scroll-behavior: smooth;
-  font-family: 'Product Sans', sans-serif, system-ui;
+  font-family: 'Roboto Flex', sans-serif;
 }
 
 @media (max-width: 1023px) {

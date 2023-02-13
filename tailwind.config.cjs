@@ -27,11 +27,6 @@ module.exports = {
         fontSurface: '#c4c7c5',
       },
     },
-    fontFamily: {
-      light: 'Product Sans Light',
-      regular: 'Product Sans',
-      medium: 'Product Sans Medium',
-    },
     extend: {
       animation: {
         fadeIn: 'fadeIn 2s ease-in-out',
