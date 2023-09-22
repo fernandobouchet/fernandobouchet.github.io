@@ -1,0 +1,34 @@
+@use '../../utilities/variables';
+
+.button__theme {
+  height: 2em;
+  width: 2em;
+  padding: 0.2rem;
+  cursor: pointer;
+  border-radius: 100%;
+  border: none;
+  background-color: transparent;
+  transition: all 500ms;
+}
+
+.dark {
+  fill: variables.$surface;
+}
+
+.light {
+  fill: variables.$surface-dark;
+}
+
+@media screen and (max-width: 768px) {
+  .icon {
+    width: 1.8rem;
+    height: 1.8rem;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .icon {
+    width: 2rem;
+    height: 2rem;
+  }
+}
