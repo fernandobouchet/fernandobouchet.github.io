@@ -1,0 +1,38 @@
+@use '../utilities/variables';
+
+.header {
+  position: fixed;
+  top: 0;
+  height: 3rem;
+  width: 100%;
+  font-size: 1rem;
+}
+
+.header__nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 1rem;
+  background-color: inherit;
+}
+
+.header__nav_list {
+  display: flex;
+  gap: 1rem;
+  justify-content: space-evenly;
+}
+
+//.header__nav__list_item {
+//}
+
+.header__nav__list__item_anchor {
+  text-decoration: none;
+  color: inherit;
+}
+
+.dark {
+  background-color: variables.$surface-dark;
+}
+
+.light {
+  background-color: variables.$surface;
+}
