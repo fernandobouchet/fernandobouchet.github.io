@@ -1,9 +1,10 @@
 import style from '../styles/components/Navbar.module.scss';
 import { useContext } from 'react';
 import { ThemeContext } from '../context/ThemeContext';
+import ThemeButton from './ui/ThemeButton';
 
 const Navbar = () => {
-  const { theme, changeTheme } = useContext(ThemeContext);
+  const { theme } = useContext(ThemeContext);
 
   return (
     <header className={`${style.header} ${style[theme]}`}>
@@ -36,7 +37,7 @@ const Navbar = () => {
         </ul>
         <ul>
           <li>
-            <button onClick={() => changeTheme()}>Cambiar tema</button>
+            <ThemeButton />
           </li>
         </ul>
       </nav>
