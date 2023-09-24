@@ -1,0 +1,32 @@
+@use '../../utilities/variables';
+@use '../../utilities/mixins';
+
+.button {
+  border: none;
+  cursor: pointer;
+  padding: 1.2rem;
+  border-radius: 1rem;
+  font-weight: 600;
+}
+
+.primary-light {
+  @include mixins.button('primary', 'light');
+}
+
+.secondary-light {
+  @include mixins.button('secondary', 'light');
+}
+
+.primary-dark {
+  @include mixins.button('primary', 'dark');
+}
+
+.secondary-dark {
+  @include mixins.button('secondary', 'dark');
+}
+
+@media screen and (min-width: 769px) {
+  button {
+    font-size: 1.6rem;
+  }
+}

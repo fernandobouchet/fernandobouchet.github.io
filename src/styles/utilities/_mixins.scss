@@ -1,5 +1,27 @@
+@use '../utilities/variables';
+
 @mixin theme($background-color, $text-color) {
   background-color: $background-color;
   color: $text-color;
   transition: all 500ms;
+}
+
+@mixin button($variant, $theme) {
+  @if ($theme == 'light') {
+    @if ($variant == 'primary') {
+      color: variables.$primary-foreground;
+      background-color: variables.$primary;
+    } @else {
+      color: variables.$secondary-foreground;
+      background-color: variables.$secondary;
+    }
+  } @else {
+    @if ($variant == 'primary') {
+      color: variables.$primary-foreground-dark;
+      background-color: variables.$primary-dark;
+    } @else {
+      color: variables.$secondary-foreground-dark;
+      background-color: variables.$secondary-dark;
+    }
+  }
 }
