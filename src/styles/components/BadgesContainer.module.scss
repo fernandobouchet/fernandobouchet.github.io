@@ -1,0 +1,13 @@
+.badge__container {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0 0 2rem 0;
+}
+
+@media screen and (min-width: 769px) {
+  .badge__container {
+    max-width: 75%;
+  }
+}

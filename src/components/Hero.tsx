@@ -2,6 +2,7 @@ import Button from './ui/Button';
 import style from '../styles/components/Hero.module.scss';
 import { useContext } from 'react';
 import { ThemeContext } from '../context/ThemeContext';
+import BadgesContainer from './BadgesContainer';
 
 const Hero = () => {
   const { theme } = useContext(ThemeContext);
@@ -28,6 +29,7 @@ const Hero = () => {
           profesional en el mundo IT. Estas hay algunas tecnologías con las que
           he estado trabajando recientemente:
         </p>
+        <BadgesContainer />
         <Button className="primary" text="Obtener CV" />
       </div>
     </div>

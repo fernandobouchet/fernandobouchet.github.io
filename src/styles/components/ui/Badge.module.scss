@@ -1,0 +1,23 @@
+@use '../../utilities/variables';
+@use '../../utilities/mixins';
+
+.badge {
+  padding: 0.5rem 0.7rem;
+  border-radius: 1rem;
+  min-width: fit-content;
+  font-size: 1.2rem;
+}
+
+.light {
+  @include mixins.badge('light');
+}
+
+.dark {
+  @include mixins.badge('dark');
+}
+
+@media screen and (min-width: 769px) {
+  .badge {
+    font-size: 1.4rem;
+  }
+}
