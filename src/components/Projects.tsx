@@ -1,7 +1,7 @@
 const Projects = () => {
   return (
-    <div id="projects" className="full_screen_section">
-      Projects
+    <div id="projects" className="section__full-screen">
+      <div className="section__container">Projects</div>
     </div>
   );
 };

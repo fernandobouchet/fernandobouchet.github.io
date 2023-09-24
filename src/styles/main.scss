@@ -2,6 +2,12 @@
 @use './utilities/variables';
 @use './utilities/mixins';
 
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;700;800&display=swap');
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
 .dark {
   @include mixins.theme(variables.$background-dark, variables.$foreground-dark);
 }
@@ -10,9 +16,10 @@
   @include mixins.theme(variables.$background, variables.$foreground);
 }
 
-.full_screen_section {
+.section__full-screen {
   height: 100dvh;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 }

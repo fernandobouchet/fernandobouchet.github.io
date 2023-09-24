@@ -1,6 +1,6 @@
 const Contact = () => {
   return (
-    <div id="contact" className="full_screen_section">
+    <div id="contact" className="section__full-screen">
       Contact
     </div>
   );
