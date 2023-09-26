@@ -1,0 +1,51 @@
+@use '../../utilities/variables';
+@use '../../utilities/mixins';
+
+.contact__icons__icon {
+  display: flex;
+  width: 2.5rem;
+  height: 2.5rem;
+  padding: 1.1rem;
+  border-radius: 50%;
+  transition: 0.1s linear;
+
+  &:hover {
+    transform: scale(1.2);
+  }
+
+  svg {
+    width: 2.5rem;
+    height: 2.5rem;
+    vertical-align: middle;
+  }
+}
+
+.contact__icons__icon.light {
+  &:hover {
+    background-color: variables.$secondary;
+    svg {
+      fill: variables.$secondary-foreground;
+    }
+  }
+}
+
+.contact__icons__icon.dark {
+  &:hover {
+    background-color: variables.$secondary-dark;
+    svg {
+      fill: variables.$secondary-foreground-dark;
+    }
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .contact__icons__icon {
+    width: 3rem;
+    height: 3rem;
+
+    svg {
+      width: 3rem;
+      height: 3rem;
+    }
+  }
+}

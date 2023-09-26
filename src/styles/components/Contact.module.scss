@@ -1,0 +1,39 @@
+@use '../utilities/variables';
+
+.contact__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 90%;
+
+  .contact__icons__container {
+    display: flex;
+    gap: 4rem;
+  }
+}
+
+.contact__title {
+  font-size: 2.8rem;
+  margin: 0;
+}
+
+.contact__text {
+  text-align: center;
+}
+
+.link__text__accent.dark {
+  color: variables.$accent-dark;
+}
+
+.link__text__accent.light {
+  color: variables.$accent;
+}
+
+@media screen and (min-width: 769px) {
+  .contact__container {
+    max-width: 60%;
+  }
+  .contact__title {
+    font-size: 3rem;
+  }
+}
