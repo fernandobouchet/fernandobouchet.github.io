@@ -1,4 +1,5 @@
 @use '../utilities/variables';
+@use '../utilities/mixins';
 
 .contact__container {
   display: flex;
@@ -23,10 +24,12 @@
 
 .link__text__accent.dark {
   color: variables.$accent-dark;
+  @include mixins.underline-effect('dark');
 }
 
 .link__text__accent.light {
   color: variables.$accent;
+  @include mixins.underline-effect('light');
 }
 
 @media screen and (min-width: 769px) {

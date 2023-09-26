@@ -33,8 +33,14 @@
 
 .dark {
   @include mixins.theme(variables.$surface-dark, inherit);
+  a {
+    @include mixins.underline-effect('dark');
+  }
 }
 
 .light {
   @include mixins.theme(variables.$surface, inherit);
+  a {
+    @include mixins.underline-effect('light');
+  }
 }
