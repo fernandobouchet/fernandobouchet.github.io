@@ -11,17 +11,29 @@
     @if ($variant == 'primary') {
       color: variables.$primary-foreground;
       background-color: variables.$primary;
+      &:hover {
+        background-color: variables.$primary-hover;
+      }
     } @else {
       color: variables.$secondary-foreground;
       background-color: variables.$secondary;
+      &:hover {
+        background-color: variables.$secondary-hover;
+      }
     }
   } @else {
     @if ($variant == 'primary') {
       color: variables.$primary-foreground-dark;
       background-color: variables.$primary-dark;
+      &:hover {
+        background-color: variables.$primary-hover-dark;
+      }
     } @else {
       color: variables.$secondary-foreground-dark;
       background-color: variables.$secondary-dark;
+      &:hover {
+        background-color: variables.$secondary-hover-dark;
+      }
     }
   }
 }
