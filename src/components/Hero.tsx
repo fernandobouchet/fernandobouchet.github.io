@@ -1,8 +1,8 @@
-import Button from './ui/Button';
-import style from '../styles/components/Hero.module.scss';
+import Button from '@components/ui/Button';
+import style from '@styles/components/Hero.module.scss';
 import { useContext } from 'react';
-import { ThemeContext } from '../context/ThemeContext';
-import BadgesContainer from './BadgesContainer';
+import { ThemeContext } from '@context/ThemeContext';
+import BadgesContainer from '@components/BadgesContainer';
 
 const Hero = () => {
   const { theme } = useContext(ThemeContext);

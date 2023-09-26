@@ -1,6 +1,6 @@
-import style from '../styles/components/ContactLinksContainer.module.scss';
-import { Email, Linkedin, Telegram, Twitter } from './icons';
-import ContactLink from './ui/ContactLink';
+import style from '@styles/components/ContactLinksContainer.module.scss';
+import { Email, Linkedin, Telegram, Twitter } from '@components/icons';
+import ContactLink from '@components/ui/ContactLink';
 
 const contactData = [
   {

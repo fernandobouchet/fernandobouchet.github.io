@@ -1,7 +1,7 @@
-import style from '../styles/components/Navbar.module.scss';
+import style from '@styles/components/Navbar.module.scss';
 import { useContext } from 'react';
-import { ThemeContext } from '../context/ThemeContext';
-import ThemeButton from './ui/ThemeButton';
+import { ThemeContext } from '@context/ThemeContext';
+import ThemeButton from '@components/ui/ThemeButton';
 
 const Navbar = () => {
   const { theme } = useContext(ThemeContext);

@@ -1,6 +1,6 @@
-import style from '../../styles/components/ui/ContactLink.module.scss';
+import style from '@styles/components/ui/ContactLink.module.scss';
 import { useContext } from 'react';
-import { ThemeContext } from '../../context/ThemeContext';
+import { ThemeContext } from '@context/ThemeContext';
 
 interface Props {
   href: string;

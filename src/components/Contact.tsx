@@ -1,7 +1,7 @@
-import style from '../styles/components/Contact.module.scss';
+import style from '@styles/components/Contact.module.scss';
 import { useContext } from 'react';
-import { ThemeContext } from '../context/ThemeContext';
-import ContactLinksContainer from './ContactLinksContainer';
+import { ThemeContext } from '@context/ThemeContext';
+import ContactLinksContainer from '@components/ContactLinksContainer';
 
 const Contact = () => {
   const { theme } = useContext(ThemeContext);

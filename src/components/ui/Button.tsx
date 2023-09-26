@@ -1,6 +1,6 @@
 import { useContext } from 'react';
-import { ThemeContext } from '../../context/ThemeContext';
-import style from '../../styles/components/ui/Button.module.scss';
+import { ThemeContext } from '@context/ThemeContext';
+import style from '@styles/components/ui/Button.module.scss';
 
 interface Props {
   className?: string;

@@ -1,5 +1,5 @@
-import Badge from './ui/Badge';
-import style from '../styles/components/BadgesContainer.module.scss';
+import Badge from '@components/ui/Badge';
+import style from '@styles/components/BadgesContainer.module.scss';
 
 const Technologies = [
   { id: 0, title: 'HTML' },
