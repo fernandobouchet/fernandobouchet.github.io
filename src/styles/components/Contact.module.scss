@@ -24,12 +24,12 @@
 
 .link__text__accent.dark {
   color: variables.$accent-dark;
-  @include mixins.underline-effect('dark');
+  @include mixins.underline-effect('dark', true, 1px);
 }
 
 .link__text__accent.light {
   color: variables.$accent;
-  @include mixins.underline-effect('light');
+  @include mixins.underline-effect('light', true, 1px);
 }
 
 @media screen and (min-width: 769px) {

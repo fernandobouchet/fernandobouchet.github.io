@@ -36,20 +36,28 @@
   }
 }
 
-@mixin underline-effect($theme) {
+@mixin underline-effect($theme, $accent, $height) {
   text-decoration: none;
   position: relative;
 
   &:after {
     bottom: 0;
     content: '';
-    height: 2px;
+    height: $height;
     left: 0;
     position: absolute;
-    @if ($theme == 'light') {
-      background: variables.$accent;
+    @if ($accent) {
+      @if ($theme == 'light') {
+        background: variables.$accent;
+      } @else {
+        background: variables.$accent-dark;
+      }
     } @else {
-      background: variables.$accent-dark;
+      @if ($theme == 'light') {
+        background: variables.$foreground;
+      } @else {
+        background: variables.$foreground-dark;
+      }
     }
     transition: width 0.5s ease, left 0.5s ease;
     width: 0;

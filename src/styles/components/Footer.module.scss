@@ -1,0 +1,33 @@
+@use '@styles/utilities/mixins';
+
+.footer__container {
+  text-align: center;
+  padding: 1rem;
+}
+
+.footer__link__text {
+  font-size: 1.2rem;
+}
+
+.footer__link__icon {
+  width: 1rem;
+  height: 1rem;
+}
+
+.footer__link.dark {
+  @include mixins.underline-effect('dark', false, 1px);
+}
+
+.footer__link.light {
+  @include mixins.underline-effect('light', false, 1px);
+}
+
+@media screen and (min-width: 769px) {
+  .footer__link__text {
+    font-size: 1.4rem;
+  }
+  .footer__link__icon {
+    width: 1.2rem;
+    height: 1.2rem;
+  }
+}
