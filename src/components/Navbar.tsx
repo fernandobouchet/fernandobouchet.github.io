@@ -35,7 +35,7 @@ const Navbar = () => {
             </a>
           </li>
         </ul>
-        <ul>
+        <ul className={`${style.header__nav_list__options}`}>
           <li>
             <ThemeButton />
           </li>

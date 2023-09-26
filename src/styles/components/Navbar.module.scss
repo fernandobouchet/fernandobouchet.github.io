@@ -4,13 +4,17 @@
 .header {
   position: fixed;
   top: 0;
-  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 4.5rem;
   width: 100%;
   font-weight: bold;
 }
 
 .header__nav {
   display: flex;
+  width: 100%;
   justify-content: space-between;
   align-items: center;
   padding: 0 1rem;
@@ -21,6 +25,11 @@
   display: flex;
   gap: 1rem;
   justify-content: space-evenly;
+  margin: 0;
+}
+
+.header__nav_list__options {
+  margin: 0;
 }
 
 //.header__nav__list_item {
