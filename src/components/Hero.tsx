@@ -3,6 +3,7 @@ import style from '@styles/components/Hero.module.scss';
 import { useContext } from 'react';
 import { ThemeContext } from '@context/ThemeContext';
 import BadgesContainer from '@components/BadgesContainer';
+import LinkButton from './ui/LinkButton';
 
 const Hero = () => {
   const { theme } = useContext(ThemeContext);
@@ -30,7 +31,13 @@ const Hero = () => {
           he estado trabajando recientemente:
         </p>
         <BadgesContainer />
-        <Button className="primary" text="Obtener CV" />
+        <LinkButton
+          className="primary"
+          text="Obtener CV"
+          link={
+            'https://drive.google.com/file/d/1LlCYRFeAQ5b2uRnIuw4_nVFK9MMpEwCV/view?usp=sharing'
+          }
+        />
       </div>
     </div>
   );
