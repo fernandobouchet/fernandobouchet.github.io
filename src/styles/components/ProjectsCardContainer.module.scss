@@ -4,6 +4,10 @@
   gap: 2rem;
 }
 
+.button__wrapper {
+  margin-top: 2rem;
+}
+
 @media screen and (min-width: 768px) {
   .cards__container {
     grid-template-columns: repeat(2, minmax(0, 1fr));

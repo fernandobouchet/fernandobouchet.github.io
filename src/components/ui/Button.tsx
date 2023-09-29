@@ -5,9 +5,10 @@ import style from '@styles/components/ui/Button.module.scss';
 interface Props {
   className?: string;
   text: string;
+  onClick?: () => void;
 }
 
-const Button = ({ className, text }: Props) => {
+const Button = ({ className, text, onClick }: Props) => {
   const { theme } = useContext(ThemeContext);
 
   return (
@@ -15,6 +16,7 @@ const Button = ({ className, text }: Props) => {
       className={`${style.button} ${
         className && style[className + '-' + theme]
       }`}
+      onClick={onClick}
     >
       {text}
     </button>
