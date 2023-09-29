@@ -16,8 +16,15 @@
   @include mixins.badge('dark');
 }
 
+.card__content__badge {
+  font-size: 1rem;
+}
+
 @media screen and (min-width: 769px) {
   .badge {
     font-size: 1.4rem;
+  }
+  .card__content__badge {
+    font-size: 1.2rem;
   }
 }

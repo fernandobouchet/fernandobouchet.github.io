@@ -1,0 +1,85 @@
+@use '@styles/utilities/variables';
+
+.card {
+  display: flex;
+  flex-direction: column;
+  border-radius: 1rem;
+  width: 100%;
+  height: auto;
+}
+
+.card__content {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 2rem;
+  height: 100%;
+}
+
+.card__content__title__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card__content__title {
+  margin: 0;
+}
+
+.card__content__text {
+  text-align: justify;
+  font-size: 1.4rem;
+  flex-grow: 1;
+}
+
+.card__image {
+  width: 100%;
+  height: auto;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+
+.card__content__bagde__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-bottom: 1rem;
+  gap: 0.5rem;
+}
+
+.card__content__badge {
+  .badge__text {
+    font-size: 0.1rem;
+  }
+}
+
+.light {
+  background-color: variables.$card;
+  border: 1px solid variables.$card-border;
+  .card__content {
+    border-top: 1px solid variables.$card-border;
+  }
+  .card__content__text {
+    color: variables.$card-foreground;
+  }
+}
+
+.dark {
+  background-color: variables.$card-dark;
+  border: 1px solid variables.$card-border-dark;
+  .card__content {
+    border-top: 1px solid variables.$card-border-dark;
+  }
+  .card__content__text {
+    color: variables.$card-foreground-dark;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .card {
+    width: 35rem;
+  }
+  .card__image {
+    width: 35rem;
+  }
+}
