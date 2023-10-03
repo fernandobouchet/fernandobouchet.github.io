@@ -1,13 +1,24 @@
 import style from '@styles/components/Contact.module.scss';
-import { useContext } from 'react';
+import useIntersection from '../hooks/useIntersection';
+import { useContext, useRef } from 'react';
 import { ThemeContext } from '@context/ThemeContext';
 import ContactLinksContainer from '@components/ContactLinksContainer';
 
 const Contact = () => {
   const { theme } = useContext(ThemeContext);
 
+  const ref = useRef(null);
+
+  const isIntersecting = useIntersection(ref);
+
   return (
-    <div id="contact" className="section__full-screen">
+    <div
+      id="contact"
+      className={`fade-in section__full-screen ${
+        isIntersecting ? 'fade-in-active' : ''
+      }`}
+      ref={ref}
+    >
       <div className={style.contact__container}>
         <h2 className={style.contact__title}>Contacto</h2>
         <p className={style.contact__text}>

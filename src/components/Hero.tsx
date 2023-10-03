@@ -1,15 +1,25 @@
-import Button from '@components/ui/Button';
 import style from '@styles/components/Hero.module.scss';
-import { useContext } from 'react';
 import { ThemeContext } from '@context/ThemeContext';
 import BadgesContainer from '@components/BadgesContainer';
 import LinkButton from './ui/LinkButton';
+import useIntersection from '../hooks/useIntersection';
+import { useContext, useRef } from 'react';
 
 const Hero = () => {
   const { theme } = useContext(ThemeContext);
 
+  const ref = useRef(null);
+
+  const isIntersecting = useIntersection(ref);
+
   return (
-    <div id="about" className="section__full-screen">
+    <div
+      id="about"
+      className={`fade-in section__full-screen ${
+        isIntersecting ? 'fade-in-active' : ''
+      }`}
+      ref={ref}
+    >
       <div className={style.hero__container}>
         <h1 className={style.hero__title}>Hola, Soy Fernando</h1>
         <p className={style.hero__text}>

@@ -1,13 +1,24 @@
 import style from '@styles/components/Projects.module.scss';
 import ProjectsCardContainer from '@components/ProjectsCardContainer';
-import { useContext } from 'react';
+import useIntersection from '../hooks/useIntersection';
+import { useContext, useRef } from 'react';
 import { ThemeContext } from '@context/ThemeContext';
 
 const Projects = () => {
   const { theme } = useContext(ThemeContext);
 
+  const ref = useRef(null);
+
+  const isIntersecting = useIntersection(ref);
+
   return (
-    <div id="projects" className={style.projects}>
+    <div
+      id="projects"
+      className={`fade-in ${style.projects} ${
+        isIntersecting ? 'fade-in-active' : ''
+      }`}
+      ref={ref}
+    >
       <div className={style.projects__container}>
         <h2>Proyectos</h2>
         <p>
