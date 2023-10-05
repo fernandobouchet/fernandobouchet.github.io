@@ -24,11 +24,13 @@
 
 .link__text__accent.dark {
   color: variables.$accent-dark;
+  font-weight: bold;
   @include mixins.underline-effect('dark', true, 1px);
 }
 
 .link__text__accent.light {
   color: variables.$accent;
+  font-weight: bold;
   @include mixins.underline-effect('light', true, 1px);
 }
 

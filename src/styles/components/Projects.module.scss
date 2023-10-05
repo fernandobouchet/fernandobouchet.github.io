@@ -22,6 +22,7 @@
 
 .link__text__accent.dark {
   color: variables.$accent-dark;
+  font-weight: bold;
   @include mixins.underline-effect('dark', true, 1px);
 }
 
