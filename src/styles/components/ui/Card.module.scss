@@ -32,11 +32,17 @@
   flex-grow: 1;
 }
 
-.card__image {
-  width: 100%;
-  height: auto;
+.card__image__wrapper {
+  width: auto;
+  height: 16.388rem;
   border-top-left-radius: 1rem;
   border-top-right-radius: 1rem;
+}
+
+.card__image {
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .card__content__bagde__wrapper {
@@ -75,11 +81,23 @@
   }
 }
 
+@media screen and (min-width: 375px) {
+  .card__image__wrapper {
+    height: 19.203rem;
+  }
+}
+
+@media screen and (min-width: 425px) {
+  .card__image__wrapper {
+    height: 21.5rem;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .card {
     width: 35rem;
   }
-  .card__image {
-    width: 35rem;
+  .card__image__wrapper {
+    height: 19.869rem;
   }
 }

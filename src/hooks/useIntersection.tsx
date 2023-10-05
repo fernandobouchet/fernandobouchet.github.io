@@ -4,13 +4,9 @@ function useIntersection(ref: React.MutableRefObject<null>) {
   const [isIntersecting, setIsIntersecting] = useState(false);
 
   useEffect(() => {
-    let isComponentUnmounted = false;
-
     const observer = new IntersectionObserver(
       ([entry]) => {
-        if (!isComponentUnmounted) {
-          setIsIntersecting(entry.isIntersecting);
-        }
+        setIsIntersecting(entry.isIntersecting);
       },
       { rootMargin: '-120px' }
     );
@@ -19,10 +15,7 @@ function useIntersection(ref: React.MutableRefObject<null>) {
       observer.observe(ref.current);
     }
 
-    return () => {
-      isComponentUnmounted = true;
-      observer.disconnect();
-    };
+    return () => observer.disconnect();
   }, [ref]);
 
   return isIntersecting;

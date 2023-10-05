@@ -4,6 +4,7 @@ import { ThemeContext } from '@context/ThemeContext';
 import Badge from './Badge';
 import { Github } from '@components/icons';
 import LinkButton from './LinkButton';
+import useImageIsLoaded from '../../hooks/useImageIsLoaded';
 
 interface Props {
   data: {
@@ -20,9 +21,23 @@ interface Props {
 const Card = ({ data }: Props) => {
   const { theme } = useContext(ThemeContext);
 
+  const isImageLoaded = useImageIsLoaded(data.image);
+
   return (
-    <div className={`${style.card}  ${style[theme]}`}>
-      <img className={style.card__image} src={data.image} alt="" />
+    <div className={`fadeIn ${style.card}  ${style[theme]}`}>
+      <div className={style.card__image__wrapper}>
+        {isImageLoaded ? (
+          <div
+            className={`${style.card__image__wrapper} ${style.card__image}`}
+            style={{ backgroundImage: `url(${data.image})` }}
+          />
+        ) : (
+          <div
+            className={`pulse ${style.card__image__wrapper}`}
+            style={{ background: '#373a40' }}
+          ></div>
+        )}
+      </div>
       <div className={style.card__content}>
         <div className={style.card__content__title__wrapper}>
           <h3 className={style.card__content__title}>{data.title}</h3>
