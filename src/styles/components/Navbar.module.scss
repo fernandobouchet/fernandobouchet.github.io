@@ -9,7 +9,6 @@
   justify-content: space-between;
   height: 4.5rem;
   width: 100%;
-  font-weight: bold;
   z-index: 100;
 }
 
@@ -47,13 +46,13 @@
 .dark {
   @include mixins.theme(variables.$surface-dark, inherit);
   a {
-    @include mixins.underline-effect('dark', false, 2px);
+    @include mixins.underline-effect('dark', false, 1px);
   }
 }
 
 .light {
   @include mixins.theme(variables.$surface, inherit);
   a {
-    @include mixins.underline-effect('light', false, 2px);
+    @include mixins.underline-effect('light', false, 1px);
   }
 }
