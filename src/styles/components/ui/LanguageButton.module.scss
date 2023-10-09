@@ -1,0 +1,12 @@
+@use '@styles/utilities/variables';
+
+.button__theme {
+  padding: 0.2rem;
+  cursor: pointer;
+  border-radius: 100%;
+  border: none;
+  background-color: transparent;
+  color: inherit;
+  font-size: inherit;
+  font-family: inherit;
+}
