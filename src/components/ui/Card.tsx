@@ -12,6 +12,7 @@ interface Props {
     id: number;
     title: string;
     info_es: string;
+    info_en: string;
     image: string;
     demo: string;
     github: string;
@@ -21,7 +22,7 @@ interface Props {
 
 const Card = ({ data }: Props) => {
   const { theme } = useContext(ThemeContext);
-  const { texts } = useContext(LanguageContext);
+  const { texts, language } = useContext(LanguageContext);
 
   const isImageLoaded = useImageIsLoaded(data.image);
 
@@ -47,7 +48,9 @@ const Card = ({ data }: Props) => {
             <Github />
           </a>
         </div>
-        <p className={style.card__content__text}>{data.info_es}</p>
+        <p className={style.card__content__text}>
+          {language === 'EN' ? data.info_en : data.info_es}
+        </p>
         <div className={style.card__content__bagde__wrapper}>
           {data.techstack.map((stack) => (
             <Badge

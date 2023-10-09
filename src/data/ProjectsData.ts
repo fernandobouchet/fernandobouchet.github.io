@@ -4,6 +4,8 @@ export const ProjectsData = [
     title: 'Pokémon Memory Game',
     info_es:
       "Clásico juego de memorio utilizando la API de 'PokeApi' para obtener los personajes de la famosa serie.",
+    info_en:
+      "Classic memory game using the 'PokeApi' API to obtain the characters from the famous series.",
     image:
       'https://github.com/fernandobouchet/memory-game/blob/main/memory-game_preview.jpg?raw=true',
     demo: 'https://fernandobouchet.github.io/memory-game',
@@ -14,6 +16,7 @@ export const ProjectsData = [
     id: 1,
     title: 'Taskify',
     info_es: 'Simple lista de "cosas para hacer", con funciones "CRUD".',
+    info_en: 'Simple "to do" list, with "CRUD" functions.',
     image:
       'https://github.com/fernandobouchet/taskify/blob/main/taskify_preview.jpg?raw=true',
     demo: 'https://fernandobouchet.github.io/taskify',
@@ -25,6 +28,7 @@ export const ProjectsData = [
     title: 'Quizzical',
     info_es:
       'SPA que muestra preguntas aleatorias de peliculas usando la API de "OPEN TDB".',
+    info_en: 'SPA that shows random movie questions using the "OPEN TDB" API.',
     image:
       'https://github.com/fernandobouchet/quizzical/blob/main/quizzical_preview.jpg?raw=true',
     demo: 'https://fernandobouchet.github.io/quizzical',
@@ -36,6 +40,8 @@ export const ProjectsData = [
     title: 'Notebook Store Arg',
     info_es:
       "SPA que muestra productos electrónicos y permite al usuario agregar productos al carrito y 'comprarlos'.",
+    info_en:
+      "SPA that displays electronic products and allows the user to add products to the cart and 'purchase' them.",
     image:
       'https://github.com/fernandobouchet/notebookShop/raw/main/project_preview.jpg?raw=true',
     demo: 'https://notebookshop.netlify.app',
@@ -47,6 +53,8 @@ export const ProjectsData = [
     title: 'Image Uploader',
     info_es:
       'Aplicación fullstack que permite subir, almacenar una imagen y obtener su url.',
+    info_en:
+      'Full stack application that allows you to upload, store an image and obtain its URL.',
     image:
       'https://raw.githubusercontent.com/fernandobouchet/image-uploader/main/project_preview.webp',
     demo: 'http://image-uploader-beryl.vercel.app',
@@ -58,6 +66,7 @@ export const ProjectsData = [
     title: 'Career progress',
     info_es:
       'Página web creada para registrar el progreso de mi carrera universitaria.',
+    info_en: 'Website created to record the progress of my university career.',
     image:
       'https://github.com/fernandobouchet/ProgresoLicenciaturaInformatica/raw/main/progresolicenciatura_preview.webp',
     demo: 'https://progreso-licenciatura-informatica.vercel.app',
@@ -70,6 +79,8 @@ export const ProjectsData = [
     title: 'My Unsplash',
     info_es:
       "Aplicación donde puedes agregar imagenes (colocando una url y un 'tag'), los datos se almacenan en una base de datos.",
+    info_en:
+      "Application where you can add images (by placing a url and a 'tag'), the data is stored in a database.",
     image:
       'https://raw.githubusercontent.com/fernandobouchet/my-unsplash/main/project_preview.webp',
     demo: 'https://my-unsplash-gray.vercel.app',
@@ -89,6 +100,8 @@ export const ProjectsData = [
     title: 'TOP Series',
     info_es:
       "Se utilizó la API de 'TMDB' para mostrar información de las series más populares, permite al usuario guardar sus series favoritas y las que desearía 'ver más tarde'.",
+    info_en:
+      "The 'TMDB' API was used to display information on the most popular series, allowing the user to save their favorite series and those they would like to 'watch later'.",
     image:
       'https://raw.githubusercontent.com/fernandobouchet/favSeries/main/preview.webp',
     demo: 'https://favseries.netlify.app',
@@ -100,6 +113,8 @@ export const ProjectsData = [
     title: 'OpenAI Images',
     info_es:
       "Se utiliza la API de OpenAI y su función 'Generador de imágenes', que con el modelo de sistema OpenAI DALL-E AI puede generar fácilmente imágenes personalizadas basadas en indicaciones de texto.",
+    info_en:
+      "The OpenAI API and its 'Image Generator' function is used, which with the OpenAI DALL-E AI system model can easily generate custom images based on text prompts.",
     image:
       'https://github.com/fernandobouchet/OpenAiImages/raw/main/project_preview.webp',
     demo: 'https://my-openai-images.vercel.app/',
@@ -119,6 +134,8 @@ export const ProjectsData = [
     title: 'Blog .',
     info_es:
       'Blog con una página para el "cliente", una página "CMS" para el administrador y una API rest conectada a una base de datos mongoDB.',
+    info_en:
+      'Blog with a page for the "customer", a "CMS" page for the administrator and a rest API connected to a mongoDB database.',
     image:
       'https://github.com/fernandobouchet/TOP_Blog-Client/raw/main/project_preview.webp',
     demo: 'https://blog-top.vercel.app',
