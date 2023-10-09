@@ -3,9 +3,11 @@ import ProjectsCardContainer from '@components/ProjectsCardContainer';
 import useIntersection from '../hooks/useIntersection';
 import { useContext, useRef } from 'react';
 import { ThemeContext } from '@context/ThemeContext';
+import { LanguageContext } from '@context/LanguageContext';
 
 const Projects = () => {
   const { theme } = useContext(ThemeContext);
+  const { texts } = useContext(LanguageContext);
 
   const ref = useRef(null);
 
@@ -20,10 +22,9 @@ const Projects = () => {
       ref={ref}
     >
       <div className={style.projects__container}>
-        <h2>Proyectos</h2>
+        <h2>{texts.projects.title}</h2>
         <p>
-          Estos son algunos de los proyectos en los que he estado trabajando,
-          puedes encontrar más en mi{' '}
+          {texts.projects.p1}{' '}
           <a
             className={`${style.link__text__accent} ${style[theme]}`}
             href="https://github.com/fernandobouchet"

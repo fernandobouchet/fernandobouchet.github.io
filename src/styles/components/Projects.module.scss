@@ -28,5 +28,6 @@
 
 .link__text__accent.light {
   color: variables.$accent;
+  font-weight: bold;
   @include mixins.underline-effect('light', true, 1px);
 }

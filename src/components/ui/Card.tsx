@@ -4,7 +4,8 @@ import { ThemeContext } from '@context/ThemeContext';
 import Badge from './Badge';
 import { Github } from '@components/icons';
 import LinkButton from './LinkButton';
-import useImageIsLoaded from '../../hooks/useImageIsLoaded';
+import useImageIsLoaded from '@hooks/useImageIsLoaded';
+import { LanguageContext } from '@context/LanguageContext';
 
 interface Props {
   data: {
@@ -20,6 +21,7 @@ interface Props {
 
 const Card = ({ data }: Props) => {
   const { theme } = useContext(ThemeContext);
+  const { texts } = useContext(LanguageContext);
 
   const isImageLoaded = useImageIsLoaded(data.image);
 
@@ -55,7 +57,11 @@ const Card = ({ data }: Props) => {
             />
           ))}
         </div>
-        <LinkButton className="secondary" text="Ver Demo" link={data.demo} />
+        <LinkButton
+          className="secondary"
+          text={texts.cardProjects.preview}
+          link={data.demo}
+        />
       </div>
     </div>
   );

@@ -2,10 +2,12 @@ import style from '@styles/components/ProjectsCardContainer.module.scss';
 import { ProjectsData } from '../data/ProjectsData';
 import Card from '@components/ui/Card';
 import Button from './ui/Button';
-import { useState } from 'react';
+import { useContext, useState } from 'react';
+import { LanguageContext } from '@context/LanguageContext';
 
 const ProjectsCardContainer = () => {
   const [projectsToShow, setProjectsToShow] = useState(2);
+  const { texts } = useContext(LanguageContext);
 
   return (
     <>
@@ -22,7 +24,7 @@ const ProjectsCardContainer = () => {
         <div className={style.button__wrapper}>
           <Button
             className="primary"
-            text={'Mostrar más'}
+            text={texts.projects.loadButton}
             onClick={() => setProjectsToShow(projectsToShow + 2)}
           />
         </div>

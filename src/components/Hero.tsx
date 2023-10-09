@@ -4,9 +4,11 @@ import BadgesContainer from '@components/BadgesContainer';
 import LinkButton from './ui/LinkButton';
 import useIntersection from '../hooks/useIntersection';
 import { useContext, useRef } from 'react';
+import { LanguageContext } from '@context/LanguageContext';
 
 const Hero = () => {
   const { theme } = useContext(ThemeContext);
+  const { texts } = useContext(LanguageContext);
 
   const ref = useRef(null);
 
@@ -21,32 +23,27 @@ const Hero = () => {
       ref={ref}
     >
       <div className={style.hero__container}>
-        <h1 className={style.hero__title}>Hola, Soy Fernando</h1>
+        <h1 className={style.hero__title}>{texts.about.hero}</h1>
         <p className={style.hero__text}>
-          Soy un{' '}
+          {texts.about.p1}
           <span className={`${style.hero__text__span} ${style[theme]}`}>
-            desarrollador full-stack
+            {texts.about.span1}
           </span>
-          , actualmente me encuentro finalizando mis estudios de{' '}
+          {texts.about.p2}{' '}
           <span className={`${style.hero__text__span} ${style[theme]}`}>
-            técnico universitario en programación
+            {texts.about.span2}
           </span>
-          , mientras aprendo de forma{' '}
+          {texts.about.p3}{' '}
           <span className={`${style.hero__text__span} ${style[theme]}`}>
-            autodidacta
+            {texts.about.span3}
           </span>{' '}
-          otras tecnologías. Continuamente estoy creando y colaborando en
-          proyectos para mejorar mis habilidades. Busco mi primera experiencia
-          profesional en el mundo IT. Estas hay algunas tecnologías con las que
-          he estado trabajando recientemente:
+          {texts.about.p4}{' '}
         </p>
         <BadgesContainer />
         <LinkButton
           className="primary"
-          text="Obtener CV"
-          link={
-            'https://drive.google.com/file/d/1LlCYRFeAQ5b2uRnIuw4_nVFK9MMpEwCV/view?usp=sharing'
-          }
+          text={texts.about.resumeButton}
+          link={texts.about.resumeLink}
         />
       </div>
     </div>

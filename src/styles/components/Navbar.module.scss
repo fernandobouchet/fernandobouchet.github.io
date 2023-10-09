@@ -31,6 +31,9 @@
 
 .header__nav_list__options {
   margin: 0;
+  li {
+    display: flex;
+  }
 }
 
 //.header__nav__list_item {

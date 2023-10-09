@@ -2,9 +2,12 @@ import style from '@styles/components/Navbar.module.scss';
 import { useContext } from 'react';
 import { ThemeContext } from '@context/ThemeContext';
 import ThemeButton from '@components/ui/ThemeButton';
+import LanguageButton from '@components/ui/LanguageButton';
+import { LanguageContext } from '@context/LanguageContext';
 
 const Navbar = () => {
   const { theme } = useContext(ThemeContext);
+  const { texts } = useContext(LanguageContext);
 
   return (
     <header className={`${style.header} ${style[theme]}`}>
@@ -15,7 +18,7 @@ const Navbar = () => {
               className={`${style.header__nav__list__item_anchor}`}
               href="#about"
             >
-              SOBRE MÍ
+              {texts.navbar.about}
             </a>
           </li>
           <li className={`${style.header__nav__list_item}`}>
@@ -23,7 +26,7 @@ const Navbar = () => {
               className={`${style.header__nav__list__item_anchor}`}
               href="#projects"
             >
-              PROYECTOS
+              {texts.navbar.projects}
             </a>
           </li>
           <li className={`${style.header__nav__list_item}`}>
@@ -31,12 +34,13 @@ const Navbar = () => {
               className={`${style.header__nav__list__item_anchor}`}
               href="#contact"
             >
-              CONTACTO
+              {texts.navbar.contact}
             </a>
           </li>
         </ul>
         <ul className={`${style.header__nav_list__options}`}>
           <li>
+            <LanguageButton />
             <ThemeButton />
           </li>
         </ul>
