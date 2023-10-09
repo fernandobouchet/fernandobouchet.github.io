@@ -9,6 +9,9 @@
   border: none;
   background-color: transparent;
   transition: all 500ms;
+  display: flex;
+  align-content: center;
+  flex-wrap: wrap;
 }
 
 .dark {
