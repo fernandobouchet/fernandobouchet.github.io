@@ -10,6 +10,7 @@ const ThemeButton = () => {
     <button
       className={`${styles.button__theme} ${styles[theme]}`}
       onClick={() => changeTheme()}
+      aria-label="Change theme button"
     >
       {theme === 'dark' ? (
         <LightMode className={`${styles.icon}`} />

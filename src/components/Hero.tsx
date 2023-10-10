@@ -44,6 +44,7 @@ const Hero = () => {
           className="primary"
           text={texts.about.resumeButton}
           link={texts.about.resumeLink}
+          description="Link to Fernando Bouchet resume"
         />
       </div>
     </div>

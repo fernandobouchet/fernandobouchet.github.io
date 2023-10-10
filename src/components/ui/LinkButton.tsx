@@ -6,9 +6,10 @@ interface Props {
   className?: string;
   text: string;
   link: string;
+  description: string;
 }
 
-const LinkButton = ({ className, text, link }: Props) => {
+const LinkButton = ({ className, text, link, description }: Props) => {
   const { theme } = useContext(ThemeContext);
 
   return (
@@ -18,6 +19,7 @@ const LinkButton = ({ className, text, link }: Props) => {
       }`}
       href={link}
       target="_blank"
+      aria-label={description}
     >
       {text}
     </a>

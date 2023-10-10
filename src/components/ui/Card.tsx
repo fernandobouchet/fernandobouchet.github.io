@@ -64,6 +64,7 @@ const Card = ({ data }: Props) => {
           className="secondary"
           text={texts.cardProjects.preview}
           link={data.demo}
+          description={`Link to deployment of the ${data.title} website`}
         />
       </div>
     </div>
