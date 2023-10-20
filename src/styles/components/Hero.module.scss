@@ -1,4 +1,4 @@
-@use '@styles/utilities/variables';
+@use "@styles/utilities/variables";
 
 .hero__container {
   display: flex;
@@ -26,6 +26,12 @@
   color: variables.$accent-dark;
 }
 
+.hero__img {
+  border-radius: 50%;
+  width: 26rem;
+  height: auto;
+}
+
 @media screen and (min-width: 769px) {
   .hero__container {
     max-width: 60%;
@@ -33,5 +39,9 @@
   .hero__title {
     font-size: 5.5rem;
     font-weight: 600;
+  }
+  .hero__img {
+    border-radius: 50%;
+    width: 30rem;
   }
 }
