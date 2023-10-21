@@ -1,5 +1,5 @@
-@use '@styles/utilities/variables';
-@use '@styles/utilities/mixins';
+@use "@styles/utilities/variables";
+@use "@styles/utilities/mixins";
 
 .header {
   position: fixed;
@@ -29,6 +29,7 @@
 }
 
 .header__nav_list__options {
+  display: flex;
   margin: 0;
   li {
     display: flex;
@@ -41,18 +42,22 @@
 .header__nav__list__item_anchor {
   text-decoration: none;
   color: inherit;
+  font-weight: bolder;
+  &::selection {
+    color: red;
+  }
 }
 
 .dark {
   @include mixins.theme(variables.$surface-dark, inherit);
   a {
-    @include mixins.underline-effect('dark', false, 1px);
+    @include mixins.underline-effect("dark", true, 2px);
   }
 }
 
 .light {
   @include mixins.theme(variables.$surface, inherit);
   a {
-    @include mixins.underline-effect('light', false, 1px);
+    @include mixins.underline-effect("light", true, 2px);
   }
 }

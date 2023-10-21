@@ -1,9 +1,9 @@
-import style from '@styles/components/Navbar.module.scss';
-import { useContext } from 'react';
-import { ThemeContext } from '@context/ThemeContext';
-import ThemeButton from '@components/ui/ThemeButton';
-import LanguageButton from '@components/ui/LanguageButton';
-import { LanguageContext } from '@context/LanguageContext';
+import style from "@styles/components/Navbar.module.scss";
+import { useContext } from "react";
+import { ThemeContext } from "@context/ThemeContext";
+import ThemeButton from "@components/ui/ThemeButton";
+import LanguageButton from "@components/ui/LanguageButton";
+import { LanguageContext } from "@context/LanguageContext";
 
 const Navbar = () => {
   const { theme } = useContext(ThemeContext);
@@ -41,6 +41,8 @@ const Navbar = () => {
         <ul className={`${style.header__nav_list__options}`}>
           <li>
             <LanguageButton />
+          </li>
+          <li>
             <ThemeButton />
           </li>
         </ul>

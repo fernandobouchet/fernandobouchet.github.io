@@ -1,11 +1,12 @@
-@use '@styles/utilities/variables';
+@use "@styles/utilities/variables";
 
 .card {
   display: flex;
   flex-direction: column;
-  border-radius: 1rem;
+  border-radius: 2rem;
   width: 100%;
   height: auto;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
 }
 
 .card__content {
@@ -35,8 +36,7 @@
 .card__image__wrapper {
   width: auto;
   height: 16.388rem;
-  border-top-left-radius: 1rem;
-  border-top-right-radius: 1rem;
+  border-radius: 2rem;
 }
 
 .card__image {
@@ -61,10 +61,7 @@
 
 .light {
   background-color: variables.$card;
-  border: 1px solid variables.$card-border;
-  .card__content {
-    border-top: 1px solid variables.$card-border;
-  }
+  //border: 1px solid variables.$card-border;
   .card__content__text {
     color: variables.$card-foreground;
   }
@@ -72,10 +69,7 @@
 
 .dark {
   background-color: variables.$card-dark;
-  border: 1px solid variables.$card-border-dark;
-  .card__content {
-    border-top: 1px solid variables.$card-border-dark;
-  }
+  // border: 1px solid variables.$card-dark;
   .card__content__text {
     color: variables.$card-foreground-dark;
   }
