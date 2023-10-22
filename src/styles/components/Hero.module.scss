@@ -29,7 +29,7 @@
 .hero__img {
   border-radius: 50%;
   width: 26rem;
-  height: auto;
+  height: 26rem;
 }
 
 @media screen and (min-width: 769px) {
@@ -43,5 +43,6 @@
   .hero__img {
     border-radius: 50%;
     width: 30rem;
+    height: 30rem;
   }
 }
