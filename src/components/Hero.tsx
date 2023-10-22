@@ -42,14 +42,14 @@ const Hero = () => {
           <span className={`${style.hero__text__span} ${style[theme]}`}>
             {texts.about.span3}
           </span>{" "}
-          {texts.about.p4}{" "}
+          {texts.about.p4} {texts.about.p5}{" "}
         </p>
         <BadgesContainer />
         <LinkButton
           className="primary"
           text={texts.about.resumeButton}
           link={texts.about.resumeLink}
-          description="Link to Fernando Bouchet resume"
+          description={texts.about.resumeLink}
         />
       </div>
     </div>
