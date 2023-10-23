@@ -1,145 +1,161 @@
 export const ProjectsData = [
   {
     id: 0,
-    title: 'Pokémon Memory Game',
+    title: "Pokémon Memory Game",
     info_es:
       "Clásico juego de memorio utilizando la API de 'PokeApi' para obtener los personajes de la famosa serie.",
     info_en:
       "Classic memory game using the 'PokeApi' API to obtain the characters from the famous series.",
     image:
-      'https://github.com/fernandobouchet/memory-game/blob/main/memory-game_preview.jpg?raw=true',
-    demo: 'https://fernandobouchet.github.io/memory-game',
-    github: 'https://github.com/fernandobouchet/memory-game',
-    techstack: ['React', 'CSS'],
+      "https://github.com/fernandobouchet/memory-game/blob/main/memory-game_preview.jpg?raw=true",
+    demo: "https://fernandobouchet.github.io/memory-game",
+    github: "https://github.com/fernandobouchet/memory-game",
+    techstack: ["React", "CSS", "API"],
   },
   {
     id: 1,
-    title: 'Taskify',
+    title: "Taskify",
     info_es: 'Simple lista de "cosas para hacer", con funciones "CRUD".',
     info_en: 'Simple "to do" list, with "CRUD" functions.',
     image:
-      'https://github.com/fernandobouchet/taskify/blob/main/taskify_preview.jpg?raw=true',
-    demo: 'https://fernandobouchet.github.io/taskify',
-    github: 'https://github.com/fernandobouchet/taskify',
-    techstack: ['React', 'Tailwind'],
+      "https://github.com/fernandobouchet/taskify/blob/main/taskify_preview.jpg?raw=true",
+    demo: "https://fernandobouchet.github.io/taskify",
+    github: "https://github.com/fernandobouchet/taskify",
+    techstack: ["React", "Tailwind"],
   },
   {
     id: 2,
-    title: 'Quizzical',
+    title: "Random Quotes",
+    info_es: "Aplicación que muestra frases conocidas de manera aleatoria.",
+    info_en: "Application that shows known phrases randomly.",
+    image:
+      "https://github.com/fernandobouchet/random-quotes/raw/main/random-quotes_preview.webp?raw=true",
+    demo: "https://fernandobouchet.github.io/random-quotes",
+    github: "https://github.com/fernandobouchet/random-quotes",
+    techstack: ["React", "Styled Components", "API"],
+  },
+  {
+    id: 3,
+    title: "Quizzical",
     info_es:
       'SPA que muestra preguntas aleatorias de peliculas usando la API de "OPEN TDB".',
     info_en: 'SPA that shows random movie questions using the "OPEN TDB" API.',
     image:
-      'https://github.com/fernandobouchet/quizzical/blob/main/quizzical_preview.jpg?raw=true',
-    demo: 'https://fernandobouchet.github.io/quizzical',
-    github: 'https://github.com/fernandobouchet/quizzical',
-    techstack: ['React', 'CSS'],
+      "https://github.com/fernandobouchet/quizzical/blob/main/quizzical_preview.jpg?raw=true",
+    demo: "https://fernandobouchet.github.io/quizzical",
+    github: "https://github.com/fernandobouchet/quizzical",
+    techstack: ["React", "CSS", "API"],
   },
   {
-    id: 3,
-    title: 'Notebook Store Arg',
+    id: 4,
+    title: "Notebook Store Arg",
     info_es:
       "SPA que muestra productos electrónicos y permite al usuario agregar productos al carrito y 'comprarlos'.",
     info_en:
       "SPA that displays electronic products and allows the user to add products to the cart and 'purchase' them.",
     image:
-      'https://github.com/fernandobouchet/notebookShop/raw/main/project_preview.jpg?raw=true',
-    demo: 'https://notebookshop.netlify.app',
-    github: 'https://github.com/fernandobouchet/notebookShop',
-    techstack: ['React', 'Bootstrap'],
-  },
-  {
-    id: 4,
-    title: 'Image Uploader',
-    info_es:
-      'Aplicación fullstack que permite subir, almacenar una imagen y obtener su url.',
-    info_en:
-      'Full stack application that allows you to upload, store an image and obtain its URL.',
-    image:
-      'https://raw.githubusercontent.com/fernandobouchet/image-uploader/main/project_preview.webp',
-    demo: 'http://image-uploader-beryl.vercel.app',
-    github: 'https://github.com/fernandobouchet/image-uploader',
-    techstack: ['React', 'Typescript', 'Express', 'MongoDB'],
+      "https://github.com/fernandobouchet/notebookShop/raw/main/project_preview.jpg?raw=true",
+    demo: "https://notebookshop.netlify.app",
+    github: "https://github.com/fernandobouchet/notebookShop",
+    techstack: ["React", "Bootstrap"],
   },
   {
     id: 5,
-    title: 'Career progress',
+    title: "Image Uploader",
     info_es:
-      'Página web creada para registrar el progreso de mi carrera universitaria.',
-    info_en: 'Website created to record the progress of my university career.',
+      "Aplicación fullstack que permite subir, almacenar una imagen y obtener su url.",
+    info_en:
+      "Full stack application that allows you to upload, store an image and obtain its URL.",
     image:
-      'https://github.com/fernandobouchet/ProgresoLicenciaturaInformatica/raw/main/progresolicenciatura_preview.webp',
-    demo: 'https://progreso-licenciatura-informatica.vercel.app',
-    github:
-      'https://github.com/fernandobouchet/ProgresoLicenciaturaInformatica',
-    techstack: ['React', 'React-router', 'Bootstrap', 'Firebase'],
+      "https://raw.githubusercontent.com/fernandobouchet/image-uploader/main/project_preview.webp",
+    demo: "http://image-uploader-beryl.vercel.app",
+    github: "https://github.com/fernandobouchet/image-uploader",
+    techstack: ["React", "Typescript", "Express", "MongoDB"],
   },
   {
     id: 6,
-    title: 'My Unsplash',
+    title: "Career progress",
+    info_es:
+      "Página web creada para registrar el progreso de mi carrera universitaria.",
+    info_en: "Website created to record the progress of my university career.",
+    image:
+      "https://github.com/fernandobouchet/ProgresoLicenciaturaInformatica/raw/main/progresolicenciatura_preview.webp",
+    demo: "https://progreso-licenciatura-informatica.vercel.app",
+    github:
+      "https://github.com/fernandobouchet/ProgresoLicenciaturaInformatica",
+    techstack: ["React", "React-router", "Bootstrap", "Firebase"],
+  },
+  {
+    id: 7,
+    title: "My Unsplash",
     info_es:
       "Aplicación donde puedes agregar imagenes (colocando una url y un 'tag'), los datos se almacenan en una base de datos.",
     info_en:
       "Application where you can add images (by placing a url and a 'tag'), the data is stored in a database.",
     image:
-      'https://raw.githubusercontent.com/fernandobouchet/my-unsplash/main/project_preview.webp',
-    demo: 'https://my-unsplash-gray.vercel.app',
-    github: 'https://github.com/fernandobouchet/my-unsplash',
+      "https://raw.githubusercontent.com/fernandobouchet/my-unsplash/main/project_preview.webp",
+    demo: "https://my-unsplash-gray.vercel.app",
+    github: "https://github.com/fernandobouchet/my-unsplash",
     techstack: [
-      'React',
-      'React-bootstrap',
-      'Typescript',
-      'React-router',
-      'Axios',
-      'Express',
-      'Mongoose',
+      "React",
+      "React-bootstrap",
+      "Typescript",
+      "React-router",
+      "Axios",
+      "Express",
+      "Mongoose",
     ],
   },
   {
-    id: 7,
-    title: 'TOP Series',
+    id: 8,
+    title: "Dev Finder",
+    info_es:
+      "Aplicación que utiliza a API de Github para poder buscar usuarios por su nombre, mostrando su información general.",
+    info_en:
+      "Application that uses the Github API to search for users by name, showing their general information.",
+    image:
+      "https://github.com/fernandobouchet/dev-finder/raw/main/dev-finder_preview.webp",
+    demo: "https://fernandobouchet.github.io/dev-finder",
+    github: "https://github.com/fernandobouchet/dev-finder",
+    techstack: ["React", "Typescript", "API"],
+  },
+  {
+    id: 9,
+    title: "TOP Series",
     info_es:
       "Se utilizó la API de 'TMDB' para mostrar información de las series más populares, permite al usuario guardar sus series favoritas y las que desearía 'ver más tarde'.",
     info_en:
       "The 'TMDB' API was used to display information on the most popular series, allowing the user to save their favorite series and those they would like to 'watch later'.",
     image:
-      'https://raw.githubusercontent.com/fernandobouchet/favSeries/main/preview.webp',
-    demo: 'https://favseries.netlify.app',
-    github: 'https://github.com/fernandobouchet/favSeries',
-    techstack: ['React', 'React-router', 'Chakra-UI', 'Axios'],
+      "https://raw.githubusercontent.com/fernandobouchet/favSeries/main/preview.webp",
+    demo: "https://favseries.netlify.app",
+    github: "https://github.com/fernandobouchet/favSeries",
+    techstack: ["React", "React-router", "Chakra-UI", "Axios", "API"],
   },
   {
-    id: 8,
-    title: 'OpenAI Images',
-    info_es:
-      "Se utiliza la API de OpenAI y su función 'Generador de imágenes', que con el modelo de sistema OpenAI DALL-E AI puede generar fácilmente imágenes personalizadas basadas en indicaciones de texto.",
-    info_en:
-      "The OpenAI API and its 'Image Generator' function is used, which with the OpenAI DALL-E AI system model can easily generate custom images based on text prompts.",
-    image:
-      'https://github.com/fernandobouchet/OpenAiImages/raw/main/project_preview.webp',
-    demo: 'https://my-openai-images.vercel.app/',
-    github: 'https://github.com/fernandobouchet/OpenAiImages',
-    techstack: [
-      'React',
-      'Typescript',
-      'OpenAI',
-      'Chakra-UI',
-      'Redux Toolkit',
-      'Axios',
-      'Express',
-    ],
-  },
-  {
-    id: 9,
-    title: 'Blog .',
+    id: 10,
+    title: "Blog .",
     info_es:
       'Blog con una página para el "cliente", una página "CMS" para el administrador y una API rest conectada a una base de datos mongoDB.',
     info_en:
       'Blog with a page for the "customer", a "CMS" page for the administrator and a rest API connected to a mongoDB database.',
     image:
-      'https://github.com/fernandobouchet/TOP_Blog-Client/raw/main/project_preview.webp',
-    demo: 'https://blog-top.vercel.app',
-    github: 'https://github.com/fernandobouchet/TOP_Blog-Client',
-    techstack: ['React', 'React-router', 'Bootstrap', 'Express', 'MongoDB'],
+      "https://github.com/fernandobouchet/TOP_Blog-Client/raw/main/project_preview.webp",
+    demo: "https://blog-top.vercel.app",
+    github: "https://github.com/fernandobouchet/TOP_Blog-Client",
+    techstack: ["React", "React-router", "Bootstrap", "Express", "MongoDB"],
+  },
+  {
+    id: 11,
+    title: "Twitter clone",
+    info_es:
+      "Aplicación web que emula la experiencia de Twitter, permitiendo a los usuarios registrarse, iniciar sesión, crear perfiles, seguir a otros usuarios y compartir tweets.",
+    info_en:
+      "Web application that emulates the Twitter experience, allowing users to register, log in, create profiles, follow other users and share tweets.",
+    image:
+      "https://github.com/fernandobouchet/s8-07-t-node-react-twitter/raw/main/project_preview.webp",
+    demo: "https://s8-07-t-node-react-twitter.vercel.app",
+    github: "https://github.com/fernandobouchet/s8-07-t-node-react-twitter",
+    techstack: ["Next Js", "Tailwind", "React-Query", "Express", "MongoDB"],
   },
 ];
