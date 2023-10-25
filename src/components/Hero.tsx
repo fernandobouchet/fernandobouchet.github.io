@@ -29,7 +29,7 @@ const Hero = () => {
           alt="Fernando Bouchet profile picture"
         ></img>
         <h1 className={style.hero__title}>{texts.about.hero}</h1>
-        <p className={style.hero__text}>
+        <p className={style.hero__text1}>
           {texts.about.p1}
           <span className={`${style.hero__text__span} ${style[theme]}`}>
             {texts.about.span1}
@@ -42,8 +42,9 @@ const Hero = () => {
           <span className={`${style.hero__text__span} ${style[theme]}`}>
             {texts.about.span3}
           </span>{" "}
-          {texts.about.p4} {texts.about.p5}{" "}
+          {texts.about.p4}{" "}
         </p>
+        <p className={style.hero__text2}> {texts.about.p5} </p>
         <BadgesContainer />
         <LinkButton
           className="primary"
