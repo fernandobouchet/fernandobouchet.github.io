@@ -34,15 +34,15 @@ const Hero = () => {
           <span className={`${style.hero__text__span} ${style[theme]}`}>
             {texts.about.span1}
           </span>
-          {texts.about.p2}{" "}
+          {texts.about.p2}
           <span className={`${style.hero__text__span} ${style[theme]}`}>
             {texts.about.span2}
           </span>
-          {texts.about.p3}{" "}
+          {texts.about.p3}
           <span className={`${style.hero__text__span} ${style[theme]}`}>
             {texts.about.span3}
-          </span>{" "}
-          {texts.about.p4}{" "}
+          </span>
+          {texts.about.p4}
         </p>
         <p className={style.hero__text2}> {texts.about.p5} </p>
         <BadgesContainer />

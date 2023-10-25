@@ -46,9 +46,9 @@ export const Translations = {
       span1: "desarrollador full-stack autodidacta",
       p2: ", actualmente cursando la ",
       span2: "licenciatura en informática",
-      p3: " y finalizando la",
+      p3: " y finalizando la ",
       span3: "tecnicatura universitaria en programación",
-      p4: ", que sirve como un paso intermedio hacia la licenciatura. Constantemente trabajo en proyectos en solitario o en equipo para mejorar y fortalecer mis habilidades. Estoy en búsqueda de mi primera experiencia profesional en IT.",
+      p4: ", que sirve como un paso intermedio hacia la licenciatura. Constantemente estoy trabajando en proyectos en solitario o en equipo para mejorar y fortalecer mis habilidades. Estoy en la búsqueda de mi primera experiencia profesional en IT.",
       p5: "Estas son algunas de las tecnologías con las que he estado trabajando recientemente:",
       resumeButton: "Obtener currículum",
       resumeLink:
