@@ -8,7 +8,7 @@ function useIntersection(ref: React.MutableRefObject<null>) {
       ([entry]) => {
         setIsIntersecting(entry.isIntersecting);
       },
-      { rootMargin: '-120px' }
+      { rootMargin: '-150px' }
     );
 
     if (ref.current) {
