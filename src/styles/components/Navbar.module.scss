@@ -1,5 +1,5 @@
-@use "@styles/utilities/variables";
-@use "@styles/utilities/mixins";
+@use '@styles/utilities/variables';
+@use '@styles/utilities/mixins';
 
 .header {
   position: fixed;
@@ -10,6 +10,9 @@
   height: 4.5rem;
   width: 100%;
   z-index: 100;
+  background: transparent !important;
+  background-color: transparent;
+  backdrop-filter: blur(15px); /* Adjust the blur amount as needed */
 }
 
 .header__nav {
@@ -51,13 +54,13 @@
 .dark {
   @include mixins.theme(variables.$surface-dark, inherit);
   a {
-    @include mixins.underline-effect("dark", true, 2px);
+    @include mixins.underline-effect('dark', true, 2px);
   }
 }
 
 .light {
   @include mixins.theme(variables.$surface, inherit);
   a {
-    @include mixins.underline-effect("light", true, 2px);
+    @include mixins.underline-effect('light', true, 2px);
   }
 }

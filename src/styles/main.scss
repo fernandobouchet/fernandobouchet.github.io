@@ -10,19 +10,28 @@ body {
 }
 
 .dark {
-  @include mixins.theme(variables.$background-dark, variables.$foreground-dark);
+  @include mixins.theme(
+    variables.$background-dark,
+    variables.$foreground-dark,
+    variables.$bg-radial-color-dark
+  );
 }
 
 .light {
-  @include mixins.theme(variables.$background, variables.$foreground);
+  @include mixins.theme(
+    variables.$background,
+    variables.$foreground,
+    variables.$bg-radial-color
+  );
 }
 
 .section__full-screen {
   height: calc(100dvh - 4.5rem);
-  margin-top: 4.5rem;
+  padding-top: 4.5rem;
   scroll-margin-top: 4.5rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  background: inherit;
 }

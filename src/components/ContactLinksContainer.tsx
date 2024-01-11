@@ -1,5 +1,5 @@
 import style from "@styles/components/ContactLinksContainer.module.scss";
-import { Email, Linkedin, Telegram, Twitter } from "@components/icons";
+import { Email, Github, Linkedin, Telegram, Twitter } from "@components/icons";
 import ContactLink from "@components/ui/ContactLink";
 
 const contactData = [
@@ -26,6 +26,12 @@ const contactData = [
     icon: <Telegram />,
     href: "https://t.me/fernandobouchet",
     description: "Link to Fernando Bouchet Telegram",
+  },
+  {
+    id: 4,
+    icon: <Github />,
+    href: "https://github.com/fernandobouchet",
+    description: "Link to Fernando Bouchet Github",
   },
 ];
 

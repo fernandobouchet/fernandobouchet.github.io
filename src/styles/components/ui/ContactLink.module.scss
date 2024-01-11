@@ -22,7 +22,7 @@
 
 .contact__icons__icon.light {
   &:hover {
-    background-color: variables.$secondary;
+    //background-color: variables.$secondary;
     svg {
       fill: variables.$secondary-foreground;
     }
@@ -33,7 +33,7 @@
   &:hover {
     background-color: variables.$secondary-dark;
     svg {
-      fill: variables.$secondary-foreground-dark;
+      fill: variables.$primary-dark;
     }
   }
 }

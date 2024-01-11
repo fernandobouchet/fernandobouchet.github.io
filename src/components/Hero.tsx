@@ -1,10 +1,10 @@
-import style from "@styles/components/Hero.module.scss";
-import { ThemeContext } from "@context/ThemeContext";
-import BadgesContainer from "@components/BadgesContainer";
-import LinkButton from "./ui/LinkButton";
-import useIntersection from "../hooks/useIntersection";
-import { useContext, useRef } from "react";
-import { LanguageContext } from "@context/LanguageContext";
+import style from '@styles/components/Hero.module.scss';
+import { ThemeContext } from '@context/ThemeContext';
+import BadgesContainer from '@components/BadgesContainer';
+import LinkButton from './ui/LinkButton';
+import useIntersection from '../hooks/useIntersection';
+import { useContext, useRef } from 'react';
+import { LanguageContext } from '@context/LanguageContext';
 
 const Hero = () => {
   const { theme } = useContext(ThemeContext);
@@ -15,14 +15,12 @@ const Hero = () => {
   const isIntersecting = useIntersection(ref);
 
   return (
-    <div
-      id="about"
-      className={`fade-in section__full-screen ${
-        isIntersecting ? "fade-in-active" : ""
-      }`}
-      ref={ref}
-    >
-      <div className={style.hero__container}>
+    <div id="about" className={`section__full-screen`} ref={ref}>
+      <div
+        className={`fade-in ${style.hero__container} ${
+          isIntersecting ? 'fade-in-active' : ''
+        }`}
+      >
         <img
           className={style.hero__img}
           src="/Profile.webp"

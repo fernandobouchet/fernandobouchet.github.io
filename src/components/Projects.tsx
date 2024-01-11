@@ -14,14 +14,12 @@ const Projects = () => {
   const isIntersecting = useIntersection(ref);
 
   return (
-    <div
-      id="projects"
-      className={`fade-in ${style.projects} ${
-        isIntersecting ? 'fade-in-active' : ''
-      }`}
-      ref={ref}
-    >
-      <div className={style.projects__container}>
+    <div id="projects" className={`${style.projects}`} ref={ref}>
+      <div
+        className={`fade-in ${style.projects__container} ${
+          isIntersecting ? 'fade-in-active' : ''
+        }`}
+      >
         <h2>{texts.projects.title}</h2>
         <p>
           {texts.projects.p1}{' '}
