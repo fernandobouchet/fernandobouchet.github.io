@@ -1,18 +1,16 @@
 @use '@styles/utilities/variables';
 
-@mixin theme($background-color, $text-color, $bg-radial-color: null) {
-  //background-color: $background-color;
+@mixin theme($background-color, $text-color, $bg-radial-color) {
   color: $text-color;
-  @if $bg-radial-color != null {
+  &.bg {
     background: radial-gradient(
       circle 500px at 50% 50%,
       ($bg-radial-color),
       ($background-color)
     );
-    background-size: cover;
-    background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: center;
+    background-size: cover;
   }
   transition: all 500ms;
 }

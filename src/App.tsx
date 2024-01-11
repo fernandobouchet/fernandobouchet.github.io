@@ -10,13 +10,16 @@ function App() {
   const { theme } = useContext(ThemeContext);
 
   return (
-    <main className={`${theme}`}>
-      <Navbar />
-      <Hero />
-      <Projects />
-      <Contact />
-      <Footer />
-    </main>
+    <>
+      <main className={`bg ${theme}`}></main>
+      <div id="main_wrapper" className={theme}>
+        <Navbar />
+        <Hero />
+        <Projects />
+        <Contact />
+        <Footer />
+      </div>
+    </>
   );
 }
 
