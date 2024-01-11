@@ -5,7 +5,7 @@
   "homepage": "https://fernandobouchet.github.io/",
   "type": "module",
   "scripts": {
-    "dev": "vite",
+    "dev": "vite --host",
     "build": "tsc && vite build",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
