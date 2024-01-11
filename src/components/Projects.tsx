@@ -14,26 +14,26 @@ const Projects = () => {
   const isIntersecting = useIntersection(ref);
 
   return (
-    <div id="projects" className={`${style.projects}`} ref={ref}>
-      <div
-        className={`fade-in ${style.projects__container} ${
-          isIntersecting ? 'fade-in-active' : ''
-        }`}
-      >
-        <h2>{texts.projects.title}</h2>
-        <p>
-          {texts.projects.p1}{' '}
-          <a
-            className={`${style.link__text__accent} ${style[theme]}`}
-            href="https://github.com/fernandobouchet"
-            target="_blank"
-          >
-            Github
-          </a>
-          .
-        </p>
-        <ProjectsCardContainer />
-      </div>
+    <div
+      id="projects"
+      className={`${style.projects} ${style.projects__container}  fade-in ${
+        isIntersecting ? 'fade-in-active' : ''
+      }`}
+      ref={ref}
+    >
+      <h2>{texts.projects.title}</h2>
+      <p>
+        {texts.projects.p1}{' '}
+        <a
+          className={`${style.link__text__accent} ${style[theme]}`}
+          href="https://github.com/fernandobouchet"
+          target="_blank"
+        >
+          Github
+        </a>
+        .
+      </p>
+      <ProjectsCardContainer />
     </div>
   );
 };
