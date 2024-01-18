@@ -1,5 +1,5 @@
-@use "@styles/utilities/variables";
-@use "@styles/utilities/mixins";
+@use '@styles/utilities/variables';
+@use '@styles/utilities/mixins';
 
 .contact__icons__icon {
   display: flex;
@@ -22,19 +22,13 @@
 
 .contact__icons__icon.light {
   &:hover {
-    //background-color: variables.$secondary;
-    svg {
-      fill: variables.$secondary-foreground;
-    }
+    background-color: variables.$secondary;
   }
 }
 
 .contact__icons__icon.dark {
   &:hover {
     background-color: variables.$secondary-dark;
-    svg {
-      fill: variables.$primary-dark;
-    }
   }
 }
 
