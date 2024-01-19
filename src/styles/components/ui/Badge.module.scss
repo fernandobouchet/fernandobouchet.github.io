@@ -1,19 +1,19 @@
-@use "@styles/utilities/variables";
-@use "@styles/utilities/mixins";
+@use '@styles/utilities/variables';
+@use '@styles/utilities/mixins';
 
 .badge {
-  padding: 0.5rem 1rem;
+  padding: 0.125rem 0.625rem;
   border-radius: 1.5rem;
   min-width: fit-content;
   font-size: 1.2rem;
 }
 
 .light {
-  @include mixins.badge("light");
+  @include mixins.badge('light');
 }
 
 .dark {
-  @include mixins.badge("dark");
+  @include mixins.badge('dark');
 }
 
 .card__content__badge {
