@@ -50,14 +50,12 @@
 }
 
 .dark {
-  @include mixins.theme(variables.$surface-dark, inherit, null);
   a {
     @include mixins.underline-effect('dark', true, 2px);
   }
 }
 
 .light {
-  @include mixins.theme(variables.$surface, inherit, null);
   a {
     @include mixins.underline-effect('light', true, 2px);
   }

@@ -3,7 +3,7 @@
 .card {
   display: flex;
   flex-direction: column;
-  border-radius: 1.5rem;
+  border-radius: 1rem;
   width: 100%;
   height: auto;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
@@ -36,7 +36,7 @@
 .card__image__wrapper {
   width: auto;
   height: 16.388rem;
-  border-radius: 1.5rem;
+  border-radius: 1rem 1rem 0 0;
 }
 
 .card__image {

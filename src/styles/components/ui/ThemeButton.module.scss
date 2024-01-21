@@ -1,4 +1,4 @@
-@use "@styles/utilities/variables";
+@use '@styles/utilities/variables';
 
 .button__theme {
   height: 2em;
@@ -15,11 +15,11 @@
 }
 
 .dark {
-  fill: variables.$surface;
+  fill: variables.$foreground-dark;
 }
 
 .light {
-  fill: variables.$surface-dark;
+  fill: variables.$foreground;
 }
 
 @media screen and (max-width: 768px) {
