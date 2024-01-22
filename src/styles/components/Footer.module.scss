@@ -15,12 +15,10 @@
   height: 1rem;
 }
 
-.footer__link.dark {
-  @include mixins.underline-effect('dark', false, 1px);
-}
-
-.footer__link.light {
-  @include mixins.underline-effect('light', false, 1px);
+.footer__link {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
 }
 
 @media screen and (min-width: 769px) {
