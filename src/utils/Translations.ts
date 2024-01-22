@@ -22,7 +22,7 @@ export const Translations = {
     projects: {
       title: 'Projects',
       p1: 'These are some of the projects I have been working on, you can find more on my',
-      loadButton: 'Show more',
+      loadButton: 'Show more projects',
     },
     contact: {
       title: 'Contact',
@@ -54,7 +54,7 @@ export const Translations = {
     projects: {
       title: 'Proyectos',
       p1: 'Estos son algunos de los proyectos en los que he estado trabajando, puedes encontrar más en mi',
-      loadButton: 'Mostrar más',
+      loadButton: 'Ver más proyectos',
     },
     contact: {
       title: 'Contacto',

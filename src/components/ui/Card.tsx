@@ -46,10 +46,18 @@ const Card = ({ data }: Props) => {
         <div className={style.card__content__title__wrapper}>
           <h3 className={style.card__content__title}>{data.title}</h3>
           <div className={style.card__links__wrapper}>
-            <a href={data.demo} target="_blank">
+            <a
+              href={data.demo}
+              target="_blank"
+              aria-label="Link to project demo"
+            >
               <Link />
             </a>
-            <a href={data.github} target="_blank">
+            <a
+              href={data.github}
+              target="_blank"
+              aria-label="Link to github repository"
+            >
               <Github />
             </a>
           </div>

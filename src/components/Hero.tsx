@@ -49,7 +49,7 @@ const Hero = () => {
         className="primary"
         text={texts.about.resumeButton}
         link={texts.about.resumeLink}
-        description={texts.about.resumeLink}
+        description={texts.about.resumeButton}
       />
     </div>
   );
