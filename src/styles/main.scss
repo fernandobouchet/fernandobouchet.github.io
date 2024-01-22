@@ -26,6 +26,7 @@ body {
   @include mixins.theme(
     variables.$background-dark,
     variables.$foreground-dark,
+    variables.$accent-dark,
     variables.$bg-radial-color-dark
   );
 }
@@ -34,6 +35,7 @@ body {
   @include mixins.theme(
     variables.$background,
     variables.$foreground,
+    variables.$accent,
     variables.$bg-radial-color
   );
 }

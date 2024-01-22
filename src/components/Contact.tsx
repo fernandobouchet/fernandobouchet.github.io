@@ -1,16 +1,12 @@
 import style from '@styles/components/Contact.module.scss';
 import useIntersection from '../hooks/useIntersection';
 import { useContext, useRef } from 'react';
-import { ThemeContext } from '@context/ThemeContext';
 import ContactLinksContainer from '@components/ContactLinksContainer';
 import { LanguageContext } from '@context/LanguageContext';
 
 const Contact = () => {
-  const { theme } = useContext(ThemeContext);
   const { texts } = useContext(LanguageContext);
-
   const ref = useRef(null);
-
   const isIntersecting = useIntersection(ref);
 
   return (
@@ -28,7 +24,7 @@ const Contact = () => {
           <br />
           {texts.contact.p2}{' '}
           <a
-            className={`${style.link__text__accent} ${style[theme]}`}
+            className={`${style.link__text__accent} color__accent`}
             href="mailto:fernandobouchet@gmail.com"
             aria-label="Fernando Bouchet email link"
           >

@@ -1,5 +1,4 @@
 import style from '@styles/components/Hero.module.scss';
-import { ThemeContext } from '@context/ThemeContext';
 import BadgesContainer from '@components/BadgesContainer';
 import LinkButton from './ui/LinkButton';
 import useIntersection from '../hooks/useIntersection';
@@ -7,11 +6,8 @@ import { useContext, useRef } from 'react';
 import { LanguageContext } from '@context/LanguageContext';
 
 const Hero = () => {
-  const { theme } = useContext(ThemeContext);
   const { texts } = useContext(LanguageContext);
-
   const ref = useRef(null);
-
   const isIntersecting = useIntersection(ref);
 
   return (
@@ -28,17 +24,17 @@ const Hero = () => {
         alt="Fernando Bouchet profile picture"
       ></img>
       <h1 className={style.hero__title}>{texts.about.hero}</h1>
-      <p className={style.hero__text1}>
+      <p className={`${style.hero__text1}`}>
         {texts.about.p1}
-        <span className={`${style.hero__text__span} ${style[theme]}`}>
+        <span className={`${style.hero__text__span} color__accent`}>
           {texts.about.span1}
         </span>
         {texts.about.p2}
-        <span className={`${style.hero__text__span} ${style[theme]}`}>
+        <span className={`${style.hero__text__span} color__accent`}>
           {texts.about.span2}
         </span>
         {texts.about.p3}
-        <span className={`${style.hero__text__span} ${style[theme]}`}>
+        <span className={`${style.hero__text__span} color__accent`}>
           {texts.about.span3}
         </span>
         {texts.about.p4}

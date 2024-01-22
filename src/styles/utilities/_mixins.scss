@@ -1,6 +1,11 @@
 @use '@styles/utilities/variables';
 
-@mixin theme($background-color, $text-color, $bg-radial-color) {
+@mixin theme(
+  $background-color,
+  $text-color,
+  $text-color-accent,
+  $bg-radial-color
+) {
   color: $text-color;
   &.bg {
     background: radial-gradient(
@@ -11,6 +16,9 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+  }
+  .color__accent {
+    color: $text-color-accent;
   }
   transition: all 500ms;
 }
@@ -54,38 +62,5 @@
   } @else {
     background-color: variables.$secondary-dark;
     color: variables.$secondary-foreground-dark;
-  }
-}
-
-@mixin underline-effect($theme, $accent, $height) {
-  text-decoration: none;
-  position: relative;
-
-  &:after {
-    bottom: 0;
-    content: '';
-    height: $height;
-    left: 0;
-    position: absolute;
-    @if ($accent) {
-      @if ($theme == 'light') {
-        background: variables.$accent;
-      } @else {
-        background: variables.$accent-dark;
-      }
-    } @else {
-      @if ($theme == 'light') {
-        background: variables.$foreground;
-      } @else {
-        background: variables.$foreground-dark;
-      }
-    }
-    transition: width 0.5s ease, left 0.5s ease;
-    width: 0;
-  }
-
-  &:hover:after {
-    width: 100%;
-    left: 0;
   }
 }

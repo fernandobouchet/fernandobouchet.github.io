@@ -1,16 +1,14 @@
 import style from '@styles/components/Navbar.module.scss';
 import { useContext } from 'react';
-import { ThemeContext } from '@context/ThemeContext';
 import ThemeButton from '@components/ui/ThemeButton';
 import LanguageButton from '@components/ui/LanguageButton';
 import { LanguageContext } from '@context/LanguageContext';
 
 const Navbar = () => {
-  const { theme } = useContext(ThemeContext);
   const { texts } = useContext(LanguageContext);
 
   return (
-    <header className={`${style.header} ${style[theme]}`}>
+    <header className={`${style.header}`}>
       <nav className={`${style.header__nav}`}>
         <ul className={`${style.header__nav_list}`}>
           <li className={`${style.header__nav__list_item}`}>

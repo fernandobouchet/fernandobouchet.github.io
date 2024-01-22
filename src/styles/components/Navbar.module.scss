@@ -1,6 +1,3 @@
-@use '@styles/utilities/variables';
-@use '@styles/utilities/mixins';
-
 .header {
   position: fixed;
   top: 0;
@@ -44,19 +41,4 @@
   text-decoration: none;
   color: inherit;
   font-weight: bolder;
-  &::selection {
-    color: red;
-  }
-}
-
-.dark {
-  a {
-    @include mixins.underline-effect('dark', true, 2px);
-  }
-}
-
-.light {
-  a {
-    @include mixins.underline-effect('light', true, 2px);
-  }
 }

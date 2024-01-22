@@ -1,16 +1,13 @@
 import style from '@styles/components/Footer.module.scss';
-import { useContext } from 'react';
-import { ThemeContext } from '@context/ThemeContext';
 import { Github } from '@components/icons';
 
 const Footer = () => {
-  const { theme } = useContext(ThemeContext);
   const text = `Fernando Bouchet - ${new Date().getFullYear()}`;
 
   return (
     <div className={style.footer__container}>
       <a
-        className={`${style.footer__link} ${style[theme]}`}
+        className={`${style.footer__link}`}
         href="https://github.com/fernandobouchet"
         target="_blank"
         aria-label={`${text} github link`}
