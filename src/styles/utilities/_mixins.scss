@@ -64,3 +64,15 @@
     color: variables.$secondary-foreground-dark;
   }
 }
+
+@mixin currentSection($theme) {
+  transition: all 1s ease;
+
+  @if ($theme == 'light') {
+    background-color: variables.$secondary;
+    color: variables.$secondary-foreground;
+  } @else {
+    background-color: variables.$secondary-dark;
+    color: variables.$secondary-foreground-dark;
+  }
+}

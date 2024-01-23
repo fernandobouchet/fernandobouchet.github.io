@@ -1,22 +1,24 @@
 import style from '@styles/components/Hero.module.scss';
 import BadgesContainer from '@components/BadgesContainer';
 import LinkButton from './ui/LinkButton';
-import useIntersection from '../hooks/useIntersection';
-import { useContext, useRef } from 'react';
+import { MutableRefObject, useContext } from 'react';
 import { LanguageContext } from '@context/LanguageContext';
 
-const Hero = () => {
+interface Props {
+  sectionRef: MutableRefObject<null>;
+  intersectionSectionId: string | null;
+}
+
+const Hero = ({ sectionRef, intersectionSectionId }: Props) => {
   const { texts } = useContext(LanguageContext);
-  const ref = useRef(null);
-  const isIntersecting = useIntersection(ref);
 
   return (
     <div
       id="about"
       className={`section__full-screen fade-in ${style.hero__container} ${
-        isIntersecting ? 'fade-in-active' : ''
+        intersectionSectionId === 'about' ? 'fade-in-active' : ''
       }`}
-      ref={ref}
+      ref={sectionRef}
     >
       <img
         className={style.hero__img}

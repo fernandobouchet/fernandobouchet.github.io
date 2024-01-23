@@ -1,24 +1,32 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useState, MutableRefObject } from 'react';
 
-function useIntersection(ref: React.MutableRefObject<null>) {
-  const [isIntersecting, setIsIntersecting] = useState(false);
+function useIntersection(refs: MutableRefObject<null>[]) {
+  const [intersectionSectionId, setIntersectionSectionId] = useState<
+    null | string
+  >(null);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
-      ([entry]) => {
-        setIsIntersecting(entry.isIntersecting);
+      (entries) => {
+        const intersectingEntry = entries.find((entry) => entry.isIntersecting);
+
+        setIntersectionSectionId(
+          intersectingEntry ? intersectingEntry.target.id : null
+        );
       },
       { rootMargin: '-150px' }
     );
 
-    if (ref.current) {
-      observer.observe(ref.current);
-    }
+    refs.forEach((ref) => {
+      if (ref.current) {
+        observer.observe(ref.current);
+      }
+    });
 
     return () => observer.disconnect();
-  }, [ref]);
+  }, [refs]);
 
-  return isIntersecting;
+  return intersectionSectionId;
 }
 
 export default useIntersection;

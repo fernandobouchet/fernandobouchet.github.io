@@ -1,21 +1,23 @@
 import style from '@styles/components/Contact.module.scss';
-import useIntersection from '../hooks/useIntersection';
-import { useContext, useRef } from 'react';
+import { MutableRefObject, useContext } from 'react';
 import ContactLinksContainer from '@components/ContactLinksContainer';
 import { LanguageContext } from '@context/LanguageContext';
 
-const Contact = () => {
+interface Props {
+  sectionRef: MutableRefObject<null>;
+  intersectionSectionId: string | null;
+}
+
+const Contact = ({ sectionRef, intersectionSectionId }: Props) => {
   const { texts } = useContext(LanguageContext);
-  const ref = useRef(null);
-  const isIntersecting = useIntersection(ref);
 
   return (
     <div
       id="contact"
       className={`section__full-screen fade-in ${style.contact__container} ${
-        isIntersecting ? 'fade-in-active' : ''
+        intersectionSectionId === 'contact' ? 'fade-in-active' : ''
       }`}
-      ref={ref}
+      ref={sectionRef}
     >
       <div className={style.contact__container}>
         <h2 className={style.contact__title}>{texts.contact.title}</h2>

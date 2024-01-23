@@ -1,4 +1,6 @@
 .projects {
+  min-height: calc(100vh - 4.5rem);
+  margin-top: 4.5rem;
   scroll-margin-top: 4.5rem;
   display: flex;
   flex-direction: column;

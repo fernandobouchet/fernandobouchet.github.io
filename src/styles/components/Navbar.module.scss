@@ -1,3 +1,5 @@
+@use '@styles/utilities/mixins';
+
 .header {
   position: fixed;
   top: 0;
@@ -41,4 +43,21 @@
   text-decoration: none;
   color: inherit;
   font-weight: bolder;
+  padding: 0.5rem;
+
+  &.current {
+    border-radius: 0.5rem;
+  }
+}
+
+.light {
+  .header__nav__list__item_anchor.current {
+    @include mixins.currentSection('light');
+  }
+}
+
+.dark {
+  .header__nav__list__item_anchor.current {
+    @include mixins.currentSection('dark');
+  }
 }

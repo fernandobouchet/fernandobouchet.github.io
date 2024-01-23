@@ -1,21 +1,23 @@
 import style from '@styles/components/Projects.module.scss';
 import ProjectsCardContainer from '@components/ProjectsCardContainer';
-import useIntersection from '../hooks/useIntersection';
-import { useContext, useRef } from 'react';
+import { MutableRefObject, useContext } from 'react';
 import { LanguageContext } from '@context/LanguageContext';
 
-const Projects = () => {
+interface Props {
+  sectionRef: MutableRefObject<null>;
+  intersectionSectionId: string | null;
+}
+
+const Projects = ({ sectionRef, intersectionSectionId }: Props) => {
   const { texts } = useContext(LanguageContext);
-  const ref = useRef(null);
-  const isIntersecting = useIntersection(ref);
 
   return (
     <div
       id="projects"
       className={`${style.projects} ${style.projects__container} fade-in ${
-        isIntersecting ? 'fade-in-active' : ''
+        intersectionSectionId === 'projects' ? 'fade-in-active' : ''
       }`}
-      ref={ref}
+      ref={sectionRef}
     >
       <h2>{texts.projects.title}</h2>
       <p>

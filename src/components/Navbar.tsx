@@ -3,33 +3,45 @@ import { useContext } from 'react';
 import ThemeButton from '@components/ui/ThemeButton';
 import LanguageButton from '@components/ui/LanguageButton';
 import { LanguageContext } from '@context/LanguageContext';
+import { ThemeContext } from '@context/ThemeContext';
 
-const Navbar = () => {
+interface Props {
+  intersectionSectionId: string | null;
+}
+
+const Navbar = ({ intersectionSectionId }: Props) => {
   const { texts } = useContext(LanguageContext);
+  const { theme } = useContext(ThemeContext);
 
   return (
-    <header className={`${style.header}`}>
+    <header className={`${style.header} ${style[theme]}`}>
       <nav className={`${style.header__nav}`}>
         <ul className={`${style.header__nav_list}`}>
-          <li className={`${style.header__nav__list_item}`}>
+          <li>
             <a
-              className={`${style.header__nav__list__item_anchor}`}
+              className={`${style.header__nav__list__item_anchor}  ${
+                intersectionSectionId === 'about' ? `${style.current}` : ''
+              }`}
               href="#about"
             >
               {texts.navbar.about}
             </a>
           </li>
-          <li className={`${style.header__nav__list_item}`}>
+          <li>
             <a
-              className={`${style.header__nav__list__item_anchor}`}
+              className={`${style.header__nav__list__item_anchor} ${
+                intersectionSectionId === 'projects' ? `${style.current}` : ''
+              }`}
               href="#projects"
             >
               {texts.navbar.projects}
             </a>
           </li>
-          <li className={`${style.header__nav__list_item}`}>
+          <li>
             <a
-              className={`${style.header__nav__list__item_anchor}`}
+              className={`${style.header__nav__list__item_anchor} ${
+                intersectionSectionId === 'contact' ? `${style.current}` : ''
+              }`}
               href="#contact"
             >
               {texts.navbar.contact}
