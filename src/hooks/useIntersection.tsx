@@ -14,7 +14,7 @@ function useIntersection(refs: MutableRefObject<null>[]) {
           intersectingEntry ? intersectingEntry.target.id : null
         );
       },
-      { root: null, rootMargin: '0px', threshold: 0.3 }
+      { root: null, rootMargin: '0px', threshold: 0.5 }
     );
 
     refs.forEach((ref) => {
