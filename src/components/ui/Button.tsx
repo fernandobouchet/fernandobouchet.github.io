@@ -6,9 +6,11 @@ interface Props {
   className?: string;
   text: string;
   onClick?: () => void;
+  icon?: JSX.Element;
+  iconPosition?: 'left' | 'right';
 }
 
-const Button = ({ className, text, onClick }: Props) => {
+const Button = ({ className, text, onClick, icon, iconPosition }: Props) => {
   const { theme } = useContext(ThemeContext);
 
   return (
@@ -18,7 +20,18 @@ const Button = ({ className, text, onClick }: Props) => {
       }`}
       onClick={onClick}
     >
-      {text}
+      {icon && iconPosition === 'left' && (
+        <>
+          {icon} {text}
+        </>
+      )}
+      {!icon && <>{text}</>}
+      {icon && iconPosition === 'right' && (
+        <>
+          {text}
+          {icon}
+        </>
+      )}
     </button>
   );
 };

@@ -2,6 +2,8 @@
 @use '@styles/utilities/mixins';
 
 .button {
+  display: flex;
+  align-items: center;
   border: none;
   cursor: pointer;
   padding: 1.2rem;
