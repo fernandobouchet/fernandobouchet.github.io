@@ -31,7 +31,7 @@ const Card = ({ data }: Props) => {
         {isImageLoaded ? (
           <a href={data.demo} target="_blank" aria-label="Link to project demo">
             <div
-              className={`${style.card__image__wrapper} ${style.card__image}`}
+              className={`fadeIn ${style.card__image__wrapper} ${style.card__image}`}
               style={{ backgroundImage: `url(${data.image})` }}
             />
           </a>

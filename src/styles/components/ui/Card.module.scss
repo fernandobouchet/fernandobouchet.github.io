@@ -53,13 +53,17 @@
 
 .card__content__badge {
   .badge__text {
-    font-size: 0.1rem;
+    font-size: 1.2rem;
   }
 }
 
 .card__links__wrapper {
   display: flex;
   gap: 1rem;
+
+  a:hover {
+    transform: scale(1.1);
+  }
 }
 
 .light {
