@@ -14,7 +14,9 @@ const Projects = ({ sectionRef, intersectionSectionId }: Props) => {
   return (
     <div
       id="projects"
-      className={`${style.projects} ${style.projects__container} fade-in ${
+      className={`section__full-screen ${style.projects} ${
+        style.projects__container
+      } fade-in ${
         intersectionSectionId === 'projects' ? 'fade-in-active' : ''
       }`}
       ref={sectionRef}

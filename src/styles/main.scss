@@ -41,7 +41,7 @@ body {
 }
 
 .section__full-screen {
-  height: calc(100vh - 4.5rem);
+  height: calc(100dvh - 4.5rem);
   margin-top: 4.5rem;
   scroll-margin-top: 4.5rem;
   display: flex;

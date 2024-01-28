@@ -1,17 +1,6 @@
-.cards__container {
+.cardsCarousel__container {
+  width: 100%;
   display: flex;
   flex-direction: column;
-  gap: 3rem;
-}
-
-.button__wrapper {
-  margin-top: 2rem;
-}
-
-@media screen and (min-width: 768px) {
-  .cards__container {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 5rem;
-  }
+  align-items: center;
 }

@@ -1,4 +1,4 @@
-interface Translations {
+type Translations = {
   [key: string]: {
     navbar: {
       about: string;
@@ -31,6 +31,17 @@ interface Translations {
       p3: string;
     };
   };
-}
+};
 
-export type { Translations };
+type ProjectsData = {
+  id: number;
+  title: string;
+  info_es: string;
+  info_en: string;
+  image: string;
+  demo: string;
+  github: string;
+  techstack: string[];
+}[];
+
+export type { Translations, ProjectsData };
