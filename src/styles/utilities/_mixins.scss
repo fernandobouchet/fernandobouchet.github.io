@@ -1,22 +1,8 @@
 @use '@styles/utilities/variables';
 
-@mixin theme(
-  $background-color,
-  $text-color,
-  $text-color-accent,
-  $bg-radial-color
-) {
+@mixin theme($background-color, $text-color, $text-color-accent) {
   color: $text-color;
-  &.bg {
-    background: radial-gradient(
-      circle 500px at 50% 50%,
-      ($bg-radial-color),
-      ($background-color)
-    );
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-  }
+  background: $background-color;
   .color__accent {
     color: $text-color-accent;
   }
@@ -28,30 +14,21 @@
     @if ($variant == 'primary') {
       color: variables.$primary-foreground;
       background-color: variables.$primary;
-      &:hover {
-        background-color: variables.$primary-hover;
-      }
     } @else {
       color: variables.$secondary-foreground;
       background-color: variables.$secondary;
-      &:hover {
-        background-color: variables.$secondary-hover;
-      }
     }
   } @else {
     @if ($variant == 'primary') {
       color: variables.$primary-foreground-dark;
       background-color: variables.$primary-dark;
-      &:hover {
-        background-color: variables.$primary-hover-dark;
-      }
     } @else {
       color: variables.$secondary-foreground-dark;
       background-color: variables.$secondary-dark;
-      &:hover {
-        background-color: variables.$secondary-hover-dark;
-      }
     }
+  }
+  &:hover {
+    opacity: 0.9;
   }
 }
 

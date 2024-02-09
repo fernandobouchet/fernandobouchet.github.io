@@ -9,14 +9,7 @@ body {
   font-family: 'Open Sans', sans-serif;
 }
 
-.bg {
-  position: fixed;
-  height: 100vh;
-  width: 100vw;
-}
-
 #main_wrapper {
-  position: absolute;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -26,8 +19,7 @@ body {
   @include mixins.theme(
     variables.$background-dark,
     variables.$foreground-dark,
-    variables.$accent-dark,
-    variables.$bg-radial-color-dark
+    variables.$accent-dark
   );
 }
 
@@ -35,8 +27,7 @@ body {
   @include mixins.theme(
     variables.$background,
     variables.$foreground,
-    variables.$accent,
-    variables.$bg-radial-color
+    variables.$accent
   );
 }
 

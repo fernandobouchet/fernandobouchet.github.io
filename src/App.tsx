@@ -16,22 +16,19 @@ function App() {
   const intersectionSectionId = useIntersection([ref1, ref2, ref3]);
 
   return (
-    <>
-      <main className={`bg ${theme}`}></main>
-      <div id="main_wrapper" className={theme}>
-        <Navbar intersectionSectionId={intersectionSectionId} />
-        <Hero sectionRef={ref1} intersectionSectionId={intersectionSectionId} />
-        <Projects
-          sectionRef={ref2}
-          intersectionSectionId={intersectionSectionId}
-        />
-        <Contact
-          sectionRef={ref3}
-          intersectionSectionId={intersectionSectionId}
-        />
-        <Footer />
-      </div>
-    </>
+    <div id="main_wrapper" className={theme}>
+      <Navbar intersectionSectionId={intersectionSectionId} />
+      <Hero sectionRef={ref1} intersectionSectionId={intersectionSectionId} />
+      <Projects
+        sectionRef={ref2}
+        intersectionSectionId={intersectionSectionId}
+      />
+      <Contact
+        sectionRef={ref3}
+        intersectionSectionId={intersectionSectionId}
+      />
+      <Footer />
+    </div>
   );
 }
 
