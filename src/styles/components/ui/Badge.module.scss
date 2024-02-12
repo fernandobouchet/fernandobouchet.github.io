@@ -19,11 +19,20 @@
   font-size: 1.2rem;
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (max-width: 640px) {
   .badge {
-    font-size: 1.4rem;
+    font-size: clamp(1rem, 3vw, 1.2rem);
   }
   .card__content__badge {
-    font-size: 1.2rem;
+    font-size: clamp(1.2rem, 3vw, 1.4rem);
+  }
+}
+
+@media screen and (min-width: 641px) {
+  .badge {
+    font-size: clamp(1.2rem, 3.5vw, 1.4rem);
+  }
+  .card__content__badge {
+    font-size: clamp(1.2rem, 3.5vw, 1.4rem);
   }
 }

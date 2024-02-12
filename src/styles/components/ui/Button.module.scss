@@ -11,6 +11,7 @@
   font-weight: 600;
   transition: all 200ms;
   text-align: center;
+  font-size: inherit;
 
   &:active {
     transform: scale(0.98);
@@ -31,10 +32,4 @@
 
 .secondary-dark {
   @include mixins.button('secondary', 'dark');
-}
-
-@media screen and (min-width: 769px) {
-  .button {
-    font-size: 1.6rem;
-  }
 }

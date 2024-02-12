@@ -48,6 +48,10 @@
   &.current {
     border-radius: 3rem;
   }
+
+  @media screen and (max-width: 375px) {
+    padding: 0.25rem 0.5rem;
+  }
 }
 
 .light {

@@ -7,7 +7,6 @@
 }
 
 .hero__title {
-  font-size: 3.2rem;
   font-weight: 600;
   text-align: center;
   margin: 0;
@@ -24,21 +23,20 @@
 
 .hero__img {
   border-radius: 50%;
-  width: 20rem;
-  height: 20rem;
+  width: clamp(14rem, 50vw, 20rem);
+  height: clamp(14rem, 50vw, 20rem);
 }
 
 @media screen and (min-width: 769px) {
   .hero__container {
     max-width: 60%;
   }
-  .hero__title {
-    font-size: 5.5rem;
-    font-weight: 600;
-  }
+}
+
+@media screen and (min-width: 641px) {
   .hero__img {
     border-radius: 50%;
-    width: 25rem;
-    height: 25rem;
+    width: clamp(20rem, 18vw, 25rem);
+    height: clamp(20rem, 18vw, 25rem);
   }
 }
