@@ -21,10 +21,15 @@
   text-align: center;
 }
 
+.hero__text_intermediate {
+  margin: 0;
+  text-align: center;
+}
+
 .hero__img {
   border-radius: 50%;
-  width: clamp(14rem, 50vw, 20rem);
-  height: clamp(14rem, 50vw, 20rem);
+  width: clamp(14rem, 48vw, 20rem);
+  height: clamp(14rem, 48vw, 20rem);
 }
 
 @media screen and (min-width: 769px) {

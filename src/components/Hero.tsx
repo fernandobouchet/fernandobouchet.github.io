@@ -36,12 +36,17 @@ const Hero = ({ sectionRef, intersectionSectionId }: Props) => {
           {texts.about.span2}
         </span>
         {texts.about.p3}
+      </p>
+      <p className={`${style.hero__text_intermediate}`}>
+        {texts.about.p4}
         <span className={`${style.hero__text__span} color__accent`}>
           {texts.about.span3}
         </span>
-        {texts.about.p4}
+        {texts.about.p5}
       </p>
-      <p className={style.hero__text2}> {texts.about.p5} </p>
+      {/* <p className={`${style.hero__text_intermediate}`}>{texts.about.p6}</p>
+       */}
+      <p className={style.hero__text2}> {texts.about.p7} </p>
       <BadgesContainer />
       <LinkButton
         className="primary"
