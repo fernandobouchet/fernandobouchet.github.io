@@ -13,9 +13,9 @@ const ThemeToggle = () => {
 
   if (!hasMounted)
     return (
-      <button className="p-1">
-        <IconLightMode className="w-5 md:w-6 h-auto" />
-      </button>
+      <div className="p-1">
+        <div className="w-5 md:w-6 h-auto" />
+      </div>
     );
 
   const handleClick = () => {
@@ -25,7 +25,7 @@ const ThemeToggle = () => {
   return (
     <button onClick={handleClick} className="p-1">
       {theme === "light" ? (
-        <IconDarkMode className="w-5 md:w-6 h-auto" />
+        <IconDarkMode className="w-4 md:w-5 h-auto" />
       ) : (
         <IconLightMode className="w-5 md:w-6 h-auto" />
       )}
