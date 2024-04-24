@@ -1,21 +1,14 @@
 import { ThemeToggle } from "@/components/ui/themeToggle";
+import { LanguageToggle } from "@/components/ui/languageToggle";
+import { NavItems } from "@/components/nav/navItems";
 
 const Nav = () => {
   return (
     <header>
       <nav className="w-full flex items-center">
-        <ul className="flex gap-5 text-sm md:text-base font-semibold text-foreground">
-          <li>
-            <a href="#about">ABOUT ME</a>
-          </li>
-          <li>
-            <a href="#projects">PROJECTS</a>
-          </li>
-          <li>
-            <a href="#contact">CONTACT</a>
-          </li>
-        </ul>
-        <div className="ml-auto">
+        <NavItems />
+        <div className="flex items-center gap-1 ml-auto">
+          <LanguageToggle />
           <ThemeToggle />
         </div>
       </nav>
