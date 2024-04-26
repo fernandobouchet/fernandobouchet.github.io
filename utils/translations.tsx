@@ -31,7 +31,7 @@ export const translations = {
       title: "Contact",
       p1: "Thank you for your interest in getting in touch!",
       p2: "The best way to contact me is through my email address:",
-      p3: ", you can also find me on the following social media platforms, I will try to respond as soon as possible!",
+      p3: ", I will get back to you as soon as possible!",
     },
   },
   ES: {
@@ -64,9 +64,9 @@ export const translations = {
     },
     contact: {
       title: "Contacto",
-      p1: "Gracias por su interés en ponerse en contacto!",
+      p1: "Gracias por tu interés en ponerte en contacto!",
       p2: "La mejor manera de contactarme es a través de mi dirección de correo electrónico:",
-      p3: ", también puedes encontrarme en las siguientes redes sociales, intentaré responder a la brevedad!",
+      p3: ", intentaré responder a la brevedad!",
     },
   },
 };
