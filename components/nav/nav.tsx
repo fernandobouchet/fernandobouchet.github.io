@@ -4,7 +4,7 @@ import { NavItems } from "@/components/nav/navItems";
 
 const Nav = () => {
   return (
-    <header>
+    <header className="fixed top-0 right-0 px-2 w-full flex backdrop-blur h-10">
       <nav className="w-full flex items-center">
         <NavItems />
         <div className="flex items-center gap-1 ml-auto">
