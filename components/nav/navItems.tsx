@@ -7,7 +7,7 @@ const NavItems = () => {
   const { texts } = useContext(LanguageContext);
 
   return (
-    <ul className="flex gap-3 md:gap-5 text-sm md:text-base font-semibold text-foreground">
+    <ul className="flex gap-3 md:gap-5 text-sm md:text-base font-bold text-foreground">
       <li>
         <a href="#about">{texts.navbar.about}</a>
       </li>
