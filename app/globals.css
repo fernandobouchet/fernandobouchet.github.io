@@ -26,7 +26,7 @@
     --background: #0e0e11;
     --foreground: #f4f4f5;
 
-    --accent: #116d92;
+    --accent: #1aa8e0;
 
     --primary: #083344;
     --primary-foreground: #ffffff;
@@ -44,9 +44,21 @@
 
 @layer base {
   html {
-    @apply box-border;
+    @apply box-border scroll-smooth;
   }
   body {
-    @apply m-0 p-2 max-w-7xl mx-auto bg-background text-foreground;
+    @apply m-0 max-w-7xl mx-auto bg-background text-foreground;
+  }
+  .section-container {
+    @apply flex flex-col justify-center items-center h-[100dvh] mx-auto px-2  max-w-screen-sm;
+  }
+  .section-title {
+    @apply text-2xl md:text-3xl font-semibold;
+  }
+  .section-text {
+    @apply text-sm md:text-base;
+  }
+  .link-text {
+    @apply text-accent font-medium relative after:absolute after:bottom-0 after:left-0 after:right-0 after:h-px after:w-full after:origin-bottom after:scale-x-0 after:bg-accent after:transition-transform after:duration-300 after:ease-[cubic-bezier(0.65_0.05_0.36_1)] hover:after:origin-bottom hover:after:scale-x-100;
   }
 }
