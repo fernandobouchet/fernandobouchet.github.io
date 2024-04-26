@@ -15,8 +15,7 @@ export const translations = {
       p4: " Passionate about full-stack development, I combine my academic training with a deep interest in  ",
       span3: "self-taught learning",
       p5: ", strengthening my skills through individual and collaborative projects.",
-      p6: " I am eager to start my first professional experience in IT.",
-      p7: "Here are some technologies I have been working with recently:",
+      p6: "Here are some technologies I have been working with recently:",
       resumeButton: "Get resume",
       resumeLink:
         "https://drive.google.com/file/d/1U6ObryGK9yXwLtXGHUxjpji0cY1MPwar/view?usp=drive_link",
@@ -50,8 +49,7 @@ export const translations = {
       p4: " Apasionado por el desarrollo full-stack, combino mi formación académica con un profundo interés en el ",
       span3: "aprendizaje autodidacta",
       p5: ", fortaleciendo mis habilidades a través de proyectos individuales y colaborativos.",
-      p6: " Estoy ansioso por comenzar mi primera experiencia profesional en IT.",
-      p7: "Estas son algunas de las tecnologías con las que he estado trabajando recientemente:",
+      p6: "Estas son algunas de las tecnologías con las que he estado trabajando recientemente:",
       resumeButton: "Obtener currículum",
       resumeLink:
         "https://drive.google.com/file/d/1LlCYRFeAQ5b2uRnIuw4_nVFK9MMpEwCV/view?usp=drive_link",
