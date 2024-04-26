@@ -11,24 +11,15 @@ const ThemeToggle = () => {
     setHasMounted(true);
   }, []);
 
-  if (!hasMounted)
-    return (
-      <div className="p-1">
-        <div className="w-5 md:w-6 h-auto" />
-      </div>
-    );
+  if (!hasMounted) return <div className="w-[18px] h-[18px] md:w-5 md:h-5" />;
 
   const handleClick = () => {
     setTheme(theme === "dark" ? "light" : "dark");
   };
 
   return (
-    <button onClick={handleClick} className="p-1">
-      {theme === "light" ? (
-        <IconDarkMode className="w-4 md:w-5 h-auto" />
-      ) : (
-        <IconLightMode className="w-5 md:w-6 h-auto" />
-      )}
+    <button onClick={handleClick} className="w-[14px] h-[14px] md:w-4 md:h-4">
+      {theme === "light" ? <IconDarkMode /> : <IconLightMode />}
     </button>
   );
 };
