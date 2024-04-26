@@ -8,7 +8,7 @@ interface Props {
 const LinkWithIcon = ({ icon, link }: Props) => {
   return (
     <a
-      className="group relative inline-flex items-center justify-center h-14 w-14 rounded-full bg-primary"
+      className="group relative inline-flex items-center justify-center h-12 w-12 md:h-14 md:w-14 rounded-full bg-primary"
       href={link}
       target="_blank"
     >

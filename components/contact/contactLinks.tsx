@@ -5,17 +5,17 @@ const links = [
   {
     id: 1,
     link: "https://www.linkedin.com/in/fernandobouchet",
-    icon: <IconLinkedin className="relative w-8 h-8 text-primary-foreground" />,
+    icon: <IconLinkedin className="link-icon" />,
   },
   {
     id: 2,
     link: "https://github.com/fernandobouchet",
-    icon: <IconGithub className="relative w-8 h-8 text-primary-foreground" />,
+    icon: <IconGithub className="link-icon" />,
   },
   {
     id: 3,
     link: "mailto:fernandobouchet@gmail.com",
-    icon: <IconMail className="relative w-8 h-8 text-primary-foreground" />,
+    icon: <IconMail className="link-icon" />,
   },
 ];
 
