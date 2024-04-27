@@ -3,6 +3,7 @@
 import { useContext } from "react";
 import { LanguageContext } from "@/context/languageContext";
 import { LinkButton } from "@/components/ui/linkButton";
+import { AboutBadgesWrapper } from "./aboutBadgesWrapper";
 
 const About = () => {
   const { texts } = useContext(LanguageContext);
@@ -20,7 +21,7 @@ const About = () => {
           alt="Fernando Bouchet profile picture"
         ></img>
       }
-      <h1 className="text-4xl md:text-5xl font-bold py-5">
+      <h1 className="text-4xl md:text-5xl font-bold py-4">
         {texts.about.hero}
       </h1>
       <p>
@@ -36,6 +37,7 @@ const About = () => {
         {texts.about.p5}
       </p>
       <p> {texts.about.p6} </p>
+      <AboutBadgesWrapper />
       <LinkButton
         text={texts.about.resumeButton}
         link={texts.about.resumeLink}
