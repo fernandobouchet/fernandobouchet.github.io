@@ -1,9 +1,11 @@
 const saveLanguage = (language: string) => {
-  localStorage.setItem("lang", JSON.stringify(language));
+  typeof window !== "undefined" &&
+    localStorage.setItem("lang", JSON.stringify(language));
 };
 
 const getSavedLanguage = () => {
-  const savedLanguage = localStorage.getItem("lang");
+  const savedLanguage =
+    typeof window !== "undefined" && localStorage.getItem("lang");
   return savedLanguage ? JSON.parse(savedLanguage) : "EN";
 };
 
