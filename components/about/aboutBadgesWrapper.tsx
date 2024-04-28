@@ -16,7 +16,7 @@ const Technologies = [
 
 const AboutBadgesWrapper = () => {
   return (
-    <div className="flex gap-2 flex-wrap w-full justify-center py-4">
+    <div className="w-full flex flex-wrap justify-center gap-1 md:gap-3 py-2 md:py-4">
       {Technologies.map((item) => (
         <Badge key={item.id} text={item.title} />
       ))}
