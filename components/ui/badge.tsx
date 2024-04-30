@@ -1,10 +1,13 @@
 interface Props {
   text: string;
+  className?: string;
 }
 
-const Badge = ({ text }: Props) => {
+const Badge = ({ text, className }: Props) => {
   return (
-    <div className="flex min-w-fit items-center gap-2 px-2 py-1 md:px-4 md:py-2 bg-tertiary text-tertiary-foreground rounded-full font-medium text-xs md:text-sm">
+    <div
+      className={`flex min-w-fit items-center gap-2 px-2 py-1 md:px-4 md:py-2 bg-tertiary text-tertiary-foreground rounded-full font-medium text-xs md:text-sm ${className}`}
+    >
       <span>{text}</span>
     </div>
   );
