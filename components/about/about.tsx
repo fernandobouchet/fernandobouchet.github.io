@@ -19,6 +19,7 @@ const About = () => {
           className="rounded-full w-48 md:w-60"
           src="profile.webp"
           alt="Fernando Bouchet profile picture"
+          loading="eager"
         ></img>
       }
       <h1 className="text-4xl md:text-5xl font-bold py-4">
