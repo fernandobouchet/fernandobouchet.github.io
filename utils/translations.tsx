@@ -23,8 +23,7 @@ export const translations = {
     projects: {
       title: "Projects",
       p1: "These are some of the projects I have been working on, you can find more on my",
-      next: "Next",
-      prev: "Prev",
+      button: "Show more",
     },
     contact: {
       title: "Contact",
@@ -57,8 +56,7 @@ export const translations = {
     projects: {
       title: "Proyectos",
       p1: "Estos son algunos de los proyectos en los que he estado trabajando, puedes encontrar más en mi",
-      next: "Siguiente",
-      prev: "Anterior",
+      button: "Mostrar más",
     },
     contact: {
       title: "Contacto",

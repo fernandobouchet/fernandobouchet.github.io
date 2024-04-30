@@ -49,6 +49,9 @@
   body {
     @apply m-0 max-w-7xl mx-auto bg-background text-foreground;
   }
+}
+
+@layer components {
   .section-container {
     @apply flex flex-col justify-center items-center h-[100dvh] mx-auto px-2 max-w-screen-md;
   }
@@ -63,5 +66,8 @@
   }
   .link-icon {
     @apply relative w-7 h-7 md:w-8 md:h-8 text-primary-foreground;
+  }
+  .link-icon-with-text {
+    @apply min-w-fit md:min-w-fit !h-8 md:!h-10 !px-4 text-primary-foreground font-semibold [&_svg]:w-4 text-sm;
   }
 }
