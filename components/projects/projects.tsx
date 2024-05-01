@@ -35,7 +35,7 @@ const Projects = () => {
         </a>
         .
       </p>
-      <div className="flex flex-col gap-4">
+      <div className="flex flex-col gap-4 pb-2">
         {projects.map((project) => (
           <CardProject key={project.id} project={project} />
         ))}
