@@ -22,7 +22,7 @@ const Projects = () => {
   };
 
   return (
-    <section id="projects" className={`section-container h-auto pt-16`}>
+    <section id="projects" className={`section-container h-auto pt-14`}>
       <h2 className="section-title">{texts.projects.title}</h2>
       <p className="text-sm md:text-base text-center py-4">
         {texts.projects.p1}{" "}
@@ -35,7 +35,7 @@ const Projects = () => {
         </a>
         .
       </p>
-      <div className="flex flex-col gap-10">
+      <div className="flex flex-col gap-4">
         {projects.map((project) => (
           <CardProject key={project.id} project={project} />
         ))}
