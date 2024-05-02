@@ -1,11 +1,11 @@
 "use client";
 
-import { useContext, useState } from "react";
+import { useContext } from "react";
 import { LanguageContext } from "@/context/languageContext";
 import { ProjectsData } from "@/utils/projectsData";
 import { CardProject } from "@/components/ui/cardProject/cardProject";
-import { Button } from "../ui/button";
 import { useIntersection } from "@/context/intersectionContext";
+import { Carousel } from "@/components/ui/carousel";
 
 const Projects = () => {
   const { texts } = useContext(LanguageContext);
@@ -13,16 +13,6 @@ const Projects = () => {
   const ref = RegisterAndObserveElement();
 
   const sortedProjects = ProjectsData.sort((a, b) => b.id - a.id);
-  const [projects, setProjects] = useState(sortedProjects.slice(0, 2));
-  const [currentProjectIndex, setCurrentProjectIndex] = useState(2);
-
-  const handleOnClick = () => {
-    setCurrentProjectIndex(currentProjectIndex + 2);
-    setProjects((prevProjects) => [
-      ...prevProjects,
-      ...sortedProjects.slice(currentProjectIndex, currentProjectIndex + 2),
-    ]);
-  };
 
   return (
     <section id="projects" className={`section-container pt-14`} ref={ref}>
@@ -38,14 +28,13 @@ const Projects = () => {
         </a>
         .
       </p>
-      <div className="flex flex-col gap-4 pb-2">
-        {projects.map((project) => (
-          <CardProject key={project.id} project={project} />
+      <Carousel options={{ loop: true }}>
+        {sortedProjects.map((project, index) => (
+          <div key={index} className="embla__slide">
+            <CardProject key={project.id} project={project} />
+          </div>
         ))}
-      </div>
-      {currentProjectIndex < sortedProjects.length && (
-        <Button onClick={handleOnClick}>{texts.projects.button}</Button>
-      )}
+      </Carousel>
     </section>
   );
 };
