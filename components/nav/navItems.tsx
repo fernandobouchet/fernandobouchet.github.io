@@ -9,7 +9,7 @@ const NavItems = () => {
   const { intersectionSectionId } = useIntersection();
 
   return (
-    <ul className="flex gap-3 md:gap-5 text-sm md:text-base font-bold text-foreground">
+    <ul className="flex gap-2 md:gap-5 text-sm md:text-base font-bold text-foreground">
       <li>
         <a
           href="#about"

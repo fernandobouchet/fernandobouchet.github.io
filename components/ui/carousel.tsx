@@ -41,7 +41,7 @@ const Carousel: React.FC<PropType> = (props) => {
   }, [emblaApi, onScroll]);
 
   return (
-    <section className="embla !max-w-xs sm:!max-w-sm md:!max-w-2xl">
+    <section className="embla !max-w-xs min-[375px]:!max-w-[25rem] md:!max-w-2xl">
       <div className="embla__viewport" ref={emblaRef}>
         <div className="embla__container">{children}</div>
       </div>
