@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <>
       <Nav />
-      <main>
+      <main id="main" className="flex flex-col items-center">
         <About />
         <Projects />
         <Contact />

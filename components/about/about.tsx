@@ -4,14 +4,18 @@ import { useContext } from "react";
 import { LanguageContext } from "@/context/languageContext";
 import { LinkButton } from "@/components/ui/linkButton";
 import { AboutBadgesWrapper } from "./aboutBadgesWrapper";
+import { useIntersection } from "@/context/intersectionContext";
 
 const About = () => {
   const { texts } = useContext(LanguageContext);
+  const { RegisterAndObserveElement } = useIntersection();
+  const ref = RegisterAndObserveElement();
 
   return (
     <section
       id="about"
       className={`section-container text-center text-sm md:text-base`}
+      ref={ref}
     >
       {
         // eslint-disable-next-line @next/next/no-img-element

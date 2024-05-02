@@ -4,6 +4,7 @@ import "./globals.css";
 import { ThemeProvider } from "next-themes";
 import { Background } from "@/components/ui/background";
 import { LanguageProvider } from "@/context/languageContext";
+import { IntersectionProvider } from "@/context/intersectionContext";
 
 const OpenSans = Open_Sans({ subsets: ["latin"] });
 
@@ -24,10 +25,12 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <body className={OpenSans.className}>
         <LanguageProvider>
-          <ThemeProvider attribute="class" defaultTheme="dark" enableSystem>
-            <Background />
-            {children}
-          </ThemeProvider>
+          <IntersectionProvider>
+            <ThemeProvider attribute="class" defaultTheme="dark" enableSystem>
+              <Background />
+              {children}
+            </ThemeProvider>
+          </IntersectionProvider>
         </LanguageProvider>
       </body>
     </html>

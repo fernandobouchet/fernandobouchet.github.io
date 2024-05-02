@@ -5,15 +5,18 @@ import { LanguageContext } from "@/context/languageContext";
 import { ProjectsData } from "@/utils/projectsData";
 import { CardProject } from "@/components/ui/cardProject/cardProject";
 import { Button } from "../ui/button";
+import { useIntersection } from "@/context/intersectionContext";
 
 const Projects = () => {
   const { texts } = useContext(LanguageContext);
+  const { RegisterAndObserveElement } = useIntersection();
+  const ref = RegisterAndObserveElement();
+
   const sortedProjects = ProjectsData.sort((a, b) => b.id - a.id);
   const [projects, setProjects] = useState(sortedProjects.slice(0, 2));
   const [currentProjectIndex, setCurrentProjectIndex] = useState(2);
 
   const handleOnClick = () => {
-    console.log("CLIDKES");
     setCurrentProjectIndex(currentProjectIndex + 2);
     setProjects((prevProjects) => [
       ...prevProjects,
@@ -22,7 +25,7 @@ const Projects = () => {
   };
 
   return (
-    <section id="projects" className={`section-container h-auto pt-14`}>
+    <section id="projects" className={`section-container pt-14`} ref={ref}>
       <h2 className="section-title">{texts.projects.title}</h2>
       <p className="text-sm md:text-base text-center py-4">
         {texts.projects.p1}{" "}
