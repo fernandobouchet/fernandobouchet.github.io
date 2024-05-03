@@ -1,7 +1,5 @@
 "use client";
 
-import { useContext } from "react";
-import { LanguageContext } from "@/context/languageContext";
 import { LinkWithIcon } from "@/components/ui/linkWithIcon";
 import { IconExternLink, IconGithub } from "@/components/icons";
 
@@ -19,25 +17,19 @@ interface Props {
 }
 
 const CardProjectLinksButtontsWrapper = ({ project }: Props) => {
-  const { language } = useContext(LanguageContext);
-
   return (
-    <div className="flex justify-around">
+    <div className="flex gap-1 ml-auto">
       <LinkWithIcon
+        className="h-8 w-8 md:h-9 md:w-9 bg-transparent"
         link={project.github}
-        icon={<IconGithub />}
-        className="link-icon-with-text"
-      >
-        {language === "ES" ? "Código" : "Source"}
-      </LinkWithIcon>
+        icon={<IconGithub className="link-icon-small" />}
+      />
 
       <LinkWithIcon
+        className="h-8 w-8 md:h-9 md:w-9 bg-transparent"
         link={project.demo}
-        className="link-icon-with-text"
-        icon={<IconExternLink />}
-      >
-        {language === "ES" ? "Vista previa" : "Preview"}
-      </LinkWithIcon>
+        icon={<IconExternLink className="link-icon-small stroke-2" />}
+      />
     </div>
   );
 };

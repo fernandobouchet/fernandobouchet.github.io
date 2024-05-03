@@ -23,7 +23,11 @@ const CardProject = ({ project }: Props) => {
 
   return (
     <div className="flex flex-col md:flex-row items-center md:items-start w-full gap-1 md:gap-4 p-2 md:even:flex-row-reverse backdrop-blur-xl bg-black/10 dark:bg-white/10 rounded-2xl group/card h-full md:h-72">
-      <div className="relative flex flex-col items-center w-full h-48 md:h-full md:w-1/2 ">
+      <a
+        className="relative flex flex-col items-center w-full h-48 md:h-full md:w-1/2"
+        href={project.demo}
+        target="_blank"
+      >
         {
           // eslint-disable-next-line @next/next/no-img-element
           <img
@@ -33,16 +37,18 @@ const CardProject = ({ project }: Props) => {
             className="object-cover object-center w-full h-48 md:h-full transition duration-500 md:scale-95 md:group-hover/card:scale-100 rounded-2xl"
           />
         }
-      </div>
+      </a>
       <div className="p-2 md:w-1/2 h-full flex flex-col">
         <div className="flex flex-col">
-          <h2 className="text-lg font-semibold">{project.title}</h2>
+          <div className="flex items-center">
+            <h2 className="text-lg font-semibold">{project.title}</h2>
+            <CardProjectLinksButtontsWrapper project={project} />
+          </div>
           <p className="text-xs md:text-sm">
             {language === "ES" ? project.info_es : project.info_en}
           </p>
         </div>
         <CardProjectTechWrapper techstack={project.techstack} />
-        <CardProjectLinksButtontsWrapper project={project} />
       </div>
     </div>
   );
