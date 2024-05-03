@@ -12,7 +12,18 @@ export const metadata: Metadata = {
   title: "Fernando Bouchet Porfolio",
   description: "Porfolio of Fernando Bouchet",
   icons: {
-    icon: "/favicon.png",
+    icon: [
+      {
+        media: "(prefers-color-scheme: light)",
+        type: "image/svg+xml",
+        url: "/favicon-light.svg",
+      },
+      {
+        media: "(prefers-color-scheme: dark)",
+        type: "image/svg+xml",
+        url: "/favicon-dark.svg",
+      },
+    ],
   },
 };
 
