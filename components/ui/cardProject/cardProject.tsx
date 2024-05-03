@@ -22,9 +22,9 @@ const CardProject = ({ project }: Props) => {
   const { language } = useContext(LanguageContext);
 
   return (
-    <div className="flex flex-col md:flex-row items-center md:items-start w-full gap-1 md:gap-4 p-2 md:even:flex-row-reverse backdrop-blur-xl bg-black/10 dark:bg-white/10 rounded-2xl group/card h-full md:h-72">
+    <div className="flex flex-col items-center w-full gap-1 md:gap-4 p-2 md:even:flex-row-reverse backdrop-blur-xl bg-black/10 dark:bg-white/10 rounded-2xl group/card h-full">
       <a
-        className="relative flex flex-col items-center w-full h-48 md:h-full md:w-3/5"
+        className="relative flex flex-col items-center w-full"
         href={project.demo}
         target="_blank"
       >
@@ -34,13 +34,13 @@ const CardProject = ({ project }: Props) => {
             src={project.image}
             alt={project.title}
             loading="lazy"
-            className="object-cover object-center w-full h-48 md:h-full transition duration-500 md:scale-95 md:group-hover/card:scale-100 rounded-2xl"
+            className="object-cover object-top w-full  h-60 transition duration-500 md:scale-95 md:group-hover/card:scale-100 rounded-2xl"
           />
         }
       </a>
-      <div className="p-2 md:w-1/2 h-full flex flex-col">
+      <div className="p-2 w-full h-full flex flex-col">
         <div className="flex flex-col">
-          <div className="flex items-center">
+          <div className="flex items-center pb-1">
             <h2 className="text-lg font-semibold">{project.title}</h2>
             <CardProjectLinksButtontsWrapper project={project} />
           </div>

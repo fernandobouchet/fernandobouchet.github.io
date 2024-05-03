@@ -15,7 +15,7 @@ const Projects = () => {
   const sortedProjects = ProjectsData.sort((a, b) => b.id - a.id);
 
   return (
-    <section id="projects" className={`section-container pt-14`} ref={ref}>
+    <section id="projects" className={`section-container`} ref={ref}>
       <h2 className="section-title">{texts.projects.title}</h2>
       <p className="text-sm md:text-base text-center py-4">
         {texts.projects.p1}{" "}

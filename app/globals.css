@@ -53,7 +53,7 @@
 
 @layer components {
   .section-container {
-    @apply flex flex-col justify-center items-center h-screen px-2 max-w-screen-md;
+    @apply flex flex-col justify-center items-center h-[calc(100vh-2.5rem)] scroll-mt-10 mt-10 px-2 max-w-screen-md;
   }
   .section-title {
     @apply text-2xl md:text-3xl font-semibold;
@@ -68,7 +68,7 @@
     @apply relative w-7 h-7 md:w-8 md:h-8 text-primary-foreground;
   }
   .link-icon-small {
-    @apply relative w-5 h-5 md:w-5 md:h-5 text-primary-foreground;
+    @apply relative w-4 h-4 md:w-5 md:h-5 text-primary-foreground;
   }
   .link-icon-with-text {
     @apply min-w-fit md:min-w-fit !h-8 md:!h-10 !px-4 text-primary-foreground font-semibold [&_svg]:w-4 text-sm;

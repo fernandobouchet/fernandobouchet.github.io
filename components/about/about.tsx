@@ -20,7 +20,7 @@ const About = () => {
       {
         // eslint-disable-next-line @next/next/no-img-element
         <img
-          className="rounded-full w-48 md:w-60"
+          className="rounded-full w-48 md:w-56"
           src="profile.webp"
           alt="Fernando Bouchet profile picture"
           loading="eager"
