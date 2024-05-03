@@ -1,9 +1,4 @@
-import React, {
-  PropsWithChildren,
-  useCallback,
-  useEffect,
-  useState,
-} from "react";
+import { PropsWithChildren, useCallback, useEffect, useState } from "react";
 import { EmblaCarouselType } from "embla-carousel";
 import { IconNext, IconPrev } from "@/components/icons";
 
@@ -63,11 +58,11 @@ export const PrevButton: React.FC<PropType> = (props) => {
 
   return (
     <button
-      className="embla__button embla__button--prev"
+      className=" appearance-none bg-transparent touch-manipulation border-0 p-0 m-0 cursor-pointer w-14 h-14 z-[1] rounded-[50%] flex items-center justify-center"
       type="button"
       {...restProps}
     >
-      <IconPrev className="embla__button__svg" />
+      <IconPrev className="w- w-2/6 h-2/6" />
       {children}
     </button>
   );
@@ -78,11 +73,11 @@ export const NextButton: React.FC<PropType> = (props) => {
 
   return (
     <button
-      className="embla__button embla__button--next"
+      className=" appearance-none bg-transparent touch-manipulation no-underline border-0 p-0 m-0 cursor-pointer w-14 h-14 z-[1] rounded-[50%] flex items-center justify-center"
       type="button"
       {...restProps}
     >
-      <IconNext className="embla__button__svg" />
+      <IconNext className="w- w-2/6 h-2/6" />
       {children}
     </button>
   );

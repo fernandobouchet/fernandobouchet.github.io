@@ -5,7 +5,7 @@ import { LanguageContext } from "@/context/languageContext";
 import { ProjectsData } from "@/utils/projectsData";
 import { CardProject } from "@/components/ui/cardProject/cardProject";
 import { useIntersection } from "@/context/intersectionContext";
-import { Carousel } from "@/components/ui/carousel";
+import { Carousel } from "@/components/ui/carousel/carousel";
 
 const Projects = () => {
   const { texts } = useContext(LanguageContext);
@@ -30,7 +30,7 @@ const Projects = () => {
       </p>
       <Carousel options={{ loop: true }}>
         {sortedProjects.map((project, index) => (
-          <div key={index} className="embla__slide">
+          <div key={index} className="carousel_slide">
             <CardProject key={project.id} project={project} />
           </div>
         ))}
