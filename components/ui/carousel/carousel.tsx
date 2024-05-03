@@ -20,7 +20,7 @@ type PropType = {
 const Carousel: React.FC<PropType> = (props) => {
   const { children, options } = props;
   const [emblaRef, emblaApi] = useEmblaCarousel(options, [
-    Autoplay({ delay: 3000 }),
+    Autoplay({ delay: 3000, stopOnInteraction: false, stopOnMouseEnter: true }),
   ]);
   const { selectedSnap, snapCount } = useSelectedSnapDisplay(emblaApi);
 

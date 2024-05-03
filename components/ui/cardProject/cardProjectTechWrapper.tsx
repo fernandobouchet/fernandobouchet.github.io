@@ -6,7 +6,7 @@ interface Props {
 
 const CardProjectTechWrapper = ({ techstack }: Props) => {
   return (
-    <div className="flex flex-wrap py-4 md:py-2 my-auto gap-2 justify-center">
+    <div className="flex flex-wrap py-2 mt-auto gap-2 justify-center">
       {techstack.map((tech, index) => (
         <Badge
           key={index}
