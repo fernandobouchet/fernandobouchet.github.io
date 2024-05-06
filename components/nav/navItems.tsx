@@ -14,7 +14,9 @@ const NavItems = () => {
         <a
           href="#about"
           className={`py-1 px-2 rounded-full ${
-            intersectionSectionId === "about" && "bg-card text-card-foreground"
+            intersectionSectionId === "about"
+              ? "bg-card text-card-foreground"
+              : ""
           }`}
         >
           {texts.navbar.about}
@@ -24,8 +26,9 @@ const NavItems = () => {
         <a
           href="#projects"
           className={`py-1 px-2 rounded-full ${
-            intersectionSectionId === "projects" &&
-            "bg-card text-card-foreground"
+            intersectionSectionId === "projects"
+              ? "bg-card text-card-foreground"
+              : ""
           }`}
         >
           {texts.navbar.projects}
@@ -35,8 +38,9 @@ const NavItems = () => {
         <a
           href="#contact"
           className={`py-1 px-2 rounded-full ${
-            intersectionSectionId === "contact" &&
-            "bg-card text-card-foreground"
+            intersectionSectionId === "contact"
+              ? "bg-card text-card-foreground"
+              : ""
           }`}
         >
           {texts.navbar.contact}
