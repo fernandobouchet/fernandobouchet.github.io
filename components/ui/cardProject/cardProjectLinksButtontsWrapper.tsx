@@ -18,7 +18,7 @@ interface Props {
 
 const CardProjectLinksButtontsWrapper = ({ project }: Props) => {
   return (
-    <div className="flex gap-1 ml-auto">
+    <div className="flex items-center gap-1 ml-auto">
       <LinkWithIcon
         className="h-8 w-8 md:h-9 md:w-9 bg-transparent"
         link={project.github}
@@ -28,7 +28,7 @@ const CardProjectLinksButtontsWrapper = ({ project }: Props) => {
       <LinkWithIcon
         className="h-8 w-8 md:h-9 md:w-9 bg-transparent"
         link={project.demo}
-        icon={<IconExternLink className="link-icon-small stroke-2" />}
+        icon={<IconExternLink className="link-icon-small" />}
       />
     </div>
   );
