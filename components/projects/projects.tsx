@@ -6,6 +6,8 @@ import { ProjectsData } from "@/utils/projectsData";
 import { CardProject } from "@/components/ui/cardProject/cardProject";
 import { useIntersection } from "@/context/intersectionContext";
 import { Carousel } from "@/components/ui/carousel/carousel";
+import { motion } from "framer-motion";
+import { mainSectionAnimation } from "@/utils/motionContants";
 
 const Projects = () => {
   const { texts } = useContext(LanguageContext);
@@ -15,7 +17,12 @@ const Projects = () => {
   const sortedProjects = ProjectsData.sort((a, b) => b.id - a.id);
 
   return (
-    <section id="projects" className={`section-container`} ref={ref}>
+    <motion.section
+      id="projects"
+      className={`section-container`}
+      ref={ref}
+      {...mainSectionAnimation}
+    >
       <h2 className="section-title">{texts.projects.title}</h2>
       <p className="text-sm md:text-base text-center py-4">
         {texts.projects.p1}{" "}
@@ -35,7 +42,7 @@ const Projects = () => {
           </div>
         ))}
       </Carousel>
-    </section>
+    </motion.section>
   );
 };
 

@@ -4,6 +4,8 @@ import { useContext } from "react";
 import { LanguageContext } from "@/context/languageContext";
 import { ContactLinks } from "@/components/contact/contactLinks";
 import { useIntersection } from "@/context/intersectionContext";
+import { motion } from "framer-motion";
+import { mainSectionAnimation } from "@/utils/motionContants";
 
 const Contact = () => {
   const { texts } = useContext(LanguageContext);
@@ -11,7 +13,12 @@ const Contact = () => {
   const ref = RegisterAndObserveElement();
 
   return (
-    <section id="contact" className={`section-container`} ref={ref}>
+    <motion.section
+      id="contact"
+      className={`section-container`}
+      ref={ref}
+      {...mainSectionAnimation}
+    >
       <h2 className="section-title">{texts.contact.title}</h2>
       <div className="text-center">
         <p className="section-text">{texts.contact.p1}</p>
@@ -24,7 +31,7 @@ const Contact = () => {
         </p>
       </div>
       <ContactLinks />
-    </section>
+    </motion.section>
   );
 };
 

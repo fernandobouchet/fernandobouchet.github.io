@@ -5,6 +5,8 @@ import { LanguageContext } from "@/context/languageContext";
 import { LinkButton } from "@/components/ui/linkButton";
 import { AboutBadgesWrapper } from "./aboutBadgesWrapper";
 import { useIntersection } from "@/context/intersectionContext";
+import { motion } from "framer-motion";
+import { mainSectionAnimation } from "@/utils/motionContants";
 
 const About = () => {
   const { texts } = useContext(LanguageContext);
@@ -12,10 +14,11 @@ const About = () => {
   const ref = RegisterAndObserveElement();
 
   return (
-    <section
+    <motion.section
       id="about"
       className={`section-container text-center text-sm md:text-base`}
       ref={ref}
+      {...mainSectionAnimation}
     >
       {
         // eslint-disable-next-line @next/next/no-img-element
@@ -47,7 +50,7 @@ const About = () => {
         text={texts.about.resumeButton}
         link={texts.about.resumeLink}
       />
-    </section>
+    </motion.section>
   );
 };
 
