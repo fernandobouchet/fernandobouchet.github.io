@@ -20,7 +20,7 @@ const Contact = () => {
       {...mainSectionAnimation}
     >
       <h2 className="section-title">{texts.contact.title}</h2>
-      <div className="text-center">
+      <div className="text-center py-4">
         <p className="section-text">{texts.contact.p1}</p>
         <p className="section-text">
           {texts.contact.p2}{" "}

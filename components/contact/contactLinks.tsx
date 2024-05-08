@@ -1,5 +1,10 @@
+import { motion } from "framer-motion";
 import { IconGithub, IconLinkedin, IconMail } from "../icons";
 import { LinkWithIcon } from "../ui/linkWithIcon";
+import {
+  listContainerAnimation,
+  listItemAnimation,
+} from "@/utils/motionContants";
 
 const links = [
   {
@@ -21,11 +26,19 @@ const links = [
 
 const ContactLinks = () => {
   return (
-    <div className="w-full flex justify-center gap-10 py-5">
+    <motion.ul
+      className="w-full flex justify-center gap-10 py-5"
+      variants={listContainerAnimation}
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: false }}
+    >
       {links.map((link) => (
-        <LinkWithIcon key={link.id} link={link.link} icon={link.icon} />
+        <motion.li key={link.id} variants={listItemAnimation}>
+          <LinkWithIcon link={link.link} icon={link.icon} />
+        </motion.li>
       ))}
-    </div>
+    </motion.ul>
   );
 };
 

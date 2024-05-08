@@ -1,9 +1,4 @@
-import { motion } from "framer-motion";
 import { Badge } from "@/components/ui/badge";
-import {
-  listContainerAnimation,
-  listItemAnimation,
-} from "@/utils/motionContants";
 
 const Technologies = [
   { id: 0, title: "HTML" },
@@ -21,18 +16,11 @@ const Technologies = [
 
 const AboutBadgesWrapper = () => {
   return (
-    <motion.ul
-      className="w-full flex flex-wrap justify-center gap-1 md:gap-3 py-2 md:py-4"
-      variants={listContainerAnimation}
-      initial="hidden"
-      animate="visible"
-    >
+    <div className="w-full flex flex-wrap justify-center gap-1 md:gap-3 py-2 md:py-4">
       {Technologies.map((item) => (
-        <motion.li key={item.id} variants={listItemAnimation}>
-          <Badge text={item.title} />
-        </motion.li>
+        <Badge key={item.id} text={item.title} />
       ))}
-    </motion.ul>
+    </div>
   );
 };
 
