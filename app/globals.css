@@ -56,13 +56,13 @@
     @apply flex flex-col justify-center items-center h-[calc(100vh-2.5rem)] scroll-mt-10 mt-10 px-2 max-w-screen-md;
   }
   .section-title {
-    @apply text-2xl md:text-3xl font-semibold;
+    @apply text-2xl md:text-3xl font-bold;
   }
   .section-text {
     @apply text-sm md:text-base;
   }
   .link-text {
-    @apply text-accent font-medium relative after:absolute after:bottom-0 after:left-0 after:right-0 after:h-px after:w-full after:origin-bottom after:scale-x-0 after:bg-accent after:transition-transform after:duration-300 after:ease-[cubic-bezier(0.65_0.05_0.36_1)] hover:after:origin-bottom hover:after:scale-x-100;
+    @apply text-accent font-semibold relative after:absolute after:bottom-0 after:left-0 after:right-0 after:h-px after:w-full after:origin-bottom after:scale-x-0 after:bg-accent after:transition-transform after:duration-300 after:ease-[cubic-bezier(0.65_0.05_0.36_1)] hover:after:origin-bottom hover:after:scale-x-100;
   }
   .link-icon {
     @apply relative w-7 h-7 md:w-8 md:h-8 text-primary-foreground;
