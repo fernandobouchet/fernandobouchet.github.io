@@ -16,10 +16,24 @@ const Technologies = [
 
 const AboutBadgesWrapper = () => {
   return (
-    <div className="w-full flex flex-wrap justify-center gap-1 md:gap-3 py-2 md:py-4">
-      {Technologies.map((item) => (
-        <Badge key={item.id} text={item.title} />
-      ))}
+    <div className="max-w-xs md:max-w-md lg:max-w-lg inline-flex flex-nowrap overflow-hidden [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-200px),transparent_100%)] py-4">
+      <ul className="flex items-center justify-center md:justify-start animate-infinite-scroll">
+        {Technologies.map((item) => (
+          <li className="mx-4" key={item.id}>
+            <Badge key={item.id} text={item.title} className="bg-transparent" />
+          </li>
+        ))}
+      </ul>
+      <ul
+        className="flex items-center justify-center md:justify-start animate-infinite-scroll"
+        aria-hidden="true"
+      >
+        {Technologies.map((item) => (
+          <li className="mx-4" key={item.id}>
+            <Badge key={item.id} text={item.title} className="bg-transparent" />
+          </li>
+        ))}
+      </ul>
     </div>
   );
 };

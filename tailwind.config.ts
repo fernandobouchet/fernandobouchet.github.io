@@ -35,6 +35,7 @@ const config: Config = {
     },
     animation: {
       "zoom-in": "zoom-in 0.6s ease-out",
+      "infinite-scroll": "infinite-scroll 25s linear infinite",
     },
     "zoom-in": {
       "0%": {
@@ -44,6 +45,12 @@ const config: Config = {
       "100%": {
         opacity: "1",
         transform: "scale(1)",
+      },
+    },
+    keyframes: {
+      "infinite-scroll": {
+        from: { transform: "translateX(0)" },
+        to: { transform: "translateX(-100%)" },
       },
     },
   },
