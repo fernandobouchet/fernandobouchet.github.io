@@ -11,16 +11,19 @@ const links = [
     id: 1,
     link: "https://www.linkedin.com/in/fernandobouchet",
     icon: <IconLinkedin className="link-icon" />,
+    name: "Linkedin",
   },
   {
     id: 2,
     link: "https://github.com/fernandobouchet",
     icon: <IconGithub className="link-icon" />,
+    name: "Github",
   },
   {
     id: 3,
     link: "mailto:fernandobouchet@gmail.com",
     icon: <IconMail className="link-icon" />,
+    name: "Email",
   },
 ];
 
@@ -34,8 +37,13 @@ const ContactLinks = () => {
       viewport={{ once: false }}
     >
       {links.map((link) => (
-        <motion.li key={link.id} variants={listItemAnimation}>
+        <motion.li
+          className="flex flex-col items-center gap-1"
+          key={link.id}
+          variants={listItemAnimation}
+        >
           <LinkWithIcon link={link.link} icon={link.icon} />
+          <span className="font-medium text-xs md:text-sm">{link.name}</span>
         </motion.li>
       ))}
     </motion.ul>
