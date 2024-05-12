@@ -22,7 +22,7 @@ const CardProject = ({ project }: Props) => {
   const { language } = useContext(LanguageContext);
 
   return (
-    <div className="flex flex-col items-center w-full gap-1 md:gap-4 p-2 md:even:flex-row-reverse backdrop-blur-xl bg-black/10 dark:bg-white/10 rounded-2xl group/card h-full">
+    <div className="flex flex-col items-center w-full gap-1 md:gap-4 p-2 md:even:flex-row-reverse backdrop-blur-xl bg-black/5 dark:bg-white/5 rounded-2xl group/card h-full">
       <a
         className="relative flex flex-col items-center w-full"
         href={project.demo}

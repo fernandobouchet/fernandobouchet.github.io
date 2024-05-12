@@ -19,17 +19,18 @@ interface Props {
 const CardProjectLinksButtontsWrapper = ({ project }: Props) => {
   return (
     <div className="flex items-center gap-1 ml-auto">
-      <LinkWithIcon
-        className="h-8 w-8 md:h-9 md:w-9 bg-transparent"
-        link={project.github}
-        icon={<IconGithub className="link-icon-small" />}
-      />
-
-      <LinkWithIcon
-        className="h-8 w-8 md:h-9 md:w-9 bg-transparent"
-        link={project.demo}
-        icon={<IconExternLink className="link-icon-small" />}
-      />
+      <a
+        className="flex items-center justify-center h-8 w-8 md:h-9 md:w-9 bg-transparent rounded-full transition ease-in hover:bg-tertiary hover:scale-110"
+        href={project.github}
+      >
+        {<IconGithub className="link-icon-small" />}
+      </a>
+      <a
+        className="flex items-center justify-center h-8 w-8 md:h-9 md:w-9 bg-transparent rounded-full transition ease-in hover:bg-tertiary hover:scale-110"
+        href={project.github}
+      >
+        {<IconExternLink className="link-icon-small" />}
+      </a>
     </div>
   );
 };
