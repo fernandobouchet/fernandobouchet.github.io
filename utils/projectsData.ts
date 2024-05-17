@@ -10,7 +10,7 @@ export const ProjectsData = [
       "https://github.com/fernandobouchet/memory-game/blob/main/memory-game_preview.jpg?raw=true",
     demo: "https://fernandobouchet.github.io/memory-game",
     github: "https://github.com/fernandobouchet/memory-game",
-    techstack: ["React", "CSS", "API"],
+    techstack: ["React", "Css"],
   },
   {
     id: 1,
@@ -21,7 +21,7 @@ export const ProjectsData = [
       "https://github.com/fernandobouchet/taskify/blob/main/taskify_preview.jpg?raw=true",
     demo: "https://fernandobouchet.github.io/taskify",
     github: "https://github.com/fernandobouchet/taskify",
-    techstack: ["React", "Tailwind"],
+    techstack: ["React", "Tailwind", "Typescript"],
   },
   {
     id: 2,
@@ -32,7 +32,7 @@ export const ProjectsData = [
       "https://github.com/fernandobouchet/random-quotes/raw/main/random-quotes_preview.webp?raw=true",
     demo: "https://fernandobouchet.github.io/random-quotes",
     github: "https://github.com/fernandobouchet/random-quotes",
-    techstack: ["React", "Styled Components", "API"],
+    techstack: ["React", "StyledComponents"],
   },
   {
     id: 3,
@@ -44,7 +44,7 @@ export const ProjectsData = [
       "https://github.com/fernandobouchet/quizzical/blob/main/quizzical_preview.jpg?raw=true",
     demo: "https://fernandobouchet.github.io/quizzical",
     github: "https://github.com/fernandobouchet/quizzical",
-    techstack: ["React", "CSS", "API"],
+    techstack: ["React", "Css"],
   },
   {
     id: 4,
@@ -70,7 +70,7 @@ export const ProjectsData = [
       "https://raw.githubusercontent.com/fernandobouchet/image-uploader/main/project_preview.webp",
     demo: "http://image-uploader-beryl.vercel.app",
     github: "https://github.com/fernandobouchet/image-uploader",
-    techstack: ["React", "Typescript", "Express", "MongoDB"],
+    techstack: ["React", "Typescript", "Express", "Mongo"],
   },
   {
     id: 6,
@@ -83,7 +83,14 @@ export const ProjectsData = [
     demo: "https://progreso-licenciatura-informatica.vercel.app",
     github:
       "https://github.com/fernandobouchet/ProgresoLicenciaturaInformatica",
-    techstack: ["React", "React-router", "Bootstrap", "Firebase"],
+    techstack: [
+      "React",
+      "ReactRouter",
+      "Bootstrap",
+      "Firebase",
+      "ReactRouter",
+      "StyledComponents",
+    ],
   },
   {
     id: 7,
@@ -98,12 +105,11 @@ export const ProjectsData = [
     github: "https://github.com/fernandobouchet/my-unsplash",
     techstack: [
       "React",
-      "React-bootstrap",
+      "Bootstrap",
       "Typescript",
-      "React-router",
-      "Axios",
+      "ReactRouter",
       "Express",
-      "Mongoose",
+      "Mongo",
     ],
   },
   {
@@ -117,7 +123,7 @@ export const ProjectsData = [
       "https://github.com/fernandobouchet/dev-finder/raw/main/dev-finder_preview.webp",
     demo: "https://fernandobouchet.github.io/dev-finder",
     github: "https://github.com/fernandobouchet/dev-finder",
-    techstack: ["React", "Typescript", "API"],
+    techstack: ["React", "Css"],
   },
   {
     id: 9,
@@ -130,7 +136,7 @@ export const ProjectsData = [
       "https://raw.githubusercontent.com/fernandobouchet/favSeries/main/preview.webp",
     demo: "https://favseries.netlify.app",
     github: "https://github.com/fernandobouchet/favSeries",
-    techstack: ["React", "React-router", "Chakra-UI", "Axios", "API"],
+    techstack: ["React", "ReactRouter", "Chakra"],
   },
   {
     id: 10,
@@ -143,7 +149,7 @@ export const ProjectsData = [
       "https://github.com/fernandobouchet/TOP_Blog-Client/raw/main/project_preview.webp",
     demo: "https://blog-top.vercel.app",
     github: "https://github.com/fernandobouchet/TOP_Blog-Client",
-    techstack: ["React", "React-router", "Bootstrap", "Express", "MongoDB"],
+    techstack: ["React", "ReactRouter", "Bootstrap", "Express", "Mongo"],
   },
   {
     id: 11,
@@ -156,6 +162,6 @@ export const ProjectsData = [
       "https://github.com/fernandobouchet/s8-07-t-node-react-twitter/raw/main/project_preview.webp",
     demo: "https://s8-07-t-node-react-twitter.vercel.app",
     github: "https://github.com/fernandobouchet/s8-07-t-node-react-twitter",
-    techstack: ["Next Js", "Tailwind", "React-Query", "Express", "MongoDB"],
+    techstack: ["Next", "Tailwind", "ReactQuery", "Express", "Mongo"],
   },
 ];
