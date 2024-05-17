@@ -19,7 +19,7 @@ const IconBadgeBootstrap = ({ className }: Props) => (
     <g
       fill="#fff"
       textAnchor="middle"
-      fontFamily="Verdana,Geneva,DejaVu Sans,sans-serif"
+      fontFamily="inherit"
       textRendering="geometricPrecision"
       fontSize="100"
     >
@@ -61,7 +61,7 @@ const IconBadgeChakra = ({ className }: Props) => (
     <g
       fill="#fff"
       textAnchor="middle"
-      fontFamily="Verdana,Geneva,DejaVu Sans,sans-serif"
+      fontFamily="inherit"
       textRendering="geometricPrecision"
       fontSize="100"
     >
@@ -103,7 +103,7 @@ const IconBadgeCss = ({ className }: Props) => (
     <g
       fill="#fff"
       textAnchor="middle"
-      fontFamily="Verdana,Geneva,DejaVu Sans,sans-serif"
+      fontFamily="inherit"
       textRendering="geometricPrecision"
       fontSize="100"
     >
@@ -145,7 +145,7 @@ const IconBadgeExpress = ({ className }: Props) => (
     <g
       fill="#fff"
       textAnchor="middle"
-      fontFamily="Verdana,Geneva,DejaVu Sans,sans-serif"
+      fontFamily="inherit"
       textRendering="geometricPrecision"
       fontSize="100"
     >
@@ -187,7 +187,7 @@ const IconBadgeFirebase = ({ className }: Props) => (
     <g
       fill="#fff"
       textAnchor="middle"
-      fontFamily="Verdana,Geneva,DejaVu Sans,sans-serif"
+      fontFamily="inherit"
       textRendering="geometricPrecision"
       fontSize="100"
     >
@@ -229,7 +229,7 @@ const IconBadgeMongodb = ({ className }: Props) => (
     <g
       fill="#fff"
       textAnchor="middle"
-      fontFamily="Verdana,Geneva,DejaVu Sans,sans-serif"
+      fontFamily="inherit"
       textRendering="geometricPrecision"
       fontSize="100"
     >
@@ -271,7 +271,7 @@ const IconBadgeReact = ({ className }: Props) => (
     <g
       fill="#fff"
       textAnchor="middle"
-      fontFamily="Verdana,Geneva,DejaVu Sans,sans-serif"
+      fontFamily="inherit"
       textRendering="geometricPrecision"
       fontSize="100"
     >
@@ -313,7 +313,7 @@ const IconBadgeTailwind = ({ className }: Props) => (
     <g
       fill="#fff"
       textAnchor="middle"
-      fontFamily="Verdana,Geneva,DejaVu Sans,sans-serif"
+      fontFamily="inherit"
       textRendering="geometricPrecision"
       fontSize="100"
     >
@@ -355,7 +355,7 @@ const IconBadgeTypescript = ({ className }: Props) => (
     <g
       fill="#fff"
       textAnchor="middle"
-      fontFamily="Verdana,Geneva,DejaVu Sans,sans-serif"
+      fontFamily="inherit"
       textRendering="geometricPrecision"
       fontSize="100"
     >
@@ -397,7 +397,7 @@ const IconBadgeStyledComponents = ({ className }: Props) => (
     <g
       fill="#fff"
       textAnchor="middle"
-      fontFamily="Verdana,Geneva,DejaVu Sans,sans-serif"
+      fontFamily="inherit"
       textRendering="geometricPrecision"
       fontSize="100"
     >
@@ -439,7 +439,7 @@ const IconBadgeReactRouter = ({ className }: Props) => (
     <g
       fill="#fff"
       textAnchor="middle"
-      fontFamily="Verdana,Geneva,DejaVu Sans,sans-serif"
+      fontFamily="inherit"
       textRendering="geometricPrecision"
       fontSize="100"
     >
@@ -523,7 +523,7 @@ const IconBadgeNextJs = ({ className }: Props) => (
     <g
       fill="#fff"
       textAnchor="middle"
-      fontFamily="Verdana,Geneva,DejaVu Sans,sans-serif"
+      fontFamily="inherit"
       textRendering="geometricPrecision"
       fontSize="100"
     >
