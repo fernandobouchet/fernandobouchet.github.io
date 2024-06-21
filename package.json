@@ -9,9 +9,9 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "embla-carousel-autoplay": "^8.1.4",
-    "embla-carousel-react": "^8.1.4",
-    "framer-motion": "^11.2.10",
+    "embla-carousel-autoplay": "^8.1.5",
+    "embla-carousel-react": "^8.1.5",
+    "framer-motion": "^11.2.11",
     "next": "14.2.4",
     "next-themes": "^0.3.0",
     "react": "^18",
