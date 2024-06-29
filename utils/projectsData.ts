@@ -155,9 +155,9 @@ export const ProjectsData = [
     id: 11,
     title: "Twitter clone",
     info_es:
-      "Aplicación web que emula la experiencia de Twitter, permitiendo a los usuarios registrarse, iniciar sesión, crear perfiles, seguir a otros usuarios y compartir tweets.",
+      "Aplicación web realizada en equipo con otros desarrolladores, utilizando la metodología ágil SCRUM, que emula la experiencia de Twitter, permitiendo a los usuarios registrarse, iniciar sesión, crear perfiles, seguir a otros usuarios y compartir tweets.",
     info_en:
-      "Web application that emulates the Twitter experience, allowing users to register, log in, create profiles, follow other users and share tweets.",
+      "Web application developed in a team with other developers, using the agile methodology SCRUM, that emulates the Twitter experience, allowing users to register, log in, create profiles, follow other users and share tweets.",
     image:
       "https://github.com/fernandobouchet/s8-07-t-node-react-twitter/raw/main/project_preview.webp",
     demo: "https://s8-07-t-node-react-twitter.vercel.app",
