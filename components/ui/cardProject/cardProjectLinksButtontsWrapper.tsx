@@ -22,12 +22,14 @@ const CardProjectLinksButtontsWrapper = ({ project }: Props) => {
       <a
         className="flex items-center justify-center h-8 w-8 md:h-9 md:w-9 bg-transparent rounded-full transition ease-in hover:bg-tertiary hover:scale-110"
         href={project.github}
+        target="_blank"
       >
         {<IconGithub className="link-icon-small" />}
       </a>
       <a
         className="flex items-center justify-center h-8 w-8 md:h-9 md:w-9 bg-transparent rounded-full transition ease-in hover:bg-tertiary hover:scale-110"
         href={project.demo}
+        target="_blank"
       >
         {<IconExternLink className="link-icon-small" />}
       </a>
