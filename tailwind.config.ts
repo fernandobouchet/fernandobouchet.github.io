@@ -32,25 +32,25 @@ const config: Config = {
           foreground: "var(--card-foreground)",
         },
       },
-    },
-    animation: {
-      "zoom-in": "zoom-in 0.6s ease-out",
-      "infinite-scroll": "infinite-scroll 25s linear infinite",
-    },
-    "zoom-in": {
-      "0%": {
-        opacity: "0",
-        transform: "scale(.5)",
+      animation: {
+        "zoom-in": "zoom-in 0.6s ease-out",
+        "infinite-scroll": "infinite-scroll 25s linear infinite",
       },
-      "100%": {
-        opacity: "1",
-        transform: "scale(1)",
+      "zoom-in": {
+        "0%": {
+          opacity: "0",
+          transform: "scale(.5)",
+        },
+        "100%": {
+          opacity: "1",
+          transform: "scale(1)",
+        },
       },
-    },
-    keyframes: {
-      "infinite-scroll": {
-        from: { transform: "translateX(0)" },
-        to: { transform: "translateX(-100%)" },
+      keyframes: {
+        "infinite-scroll": {
+          from: { transform: "translateX(0)" },
+          to: { transform: "translateX(-100%)" },
+        },
       },
     },
   },
