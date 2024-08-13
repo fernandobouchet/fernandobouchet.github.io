@@ -73,7 +73,4 @@
   .link-icon-with-text {
     @apply min-w-fit md:min-w-fit !h-8 md:!h-10 !px-4 text-primary-foreground font-semibold [&_svg]:w-4 text-sm;
   }
-  .carousel_slide {
-    @apply flex-[0_0_100%] min-w-0 pl-4;
-  }
 }
