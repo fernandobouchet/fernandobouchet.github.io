@@ -22,7 +22,7 @@ const CardProject = ({ project }: Props) => {
   const { language } = useContext(LanguageContext);
 
   return (
-    <div className="flex flex-col items-center w-full gap-1 md:gap-4 p-2 md:even:flex-row-reverse backdrop-blur-xl bg-black/5 dark:bg-white/5 rounded-2xl group/card h-full">
+    <div className="flex flex-col items-center w-full gap-1 lg:gap-4 p-2 backdrop-blur-xl bg-black/5 dark:bg-white/5 rounded-2xl group/card h-full">
       <a
         className="relative flex flex-col items-center w-full"
         href={project.demo}
@@ -34,7 +34,7 @@ const CardProject = ({ project }: Props) => {
             src={project.image}
             alt={project.title}
             loading="lazy"
-            className="object-cover object-top w-full  h-60 transition duration-500 md:scale-95 md:group-hover/card:scale-100 rounded-2xl"
+            className="object-cover object-top w-full h-60 transition duration-500 lg:scale-95 lg:group-hover/card:scale-100 rounded-2xl"
           />
         }
       </a>
@@ -44,7 +44,7 @@ const CardProject = ({ project }: Props) => {
             <h2 className="text-lg font-semibold">{project.title}</h2>
             <CardProjectLinksButtontsWrapper project={project} />
           </div>
-          <p className="text-xs md:text-sm">
+          <p className="text-xs lg:text-sm">
             {language === "ES" ? project.info_es : project.info_en}
           </p>
         </div>

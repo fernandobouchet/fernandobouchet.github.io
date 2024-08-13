@@ -1,6 +1,5 @@
 "use client";
 
-import { LinkWithIcon } from "@/components/ui/linkWithIcon";
 import { IconExternLink, IconGithub } from "@/components/icons";
 
 interface Props {

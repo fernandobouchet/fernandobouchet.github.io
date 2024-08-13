@@ -1,13 +1,13 @@
 "use client";
 
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import { LanguageContext } from "@/context/languageContext";
 import { ProjectsData } from "@/utils/projectsData";
 import { CardProject } from "@/components/ui/cardProject/cardProject";
 import { useIntersection } from "@/context/intersectionContext";
-import { Carousel } from "@/components/ui/carousel/carousel";
 import { motion } from "framer-motion";
 import { mainSectionAnimation } from "@/utils/motionContants";
+import { Button } from "../ui/button";
 
 const Projects = () => {
   const { texts } = useContext(LanguageContext);
@@ -15,11 +15,23 @@ const Projects = () => {
   const ref = RegisterAndObserveElement();
 
   const sortedProjects = ProjectsData.sort((a, b) => b.id - a.id);
+  const [currentProjectIndex, setCurrentProjectIndex] = useState(4);
+  const [projects, setProjects] = useState(
+    sortedProjects.slice(0, currentProjectIndex)
+  );
+
+  const handleOnClick = () => {
+    setCurrentProjectIndex(currentProjectIndex + 2);
+    setProjects((prevProjects) => [
+      ...prevProjects,
+      ...sortedProjects.slice(currentProjectIndex, currentProjectIndex + 2),
+    ]);
+  };
 
   return (
     <motion.section
       id="projects"
-      className={`section-container`}
+      className={`section-container h-auto max-w-none`}
       ref={ref}
       {...mainSectionAnimation}
     >
@@ -35,13 +47,16 @@ const Projects = () => {
         </a>
         .
       </p>
-      <Carousel options={{ loop: true }}>
-        {sortedProjects.map((project, index) => (
-          <div key={index} className="carousel_slide">
-            <CardProject key={project.id} project={project} />
-          </div>
+      <div className="flex flex-col gap-4 lg:grid lg:grid-cols-2 lg:max-w-6xl md:px-4 pb-2">
+        {projects.map((project) => (
+          <CardProject key={project.id} project={project} />
         ))}
-      </Carousel>
+      </div>
+      {currentProjectIndex < sortedProjects.length && (
+        <Button onClick={handleOnClick} className="mt-10">
+          {texts.projects.button}
+        </Button>
+      )}
     </motion.section>
   );
 };
