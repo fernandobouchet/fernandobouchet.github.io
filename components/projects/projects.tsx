@@ -4,15 +4,12 @@ import { useContext, useState } from "react";
 import { LanguageContext } from "@/context/languageContext";
 import { ProjectsData } from "@/utils/projectsData";
 import { CardProject } from "@/components/ui/cardProject/cardProject";
-import { useIntersection } from "@/context/intersectionContext";
 import { motion } from "framer-motion";
 import { mainSectionAnimation } from "@/utils/motionContants";
 import { Button } from "../ui/button";
 
 const Projects = () => {
   const { texts } = useContext(LanguageContext);
-  const { RegisterAndObserveElement } = useIntersection();
-  const ref = RegisterAndObserveElement();
 
   const sortedProjects = ProjectsData.sort((a, b) => b.id - a.id);
   const [currentProjectIndex, setCurrentProjectIndex] = useState(4);
@@ -32,7 +29,6 @@ const Projects = () => {
     <motion.section
       id="projects"
       className={`section-container h-auto max-w-none`}
-      ref={ref}
       {...mainSectionAnimation}
     >
       <h2 className="section-title">{texts.projects.title}</h2>

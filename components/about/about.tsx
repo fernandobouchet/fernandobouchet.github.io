@@ -4,20 +4,16 @@ import { useContext } from "react";
 import { LanguageContext } from "@/context/languageContext";
 import { LinkButton } from "@/components/ui/linkButton";
 import { AboutBadgesWrapper } from "./aboutBadgesWrapper";
-import { useIntersection } from "@/context/intersectionContext";
 import { motion } from "framer-motion";
 import { mainSectionAnimation } from "@/utils/motionContants";
 
 const About = () => {
   const { texts } = useContext(LanguageContext);
-  const { RegisterAndObserveElement } = useIntersection();
-  const ref = RegisterAndObserveElement();
 
   return (
     <motion.section
       id="about"
       className={`section-container text-center text-sm md:text-base`}
-      ref={ref}
       {...mainSectionAnimation}
     >
       {

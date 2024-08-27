@@ -3,20 +3,16 @@
 import { useContext } from "react";
 import { LanguageContext } from "@/context/languageContext";
 import { ContactLinks } from "@/components/contact/contactLinks";
-import { useIntersection } from "@/context/intersectionContext";
 import { motion } from "framer-motion";
 import { mainSectionAnimation } from "@/utils/motionContants";
 
 const Contact = () => {
   const { texts } = useContext(LanguageContext);
-  const { RegisterAndObserveElement } = useIntersection();
-  const ref = RegisterAndObserveElement();
 
   return (
     <motion.section
       id="contact"
       className={`section-container`}
-      ref={ref}
       {...mainSectionAnimation}
     >
       <h2 className="section-title">{texts.contact.title}</h2>
