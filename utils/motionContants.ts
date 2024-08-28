@@ -1,5 +1,3 @@
-import { delay } from "framer-motion";
-
 const mainSectionAnimation = {
   initial: {
     opacity: 0,
