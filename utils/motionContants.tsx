@@ -1,3 +1,5 @@
+import { delay } from "framer-motion";
+
 const mainSectionAnimation = {
   initial: {
     opacity: 0,
@@ -28,4 +30,20 @@ const listItemAnimation = {
   },
 };
 
-export { mainSectionAnimation, listContainerAnimation, listItemAnimation };
+const projectAnimation = {
+  hidden: { y: 20, opacity: 0 },
+  visible: {
+    y: 0,
+    opacity: 1,
+    transition: {
+      delay: 0.3,
+    },
+  },
+};
+
+export {
+  mainSectionAnimation,
+  listContainerAnimation,
+  listItemAnimation,
+  projectAnimation,
+};

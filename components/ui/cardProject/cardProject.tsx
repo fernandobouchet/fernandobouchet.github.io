@@ -4,6 +4,8 @@ import { useContext } from "react";
 import { LanguageContext } from "@/context/languageContext";
 import { CardProjectLinksButtontsWrapper } from "@/components/ui/cardProject/cardProjectLinksButtontsWrapper";
 import { CardProjectTechWrapper } from "@/components/ui/cardProject/cardProjectTechWrapper";
+import { AnimatePresence, motion } from "framer-motion";
+import { listItemAnimation } from "@/utils/motionContants";
 
 interface Props {
   project: {
@@ -22,7 +24,10 @@ const CardProject = ({ project }: Props) => {
   const { language } = useContext(LanguageContext);
 
   return (
-    <div className="flex flex-col items-center w-full gap-1 lg:gap-4 p-2 backdrop-blur-xl bg-black/5 dark:bg-white/5 rounded-2xl group/card h-full">
+    <motion.div
+      className="flex flex-col items-center w-full gap-1 lg:gap-4 p-2 backdrop-blur-xl bg-black/5 dark:bg-white/5 rounded-2xl group/card h-full"
+      variants={listItemAnimation}
+    >
       <a
         className="relative flex flex-col items-center w-full"
         href={project.demo}
@@ -50,7 +55,7 @@ const CardProject = ({ project }: Props) => {
         </div>
         <CardProjectTechWrapper techstack={project.techstack} />
       </div>
-    </div>
+    </motion.div>
   );
 };
 

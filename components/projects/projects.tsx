@@ -4,8 +4,11 @@ import { useContext, useState } from "react";
 import { LanguageContext } from "@/context/languageContext";
 import { ProjectsData } from "@/utils/projectsData";
 import { CardProject } from "@/components/ui/cardProject/cardProject";
-import { motion } from "framer-motion";
-import { mainSectionAnimation } from "@/utils/motionContants";
+import { AnimatePresence, motion } from "framer-motion";
+import {
+  listContainerAnimation,
+  mainSectionAnimation,
+} from "@/utils/motionContants";
 import { Button } from "../ui/button";
 
 const Projects = () => {
@@ -43,11 +46,21 @@ const Projects = () => {
         </a>
         .
       </p>
-      <div className="flex flex-col gap-4 lg:grid lg:grid-cols-2 lg:max-w-6xl md:px-4 pb-2">
-        {projects.map((project) => (
-          <CardProject key={project.id} project={project} />
-        ))}
-      </div>
+      <motion.div
+        className="flex flex-col gap-4 lg:grid lg:grid-cols-2 lg:max-w-6xl md:px-4 pb-2"
+        variants={listContainerAnimation}
+        initial="hidden"
+        whileInView="visible"
+        animate="visible"
+        exit="hidden"
+        viewport={{ once: false }}
+      >
+        <AnimatePresence>
+          {projects.map((project) => (
+            <CardProject key={project.id} project={project} />
+          ))}
+        </AnimatePresence>
+      </motion.div>
       {currentProjectIndex < sortedProjects.length && (
         <Button onClick={handleOnClick} className="mt-10">
           {texts.projects.button}
