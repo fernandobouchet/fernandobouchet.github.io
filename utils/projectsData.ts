@@ -164,4 +164,17 @@ export const ProjectsData = [
     github: "https://github.com/fernandobouchet/s8-07-t-node-react-twitter",
     techstack: ["Next", "Tailwind", "ReactQuery", "Express", "Mongo"],
   },
+  {
+    id: 12,
+    title: "excel2docxTemplate2pdf",
+    info_es:
+      "Aplicación web que fusiona datos de un archivo XLSX cargado en una plantilla DOCX, permitiendo a los usuarios descargar el resultado en formato DOCX o PDF. Utiliza la API de Gotenberg para la conversión a PDF, alojada en un contenedor Docker.",
+    info_en:
+      "Web application wich merges data from an uploaded XLSX file into a DOCX template, allowing users to download the result as DOCX or PDF. It uses Gotenberg API for PDF conversion, hosted in a Docker container.",
+    image:
+      "https://github.com/fernandobouchet/excel2docxTemplate2pdf/blob/main/preview.webp",
+    demo: "https://excel2docx-template2pdf.vercel.app",
+    github: "https://github.com/fernandobouchet/excel2docxTemplate2pdf",
+    techstack: ["Next", "Tailwind"],
+  },
 ];
