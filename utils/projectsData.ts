@@ -172,7 +172,7 @@ export const ProjectsData = [
     info_en:
       "Web application wich merges data from an uploaded XLSX file into a DOCX template, allowing users to download the result as DOCX or PDF. It uses Gotenberg API for PDF conversion, hosted in a Docker container.",
     image:
-      "https://github.com/fernandobouchet/excel2docxTemplate2pdf/blob/main/preview.webp",
+      "https://raw.githubusercontent.com/fernandobouchet/excel2docxTemplate2pdf/main/preview.webp",
     demo: "https://excel2docx-template2pdf.vercel.app",
     github: "https://github.com/fernandobouchet/excel2docxTemplate2pdf",
     techstack: ["Next", "Tailwind"],
