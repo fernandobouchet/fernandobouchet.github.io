@@ -50,7 +50,7 @@
     @apply m-0 max-w-7xl mx-auto bg-background text-foreground;
   }
   a.nav-active {
-    @apply text-accent bg-secondary-foreground;
+    @apply text-tertiary-foreground bg-tertiary dark:bg-secondary-foreground;
   }
 }
 
