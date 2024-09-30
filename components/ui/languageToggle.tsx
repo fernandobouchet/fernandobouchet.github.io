@@ -8,7 +8,7 @@ const LanguageToggle = () => {
 
   return (
     <button
-      className="text-sm md:text-base font-bold text-foreground"
+      className="font-bold text-foreground"
       onClick={() => handleChangeLanguage()}
     >
       {language === "EN" ? "ES" : "EN"}

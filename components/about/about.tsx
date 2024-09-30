@@ -13,7 +13,7 @@ const About = () => {
   return (
     <motion.section
       id="about"
-      className={`section-container text-center text-sm md:text-base`}
+      className={`section-container text-center`}
       {...mainSectionAnimation}
     >
       {

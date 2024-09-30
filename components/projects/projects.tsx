@@ -35,7 +35,7 @@ const Projects = () => {
       {...mainSectionAnimation}
     >
       <h2 className="section-title">{texts.projects.title}</h2>
-      <p className="text-sm md:text-base text-center py-4">
+      <p className="text-center py-4">
         {texts.projects.p1}{" "}
         <a
           href="https://github.com/fernandobouchet"

@@ -43,7 +43,7 @@ const ContactLinks = () => {
           variants={listItemAnimation}
         >
           <LinkWithIcon link={link.link} icon={link.icon} />
-          <span className="font-medium text-xs md:text-sm">{link.name}</span>
+          <span className="font-medium">{link.name}</span>
         </motion.li>
       ))}
     </motion.ul>

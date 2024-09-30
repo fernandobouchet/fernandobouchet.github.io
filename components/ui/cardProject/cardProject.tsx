@@ -49,7 +49,7 @@ const CardProject = ({ project }: Props) => {
             <h2 className="text-lg font-semibold">{project.title}</h2>
             <CardProjectLinksButtontsWrapper project={project} />
           </div>
-          <p className="text-xs lg:text-sm">
+          <p className="text-sm lg:text-sm">
             {language === "ES" ? project.info_es : project.info_en}
           </p>
         </div>

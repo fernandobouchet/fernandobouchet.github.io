@@ -11,14 +11,14 @@ const ThemeToggle = () => {
     setHasMounted(true);
   }, []);
 
-  if (!hasMounted) return <div className="w-[18px] h-[18px] md:w-5 md:h-5" />;
+  if (!hasMounted) return <div className="w-4 h-4 lg:w-[18px] lg:[18px]" />;
 
   const handleClick = () => {
     setTheme(theme === "dark" ? "light" : "dark");
   };
 
   return (
-    <button onClick={handleClick} className="w-[14px] h-[14px] md:w-4 md:h-4">
+    <button onClick={handleClick} className="w-4 h-4 lg:w-[18px] lg:[18px]">
       {theme === "light" ? <IconDarkMode /> : <IconLightMode />}
     </button>
   );

@@ -6,7 +6,7 @@ interface Props {
 const Badge = ({ text, className }: Props) => {
   return (
     <div
-      className={`flex min-w-fit items-center gap-2 px-2 py-1 bg-tertiary text-tertiary-foreground rounded-full font-medium text-xs md:text-sm whitespace-nowrap ${className}`}
+      className={`flex min-w-fit items-center gap-2 px-2 py-1 bg-tertiary text-tertiary-foreground rounded-full font-medium text-sm lg:text-base whitespace-nowrap ${className}`}
     >
       <span>{text}</span>
     </div>

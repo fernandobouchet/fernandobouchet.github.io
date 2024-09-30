@@ -2,13 +2,13 @@
 
 import { useContext } from "react";
 import { LanguageContext } from "@/context/languageContext";
-import { Link, Element } from "react-scroll";
+import { Link } from "react-scroll";
 
 const NavItems = () => {
   const { texts } = useContext(LanguageContext);
 
   return (
-    <ul className="flex gap-2 md:gap-5 text-sm md:text-base font-bold text-foreground">
+    <ul className="flex gap-2 md:gap-5 font-bold text-foreground">
       <li>
         <Link
           to="about"
