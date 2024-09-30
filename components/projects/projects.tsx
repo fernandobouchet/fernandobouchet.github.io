@@ -31,7 +31,7 @@ const Projects = () => {
   return (
     <motion.section
       id="projects"
-      className={`section-container h-auto max-w-none`}
+      className={`section-container h-auto max-w-none py-10`}
       {...mainSectionAnimation}
     >
       <h2 className="section-title">{texts.projects.title}</h2>
