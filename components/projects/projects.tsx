@@ -47,7 +47,7 @@ const Projects = () => {
         .
       </p>
       <motion.div
-        className="flex flex-col gap-4 lg:grid lg:grid-cols-2 lg:max-w-6xl md:px-4 pb-2"
+        className="flex flex-col gap-6 md:grid md:grid-cols-2 lg:max-w-6xl md:px-4 pb-2"
         variants={listContainerAnimation}
         initial="hidden"
         whileInView="visible"
