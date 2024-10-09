@@ -44,10 +44,10 @@
 
 @layer base {
   html {
-    @apply box-border scroll-smooth text-base lg:text-lg;
+    @apply box-border scroll-smooth text-base;
   }
   body {
-    @apply m-0 max-w-7xl mx-auto bg-background text-foreground;
+    @apply m-0 max-w-7xl bg-background text-foreground text-base lg:text-lg;
   }
   a.nav-active {
     @apply text-tertiary-foreground bg-tertiary dark:bg-secondary-foreground;
@@ -60,9 +60,6 @@
   }
   .section-title {
     @apply text-2xl md:text-3xl font-bold;
-  }
-  .section-text {
-    @apply text-base lg:text-lg;
   }
   .link-text {
     @apply text-accent font-semibold relative after:absolute after:bottom-0 after:left-0 after:right-0 after:h-px after:w-full after:origin-bottom after:scale-x-0 after:bg-accent after:transition-transform after:duration-300 after:ease-[cubic-bezier(0.65_0.05_0.36_1)] hover:after:origin-bottom hover:after:scale-x-100;
