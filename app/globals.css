@@ -47,16 +47,16 @@
     @apply box-border scroll-smooth text-base;
   }
   body {
-    @apply m-0 max-w-7xl bg-background text-foreground text-base lg:text-lg;
+    @apply m-0 max-w-7xl bg-background text-foreground text-base lg:text-lg mx-auto;
   }
   a.nav-active {
-    @apply text-tertiary-foreground bg-tertiary dark:bg-secondary-foreground;
+    @apply bg-primary text-primary-foreground;
   }
 }
 
 @layer components {
   .section-container {
-    @apply flex flex-col justify-center items-center h-[calc(100vh-2.5rem)] scroll-mt-10 mt-10 px-2 max-w-screen-lg;
+    @apply flex flex-col justify-center items-center h-[calc(100vh-2.5rem)] scroll-mt-10 mt-10 px-2 max-w-screen-lg w-full;
   }
   .section-title {
     @apply text-2xl md:text-3xl font-bold;
