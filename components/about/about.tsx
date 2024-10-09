@@ -6,7 +6,6 @@ import { LinkButton } from "@/components/ui/linkButton";
 import { AboutBadgesWrapper } from "./aboutBadgesWrapper";
 import { motion } from "framer-motion";
 import { mainSectionAnimation } from "@/utils/motionContants";
-import Image from "next/image";
 
 const About = () => {
   const { texts } = useContext(LanguageContext);
@@ -17,14 +16,15 @@ const About = () => {
       className={`section-container text-center`}
       {...mainSectionAnimation}
     >
-      <Image
-        className="rounded-full w-48 md:w-56"
-        src="profile.webp"
-        alt="Fernando Bouchet profile picture"
-        width={200}
-        height={200}
-        priority
-      />
+      {
+        // eslint-disable-next-line @next/next/no-img-element
+        <img
+          className="rounded-full w-48 md:w-56"
+          src="profile.webp"
+          alt="Fernando Bouchet profile picture"
+          loading="eager"
+        ></img>
+      }
       <h1 className="text-4xl md:text-5xl font-bold py-4">
         {texts.about.hero}
       </h1>

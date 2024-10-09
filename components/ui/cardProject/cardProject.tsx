@@ -4,9 +4,8 @@ import { useContext } from "react";
 import { LanguageContext } from "@/context/languageContext";
 import { CardProjectLinksButtontsWrapper } from "@/components/ui/cardProject/cardProjectLinksButtontsWrapper";
 import { CardProjectTechWrapper } from "@/components/ui/cardProject/cardProjectTechWrapper";
-import { motion } from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
 import { listItemAnimation } from "@/utils/motionContants";
-import Image from "next/image";
 
 interface Props {
   project: {
@@ -26,36 +25,35 @@ const CardProject = ({ project }: Props) => {
 
   return (
     <motion.div
-      className="w-[90vw] md:w-[22rem] lg:w-[30rem] h-80"
+      className="flex flex-col items-center w-full gap-1 lg:gap-4 p-2 backdrop-blur-xl bg-black/5 dark:bg-white/5 rounded-2xl group/card h-full"
       variants={listItemAnimation}
     >
-      <div className="relative overflow-hidden transition-all duration-300 ease-in-out transform hover:scale-105 mx-auto rounded-2xl w-full h-full">
-        <div className="relative p-0 h-full">
-          <Image
+      <a
+        className="relative flex flex-col items-center w-full"
+        href={project.demo}
+        target="_blank"
+      >
+        {
+          // eslint-disable-next-line @next/next/no-img-element
+          <img
             src={project.image}
             alt={project.title}
-            fill
-            className="w-full h-full object-cover"
+            loading="lazy"
+            className="object-cover object-top w-full h-60 transition duration-500 lg:scale-95 lg:group-hover/card:scale-100 rounded-2xl"
           />
-          <div className="absolute inset-0 bg-black bg-opacity-70 opacity-0 hover:opacity-100 transition-opacity duration-300 flex flex-col justify-between p-4 pb-1">
-            <div>
-              <h3 className="text-lg lg:text-xl font-bold mb-2">
-                {project.title}
-              </h3>
-              <p className="text-sm text-pretty lg:text-base mb-2 text-justify">
-                {language === "ES" ? project.info_es : project.info_en}
-              </p>
-            </div>
-            <div className="flex flex-col h-full justify-end">
-              <div className="flex w-full justify-between pb-2">
-                <CardProjectLinksButtontsWrapper project={project} />
-              </div>
-              <div className="flex flex-wrap gap-1 justify-center">
-                <CardProjectTechWrapper techstack={project.techstack} />
-              </div>
-            </div>
+        }
+      </a>
+      <div className="p-2 w-full h-full flex flex-col">
+        <div className="flex flex-col">
+          <div className="flex items-center pb-1">
+            <h2 className="text-lg font-semibold">{project.title}</h2>
+            <CardProjectLinksButtontsWrapper project={project} />
           </div>
+          <p className="text-sm lg:text-sm">
+            {language === "ES" ? project.info_es : project.info_en}
+          </p>
         </div>
+        <CardProjectTechWrapper techstack={project.techstack} />
       </div>
     </motion.div>
   );

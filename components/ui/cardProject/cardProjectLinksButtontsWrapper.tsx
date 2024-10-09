@@ -1,7 +1,6 @@
 "use client";
 
 import { IconExternLink, IconGithub } from "@/components/icons";
-import { Button } from "../button";
 
 interface Props {
   project: {
@@ -18,25 +17,21 @@ interface Props {
 
 const CardProjectLinksButtontsWrapper = ({ project }: Props) => {
   return (
-    <div className="w-full flex justify-around">
-      <Button>
-        <a
-          className="flex items-center gap-2"
-          href={project.github}
-          target="_blank"
-        >
-          <span>Github</span> <IconGithub className="link-icon-small" />
-        </a>
-      </Button>
-      <Button>
-        <a
-          className="flex items-center gap-2"
-          href={project.demo}
-          target="_blank"
-        >
-          <span>Demo</span> <IconExternLink className="link-icon-small" />
-        </a>
-      </Button>
+    <div className="flex items-center gap-1 ml-auto">
+      <a
+        className="flex items-center justify-center h-8 w-8 md:h-9 md:w-9 bg-transparent rounded-full transition ease-in hover:bg-tertiary hover:scale-110"
+        href={project.github}
+        target="_blank"
+      >
+        {<IconGithub className="link-icon-small" />}
+      </a>
+      <a
+        className="flex items-center justify-center h-8 w-8 md:h-9 md:w-9 bg-transparent rounded-full transition ease-in hover:bg-tertiary hover:scale-110"
+        href={project.demo}
+        target="_blank"
+      >
+        {<IconExternLink className="link-icon-small" />}
+      </a>
     </div>
   );
 };
