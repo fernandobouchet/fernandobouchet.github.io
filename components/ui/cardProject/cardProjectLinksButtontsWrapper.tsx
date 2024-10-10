@@ -19,14 +19,14 @@ const CardProjectLinksButtontsWrapper = ({ project }: Props) => {
   return (
     <div className="flex items-center gap-1 ml-auto">
       <a
-        className="flex items-center justify-center h-8 w-8 md:h-9 md:w-9 bg-transparent rounded-full transition ease-in hover:bg-tertiary hover:scale-110"
+        className="flex items-center justify-center h-9 w-9 md:h-10 md:w-10 bg-transparent  rounded-full transition ease-in hover:bg-tertiary hover:scale-110"
         href={project.github}
         target="_blank"
       >
         {<IconGithub className="link-icon-small" />}
       </a>
       <a
-        className="flex items-center justify-center h-8 w-8 md:h-9 md:w-9 bg-transparent rounded-full transition ease-in hover:bg-tertiary hover:scale-110"
+        className="flex items-center justify-center h-9 w-9 md:h-10 md:w-10 bg-transparent  rounded-full transition ease-in hover:bg-tertiary hover:scale-110"
         href={project.demo}
         target="_blank"
       >

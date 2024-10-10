@@ -68,7 +68,7 @@
     @apply relative w-7 h-7 md:w-8 md:h-8 text-primary-foreground;
   }
   .link-icon-small {
-    @apply relative w-4 h-4 md:w-5 md:h-5 fill-current;
+    @apply relative w-5 h-5 fill-current;
   }
   .link-icon-with-text {
     @apply min-w-fit md:min-w-fit !h-8 md:!h-10 !px-4 text-primary-foreground font-semibold [&_svg]:w-4 text-sm;
