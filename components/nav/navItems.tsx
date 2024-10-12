@@ -17,7 +17,7 @@ const NavItems = () => {
           smooth={true}
           duration={200}
           offset={-40}
-          className={`p-2 rounded-full cursor-pointer`}
+          className={`px-3 py-2 rounded-full cursor-pointer`}
         >
           {texts.navbar.about}
         </Link>
@@ -30,7 +30,7 @@ const NavItems = () => {
           smooth={true}
           duration={200}
           offset={-40}
-          className={`p-2 rounded-full cursor-pointer`}
+          className={`px-3 py-2 rounded-full cursor-pointer`}
         >
           {texts.navbar.projects}
         </Link>
@@ -43,7 +43,7 @@ const NavItems = () => {
           smooth={true}
           duration={200}
           offset={-40}
-          className={`p-2 rounded-full cursor-pointer`}
+          className={`px-3 py-2 rounded-full cursor-pointer`}
         >
           {texts.navbar.contact}
         </Link>
