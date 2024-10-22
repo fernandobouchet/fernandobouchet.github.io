@@ -177,4 +177,17 @@ export const ProjectsData = [
     github: "https://github.com/fernandobouchet/excel2docxTemplate2pdf",
     techstack: ["Next", "Tailwind"],
   },
+  {
+    id: 13,
+    title: "FavSongsQuotes",
+    info_es:
+      "Aplicación web que permite descubrir y compartir citas memorables de canciones, con enlaces a los vídeos de las mismas. Ofrece una experiencia interactiva y completamente responsiva para explorar, dar 'me gusta' y gestionar citas de canciones favoritas, usando Supabase como base de datos.",
+    info_en:
+      "Web application that allows users to discover and share memorable song quotes, with links to the videos of the songs. It offers an interactive and fully responsive experience to explore, like, and manage favourite song quotes, using Supabase as the database.",
+    image:
+      "https://raw.githubusercontent.com/fernandobouchet/FavSongQuote/refs/heads/main/preview.webp",
+    demo: "https://favsongsquote.vercel.app",
+    github: "https://github.com/fernandobouchet/FavSongQuote",
+    techstack: ["Next", "Tailwind"],
+  },
 ];
