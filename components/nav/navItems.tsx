@@ -8,7 +8,7 @@ const NavItems = () => {
   const { texts } = useContext(LanguageContext);
 
   return (
-    <ul className="flex gap-2 md:gap-5 font-bold text-foreground pt-2">
+    <ul className="flex gap-2 md:gap-5 font-bold text-foreground">
       <li>
         <Link
           to="about"
