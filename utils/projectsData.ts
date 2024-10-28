@@ -10,7 +10,7 @@ export const ProjectsData = [
       "https://github.com/fernandobouchet/memory-game/blob/main/memory-game_preview.jpg?raw=true",
     demo: "https://fernandobouchet.github.io/memory-game",
     github: "https://github.com/fernandobouchet/memory-game",
-    techstack: ["React", "Css"],
+    techstack: ["React", "API"],
   },
   {
     id: 1,
@@ -21,7 +21,7 @@ export const ProjectsData = [
       "https://github.com/fernandobouchet/taskify/blob/main/taskify_preview.jpg?raw=true",
     demo: "https://fernandobouchet.github.io/taskify",
     github: "https://github.com/fernandobouchet/taskify",
-    techstack: ["React", "Tailwind", "Typescript"],
+    techstack: ["React", "Tailwind CSS", "TypeScript"],
   },
   {
     id: 2,
@@ -32,7 +32,7 @@ export const ProjectsData = [
       "https://github.com/fernandobouchet/random-quotes/raw/main/random-quotes_preview.webp?raw=true",
     demo: "https://fernandobouchet.github.io/random-quotes",
     github: "https://github.com/fernandobouchet/random-quotes",
-    techstack: ["React", "StyledComponents"],
+    techstack: ["React", "Styled Components", "API"],
   },
   {
     id: 3,
@@ -44,7 +44,7 @@ export const ProjectsData = [
       "https://github.com/fernandobouchet/quizzical/blob/main/quizzical_preview.jpg?raw=true",
     demo: "https://fernandobouchet.github.io/quizzical",
     github: "https://github.com/fernandobouchet/quizzical",
-    techstack: ["React", "Css"],
+    techstack: ["React", "API"],
   },
   {
     id: 4,
@@ -70,7 +70,7 @@ export const ProjectsData = [
       "https://raw.githubusercontent.com/fernandobouchet/image-uploader/main/project_preview.webp",
     demo: "http://image-uploader-beryl.vercel.app",
     github: "https://github.com/fernandobouchet/image-uploader",
-    techstack: ["React", "Typescript", "Express", "Mongo"],
+    techstack: ["React", "TypeScript", "Express", "MongoDB", "API"],
   },
   {
     id: 6,
@@ -85,11 +85,10 @@ export const ProjectsData = [
       "https://github.com/fernandobouchet/ProgresoLicenciaturaInformatica",
     techstack: [
       "React",
-      "ReactRouter",
       "Bootstrap",
       "Firebase",
-      "ReactRouter",
-      "StyledComponents",
+      "React Router",
+      "Styled Components",
     ],
   },
   {
@@ -106,10 +105,11 @@ export const ProjectsData = [
     techstack: [
       "React",
       "Bootstrap",
-      "Typescript",
+      "TypeScript",
       "ReactRouter",
       "Express",
-      "Mongo",
+      "MongoDB",
+      "API",
     ],
   },
   {
@@ -123,7 +123,7 @@ export const ProjectsData = [
       "https://github.com/fernandobouchet/dev-finder/raw/main/dev-finder_preview.webp",
     demo: "https://fernandobouchet.github.io/dev-finder",
     github: "https://github.com/fernandobouchet/dev-finder",
-    techstack: ["React", "Css"],
+    techstack: ["React", "API"],
   },
   {
     id: 9,
@@ -136,7 +136,7 @@ export const ProjectsData = [
       "https://raw.githubusercontent.com/fernandobouchet/favSeries/main/preview.webp",
     demo: "https://favseries.netlify.app",
     github: "https://github.com/fernandobouchet/favSeries",
-    techstack: ["React", "ReactRouter", "Chakra"],
+    techstack: ["React", "React Router", "Chakra UI", "API"],
   },
   {
     id: 10,
@@ -149,7 +149,14 @@ export const ProjectsData = [
       "https://github.com/fernandobouchet/TOP_Blog-Client/raw/main/project_preview.webp",
     demo: "https://blog-top.vercel.app",
     github: "https://github.com/fernandobouchet/TOP_Blog-Client",
-    techstack: ["React", "ReactRouter", "Bootstrap", "Express", "Mongo"],
+    techstack: [
+      "React",
+      "React Router",
+      "Bootstrap",
+      "Express",
+      "MongoDB",
+      "API",
+    ],
   },
   {
     id: 11,
@@ -162,7 +169,15 @@ export const ProjectsData = [
       "https://github.com/fernandobouchet/s8-07-t-node-react-twitter/raw/main/project_preview.webp",
     demo: "https://s8-07-t-node-react-twitter.vercel.app",
     github: "https://github.com/fernandobouchet/s8-07-t-node-react-twitter",
-    techstack: ["Next", "Tailwind", "ReactQuery", "Express", "Mongo"],
+    techstack: [
+      "Next.js",
+      "Tailwind CSS",
+      "React Query",
+      "Express",
+      "MongoDB",
+      "Redux",
+      "API",
+    ],
   },
   {
     id: 12,
@@ -175,7 +190,7 @@ export const ProjectsData = [
       "https://raw.githubusercontent.com/fernandobouchet/excel2docxTemplate2pdf/main/preview.webp",
     demo: "https://excel2docx-template2pdf.vercel.app",
     github: "https://github.com/fernandobouchet/excel2docxTemplate2pdf",
-    techstack: ["Next", "Tailwind"],
+    techstack: ["Next.js", "Tailwind CSS", "Shadcn/UI", "API"],
   },
   {
     id: 13,
@@ -188,6 +203,6 @@ export const ProjectsData = [
       "https://raw.githubusercontent.com/fernandobouchet/FavSongQuote/refs/heads/main/preview.webp",
     demo: "https://favsongsquote.vercel.app",
     github: "https://github.com/fernandobouchet/FavSongQuote",
-    techstack: ["Next", "Tailwind"],
+    techstack: ["Next.js", "Tailwind CSS", "Supabase", "Shadcn/UI", "API"],
   },
 ];
