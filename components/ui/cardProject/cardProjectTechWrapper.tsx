@@ -1,48 +1,44 @@
-import {
-  IconBadgeBootstrap,
-  IconBadgeChakra,
-  IconBadgeCss,
-  IconBadgeExpress,
-  IconBadgeFirebase,
-  IconBadgeMongodb,
-  IconBadgeNextJs,
-  IconBadgeReact,
-  IconBadgeReactQuery,
-  IconBadgeReactRouter,
-  IconBadgeStyledComponents,
-  IconBadgeTailwind,
-  IconBadgeTypescript,
-} from "@/components/icons/techStackBadgesIcons";
+import { TechIcons } from "@/components/icons";
+import { Badge } from "@/components/ui/badge";
 
 interface Props {
   techstack: string[];
 }
 
-const badgeIcons = [
-  { id: 1, name: "React", icon: <IconBadgeReact /> },
-  { id: 2, name: "Typescript", icon: <IconBadgeTypescript /> },
-  { id: 3, name: "Mongo", icon: <IconBadgeMongodb /> },
-  { id: 4, name: "Express", icon: <IconBadgeExpress /> },
-  { id: 5, name: "Next", icon: <IconBadgeNextJs /> },
-  { id: 6, name: "ReactQuery", icon: <IconBadgeReactQuery /> },
-  { id: 7, name: "ReactRouter", icon: <IconBadgeReactRouter /> },
-  { id: 8, name: "Firebase", icon: <IconBadgeFirebase /> },
-  { id: 9, name: "Bootstrap", icon: <IconBadgeBootstrap /> },
-  { id: 10, name: "Css", icon: <IconBadgeCss /> },
-  { id: 11, name: "StyledComponents", icon: <IconBadgeStyledComponents /> },
-  { id: 12, name: "Chakra", icon: <IconBadgeChakra /> },
-  { id: 13, name: "Tailwind", icon: <IconBadgeTailwind /> },
+const Technologies = [
+  { id: 0, tech: TechIcons.html },
+  { id: 1, tech: TechIcons.css },
+  { id: 2, tech: TechIcons.javascript },
+  { id: 3, tech: TechIcons.typescript },
+  { id: 4, tech: TechIcons.react },
+  { id: 5, tech: TechIcons.nextjs },
+  { id: 6, tech: TechIcons.nodejs },
+  { id: 7, tech: TechIcons.express },
+  { id: 8, tech: TechIcons.mongodb },
+  { id: 9, tech: TechIcons.postgresql },
+  { id: 10, tech: TechIcons.mysql },
+  { id: 11, tech: TechIcons.tailwind },
+  { id: 12, tech: TechIcons.reactQuery },
+  { id: 13, tech: TechIcons.styledComponents },
+  { id: 14, tech: TechIcons.bootstrap },
+  { id: 15, tech: TechIcons.firebase },
+  { id: 16, tech: TechIcons.reactRouter },
+  { id: 17, tech: TechIcons.chakraUi },
+  { id: 18, tech: TechIcons.supabase },
+  { id: 19, tech: TechIcons.shadcnui },
+  { id: 20, tech: TechIcons.redux },
+  { id: 99, tech: TechIcons.api },
 ];
 
 const CardProjectTechWrapper = ({ techstack }: Props) => {
-  const cardIcons = badgeIcons.filter((item) => techstack.includes(item.name));
+  const cardIcons = Technologies.filter((item) =>
+    techstack.includes(item.tech.title)
+  );
 
   return (
     <div className="flex flex-wrap py-2 mt-auto gap-2 justify-center">
-      {cardIcons.map((tech) => (
-        <span key={tech.id} className="[&_svg]:rounded-lg">
-          {tech.icon}
-        </span>
+      {cardIcons.map((item) => (
+        <Badge key={item.id} text={item.tech.title} icon={item.tech.icon} />
       ))}
     </div>
   );
