@@ -1,4 +1,3 @@
-import { Badge } from "@/components/ui/badge";
 import { TechIcons } from "@/components/icons";
 
 const Technologies = [
@@ -25,11 +24,9 @@ const AboutBadgesWrapper = () => {
             key={item.id}
           >
             {item.tech.icon}
-            <Badge
-              key={item.id}
-              text={item.tech.title}
-              className="bg-transparent"
-            />
+            <span className="text-tertiary-foreground py-2 font-medium text-sm lg:text-base">
+              {item.tech.title}
+            </span>
           </li>
         ))}
       </ul>
@@ -43,11 +40,9 @@ const AboutBadgesWrapper = () => {
             key={item.id}
           >
             {item.tech.icon}
-            <Badge
-              key={item.id}
-              text={item.tech.title}
-              className="bg-transparent"
-            />
+            <span className="text-tertiary-foreground py-2 font-medium text-sm lg:text-base">
+              {item.tech.title}
+            </span>
           </li>
         ))}
       </ul>

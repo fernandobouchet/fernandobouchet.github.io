@@ -19,6 +19,7 @@ import {
   SiTypescript,
   SiRedux,
   SiShadcnui,
+  SiPrisma,
 } from "react-icons/si";
 import { GrMysql } from "react-icons/gr";
 import { TbApi } from "react-icons/tb";
@@ -52,6 +53,7 @@ const TechIcons = {
   api: { title: "API", icon: <TbApi /> },
   redux: { title: "Redux", icon: <SiRedux /> },
   shadcnui: { title: "Shadcn/UI", icon: <SiShadcnui /> },
+  prisma: { title: "Prisma", icon: <SiPrisma /> },
 };
 
 export { TechIcons };

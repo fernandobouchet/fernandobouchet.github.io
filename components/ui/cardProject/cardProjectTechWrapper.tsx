@@ -27,6 +27,7 @@ const Technologies = [
   { id: 18, tech: TechIcons.supabase },
   { id: 19, tech: TechIcons.shadcnui },
   { id: 20, tech: TechIcons.redux },
+  { id: 21, tech: TechIcons.prisma },
   { id: 99, tech: TechIcons.api },
 ];
 

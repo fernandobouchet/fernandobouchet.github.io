@@ -203,6 +203,13 @@ export const ProjectsData = [
       "https://raw.githubusercontent.com/fernandobouchet/FavSongQuote/refs/heads/main/preview.webp",
     demo: "https://favsongsquote.vercel.app",
     github: "https://github.com/fernandobouchet/FavSongQuote",
-    techstack: ["Next.js", "Tailwind CSS", "Supabase", "Shadcn/UI", "API"],
+    techstack: [
+      "Next.js",
+      "Tailwind CSS",
+      "Supabase",
+      "Shadcn/UI",
+      "Prisma",
+      "API",
+    ],
   },
 ];
