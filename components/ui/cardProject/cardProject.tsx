@@ -26,11 +26,11 @@ const CardProject = ({ project }: Props) => {
 
   return (
     <motion.div
-      className="flex flex-col items-center gap-1 lg:gap-4 p-2 backdrop-blur-xl bg-black/5 dark:bg-white/5 rounded-2xl group/card w-[90vw] md:w-[22rem] lg:w-[30rem] h-full"
+      className="flex flex-col items-center gap-1 backdrop-blur-xl bg-black/5 dark:bg-white/5 rounded-2xl w-[90vw] md:w-[22rem] lg:w-[30rem] h-full"
       variants={listItemAnimation}
     >
       <a
-        className="relative flex flex-col items-center w-full h-72"
+        className="relative flex flex-col items-center w-full h-72 rounded-2xl overflow-hidden"
         href={project.demo}
         target="_blank"
       >
@@ -38,16 +38,16 @@ const CardProject = ({ project }: Props) => {
           src={project.image}
           alt={project.title}
           fill
-          className="object-cover object-top w-full h-60 transition duration-500 lg:scale-95 lg:group-hover/card:scale-100 rounded-2xl"
+          className="object-cover object-top w-full h-60 transition duration-500 scale-105 hover:scale-110 rounded-2xl"
         />
       </a>
-      <div className="p-2 w-full flex flex-col h-1/2">
+      <div className="px-4 w-full flex flex-col h-1/2">
         <div className="flex flex-col">
           <div className="flex items-center pb-1">
             <h2 className="text-lg font-semibold">{project.title}</h2>
             <CardProjectLinksButtontsWrapper project={project} />
           </div>
-          <p className="text-sm lg:text-sm">
+          <p className="text-sm lg:text-sm text-neutral-900 dark:text-neutral-300">
             {language === "ES" ? project.info_es : project.info_en}
           </p>
         </div>

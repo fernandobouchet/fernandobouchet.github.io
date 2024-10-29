@@ -37,7 +37,7 @@ const CardProjectTechWrapper = ({ techstack }: Props) => {
   );
 
   return (
-    <div className="flex flex-wrap py-2 mt-auto gap-2 justify-center">
+    <div className="flex flex-wrap pt-2 pb-4 mt-auto gap-2 justify-center">
       {cardIcons.map((item) => (
         <Badge key={item.id} text={item.tech.title} icon={item.tech.icon} />
       ))}
