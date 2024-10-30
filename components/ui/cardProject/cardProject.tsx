@@ -1,10 +1,10 @@
 "use client";
 
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import { LanguageContext } from "@/context/languageContext";
 import { CardProjectLinksButtontsWrapper } from "@/components/ui/cardProject/cardProjectLinksButtontsWrapper";
 import { CardProjectTechWrapper } from "@/components/ui/cardProject/cardProjectTechWrapper";
-import { motion } from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
 import { listItemAnimation } from "@/utils/motionContants";
 import Image from "next/image";
 
@@ -23,6 +23,7 @@ interface Props {
 
 const CardProject = ({ project }: Props) => {
   const { language } = useContext(LanguageContext);
+  const [isLoaded, setIsLoaded] = useState(false);
 
   return (
     <motion.div
@@ -33,12 +34,28 @@ const CardProject = ({ project }: Props) => {
         className="relative flex flex-col items-center w-full h-72 rounded-2xl overflow-hidden"
         href={project.demo}
         target="_blank"
+        rel="noopener noreferrer"
       >
+        <AnimatePresence>
+          {!isLoaded && (
+            <motion.div
+              className="w-full h-72 rounded-2xl animate-pulse flex space-x-4 bg-slate-700 relative"
+              initial={{ opacity: 1 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              transition={{ duration: 0.5 }}
+            >
+              <div className="bg-slate-700 w-full rounded-2xl h-72"></div>
+            </motion.div>
+          )}
+        </AnimatePresence>
+
         <Image
           src={project.image}
           alt={project.title}
+          className="object-cover object-top w-full h-72 transition duration-500 scale-105 hover:scale-110 rounded-2xl"
           fill
-          className="object-cover object-top w-full h-60 transition duration-500 scale-105 hover:scale-110 rounded-2xl"
+          onLoad={() => setIsLoaded(true)}
         />
       </a>
       <div className="px-4 w-full flex flex-col h-1/2">
