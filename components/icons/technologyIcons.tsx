@@ -20,9 +20,11 @@ import {
   SiRedux,
   SiShadcnui,
   SiPrisma,
+  SiNextui,
 } from "react-icons/si";
 import { GrMysql } from "react-icons/gr";
 import { TbApi } from "react-icons/tb";
+import { TfiWorld } from "react-icons/tfi";
 
 const TechIcons = {
   html: { title: "HTML", icon: <SiHtml5 /> },
@@ -54,6 +56,8 @@ const TechIcons = {
   redux: { title: "Redux", icon: <SiRedux /> },
   shadcnui: { title: "Shadcn/UI", icon: <SiShadcnui /> },
   prisma: { title: "Prisma", icon: <SiPrisma /> },
+  nextUI: { title: "Next UI", icon: <SiNextui /> },
+  i18n: { title: "Next-intl", icon: <TfiWorld /> },
 };
 
 export { TechIcons };

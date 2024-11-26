@@ -212,4 +212,30 @@ export const ProjectsData = [
       "API",
     ],
   },
+  {
+    id: 14,
+    title: "TechStore",
+    info_es:
+      "Esta es una aplicación web de un e-commerce ficticio que permite a los usuarios explorar productos, agregar artículos a un carrito y guardar favoritos. La aplicación posee soporte multilenguaje y aprovecha la generación de sitios estáticos (SSG) para un rendimiento óptimo y una carga rápida.",
+    info_en:
+      "This is a fictional e-commerce web application that allows users to browse products, add items to a cart, and save favorites. The application has multi-language support and takes advantage of static site generation (SSG) for optimal performance and fast loading.",
+    image:
+      "https://raw.githubusercontent.com/fernandobouchet/store/refs/heads/main/preview.webp",
+    demo: "https://storetechbeta.vercel.app",
+    github: "https://github.com/fernandobouchet/store",
+    techstack: ["Next.js", "Tailwind CSS", "Next UI", "Next-intl"],
+  },
+  {
+    id: 15,
+    title: "SimpleTaskBoard",
+    info_es:
+      "Un sistema de gestión de tareas con vista de tabla y tablero Kanban (con soporte para arrastrar y soltar), con soporte multilenguaje y visualización de datos.",
+    info_en:
+      "A task management system with a table view and a Kanban board (with drag and drop support), with multi-language support and data visualization.",
+    image:
+      "https://raw.githubusercontent.com/fernandobouchet/tasks/refs/heads/main/preview.webp",
+    demo: "https://simpletaskboard.vercel.app",
+    github: "https://github.com/fernandobouchet/tasks",
+    techstack: ["Next.js", "Tailwind CSS", "Shadcn/UI", "Prisma", "Next-intl"],
+  },
 ];
