@@ -8,7 +8,7 @@ import { LanguageProvider } from "@/context/languageContext";
 const OpenSans = Open_Sans({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Fernando Bouchet Porfolio",
+  title: "Fernando Bouchet | Full Stack Developer",
   description: "Porfolio of Fernando Bouchet",
   icons: {
     icon: [
