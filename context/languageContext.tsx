@@ -1,7 +1,6 @@
 "use client";
 
-import { createContext, useState } from "react";
-import { getSavedLanguage, saveLanguage } from "@/utils/functions";
+import { createContext, useEffect, useState } from "react";
 import { translations } from "@/utils/translations";
 
 type LanguageKey = keyof typeof translations;
@@ -17,19 +16,18 @@ export const LanguageProvider = ({
 }: {
   children: React.ReactNode;
 }) => {
-  const [language, setLanguage] = useState<LanguageKey>(getSavedLanguage());
-
+  const [language, setLanguage] = useState<LanguageKey>("EN");
   const [texts, setTexts] = useState(translations[language]);
+
+  useEffect(() => {
+    setTexts(translations[language]);
+  }, [language]);
 
   const handleChangeLanguage = () => {
     if (language === "EN") {
       setLanguage("ES");
-      setTexts(translations.ES);
-      saveLanguage("ES");
     } else {
       setLanguage("EN");
-      setTexts(translations.EN);
-      saveLanguage("EN");
     }
   };
 

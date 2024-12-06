@@ -1,0 +1,36 @@
+{
+  "site": {
+    "title": "Fernando Bouchet | Desarrollador Full Stack",
+    "description": "Go to the about page"
+  },
+  "navbar": {
+    "about": "SOBRE MÍ",
+    "projects": "PROYECTOS",
+    "contact": "CONTACTO"
+  },
+  "about": {
+    "hero": "Hola, soy Fernando",
+    "p1": "Soy ",
+    "span1": "Técnico Universitario en Programación",
+    "p2": " y estudiante intermedio de la ",
+    "span2": "Licenciatura en Informática",
+    "p3": ".",
+    "p4": " Apasionado por el desarrollo full-stack, combino una sólida formación académica con un fuerte compromiso con el ",
+    "span3": "aprendizaje autodidacta",
+    "p5": ", perfeccionando continuamente mis habilidades a través de proyectos individuales y colaborativos.",
+    "p6": "Estas son algunas de las tecnologías con las que he estado trabajando recientemente:",
+    "resumeButton": "Obtener currículum",
+    "resumeLink": "https://drive.google.com/file/d/1LlCYRFeAQ5b2uRnIuw4_nVFK9MMpEwCV/view?usp=drive_link"
+  },
+  "projects": {
+    "title": "Proyectos",
+    "p1": "Estos son algunos de los proyectos en los que he estado trabajando, puedes encontrar más en mi",
+    "button": "Mostrar más"
+  },
+  "contact": {
+    "title": "Contacto",
+    "p1": "Gracias por tu interés en ponerte en contacto!",
+    "p2": "La mejor manera de contactarme es a través de mi dirección de correo electrónico:",
+    "p3": ", intentaré responder a la brevedad!"
+  }
+}
