@@ -1,4 +1,4 @@
-import { NavItem } from "./navItem";
+import { NavItem } from "./nav-item";
 
 const Links = ["ABOUT", "PROJECTS", "CONTACT"];
 
