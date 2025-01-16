@@ -1,8 +1,10 @@
+import { SectionContainer } from "../ui/section-container";
+
 const Contact = () => {
   return (
-    <section id="contact" className="section-container">
+    <SectionContainer sectionId="contact">
       <h2 className="section-title">Contact</h2>
-    </section>
+    </SectionContainer>
   );
 };
 export { Contact };

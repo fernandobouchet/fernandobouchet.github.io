@@ -1,8 +1,10 @@
+import { SectionContainer } from "../ui/section-container";
+
 const About = () => {
   return (
-    <section id="about" className="section-container">
+    <SectionContainer sectionId="about">
       <h2 className="section-title">About</h2>
-    </section>
+    </SectionContainer>
   );
 };
 export { About };
