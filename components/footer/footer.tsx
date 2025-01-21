@@ -4,7 +4,7 @@ const Footer = () => {
   const year = new Date().getFullYear();
 
   return (
-    <footer className="flex justify-center text-xs lg:text-sm py-1">
+    <footer className="flex justify-center text-xs lg:text-sm py-1 text-muted-foreground">
       <a
         href="https://github.com/fernandobouchet/fernandobouchet.github.io"
         target="_blank"
