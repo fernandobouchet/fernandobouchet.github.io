@@ -2,15 +2,31 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
+@layer base {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #fcfcfd;
+    --foreground: #1e1f24;
+    --accent: #d7edfe;
+    --primary: #075985;
+    --primary-foreground: #fff;
+    --secondary: #0094ff1a;
+    --secondary-foreground: #00558bd7;
+    --muted: #fcfcfd;
+    --muted-foreground: #0002119d;
+    --card: #00005506;
+    --card-foreground: #1e1f24;
+  }
+
+  .dark {
+    --background: #111113;
+    --foreground: #eeeef0;
+    --accent: #075985;
+    --secondary: #0086fc34;
+    --secondary-foreground: #75c6fffd;
+    --muted: #111113;
+    --muted-foreground: #eff0feb9;
+    --card: #cbcbf90b;
+    --card-foreground: #eff0feb9;
   }
 }
 
@@ -22,13 +38,18 @@ body {
   color: var(--foreground);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
+  padding: 0;
+  margin: 0;
 }
 
 @layer components {
   .section-container {
-    @apply container flex flex-col justify-center items-center h-[calc(100vh-2.5rem)] scroll-mt-10 mt-10 px-2;
+    @apply container max-w-4xl flex flex-col justify-center items-center h-[calc(100vh-3rem)] mt-12 scroll-mt-12 p-4;
   }
   .section-title {
     @apply text-2xl md:text-3xl font-bold;
+  }
+  .toggle-icon {
+    @apply w-4 h-4;
   }
 }
