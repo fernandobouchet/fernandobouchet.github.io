@@ -3,10 +3,11 @@ import { InView } from "./in-view";
 
 interface Props {
   sectionId: string;
+  className?: string;
   children: ReactNode;
 }
 
-const SectionContainer = ({ sectionId, children }: Props) => {
+const SectionContainer = ({ sectionId, children, className }: Props) => {
   return (
     <section id={sectionId}>
       <InView
@@ -16,7 +17,8 @@ const SectionContainer = ({ sectionId, children }: Props) => {
         }}
         viewOptions={{ margin: "0px 0px -200px 0px" }}
         transition={{ duration: 0.5 }}
-        className="section-container"
+        className={`section-container ${className ? className : ""}`}
+        as={"section"}
       >
         {children}
       </InView>
