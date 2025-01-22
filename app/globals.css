@@ -13,7 +13,7 @@
     --secondary-foreground: #00558bd7;
     --muted: #fcfcfd;
     --muted-foreground: #0002119d;
-    --card: #00005506;
+    --card: #f9f9fb;
     --card-foreground: #1e1f24;
   }
 
@@ -24,9 +24,9 @@
     --secondary: #0086fc34;
     --secondary-foreground: #75c6fffd;
     --muted: #111113;
-    --muted-foreground: #eff0feb9;
-    --card: #cbcbf90b;
-    --card-foreground: #eff0feb9;
+    --muted-foreground: #eff0fe;
+    --card: #19191b;
+    --card-foreground: #eff0fe;
   }
 }
 
@@ -51,5 +51,8 @@ body {
   }
   .toggle-icon {
     @apply w-4 h-4;
+  }
+  .link-text {
+    @apply text-secondary-foreground font-semibold relative after:absolute after:bottom-0 after:left-0 after:right-0 after:h-px after:w-full after:origin-bottom after:scale-x-0 after:bg-secondary-foreground after:transition-transform after:duration-300 after:ease-[cubic-bezier(0.65_0.05_0.36_1)] hover:after:origin-bottom hover:after:scale-x-100;
   }
 }
