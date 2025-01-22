@@ -38,7 +38,7 @@ const ProjectCard = ({ project }: Props) => {
         style={{
           borderRadius: "12px",
         }}
-        className="flex max-w-lg flex-col overflow-hidden bg-card text-card-foreground border border-muted"
+        className="flex max-w-lg flex-col overflow-hidden bg-card text-card-foreground border border-zinc-950/10 bg-white dark:border-zinc-50/10 dark:bg-zinc-900"
       >
         <MorphingDialogImage
           src={project.image}
@@ -68,7 +68,7 @@ const ProjectCard = ({ project }: Props) => {
           style={{
             borderRadius: "24px",
           }}
-          className="pointer-events-auto relative flex h-auto w-full flex-col overflow-hidden bg-card text-card-foreground sm:w-[500px]"
+          className="pointer-events-auto relative flex h-auto w-full flex-col overflow-hidden bg-card text-card-foreground sm:w-[500px] border border-zinc-950/10 bg-white dark:border-zinc-50/10 dark:bg-zinc-900"
         >
           <MorphingDialogImage
             src={project.image}
