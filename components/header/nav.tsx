@@ -1,7 +1,7 @@
 import { ThemeToggle } from "../ui/theme-toggle";
 import { NavItem } from "./nav-item";
 
-const Links = ["ABOUT", "PROJECTS", "CONTACT"];
+const Links = ["About", "Projects", "Contact"];
 
 const Nav = () => {
   return (
