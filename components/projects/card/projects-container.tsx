@@ -35,7 +35,7 @@ const ProjectsContainer = () => {
         ))}
       </div>
       {projects.length < sortedProjects.length && (
-        <Button onClick={handleOnClick} className="w-1/4 mx-auto">
+        <Button onClick={handleOnClick} className="md:w-1/4 mx-auto flex">
           Show more
         </Button>
       )}
