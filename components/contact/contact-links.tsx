@@ -2,7 +2,7 @@
 import { motion } from "motion/react";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { ButtonIconLink } from "../ui/button-icon-link";
-import { MdMail } from "react-icons/md";
+import { TbMailFilled } from "react-icons/tb";
 
 const links = [
   {
@@ -20,7 +20,7 @@ const links = [
   {
     id: 3,
     link: "mailto:fernandobouchet@gmail.com",
-    icon: <MdMail className="link-icon" />,
+    icon: <TbMailFilled className="link-icon" />,
     name: "Email",
   },
 ];

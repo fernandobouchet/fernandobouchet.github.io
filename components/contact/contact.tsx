@@ -12,8 +12,9 @@ const Contact = () => {
           <a href="mailto:fernandobouchet@gmail.com" className="link-text">
             fernandobouchet@gmail.com
           </a>
-          , I will get back to you as soon as possible!
+          .
         </p>
+        <p>I will get back to you as soon as possible!</p>
       </div>
       <ContactLinks />
     </SectionContainer>
