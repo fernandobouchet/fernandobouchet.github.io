@@ -1,3 +1,5 @@
+"use client";
+
 import {
   MorphingDialog,
   MorphingDialogTrigger,
@@ -11,6 +13,8 @@ import {
 } from "../../ui/morphing-dialog";
 import { MdOutlineAdd } from "react-icons/md";
 import { ProjectTechBadge } from "./project-tech-badge";
+import { useContext } from "react";
+import { LanguageContext } from "@/context/language-context";
 
 interface Props {
   project: {
@@ -26,6 +30,8 @@ interface Props {
 }
 
 const ProjectCard = ({ project }: Props) => {
+  const { language } = useContext(LanguageContext);
+
   return (
     <MorphingDialog
       transition={{
@@ -51,7 +57,7 @@ const ProjectCard = ({ project }: Props) => {
               {project.title}
             </MorphingDialogTitle>
             <MorphingDialogSubtitle className="text-zinc-700 dark:text-zinc-400 line-clamp-1">
-              {project.info_en}
+              {language === "EN" ? project.info_en : project.info_es}
             </MorphingDialogSubtitle>
           </div>
           <button
@@ -88,7 +94,7 @@ const ProjectCard = ({ project }: Props) => {
               }}
             >
               <p className="mt-2 text-zinc-700 dark:text-zinc-400">
-                {project.info_en}
+                {language === "EN" ? project.info_en : project.info_es}
               </p>
             </MorphingDialogDescription>
             <ProjectTechBadge techstack={project.techstack} />

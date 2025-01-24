@@ -21,7 +21,7 @@ const NavItem = ({ title, link }: Props) => {
       href={href}
       onClick={handleOnClick}
       className={`py-1 px-2 rounded-full transition-all ${
-        activeSection === title.toLowerCase()
+        activeSection === link.toLowerCase()
           ? "bg-foreground text-background"
           : ""
       }`}

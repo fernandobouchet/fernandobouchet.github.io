@@ -1,11 +1,14 @@
 "use client";
-import { useState } from "react";
+import { useContext, useState } from "react";
 import { ProjectsData } from "@/utils/projects-data";
 import { ProjectCard } from "./project-card";
 import { Button } from "@/components/ui/button";
 import { motion } from "motion/react";
+import { LanguageContext } from "@/context/language-context";
 
 const ProjectsContainer = () => {
+  const { texts } = useContext(LanguageContext);
+
   const sortedProjects = ProjectsData.sort((a, b) => b.id - a.id);
   const [currentProjectIndex, setCurrentProjectIndex] = useState(4);
   const [projects, setProjects] = useState(
@@ -36,7 +39,7 @@ const ProjectsContainer = () => {
       </div>
       {projects.length < sortedProjects.length && (
         <Button onClick={handleOnClick} className="md:w-1/4 mx-auto flex">
-          Show more
+          {texts.projects.button}
         </Button>
       )}
     </div>

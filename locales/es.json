@@ -4,9 +4,9 @@
     "description": "Go to the about page"
   },
   "navbar": {
-    "about": "SOBRE MÍ",
-    "projects": "PROYECTOS",
-    "contact": "CONTACTO"
+    "about": "Sobre mí",
+    "projects": "Proyectos",
+    "contact": "Contacto"
   },
   "about": {
     "hero": "Hola, soy Fernando",
@@ -30,7 +30,7 @@
   "contact": {
     "title": "Contacto",
     "p1": "Gracias por tu interés en ponerte en contacto!",
-    "p2": "La mejor manera de contactarme es a través de mi dirección de correo electrónico:",
-    "p3": ", intentaré responder a la brevedad!"
+    "p2": "La mejor manera de contactarme es a través de mi dirección de correo electrónico",
+    "p3": "intentaré responder a la brevedad!"
   }
 }

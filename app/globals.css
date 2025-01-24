@@ -44,7 +44,7 @@ body {
 
 @layer components {
   .section-container {
-    @apply container max-w-4xl flex flex-col justify-center items-center h-[calc(100vh-3rem)] mt-12 scroll-mt-12 p-4;
+    @apply container md:max-w-5xl flex flex-col justify-center items-center h-[calc(100vh-3rem)] mt-12 scroll-mt-12 p-4;
   }
   .section-title {
     @apply text-2xl md:text-3xl font-bold;
