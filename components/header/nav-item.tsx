@@ -1,3 +1,6 @@
+"use client";
+
+import { useNavbar } from "@/hooks/useNavBar";
 import Link from "next/link";
 
 interface Props {
@@ -6,6 +9,25 @@ interface Props {
 }
 
 const NavItem = ({ title, link }: Props) => {
-  return <Link href={`#${link}`.toLowerCase()}>{title}</Link>;
+  const { activeSection, scrollToSection } = useNavbar();
+  const href = `#${link}`.toLowerCase();
+
+  const handleOnClick = () => {
+    scrollToSection(href);
+  };
+
+  return (
+    <Link
+      href={href}
+      onClick={handleOnClick}
+      className={`py-1 px-2 rounded-full transition-all ${
+        activeSection === title.toLowerCase()
+          ? "bg-foreground text-background"
+          : ""
+      }`}
+    >
+      {title}
+    </Link>
+  );
 };
 export { NavItem };
