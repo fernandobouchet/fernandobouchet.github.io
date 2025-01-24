@@ -1,3 +1,4 @@
+import { LanguageToggle } from "../ui/language.toggle";
 import { ThemeToggle } from "../ui/theme-toggle";
 import { NavItem } from "./nav-item";
 
@@ -15,6 +16,7 @@ const Nav = () => {
       </ul>
       <ul className="flex items-center gap-2 ml-auto">
         <ThemeToggle />
+        <LanguageToggle />
       </ul>
     </nav>
   );
