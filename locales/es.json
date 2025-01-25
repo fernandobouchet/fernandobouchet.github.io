@@ -25,7 +25,9 @@
   "projects": {
     "title": "Proyectos",
     "p1": "Estos son algunos de los proyectos en los que he estado trabajando, puedes encontrar más en mi",
-    "button": "Mostrar más"
+    "info_button": "Más información",
+    "button": "Mostrar más",
+    "repo": "Repositorio"
   },
   "contact": {
     "title": "Contacto",

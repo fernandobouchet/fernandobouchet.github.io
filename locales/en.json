@@ -25,7 +25,9 @@
   "projects": {
     "title": "Projects",
     "p1": "These are some of the projects I have been working on, you can find more on my",
-    "button": "Show more"
+    "info_button": "Learn more",
+    "button": "Show more",
+    "repo": "Repository"
   },
   "contact": {
     "title": "Contact",
