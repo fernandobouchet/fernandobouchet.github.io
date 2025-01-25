@@ -11,10 +11,11 @@ import {
   MorphingDialogDescription,
   MorphingDialogContainer,
 } from "../../ui/morphing-dialog";
-import { MdOutlineAdd } from "react-icons/md";
 import { ProjectTechBadge } from "./project-tech-badge";
 import { useContext } from "react";
 import { LanguageContext } from "@/context/language-context";
+import { FaGithub } from "react-icons/fa";
+import { LuExternalLink } from "react-icons/lu";
 
 interface Props {
   project: {
@@ -30,42 +31,44 @@ interface Props {
 }
 
 const ProjectCard = ({ project }: Props) => {
-  const { language } = useContext(LanguageContext);
+  const { texts, language } = useContext(LanguageContext);
 
   return (
     <MorphingDialog
       transition={{
         type: "spring",
-        bounce: 0.05,
-        duration: 0.25,
+        stiffness: 200,
+        damping: 24,
       }}
     >
       <MorphingDialogTrigger
         style={{
-          borderRadius: "12px",
+          borderRadius: "24px",
         }}
         className="flex max-w-lg flex-col overflow-hidden bg-card text-card-foreground border border-zinc-950/10 bg-white dark:border-zinc-50/10 dark:bg-zinc-900"
       >
         <MorphingDialogImage
           src={project.image}
           alt={project.title}
-          className="h-48 w-full object-cover"
+          className="h-48 w-full object-cover rounded-b-2xl"
         />
         <div className="flex flex-grow flex-row items-end justify-between p-2">
           <div>
-            <MorphingDialogTitle className="text-card-foreground">
+            <MorphingDialogTitle className="text-card-foreground text-xl">
               {project.title}
             </MorphingDialogTitle>
-            <MorphingDialogSubtitle className="text-zinc-700 dark:text-zinc-400 line-clamp-1">
+            <MorphingDialogSubtitle className="text-zinc-700 dark:text-zinc-400 line-clamp-2">
               {language === "EN" ? project.info_en : project.info_es}
             </MorphingDialogSubtitle>
           </div>
+        </div>
+        <div className="w-full flex p-2">
           <button
             type="button"
-            className="relative ml-1 flex h-6 w-6 shrink-0 scale-100 select-none appearance-none items-center justify-center rounded-lg border border-zinc-950/10 text-zinc-500 transition-colors hover:bg-zinc-100 hover:text-zinc-800 focus-visible:ring-2 active:scale-[0.98] dark:border-zinc-50/10 dark:bg-zinc-900 dark:text-zinc-500 dark:hover:bg-zinc-800 dark:hover:text-zinc-50 dark:focus-visible:ring-zinc-500"
+            className="bg-secondary text-secondary-foreground rounded-full ml-auto inline-flex py-2 px-4"
             aria-label="Open dialog"
           >
-            <MdOutlineAdd size={12} />
+            {texts.projects.info_button}
           </button>
         </div>
       </MorphingDialogTrigger>
@@ -79,7 +82,7 @@ const ProjectCard = ({ project }: Props) => {
           <MorphingDialogImage
             src={project.image}
             alt={project.title}
-            className="h-full w-full"
+            className="h-full lg:h-72 object-cover object-center"
           />
           <div className="p-6">
             <MorphingDialogTitle className="text-2xl text-zinc-950 dark:text-zinc-50">
@@ -99,22 +102,28 @@ const ProjectCard = ({ project }: Props) => {
             </MorphingDialogDescription>
             <ProjectTechBadge techstack={project.techstack} />
             <div className="w-full flex justify-evenly">
-              <a
-                className="mt-2 inline-flex link-text"
-                href={project.github}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Code
-              </a>
-              <a
-                className="mt-2 inline-flex link-text"
-                href={project.demo}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Demo
-              </a>
+              <button className="border-2 border-secondary text-secondary-foreground px-4 py-2 rounded-full transition hover:border-primary-foreground hover:text-primary-foreground">
+                <a
+                  className="inline-flex items-center gap-2"
+                  href={project.github}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  {texts.projects.repo}
+                  <FaGithub />
+                </a>
+              </button>
+              <button className="border-2 border-secondary text-secondary-foreground px-4 py-2 rounded-full transition hover:border-primary-foreground hover:text-primary-foreground">
+                <a
+                  className="inline-flex items-center gap-2"
+                  href={project.demo}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Demo
+                  <LuExternalLink />
+                </a>
+              </button>
             </div>
           </div>
           <MorphingDialogClose className="text-zinc-50" />
