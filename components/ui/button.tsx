@@ -6,15 +6,24 @@ interface Props {
   className?: string;
   onClick?: () => void;
   children: ReactNode;
+  variant?: "primary" | "secondary";
 }
 
-const Button = ({ className, children, onClick }: Props) => {
+const Button = ({
+  className,
+  children,
+  onClick,
+  variant = "primary",
+}: Props) => {
   return (
     <button
-      className={`group relative inline-flex h-12 items-center text-base lg:text-lg justify-center overflow-hidden rounded-full bg-primary px-6 text-primary-foreground font-semibold my-2 *:z-10 ${className}`}
+      className={`group relative inline-flex h-10 md:h-12 items-center justify-center overflow-hidden rounded-full bg-primary px-4 md:px-6 text-primary-foreground font-semibold my-2 *:z-10  ${
+        variant === "primary"
+          ? "bg-primary text-primary-foreground primary-hover"
+          : "bg-secondary text-secondary-foreground secondary-hover"
+      } ${className}`}
       onClick={onClick ? onClick : undefined}
     >
-      <span className="absolute h-0 w-0 rounded-full bg-secondary transition-all duration-300 group-hover:h-full group-hover:w-full"></span>
       <span>{children}</span>
     </button>
   );

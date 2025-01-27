@@ -1,8 +1,8 @@
 "use client";
 import { motion } from "motion/react";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
-import { ButtonIconLink } from "../ui/button-icon-link";
 import { TbMailFilled } from "react-icons/tb";
+import { ButtonLink } from "../ui/button-link";
 
 const links = [
   {
@@ -28,7 +28,7 @@ const links = [
 const ContactLinks = () => {
   return (
     <motion.ul
-      className="w-full flex justify-center gap-10 py-5"
+      className="w-full flex justify-around md:justify-center md:gap-10 py-5"
       variants={{
         hidden: { opacity: 1 },
         visible: {
@@ -55,8 +55,9 @@ const ContactLinks = () => {
             },
           }}
         >
-          <ButtonIconLink link={link.link} icon={link.icon} />
-          <span className="font-medium">{link.name}</span>
+          <ButtonLink link={link.link} icon={link.icon}>
+            {link.name}
+          </ButtonLink>
         </motion.li>
       ))}
     </motion.ul>

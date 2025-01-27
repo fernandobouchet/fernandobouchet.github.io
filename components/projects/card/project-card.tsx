@@ -16,6 +16,8 @@ import { useContext } from "react";
 import { LanguageContext } from "@/context/language-context";
 import { FaGithub } from "react-icons/fa";
 import { LuExternalLink } from "react-icons/lu";
+import { ButtonLink } from "@/components/ui/button-link";
+import { Button } from "@/components/ui/button";
 
 interface Props {
   project: {
@@ -45,7 +47,7 @@ const ProjectCard = ({ project }: Props) => {
         style={{
           borderRadius: "24px",
         }}
-        className="flex max-w-lg flex-col overflow-hidden bg-card text-card-foreground border border-zinc-950/10 bg-white dark:border-zinc-50/10 dark:bg-zinc-900"
+        className="flex max-w-lg flex-col overflow-hidden bg-card text-card-foreground border border-zinc-950/10 bg-white dark:border-zinc-50/10 dark:bg-zinc-900 h-full"
       >
         <MorphingDialogImage
           src={project.image}
@@ -63,13 +65,13 @@ const ProjectCard = ({ project }: Props) => {
           </div>
         </div>
         <div className="w-full flex p-2">
-          <button
-            type="button"
-            className="bg-secondary text-secondary-foreground rounded-full ml-auto inline-flex py-2 px-4"
+          <Button
+            className="ml-auto"
             aria-label="Open dialog"
+            variant="secondary"
           >
             {texts.projects.info_button}
-          </button>
+          </Button>
         </div>
       </MorphingDialogTrigger>
       <MorphingDialogContainer>
@@ -102,28 +104,12 @@ const ProjectCard = ({ project }: Props) => {
             </MorphingDialogDescription>
             <ProjectTechBadge techstack={project.techstack} />
             <div className="w-full flex justify-evenly">
-              <button className="border-2 border-secondary text-secondary-foreground px-4 py-2 rounded-full transition hover:border-primary-foreground hover:text-primary-foreground">
-                <a
-                  className="inline-flex items-center gap-2"
-                  href={project.github}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  {texts.projects.repo}
-                  <FaGithub />
-                </a>
-              </button>
-              <button className="border-2 border-secondary text-secondary-foreground px-4 py-2 rounded-full transition hover:border-primary-foreground hover:text-primary-foreground">
-                <a
-                  className="inline-flex items-center gap-2"
-                  href={project.demo}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Demo
-                  <LuExternalLink />
-                </a>
-              </button>
+              <ButtonLink link={project.github} icon={<FaGithub />}>
+                {texts.projects.repo}
+              </ButtonLink>
+              <ButtonLink link={project.demo} icon={<LuExternalLink />}>
+                Demo
+              </ButtonLink>
             </div>
           </div>
           <MorphingDialogClose className="text-zinc-50" />

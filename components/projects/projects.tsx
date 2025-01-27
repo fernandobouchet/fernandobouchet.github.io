@@ -11,7 +11,7 @@ const Projects = () => {
     <SectionContainer sectionId="projects" className="h-full">
       <div className="flex flex-col items-center gap-4 pt-4 pb-6">
         <h2 className="section-title">{texts.projects.title}</h2>
-        <p>
+        <p className="text-center">
           {texts.projects.p1}{" "}
           <a
             href="https://github.com/fernandobouchet"
