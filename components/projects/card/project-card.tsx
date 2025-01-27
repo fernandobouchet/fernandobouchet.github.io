@@ -18,6 +18,7 @@ import { FaGithub } from "react-icons/fa";
 import { LuExternalLink } from "react-icons/lu";
 import { ButtonLink } from "@/components/ui/button-link";
 import { Button } from "@/components/ui/button";
+import { CardImage } from "./card-image";
 
 interface Props {
   project: {
@@ -39,8 +40,8 @@ const ProjectCard = ({ project }: Props) => {
     <MorphingDialog
       transition={{
         type: "spring",
-        stiffness: 200,
-        damping: 24,
+        bounce: 0.05,
+        duration: 0.25,
       }}
     >
       <MorphingDialogTrigger
@@ -49,11 +50,7 @@ const ProjectCard = ({ project }: Props) => {
         }}
         className="flex max-w-lg flex-col overflow-hidden bg-card text-card-foreground border border-zinc-950/10 bg-white dark:border-zinc-50/10 dark:bg-zinc-900 h-full"
       >
-        <MorphingDialogImage
-          src={project.image}
-          alt={project.title}
-          className="h-48 w-full object-cover rounded-b-2xl"
-        />
+        <CardImage src={project.image} alt={project.title} />
         <div className="flex flex-grow flex-row items-end justify-between p-2">
           <div>
             <MorphingDialogTitle className="text-card-foreground text-xl">
