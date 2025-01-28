@@ -15,7 +15,11 @@ const LanguageToggle = () => {
   if (!hasMounted) return <div className="toggle-icon" />;
 
   return (
-    <button onClick={handleChangeLanguage} className="toggle-icon">
+    <button
+      onClick={handleChangeLanguage}
+      className="toggle-icon"
+      aria-label="language toggle"
+    >
       <MdLanguage size="1.1em" />
     </button>
   );

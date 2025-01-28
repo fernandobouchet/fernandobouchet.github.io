@@ -19,7 +19,11 @@ const ThemeToggle = () => {
   };
 
   return (
-    <button onClick={handleClick} className="toggle-icon">
+    <button
+      onClick={handleClick}
+      className="toggle-icon"
+      aria-label="theme toggle"
+    >
       {theme === "light" ? (
         <MdDarkMode size="1.1em" />
       ) : (
