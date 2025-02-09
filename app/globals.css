@@ -1,6 +1,72 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss';
+
+@custom-variant dark (&:is(.dark *));
+
+@theme {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+}
+
+/*
+  The default border color has changed to `currentColor` in Tailwind CSS v4,
+  so we've added these compatibility styles to make sure everything still
+  looks the same as it did with Tailwind CSS v3.
+
+  If we ever want to remove these styles, we need to add an explicit border
+  color utility to any element that depends on these defaults.
+*/
+@layer base {
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: var(--color-gray-200, currentColor);
+  }
+}
+
+@utility section-container {
+  @apply container md:max-w-5xl flex flex-col justify-center items-center h-[calc(100vh-3rem)] mt-12 scroll-mt-12 p-4;
+}
+
+@utility section-title {
+  @apply text-2xl md:text-3xl font-bold;
+}
+
+@utility toggle-icon {
+  @apply w-4 h-4;
+}
+
+@utility link-text {
+  @apply text-secondary-foreground font-semibold relative after:absolute after:bottom-0 after:left-0 after:right-0 after:h-px after:w-full after:origin-bottom after:scale-x-0 after:bg-secondary-foreground after:transition-transform after:duration-300 after:ease-[cubic-bezier(0.65_0.05_0.36_1)] hover:after:origin-bottom hover:after:scale-x-100;
+}
+
+@utility link-icon {
+  @apply relative w-5 h-5 text-primary-foreground;
+}
+
+@utility primary-hover {
+  @apply transition-colors duration-300 hover:bg-[#004970];
+}
+
+@utility secondary-hover {
+  @apply transition-colors duration-300 hover:bg-[#0095EA0C] dark:hover:bg-[#007CFB18];
+}
 
 @layer base {
   :root {
@@ -30,38 +96,16 @@
   }
 }
 
-html {
-  scroll-behavior: smooth;
-}
+@layer utilities {
+  html {
+    scroll-behavior: smooth;
+  }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-  padding: 0;
-  margin: 0;
-}
-
-@layer components {
-  .section-container {
-    @apply container md:max-w-5xl flex flex-col justify-center items-center h-[calc(100vh-3rem)] mt-12 scroll-mt-12 p-4;
-  }
-  .section-title {
-    @apply text-2xl md:text-3xl font-bold;
-  }
-  .toggle-icon {
-    @apply w-4 h-4;
-  }
-  .link-text {
-    @apply text-secondary-foreground font-semibold relative after:absolute after:bottom-0 after:left-0 after:right-0 after:h-px after:w-full after:origin-bottom after:scale-x-0 after:bg-secondary-foreground after:transition-transform after:duration-300 after:ease-[cubic-bezier(0.65_0.05_0.36_1)] hover:after:origin-bottom hover:after:scale-x-100;
-  }
-  .link-icon {
-    @apply relative w-5 h-5 text-primary-foreground;
-  }
-  .primary-hover {
-    @apply transition-colors duration-300 hover:bg-[#004970];
-  }
-  .secondary-hover {
-    @apply transition-colors duration-300 hover:bg-[#0095EA0C] dark:hover:bg-[#007CFB18];
+  body {
+    color: var(--foreground);
+    background: var(--background);
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
   }
 }
