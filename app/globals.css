@@ -1,4 +1,4 @@
-@import 'tailwindcss';
+@import "tailwindcss";
 
 @custom-variant dark (&:is(.dark *));
 
@@ -49,7 +49,7 @@
 }
 
 @utility toggle-icon {
-  @apply w-4 h-4;
+  @apply w-4 h-4 cursor-pointer;
 }
 
 @utility link-text {
