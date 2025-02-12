@@ -53,7 +53,7 @@ const ProjectCard = ({ project }: Props) => {
         <CardImage src={project.image} alt={project.title} />
         <div className="flex grow flex-row items-end justify-between p-2">
           <div>
-            <MorphingDialogTitle className="text-card-foreground text-xl">
+            <MorphingDialogTitle className="text-card-foreground text-xl font-semibold">
               {project.title}
             </MorphingDialogTitle>
             <MorphingDialogSubtitle className="text-zinc-700 dark:text-zinc-400 line-clamp-2">
