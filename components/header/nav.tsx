@@ -23,7 +23,7 @@ const Nav = () => {
           </li>
         ))}
       </ul>
-      <ul className="flex items-center gap-2 ml-auto">
+      <ul className="flex items-center gap-3 ml-auto">
         <li>
           <ThemeToggle />
         </li>
