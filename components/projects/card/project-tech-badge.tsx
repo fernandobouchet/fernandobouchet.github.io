@@ -3,6 +3,7 @@ import { TechIcons } from "@/components/ui/tech-icons";
 
 interface Props {
   techstack: string[];
+  length?: number;
 }
 
 const Technologies = [
@@ -35,16 +36,20 @@ const Technologies = [
   { id: 99, tech: TechIcons.api },
 ];
 
-const ProjectTechBadge = ({ techstack }: Props) => {
+const ProjectTechBadge = ({ techstack, length }: Props) => {
   const cardIcons = Technologies.filter((item) =>
     techstack.includes(item.tech.title)
   );
 
   return (
     <div className="flex flex-wrap py-4 mt-auto gap-2 justify-center">
-      {cardIcons.map((item) => (
+      {cardIcons.slice(0, length).map((item) => (
         <Badge key={item.id} text={item.tech.title} icon={item.tech.icon} />
       ))}
+
+      {length && length <= cardIcons.length && (
+        <Badge text={`+${cardIcons.length - length}`} />
+      )}
     </div>
   );
 };

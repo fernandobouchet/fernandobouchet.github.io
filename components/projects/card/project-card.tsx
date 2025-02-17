@@ -6,7 +6,6 @@ import {
   MorphingDialogContent,
   MorphingDialogTitle,
   MorphingDialogImage,
-  MorphingDialogSubtitle,
   MorphingDialogClose,
   MorphingDialogDescription,
   MorphingDialogContainer,
@@ -17,7 +16,6 @@ import { LanguageContext } from "@/context/language-context";
 import { FaGithub } from "react-icons/fa";
 import { LuExternalLink } from "react-icons/lu";
 import { ButtonLink } from "@/components/ui/button-link";
-import { Button } from "@/components/ui/button";
 import { CardImage } from "./card-image";
 
 interface Props {
@@ -34,7 +32,7 @@ interface Props {
 }
 
 const ProjectCard = ({ project }: Props) => {
-  const { texts, language } = useContext(LanguageContext);
+  const { language } = useContext(LanguageContext);
 
   return (
     <MorphingDialog
@@ -53,19 +51,11 @@ const ProjectCard = ({ project }: Props) => {
             <MorphingDialogTitle className="text-card-foreground text-xl font-semibold">
               {project.title}
             </MorphingDialogTitle>
-            <MorphingDialogSubtitle className="text-zinc-700 dark:text-zinc-400 line-clamp-2">
+            <MorphingDialogDescription className="text-zinc-700 dark:text-zinc-400 line-clamp-2">
               {language === "EN" ? project.info_en : project.info_es}
-            </MorphingDialogSubtitle>
+            </MorphingDialogDescription>
+            <ProjectTechBadge techstack={project.techstack} length={3} />
           </div>
-        </div>
-        <div className="w-full flex p-2">
-          <Button
-            className="ml-auto cursor-pointer"
-            aria-label="Open dialog"
-            variant="secondary"
-          >
-            {texts.projects.info_button}
-          </Button>
         </div>
       </MorphingDialogTrigger>
       <MorphingDialogContainer>
@@ -79,24 +69,7 @@ const ProjectCard = ({ project }: Props) => {
             <MorphingDialogTitle className="text-2xl text-zinc-950 dark:text-zinc-50">
               {project.title}
             </MorphingDialogTitle>
-            <MorphingDialogDescription
-              disableLayoutAnimation
-              variants={{
-                initial: { opacity: 0, scale: 0.9, y: 80 },
-                animate: {
-                  opacity: 1,
-                  scale: 1,
-                  y: 0,
-                  transition: { type: "spring", stiffness: 120, damping: 15 },
-                },
-                exit: {
-                  opacity: 0,
-                  scale: 0.9,
-                  y: 80,
-                  transition: { duration: 0.2, ease: "easeInOut" },
-                },
-              }}
-            >
+            <MorphingDialogDescription>
               <p className="mt-2 text-zinc-700 dark:text-zinc-400">
                 {language === "EN" ? project.info_en : project.info_es}
               </p>
