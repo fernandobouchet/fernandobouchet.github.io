@@ -236,6 +236,13 @@ export const ProjectsData = [
       "https://raw.githubusercontent.com/fernandobouchet/tasks/refs/heads/main/preview.webp",
     demo: "https://simpletaskboard.vercel.app",
     github: "https://github.com/fernandobouchet/tasks",
-    techstack: ["Next.js", "Tailwind CSS", "Shadcn/UI", "Prisma", "Next-intl"],
+    techstack: [
+      "Next.js",
+      "PostgreSQL",
+      "Tailwind CSS",
+      "Shadcn/UI",
+      "Prisma",
+      "Next-intl",
+    ],
   },
 ];

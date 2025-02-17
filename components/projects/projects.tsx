@@ -9,7 +9,7 @@ const Projects = () => {
 
   return (
     <SectionContainer sectionId="projects" className="h-full">
-      <div className="flex flex-col items-center gap-4 pt-4 pb-6">
+      <div className="flex flex-col items-center pt-4">
         <h2 className="section-title">{texts.projects.title}</h2>
         <p className="text-center">
           {texts.projects.p1}{" "}
@@ -23,6 +23,7 @@ const Projects = () => {
           </a>
           .
         </p>
+        <p>{texts.projects.p2}</p>
       </div>
       <ProjectsContainer />
     </SectionContainer>

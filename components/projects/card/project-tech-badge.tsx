@@ -47,7 +47,7 @@ const ProjectTechBadge = ({ techstack, length }: Props) => {
         <Badge key={item.id} text={item.tech.title} icon={item.tech.icon} />
       ))}
 
-      {length && length <= cardIcons.length && (
+      {length && length < cardIcons.length && (
         <Badge text={`+${cardIcons.length - length}`} />
       )}
     </div>

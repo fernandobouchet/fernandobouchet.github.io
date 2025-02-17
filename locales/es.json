@@ -24,7 +24,8 @@
   },
   "projects": {
     "title": "Proyectos",
-    "p1": "Estos son algunos de los proyectos en los que he estado trabajando, puedes encontrar más en mi",
+    "p1": "Aquí están algunos de los proyectos en los que he estado trabajando. Puedes encontrar más en mi",
+    "p2": "Selecciona un proyecto para ver más detalles y usa los filtros para explorar por tecnología.",
     "button": "Mostrar más"
   },
   "contact": {
