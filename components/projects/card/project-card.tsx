@@ -40,16 +40,13 @@ const ProjectCard = ({ project }: Props) => {
     <MorphingDialog
       transition={{
         type: "spring",
-        bounce: 0.05,
-        duration: 0.25,
+        stiffness: 150,
+        damping: 20,
+        bounce: 0.1,
+        duration: 0.3,
       }}
     >
-      <MorphingDialogTrigger
-        style={{
-          borderRadius: "24px",
-        }}
-        className="flex max-w-lg flex-col overflow-hidden bg-card text-card-foreground border border-zinc-950/10 dark:border-zinc-50/10 dark:bg-zinc-900 h-full"
-      >
+      <MorphingDialogTrigger className="flex max-w-lg flex-col overflow-hidden bg-card text-card-foreground border border-zinc-950/10 dark:border-zinc-50/10 dark:bg-zinc-900 h-full rounded-3xl">
         <CardImage src={project.image} alt={project.title} />
         <div className="flex grow flex-row items-end justify-between p-2">
           <div>
@@ -63,7 +60,7 @@ const ProjectCard = ({ project }: Props) => {
         </div>
         <div className="w-full flex p-2">
           <Button
-            className="ml-auto"
+            className="ml-auto cursor-pointer"
             aria-label="Open dialog"
             variant="secondary"
           >
@@ -72,27 +69,32 @@ const ProjectCard = ({ project }: Props) => {
         </div>
       </MorphingDialogTrigger>
       <MorphingDialogContainer>
-        <MorphingDialogContent
-          style={{
-            borderRadius: "24px",
-          }}
-          className="pointer-events-auto relative flex h-auto w-full flex-col overflow-hidden bg-card text-card-foreground sm:w-[500px] border border-zinc-950/10 dark:border-zinc-50/10 dark:bg-zinc-900"
-        >
+        <MorphingDialogContent className="pointer-events-auto relative flex h-auto flex-col overflow-hidden bg-card text-card-foreground w-full max-w-xl m-4 border border-zinc-950/10 dark:border-zinc-50/10 dark:bg-zinc-900 rounded-3xl">
           <MorphingDialogImage
             src={project.image}
             alt={project.title}
-            className="h-full lg:h-72 object-cover object-center"
+            className="h-72 object-cover object-center rounded-b-3xl"
           />
-          <div className="p-6">
+          <div className="p-4">
             <MorphingDialogTitle className="text-2xl text-zinc-950 dark:text-zinc-50">
               {project.title}
             </MorphingDialogTitle>
             <MorphingDialogDescription
               disableLayoutAnimation
               variants={{
-                initial: { opacity: 0, scale: 0.8, y: 100 },
-                animate: { opacity: 1, scale: 1, y: 0 },
-                exit: { opacity: 0, scale: 0.8, y: 100 },
+                initial: { opacity: 0, scale: 0.9, y: 80 },
+                animate: {
+                  opacity: 1,
+                  scale: 1,
+                  y: 0,
+                  transition: { type: "spring", stiffness: 120, damping: 15 },
+                },
+                exit: {
+                  opacity: 0,
+                  scale: 0.9,
+                  y: 80,
+                  transition: { duration: 0.2, ease: "easeInOut" },
+                },
               }}
             >
               <p className="mt-2 text-zinc-700 dark:text-zinc-400">
@@ -102,7 +104,7 @@ const ProjectCard = ({ project }: Props) => {
             <ProjectTechBadge techstack={project.techstack} />
             <div className="w-full flex justify-evenly">
               <ButtonLink link={project.github} icon={<FaGithub />}>
-                {texts.projects.repo}
+                Github
               </ButtonLink>
               <ButtonLink link={project.demo} icon={<LuExternalLink />}>
                 Demo
