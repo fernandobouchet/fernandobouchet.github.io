@@ -19,7 +19,7 @@ const MainTechFilter = ({ onClick }: Props) => {
   return (
     <div className="flex flex-wrap py-4 mt-auto gap-2 justify-center">
       <button className="cursor-pointer" onClick={() => onClick("all")}>
-        <Badge className="h-10 px-4" text="All" />
+        <Badge className="h-10 px-4 [&_span]:text-base" text="All" />
       </button>
       {MainTechnologies.map((item) => (
         <button
@@ -28,7 +28,7 @@ const MainTechFilter = ({ onClick }: Props) => {
           onClick={() => onClick(item.tech.title)}
         >
           <Badge
-            className="h-10 px-4"
+            className="h-10 px-4 [&_span]:text-base"
             text={item.tech.title}
             icon={item.tech.icon}
           />

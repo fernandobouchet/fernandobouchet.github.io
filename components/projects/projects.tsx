@@ -23,7 +23,7 @@ const Projects = () => {
           </a>
           .
         </p>
-        <p>{texts.projects.p2}</p>
+        <p className="text-center">{texts.projects.p2}</p>
       </div>
       <ProjectsContainer />
     </SectionContainer>
