@@ -205,6 +205,7 @@ export const ProjectsData = [
     github: "https://github.com/fernandobouchet/FavSongQuote",
     techstack: [
       "Next.js",
+      "PostgreSQL",
       "Tailwind CSS",
       "Supabase",
       "Shadcn/UI",
