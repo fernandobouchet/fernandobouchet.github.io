@@ -11,7 +11,7 @@ const openSans = Open_Sans({
 
 export const metadata: Metadata = {
   title: "Fernando Bouchet | Full Stack Developer",
-  description: "Porfolio of Fernando Bouchet",
+  description: "Portfolio of Fernando Bouchet",
   icons: {
     icon: [
       {
