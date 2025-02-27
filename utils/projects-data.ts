@@ -160,6 +160,19 @@ export const ProjectsData = [
   },
   {
     id: 11,
+    title: "The Office Wiki",
+    info_es:
+      "Una wiki completa y multilingüe sobre The Office, que proporciona información detallada sobre episodios, personajes y más, impulsada por la API de TMDB.",
+    info_en:
+      "A comprehensive and multilingual wiki for The Office, providing detailed information about episodes, characters, and more, powered by the TMDB API.",
+    image:
+      "https://raw.githubusercontent.com/fernandobouchet/the_office_wiki/refs/heads/main/preview.webp",
+    demo: "https://officewiki.vercel.app",
+    github: "https://github.com/fernandobouchet/the_office_wiki",
+    techstack: ["Next.js", "Tailwind CSS", "Shadcn/UI", "Next-intl"],
+  },
+  {
+    id: 12,
     title: "Twitter clone",
     info_es:
       "Aplicación web realizada en equipo con otros desarrolladores, utilizando la metodología ágil SCRUM, que emula la experiencia de Twitter, permitiendo a los usuarios registrarse, iniciar sesión, crear perfiles, seguir a otros usuarios y compartir tweets.",
@@ -180,7 +193,7 @@ export const ProjectsData = [
     ],
   },
   {
-    id: 12,
+    id: 13,
     title: "excel2docxTemplate2pdf",
     info_es:
       "Aplicación web que fusiona datos de un archivo XLSX cargado en una plantilla DOCX, permitiendo a los usuarios descargar el resultado en formato DOCX o PDF. Utiliza la API de Gotenberg para la conversión a PDF, alojada en un contenedor Docker.",
@@ -193,7 +206,7 @@ export const ProjectsData = [
     techstack: ["Next.js", "Tailwind CSS", "Shadcn/UI", "API"],
   },
   {
-    id: 13,
+    id: 14,
     title: "FavSongsQuotes",
     info_es:
       "Aplicación web que permite descubrir y compartir citas memorables de canciones, con enlaces a los vídeos de las mismas. Ofrece una experiencia interactiva y completamente responsiva para explorar, dar 'me gusta' y gestionar citas de canciones favoritas, usando Supabase como base de datos.",
@@ -214,7 +227,7 @@ export const ProjectsData = [
     ],
   },
   {
-    id: 14,
+    id: 15,
     title: "TechStore",
     info_es:
       "Esta es una aplicación web de un e-commerce ficticio que permite a los usuarios explorar productos, agregar artículos a un carrito y guardar favoritos. La aplicación posee soporte multilenguaje y aprovecha la generación de sitios estáticos (SSG) para un rendimiento óptimo y una carga rápida.",
@@ -227,7 +240,7 @@ export const ProjectsData = [
     techstack: ["Next.js", "Tailwind CSS", "Next UI", "Next-intl"],
   },
   {
-    id: 15,
+    id: 16,
     title: "SimpleTaskBoard",
     info_es:
       "Un sistema de gestión de tareas con vista de tabla y tablero Kanban (con soporte para arrastrar y soltar), con soporte multilenguaje y visualización de datos.",
