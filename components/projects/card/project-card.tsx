@@ -44,7 +44,7 @@ const ProjectCard = ({ project }: Props) => {
         duration: 0.3,
       }}
     >
-      <MorphingDialogTrigger className="flex max-w-lg flex-col overflow-hidden bg-card text-card-foreground border border-zinc-950/10 dark:border-zinc-50/10 dark:bg-zinc-900 h-full rounded-3xl">
+      <MorphingDialogTrigger className="flex max-w-lg flex-col overflow-hidden bg-card text-card-foreground border border-zinc-950/10 dark:border-zinc-50/10 dark:bg-zinc-900 h-full rounded-3xl transition-colors hover:opacity-95 dark:hover:bg-card/5">
         <CardImage src={project.image} alt={project.title} />
         <div className="flex grow flex-row items-end justify-between p-2">
           <div>
@@ -84,7 +84,7 @@ const ProjectCard = ({ project }: Props) => {
               </ButtonLink>
             </div>
           </div>
-          <MorphingDialogClose className="text-zinc-50" />
+          <MorphingDialogClose className="text-zinc-50 cursor-pointer" />
         </MorphingDialogContent>
       </MorphingDialogContainer>
     </MorphingDialog>
