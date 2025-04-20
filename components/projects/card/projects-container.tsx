@@ -7,9 +7,11 @@ import { motion } from "motion/react";
 import { LanguageContext } from "@/context/language-context";
 import { MainTechFilter } from "./main-tech-filter";
 import { ButtonGithub } from "@/components/ui/button-github";
+import { useIsMobile } from "@/hooks/useMobile";
 
 const ProjectsContainer = () => {
   const { texts } = useContext(LanguageContext);
+  const isMobile = useIsMobile();
   const lastVisibleProjectRef = useRef<HTMLDivElement | null>(null);
 
   const sortedProjects = ProjectsData.slice().sort((a, b) => b.id - a.id);
@@ -22,7 +24,7 @@ const ProjectsContainer = () => {
       setTimeout(() => {
         lastVisibleProjectRef.current?.scrollIntoView({
           behavior: "smooth",
-          block: "center",
+          block: `${isMobile ? "start" : "center"}`,
         });
       }, 100);
 
