@@ -13,10 +13,10 @@ import {
 import { ProjectTechBadge } from "./project-tech-badge";
 import { useContext } from "react";
 import { LanguageContext } from "@/context/language-context";
-import { FaGithub } from "react-icons/fa";
 import { LuExternalLink } from "react-icons/lu";
 import { ButtonLink } from "@/components/ui/button-link";
 import { CardImage } from "./card-image";
+import { ButtonGithub } from "@/components/ui/button-github";
 
 interface Props {
   project: {
@@ -76,9 +76,7 @@ const ProjectCard = ({ project }: Props) => {
             </MorphingDialogDescription>
             <ProjectTechBadge techstack={project.techstack} />
             <div className="w-full flex justify-evenly">
-              <ButtonLink link={project.github} icon={<FaGithub />}>
-                Github
-              </ButtonLink>
+              <ButtonGithub link={project.github}>GitHub</ButtonGithub>
               <ButtonLink link={project.demo} icon={<LuExternalLink />}>
                 Demo
               </ButtonLink>

@@ -1,21 +1,33 @@
 "use client";
-import { useContext, useState } from "react";
+import { useContext, useRef, useState } from "react";
 import { ProjectsData } from "@/utils/projects-data";
 import { ProjectCard } from "./project-card";
 import { Button } from "@/components/ui/button";
 import { motion } from "motion/react";
 import { LanguageContext } from "@/context/language-context";
 import { MainTechFilter } from "./main-tech-filter";
+import { ButtonGithub } from "@/components/ui/button-github";
 
 const ProjectsContainer = () => {
   const { texts } = useContext(LanguageContext);
+  const lastVisibleProjectRef = useRef<HTMLDivElement | null>(null);
 
   const sortedProjects = ProjectsData.slice().sort((a, b) => b.id - a.id);
   const [currentProjectIndex, setCurrentProjectIndex] = useState(2);
   const [projects, setProjects] = useState(sortedProjects);
 
   const handleOnClick = () => {
-    setCurrentProjectIndex((prevIndex) => prevIndex + 2);
+    setCurrentProjectIndex((prev) => {
+      const nextIndex = prev + 2;
+      setTimeout(() => {
+        lastVisibleProjectRef.current?.scrollIntoView({
+          behavior: "smooth",
+          block: "center",
+        });
+      }, 100);
+
+      return nextIndex;
+    });
   };
 
   const handleFilterProjects = (technology: string) => {
@@ -35,21 +47,32 @@ const ProjectsContainer = () => {
         <MainTechFilter onClick={handleFilterProjects} />
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-        {projects.slice(0, currentProjectIndex).map((project, index) => (
-          <motion.div
-            key={project.id}
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: (index % 4) * 0.1 }}
-          >
-            <ProjectCard project={project} />{" "}
-          </motion.div>
-        ))}
+        {projects.slice(0, currentProjectIndex).map((project, index) => {
+          const isLastVisible = index === currentProjectIndex - 1;
+          return (
+            <motion.div
+              key={project.id}
+              ref={isLastVisible ? lastVisibleProjectRef : null}
+              initial={{ opacity: 0, y: 20, filter: "blur(10px)" }}
+              animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
+              transition={{ duration: 0.5, delay: index * 0.1 }}
+            >
+              <ProjectCard project={project} />
+            </motion.div>
+          );
+        })}
       </div>
-      {currentProjectIndex < projects.length && (
+      {currentProjectIndex < projects.length ? (
         <Button onClick={handleOnClick} className="md:w-1/4 mx-auto flex">
           {texts.projects.button}
         </Button>
+      ) : (
+        <ButtonGithub
+          link="https://github.com/fernandobouchet?tab=repositories"
+          className="md:fit mx-auto flex"
+        >
+          {texts.projects.githubButton}
+        </ButtonGithub>
       )}
     </div>
   );

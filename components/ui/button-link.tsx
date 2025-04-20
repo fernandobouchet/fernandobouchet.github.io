@@ -5,14 +5,15 @@ interface Props {
   link: string;
   icon?: ReactNode;
   children: ReactNode;
+  className?: string;
 }
 
-const ButtonLink = ({ link, icon, children }: Props) => {
+const ButtonLink = ({ link, icon, children, className }: Props) => {
   return (
     <a
       href={link}
       target="_blank"
-      className="group relative inline-flex h-10 md:h-12 items-center justify-center overflow-hidden bg-primary px-4 md:px-6 font-medium text-primary-foreground duration-300 primary-hover rounded-full"
+      className={`group relative inline-flex h-10 md:h-12 items-center justify-center overflow-hidden bg-primary px-4 md:px-6 font-medium text-primary-foreground duration-300 primary-hover rounded-full ${className}`}
     >
       <div className="relative inline-flex -translate-x-0 items-center transition group-hover:-translate-x-6">
         <div className="absolute translate-x-0 opacity-100 transition group-hover:-translate-x-6 group-hover:opacity-0">

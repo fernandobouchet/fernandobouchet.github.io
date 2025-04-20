@@ -19,7 +19,7 @@ const Projects = () => {
             rel="noopener noreferrer"
             className="link-text"
           >
-            Github
+            GitHub
           </a>
           .
         </p>
