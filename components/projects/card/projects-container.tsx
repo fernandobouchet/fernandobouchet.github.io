@@ -24,7 +24,7 @@ const ProjectsContainer = () => {
       setTimeout(() => {
         lastVisibleProjectRef.current?.scrollIntoView({
           behavior: "smooth",
-          block: `${isMobile ? "start" : "center"}`,
+          block: `${isMobile ? "nearest" : "center"}`,
         });
       }, 100);
 
