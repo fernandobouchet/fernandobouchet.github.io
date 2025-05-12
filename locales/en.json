@@ -34,5 +34,10 @@
     "p1": "Thank you for your interest in getting in touch!",
     "p2": "The best way to contact me is through my email address",
     "p3": "I will get back to you as soon as possible!"
+  },
+  "notFound": {
+    "title": "404 - Page Not Found",
+    "p1": "The page you are looking for doesn't exist or has been moved.",
+    "button": "Go Home."
   }
 }

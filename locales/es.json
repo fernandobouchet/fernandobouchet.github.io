@@ -34,5 +34,10 @@
     "p1": "Gracias por tu interés en ponerte en contacto!",
     "p2": "La mejor manera de contactarme es a través de mi dirección de correo electrónico",
     "p3": "intentaré responder a la brevedad!"
+  },
+  "notFound": {
+    "title": "404 - Página no encontrada",
+    "p1": "La pagina que estás buscando no existe o ha sido movida.",
+    "button": "Volver a la página principal."
   }
 }
