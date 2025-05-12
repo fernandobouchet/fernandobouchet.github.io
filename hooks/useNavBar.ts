@@ -8,7 +8,7 @@ export function useNavbar() {
     const scrollPosition = window.scrollY;
 
     if (scrollPosition === 0) {
-      setActiveSection("");
+      setActiveSection("about");
       setIsScrolled(false);
       return;
     }

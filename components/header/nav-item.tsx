@@ -20,10 +20,10 @@ const NavItem = ({ title, link }: Props) => {
     <Link
       href={href}
       onClick={handleOnClick}
-      className={`py-1 px-2 rounded-full transition-all ${
+      className={`py-1 px-3 rounded-full transition-all ${
         activeSection === link.toLowerCase()
           ? "bg-foreground text-background"
-          : ""
+          : "hover:bg-foreground/10 text-foreground"
       }`}
     >
       {title}
