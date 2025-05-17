@@ -13,7 +13,7 @@ const CardImage = ({ src, alt, className }: Props) => {
       <MorphingDialogImage
         src={src}
         alt={alt}
-        className={`w-full h-full object-cover rounded-b-2xl hover:scale-110 transition duration-500  ${className}}`}
+        className={`w-full h-full object-cover rounded-b-2xl scale-105 ${className}}`}
       />
     </div>
   );
