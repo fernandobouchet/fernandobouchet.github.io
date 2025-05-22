@@ -10,7 +10,7 @@ const Contact = () => {
 
   return (
     <SectionContainer sectionId="contact">
-      <h2 className="section-title pt-4 pb-6">{texts.contact.title}</h2>
+      <h2 className="section-title">{texts.contact.title}</h2>
       <div className="text-center">
         <p>{texts.contact.p1}</p>
         <p>

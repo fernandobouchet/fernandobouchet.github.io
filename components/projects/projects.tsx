@@ -9,7 +9,7 @@ const Projects = () => {
 
   return (
     <SectionContainer sectionId="projects" className="h-full">
-      <div className="flex flex-col items-center pt-4">
+      <div className="flex flex-col items-center">
         <h2 className="section-title">{texts.projects.title}</h2>
         <p className="text-center">
           {texts.projects.p1}{" "}

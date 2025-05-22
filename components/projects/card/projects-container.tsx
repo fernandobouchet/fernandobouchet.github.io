@@ -44,11 +44,11 @@ const ProjectsContainer = () => {
   };
 
   return (
-    <div className="flex flex-col justify-center gap-6">
+    <div className="flex flex-col justify-center gap-4">
       <div>
         <MainTechFilter onClick={handleFilterProjects} />
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
         {projects.slice(0, currentProjectIndex).map((project, index) => {
           const isLastVisible = index === currentProjectIndex - 1;
           return (

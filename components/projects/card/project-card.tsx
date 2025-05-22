@@ -66,7 +66,7 @@ const ProjectCard = ({ project }: Props) => {
             className="h-72 object-cover object-center rounded-b-3xl scale-105"
           />
           <div className="p-4">
-            <MorphingDialogTitle className="text-2xl">
+            <MorphingDialogTitle className="text-2xl font-semibold">
               {project.title}
             </MorphingDialogTitle>
             <MorphingDialogDescription>

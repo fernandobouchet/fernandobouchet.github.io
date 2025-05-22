@@ -13,7 +13,7 @@ const About = () => {
   return (
     <SectionContainer sectionId="about">
       <Avatar />
-      <h1 className="text-3xl md:text-4xl font-bold py-4">
+      <h1 className="text-4xl md:text-5xl font-bold py-4">
         {texts.about.hero}
       </h1>
       <div className="flex flex-col text-center">
