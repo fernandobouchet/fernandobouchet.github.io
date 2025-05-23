@@ -79,8 +79,8 @@
     --primary-foreground: #ffffff;
     --secondary: #0094ff1a;
     --secondary-foreground: #00558bd7;
-    --muted: #fcfcfd;
-    --muted-foreground: #0002119d;
+    --muted: #d4e4f6;
+    --muted-foreground: #394856;
     --card: #ebeef3;
     --card-foreground: #181c20;
   }
@@ -93,8 +93,8 @@
     --primary-foreground: #003350;
     --secondary: #0086fc34;
     --secondary-foreground: #75c6fffd;
-    --muted: #111113;
-    --muted-foreground: #eff0fe;
+    --muted: #394856;
+    --muted-foreground: #d4e4f6;
     --card: #1c2024;
     --card-foreground: #e0e3e8;
   }
