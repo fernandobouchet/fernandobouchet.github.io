@@ -55,7 +55,7 @@
 }
 
 @utility link-text {
-  @apply text-secondary-foreground font-semibold relative after:absolute after:bottom-0 after:left-0 after:right-0 after:h-px after:w-full after:origin-bottom after:scale-x-0 after:bg-secondary-foreground after:transition-transform after:duration-300 after:ease-[cubic-bezier(0.65_0.05_0.36_1)] hover:after:origin-bottom hover:after:scale-x-100;
+  @apply text-primary font-semibold underline underline-offset-4 decoration-2 transition-colors duration-300  hover:text-foreground dark:hover:text-foreground;
 }
 
 @utility link-icon {
@@ -63,38 +63,40 @@
 }
 
 @utility primary-hover {
-  @apply transition-colors duration-300 hover:bg-[#004970];
+  @apply transition-colors duration-300 hover:bg-primary/90 dark:hover:bg-primary/90 hover:text-primary-foreground/90 dark:hover:text-primary-foreground/90;
 }
 
 @utility secondary-hover {
-  @apply transition-colors duration-300 hover:bg-[#0095EA0C] dark:hover:bg-[#007CFB18];
+  @apply transition-colors duration-300 hover:bg-secondary/90 dark:hover:bg-secondary/90 hover:text-secondary-foreground/90 dark:hover:text-secondary-foreground/90;
 }
 
 @layer base {
   :root {
-    --background: #fcfcfd;
-    --foreground: #1e1f24;
+    --background: #f7f9ff;
+    --foreground: #181c20;
     --accent: #d7edfe;
-    --primary: #075985;
-    --primary-foreground: #fff;
+    --primary: #2a638a;
+    --primary-foreground: #ffffff;
     --secondary: #0094ff1a;
     --secondary-foreground: #00558bd7;
     --muted: #fcfcfd;
     --muted-foreground: #0002119d;
-    --card: #f1f1f1;
-    --card-foreground: #1e1f24;
+    --card: #ebeef3;
+    --card-foreground: #181c20;
   }
 
   .dark {
-    --background: #111113;
-    --foreground: #eeeef0;
+    --background: #101417;
+    --foreground: #e0e3e8;
     --accent: #003758;
+    --primary: #98ccf9;
+    --primary-foreground: #003350;
     --secondary: #0086fc34;
     --secondary-foreground: #75c6fffd;
     --muted: #111113;
     --muted-foreground: #eff0fe;
-    --card: #19191b;
-    --card-foreground: #eff0fe;
+    --card: #1c2024;
+    --card-foreground: #e0e3e8;
   }
 }
 

@@ -19,7 +19,7 @@ const ButtonLink = ({ link, icon, children, className }: Props) => {
         <div className="absolute translate-x-0 opacity-100 transition group-hover:-translate-x-6 group-hover:opacity-0">
           {icon}
         </div>
-        <span className="pl-6">{children}</span>
+        <span className="pl-6 font-semibold">{children}</span>
         <div className="absolute right-0 translate-x-12 opacity-0 transition group-hover:translate-x-6 group-hover:opacity-100">
           <MdOutlineArrowForward className="link-icon" />
         </div>

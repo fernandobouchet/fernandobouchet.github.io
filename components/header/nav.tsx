@@ -16,7 +16,7 @@ const Nav = () => {
 
   return (
     <nav className="w-full flex items-center">
-      <ul className="flex items-center gap-2 md:gap-5 font-bold">
+      <ul className="flex items-center gap-2 md:gap-5 font-semibold">
         {Links.map((item) => (
           <li key={item.href}>
             <NavItem title={item.text} link={item.href} />

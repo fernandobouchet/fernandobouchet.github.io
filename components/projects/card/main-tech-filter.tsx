@@ -24,7 +24,7 @@ const MainTechFilter = ({ onClick }: Props) => {
     <div className="flex flex-wrap py-4 mt-auto gap-2 justify-center">
       <button className="cursor-pointer" onClick={() => onClick("all")}>
         <Badge
-          className="h-10 px-4 [&_span]:text-sm"
+          className="h-10 px-4 [&_span]:text-base secondary-hover"
           text={`${language === "EN" ? "All" : "Todos"}`}
         />
       </button>
@@ -35,7 +35,7 @@ const MainTechFilter = ({ onClick }: Props) => {
           onClick={() => onClick(item.tech.title)}
         >
           <Badge
-            className="h-10 px-4 [&_span]:text-sm"
+            className="h-10 px-4 [&_span]:text-base secondary-hover"
             text={item.tech.title}
             icon={item.tech.icon}
           />

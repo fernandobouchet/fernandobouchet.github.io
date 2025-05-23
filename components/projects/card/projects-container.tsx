@@ -65,7 +65,7 @@ const ProjectsContainer = () => {
         })}
       </div>
       {currentProjectIndex < projects.length ? (
-        <Button onClick={handleOnClick} className="md:w-1/4 mx-auto flex">
+        <Button onClick={handleOnClick} className="mx-auto flex">
           {texts.projects.button}
         </Button>
       ) : (

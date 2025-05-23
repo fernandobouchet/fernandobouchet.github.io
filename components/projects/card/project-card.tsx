@@ -75,7 +75,7 @@ const ProjectCard = ({ project }: Props) => {
               </p>
             </MorphingDialogDescription>
             <ProjectTechBadge techstack={project.techstack} />
-            <div className="w-full flex justify-end gap-4">
+            <div className="w-full flex justify-around">
               <ButtonGithub link={project.github}>GitHub</ButtonGithub>
               <ButtonLink link={project.demo} icon={<LuExternalLink />}>
                 Demo
