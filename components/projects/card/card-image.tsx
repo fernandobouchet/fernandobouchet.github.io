@@ -1,5 +1,6 @@
 "use client";
-import { MorphingDialogImage } from "@/components/ui/morphing-dialog";
+
+import Image from "next/image";
 
 interface Props {
   src: string;
@@ -7,14 +8,16 @@ interface Props {
   className?: string;
 }
 
-const CardImage = ({ src, alt, className }: Props) => {
+const CardImage = ({ src, alt }: Props) => {
   return (
-    <div className="relative w-full h-48 rounded-2xl overflow-hidden">
-      <MorphingDialogImage
+    <div className="absolute inset-0 overflow-hidden rounded-2xl">
+      <Image
         src={src}
         alt={alt}
-        className={`w-full h-full object-cover rounded-b-2xl scale-105 ${className}}`}
+        fill
+        className="object-cover scale-110 blur-xl brightness-[0.2] saturate-[1.2] dark:brightness-[0.25] dark:saturate-100"
       />
+      <div className="absolute inset-0 bg-background/50 dark:bg-background/50" />
     </div>
   );
 };

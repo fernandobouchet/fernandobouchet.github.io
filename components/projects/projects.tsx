@@ -1,7 +1,7 @@
 "use client";
 import { LanguageContext } from "@/context/language-context";
 import { SectionContainer } from "../ui/section-container";
-import { ProjectsContainer } from "./card/projects-container";
+import { ProjectsContainer } from "./projects-container";
 import { useContext } from "react";
 
 const Projects = () => {
@@ -11,7 +11,7 @@ const Projects = () => {
     <SectionContainer sectionId="projects" className="h-full">
       <div className="flex flex-col items-center">
         <h2 className="section-title">{texts.projects.title}</h2>
-        <p className="text-center">
+        <p className="text-center pb-4">
           {texts.projects.p1}{" "}
           <a
             href="https://github.com/fernandobouchet"
@@ -23,7 +23,6 @@ const Projects = () => {
           </a>
           .
         </p>
-        <p className="text-center">{texts.projects.p2}</p>
       </div>
       <ProjectsContainer />
     </SectionContainer>
