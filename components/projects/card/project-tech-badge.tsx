@@ -42,7 +42,7 @@ const ProjectTechBadge = ({ techstack, length }: Props) => {
   );
 
   return (
-    <div className="flex flex-wrap py-4 mt-auto gap-2 justify-center">
+    <div className="flex flex-wrap py-4 mt-auto gap-1 justify-center">
       {cardIcons.slice(0, length).map((item) => (
         <Badge key={item.id} text={item.tech.title} icon={item.tech.icon} />
       ))}

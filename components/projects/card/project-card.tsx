@@ -53,7 +53,7 @@ const ProjectCard = ({ project }: Props) => {
         <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/10 to-transparent dark:from-black/70 dark:via-black/20 dark:to-transparent" />
       </div>
 
-      <div className="relative z-10 p-4 h-full flex flex-col">
+      <div className="relative z-10 p-4 flex flex-col flex-1 justify-between">
         <div>
           <h3 className="text-2xl font-bold text-white drop-shadow-lg">
             {title}
@@ -63,14 +63,11 @@ const ProjectCard = ({ project }: Props) => {
           </p>
         </div>
         <ProjectTechBadge techstack={techstack} />
-        <div className="flex gap-8 mt-auto">
-          {demo && (
-            <ButtonLink link={demo} icon={<LuExternalLink />}>
-              Demo
-            </ButtonLink>
-          )}
-
-          {github && <ButtonGithub link={github}>Github</ButtonGithub>}
+        <div className="flex justify-evenly mt-auto">
+          <ButtonLink link={demo} icon={<LuExternalLink />}>
+            Demo
+          </ButtonLink>
+          <ButtonGithub link={github}>Github</ButtonGithub>
         </div>
       </div>
     </motion.div>
