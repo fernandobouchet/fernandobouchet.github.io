@@ -47,7 +47,7 @@ const ProjectCard = ({ project }: Props) => {
             src={image}
             alt={title}
             fill
-            className="object-cover scale-100 group-hover:scale-105 brightness-95 dark:brightness-90 group-hover:brightness-100 transition-all duration-500"
+            className="object-cover scale-105 group-hover:scale-110 brightness-95 dark:brightness-90 group-hover:brightness-100 transition-all duration-500"
           />
         </div>
         <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/10 to-transparent dark:from-black/70 dark:via-black/20 dark:to-transparent" />
@@ -55,19 +55,21 @@ const ProjectCard = ({ project }: Props) => {
 
       <div className="relative z-10 p-4 flex flex-col flex-1 justify-between">
         <div>
-          <h3 className="text-2xl font-bold text-white drop-shadow-lg">
+          <h3 className="text-2xl font-bold text-foreground drop-shadow-lg">
             {title}
           </h3>
-          <p className="text-base text-white/90 leading-relaxed drop-shadow-md">
+          <p className="text-base text-foreground/90 leading-relaxed drop-shadow-md">
             {language === "ES" ? info_es : info_en}
           </p>
         </div>
         <ProjectTechBadge techstack={techstack} />
         <div className="flex justify-evenly mt-auto">
-          <ButtonLink link={demo} icon={<LuExternalLink />}>
+          <ButtonLink link={demo} icon={<LuExternalLink />} variant="ghost">
             Demo
           </ButtonLink>
-          <ButtonGithub link={github}>Github</ButtonGithub>
+          <ButtonGithub link={github} variant="ghost">
+            Github
+          </ButtonGithub>
         </div>
       </div>
     </motion.div>

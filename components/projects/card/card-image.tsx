@@ -14,9 +14,9 @@ const CardImage = ({ src }: Props) => {
         src={src}
         alt=""
         fill
-        className="object-cover scale-110 blur-xl brightness-[0.2] dark:brightness-[0.25]"
+        className="object-cover scale-110 blur-xl brightness-50 dark:brightness-[0.25]"
       />
-      <div className="absolute inset-0 bg-background/50 dark:bg-background/50" />
+      <div className="absolute inset-0 bg-background/70 dark:bg-background/50" />
     </div>
   );
 };

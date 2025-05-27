@@ -8,19 +8,19 @@ const links = [
   {
     id: 1,
     link: "https://www.linkedin.com/in/fernandobouchet",
-    icon: <FaLinkedin className="link-icon" />,
+    icon: <FaLinkedin className="link-icon text-foreground" />,
     name: "Linkedin",
   },
   {
     id: 2,
     link: "https://github.com/fernandobouchet",
-    icon: <FaGithub className="link-icon" />,
+    icon: <FaGithub className="link-icon text-foreground" />,
     name: "Github",
   },
   {
     id: 3,
     link: "mailto:fernandobouchet@gmail.com",
-    icon: <TbMailFilled className="link-icon" />,
+    icon: <TbMailFilled className="link-icon text-foreground" />,
     name: "Email",
   },
 ];
@@ -55,7 +55,7 @@ const ContactLinks = () => {
             },
           }}
         >
-          <ButtonLink link={link.link} icon={link.icon}>
+          <ButtonLink link={link.link} icon={link.icon} variant="ghost">
             {link.name}
           </ButtonLink>
         </motion.li>
