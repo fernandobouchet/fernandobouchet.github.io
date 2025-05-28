@@ -74,7 +74,7 @@
   :root {
     --background: #f7f9ff;
     --foreground: #181c20;
-    --accent: #d7edfe;
+    --accent: #7dd3fc;
     --primary: #2a638a;
     --primary-foreground: #ffffff;
     --secondary: #0094ff1a;
@@ -111,5 +111,10 @@
     font-family: "Open Sans", sans-serif;
     padding: 0;
     margin: 0;
+  }
+
+  html,
+  body {
+    min-height: 100%;
   }
 }

@@ -1,6 +1,8 @@
 const Background = () => {
   return (
-    <div className="absolute right-0 top-0 z-[-2] w-screen bg-linear-to-b from-accent to-transparent opacity-60 h-3/5" />
+    <div className="fixed inset-0 -z-10 w-full h-full bg-background">
+      <div className="absolute inset-0 bg-[radial-gradient(circle_500px_at_50%_200px,var(--accent),transparent)]" />
+    </div>
   );
 };
 export { Background };
