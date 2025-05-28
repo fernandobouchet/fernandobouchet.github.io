@@ -7,8 +7,8 @@ const ProjectsContainer = () => {
   const sortedProjects = ProjectsData.slice().sort((a, b) => b.id - a.id);
 
   return (
-    <div className="flex flex-col justify-center gap-4">
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-center gap-4">
+    <div className="flex flex-col justify-center gap-4 max-w-5xl">
+      <div className="grid grid-cols-1 md:grid-cols-2 justify-center gap-4">
         {sortedProjects.slice(0, 6).map((project, index) => {
           return (
             <motion.div

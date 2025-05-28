@@ -20,7 +20,7 @@ const ButtonLink = ({
   const variantClasses = {
     primary: "bg-primary text-primary-foreground primary-hover",
     secondary: "bg-secondary text-secondary-foreground hover:bg-secondary/80",
-    ghost: "bg-muted/20 text-muted-foreground hover:bg-muted/30",
+    ghost: "bg-primary/10 text-primary-foreground hover:bg-primary/20",
   };
 
   return (
@@ -28,7 +28,7 @@ const ButtonLink = ({
       href={link}
       target="_blank"
       className={clsx(
-        "group/link relative inline-flex items-center justify-center overflow-hidden py-2 px-4 md:px-6 font-medium duration-300 rounded-full",
+        "group/link relative inline-flex items-center justify-center overflow-hidden py-2 px-4 md:px-6 font-medium duration-300 rounded-full z-10",
         variantClasses[variant],
         className
       )}
