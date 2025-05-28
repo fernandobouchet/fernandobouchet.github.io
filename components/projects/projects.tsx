@@ -8,7 +8,7 @@ const Projects = () => {
   const { texts } = useContext(LanguageContext);
 
   return (
-    <SectionContainer sectionId="projects" className="h-full">
+    <SectionContainer sectionId="projects" className="h-full mt-12">
       <div className="flex flex-col items-center">
         <h2 className="section-title">{texts.projects.title}</h2>
         <p className="text-center pb-4">

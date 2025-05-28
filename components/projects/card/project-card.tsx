@@ -6,7 +6,7 @@ import { LuExternalLink } from "react-icons/lu";
 import { ButtonGithub } from "@/components/ui/button-github";
 import { motion } from "motion/react";
 import Image from "next/image";
-import { CardImage } from "./card-image";
+import { CardBackground } from "./card-background";
 import { ProjectTechBadge } from "./project-tech-badge";
 import { ButtonLink } from "@/components/ui/button-link";
 
@@ -38,7 +38,7 @@ const ProjectCard = ({ project }: Props) => {
       }}
       className="overflow-hidden transition-all duration-500 w-full relative group h-full rounded-2xl flex flex-col"
     >
-      <CardImage src={image} />
+      <CardBackground />
       <div className="absolute inset-0 bg-surface-container/40 group-hover:bg-surface-container/60 dark:bg-surface-container/20 dark:group-hover:bg-surface-container/30 transition-all duration-500 rounded-2xl" />
 
       <div className="relative h-56 overflow-hidden z-10 rounded-2xl">
