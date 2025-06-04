@@ -70,6 +70,10 @@
   @apply transition-colors duration-300 hover:bg-secondary/90 dark:hover:bg-secondary/90 hover:text-secondary-foreground/90 dark:hover:text-secondary-foreground/90;
 }
 
+@utility highlighted-text {
+  @apply text-secondary-foreground font-medium;
+}
+
 @layer base {
   :root {
     --background: #f7f9ff;
