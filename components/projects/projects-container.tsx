@@ -2,6 +2,7 @@
 import { ProjectsData } from "@/utils/projects-data";
 import { ProjectCard } from "./card/project-card";
 import { motion } from "motion/react";
+import { CardGithub } from "./card/card-github";
 
 const ProjectsContainer = () => {
   const sortedProjects = ProjectsData.slice().sort((a, b) => b.id - a.id);
@@ -21,6 +22,7 @@ const ProjectsContainer = () => {
             </motion.div>
           );
         })}
+        <CardGithub />
       </div>
     </div>
   );

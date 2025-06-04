@@ -11,18 +11,7 @@ const Projects = () => {
     <SectionContainer sectionId="projects" className="h-full mt-12">
       <div className="flex flex-col items-center">
         <h2 className="section-title">{texts.projects.title}</h2>
-        <p className="text-center pb-4">
-          {texts.projects.p1}{" "}
-          <a
-            href="https://github.com/fernandobouchet"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="link-text"
-          >
-            GitHub
-          </a>
-          .
-        </p>
+        <p className="text-center pb-4">{texts.projects.p1}</p>
       </div>
       <ProjectsContainer />
     </SectionContainer>

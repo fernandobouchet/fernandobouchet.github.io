@@ -9,7 +9,7 @@ const links = [
     id: 1,
     link: "https://www.linkedin.com/in/fernandobouchet",
     icon: <FaLinkedin className="link-icon text-foreground" />,
-    name: "Linkedin",
+    name: "LinkedIn",
   },
   {
     id: 2,
