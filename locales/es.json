@@ -9,29 +9,39 @@
     "contact": "Contacto"
   },
   "about": {
-    "hero": "Hola, soy Fernando",
+    "hero": "Fernando Bouchet",
+    "subtitles": [
+      "Desarrollador Full Stack",
+      "Técnico Universitario en Programación",
+      "Estudiante de la Licenciatura en Informática"
+    ],
     "p1": "Soy ",
     "span1": "Técnico Universitario en Programación",
     "p2": " y estudiante intermedio de la ",
     "span2": "Licenciatura en Informática",
-    "p3": ".",
-    "p4": " Apasionado por el desarrollo full-stack, combino una sólida formación académica con un fuerte compromiso con el ",
-    "span3": "aprendizaje autodidacta",
-    "p5": ", perfeccionando continuamente mis habilidades a través de proyectos individuales y colaborativos.",
-    "p6": "Estas son algunas de las tecnologías con las que he estado trabajando recientemente:",
-    "resumeButton": "Obtener currículum",
-    "resumeLink": "https://drive.google.com/file/d/1LlCYRFeAQ5b2uRnIuw4_nVFK9MMpEwCV/view?usp=drive_link"
+    "p3": ", impulsado por una fuerte pasión por el desarrollo ",
+    "span3": "full-stack",
+    "p4": " .",
+    "p5": "Combino una sólida formación académica con un enfoque ",
+    "span4": "autodidacta",
+    "p6": " orientado al aprendizaje continuo y la resolución de problemas, perfeccionando constantemente mis habilidades a través de proyectos individuales y colaborativos.",
+    "p7": "Estas son algunas de las tecnologías con las que he estado trabajando recientemente:",
+    "resumeButton": "Descarga mi CV",
+    "resumeLinkId": "1LlCYRFeAQ5b2uRnIuw4_nVFK9MMpEwCV"
   },
   "projects": {
     "title": "Proyectos",
-    "p1": "Aquí están algunos de los proyectos en los que he estado trabajando. Puedes encontrar más en mi",
-    "githubButton": "Explorar más en GitHub"
+    "p1": "Aquí están algunos de los proyectos en los que he estado trabajando."
   },
   "contact": {
     "title": "Contacto",
     "p1": "Gracias por tu interés en ponerte en contacto!",
-    "p2": "La mejor manera de contactarme es a través de mi dirección de correo electrónico",
-    "p3": "intentaré responder a la brevedad!"
+    "p2": "La mejor manera de hacerlo es a escribiéndome a",
+    "p3": "Responderé lo antes posible."
+  },
+  "gitCard": {
+    "title": "Explore más proyectos en GitHub",
+    "p1": "¿Quieres ver más de mi trabajo y contribuciones? Visita mi perfil de GitHub."
   },
   "notFound": {
     "title": "404 - Página no encontrada",
