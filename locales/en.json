@@ -6,7 +6,8 @@
   "navbar": {
     "about": "About me",
     "projects": "Projects",
-    "contact": "Contact"
+    "contact": "Contact",
+    "skills": " Skills"
   },
   "about": {
     "hero": "Fernando Bouchet",
@@ -29,9 +30,17 @@
     "resumeButton": "Download my resume",
     "resumeLinkId": "1U6ObryGK9yXwLtXGHUxjpji0cY1MPwar"
   },
+  "skills": {
+    "title": "Skills",
+    "p1": "A selection of the main technologies and tools I work with across the stack.",
+    "languages": "Programming Languages",
+    "frameworks": "Frameworks & Libraries",
+    "databases": "Databases",
+    "tools": "Tools & Platforms"
+  },
   "projects": {
     "title": "Projects",
-    "p1": "Here are some of the projects I’ve been working on."
+    "p1": "Explore this selection of projects I've worked on to see my skills in action."
   },
   "contact": {
     "title": "Contact",

@@ -6,7 +6,8 @@
   "navbar": {
     "about": "Sobre mí",
     "projects": "Proyectos",
-    "contact": "Contacto"
+    "contact": "Contacto",
+    "skills": "Habilidades"
   },
   "about": {
     "hero": "Fernando Bouchet",
@@ -29,9 +30,17 @@
     "resumeButton": "Descarga mi CV",
     "resumeLinkId": "1LlCYRFeAQ5b2uRnIuw4_nVFK9MMpEwCV"
   },
+  "skills": {
+    "title": "Habilidades",
+    "p1": "Una selección de las principales tecnologías y herramientas con las que trabajo en todo el stack.",
+    "languages": "Lenguajes de Programación",
+    "frameworks": "Frameworks y Librerías",
+    "databases": "Bases de Datos",
+    "tools": "Herramientas y Plataformas"
+  },
   "projects": {
     "title": "Proyectos",
-    "p1": "Aquí están algunos de los proyectos en los que he estado trabajando."
+    "p1": "Explora esta selección de proyectos que he realizado para ver mis habilidades en acción."
   },
   "contact": {
     "title": "Contacto",
