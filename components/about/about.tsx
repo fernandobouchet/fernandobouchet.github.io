@@ -2,7 +2,6 @@
 
 import { SectionContainer } from "../ui/section-container";
 import { GetResumeButton } from "./get-resume-button";
-import { TechSlider } from "./tech-slider";
 import { Avatar } from "./avatar";
 import { useContext } from "react";
 import { LanguageContext } from "@/context/language-context";
@@ -33,10 +32,8 @@ const About = () => {
           <span className="highlighted-text">{texts.about.span4}</span>
           {texts.about.p6}
         </p>
-        <p> {texts.about.p7} </p>
       </div>
-      <TechSlider />
-      <div>
+      <div className="py-4">
         <GetResumeButton />
       </div>
     </SectionContainer>
