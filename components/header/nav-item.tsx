@@ -1,19 +1,29 @@
 "use client";
 
-import { useNavbar } from "@/hooks/useNavBar";
 import Link from "next/link";
 
 interface Props {
   title: string;
   link: string;
+  onClick?: () => void;
+  activeSection?: string;
+  scrollToSection: (section: string) => void;
 }
 
-const NavItem = ({ title, link }: Props) => {
-  const { activeSection, scrollToSection } = useNavbar();
+const NavItem = ({
+  title,
+  link,
+  onClick,
+  activeSection,
+  scrollToSection,
+}: Props) => {
   const href = `#${link}`.toLowerCase();
 
   const handleOnClick = () => {
     scrollToSection(href);
+    if (onClick) {
+      onClick();
+    }
   };
 
   return (

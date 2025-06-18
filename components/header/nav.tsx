@@ -1,29 +1,34 @@
 "use client";
-import { LanguageContext } from "@/context/language-context";
 import { LanguageToggle } from "../ui/language.toggle";
 import { ThemeToggle } from "../ui/theme-toggle";
-import { NavItem } from "./nav-item";
-import { useContext } from "react";
+import { useState } from "react";
+import { MobileMenu } from "./mobile-menu";
+import { useNavbar } from "@/hooks/useNavBar";
+import { NavLinks } from "./nav-links";
 
 const Nav = () => {
-  const { texts } = useContext(LanguageContext);
-
-  const Links = [
-    { text: texts.navbar.about, href: "about" },
-    { text: texts.navbar.projects, href: "projects" },
-    { text: texts.navbar.contact, href: "contact" },
-  ];
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const { activeSection, scrollToSection } = useNavbar();
 
   return (
-    <nav className="w-full flex items-center">
-      <ul className="flex items-center gap-2 md:gap-5 font-semibold">
-        {Links.map((item) => (
-          <li key={item.href}>
-            <NavItem title={item.text} link={item.href} />
-          </li>
-        ))}
+    <nav
+      className={`w-full flex items-center px-2 ${
+        !isMobileMenuOpen ? "backdrop-blur-md bg-background/50" : ""
+      }`}
+    >
+      <MobileMenu
+        isMobileMenuOpen={isMobileMenuOpen}
+        setIsMobileMenuOpen={setIsMobileMenuOpen}
+        activeSection={activeSection}
+        scrollToSection={scrollToSection}
+      />
+      <ul className="items-center gap-2 md:gap-5 font-semibold hidden md:flex">
+        <NavLinks
+          activeSection={activeSection}
+          scrollToSection={scrollToSection}
+        />
       </ul>
-      <ul className="flex items-center gap-3 ml-auto">
+      <ul className="flex items-center gap-3 ml-auto z-50">
         <li>
           <ThemeToggle />
         </li>
