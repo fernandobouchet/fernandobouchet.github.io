@@ -1,5 +1,5 @@
 import { ReactNode } from "react";
-import { MdOutlineArrowForward } from "react-icons/md";
+import { MdOutlineArrowOutward } from "react-icons/md";
 import clsx from "clsx";
 
 interface Props {
@@ -39,7 +39,7 @@ const ButtonLink = ({
         </div>
         <span className="pl-6 font-semibold text-foreground">{children}</span>
         <div className="absolute right-0 translate-x-12 opacity-0 transition group-hover/link:translate-x-6 group-hover/link:opacity-100">
-          <MdOutlineArrowForward className="border-none text-foreground" />
+          <MdOutlineArrowOutward className="border-none text-foreground" />
         </div>
       </div>
     </a>
