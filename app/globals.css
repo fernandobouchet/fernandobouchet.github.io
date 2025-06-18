@@ -43,7 +43,7 @@
 }
 
 @utility section-container {
-  @apply container md:max-w-7xl flex flex-col justify-center items-center min-h-[100svh] scroll-mt-12 p-4;
+  @apply container md:max-w-7xl flex flex-col justify-center items-center p-4 min-h-[calc(100dvh-3rem)] md:min-h-[calc(100dvh-3.5rem)] mt-12 md:mt-14 scroll-mt-12 md:scroll-mt-14;
 }
 
 @utility section-title {
@@ -71,7 +71,7 @@
 }
 
 @utility highlighted-text {
-  @apply text-secondary-foreground font-medium;
+  @apply font-semibold;
 }
 
 @layer base {
