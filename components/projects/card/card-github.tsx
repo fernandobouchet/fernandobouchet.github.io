@@ -43,7 +43,7 @@ const CardGithub = () => {
             {texts.gitCard.p1}
           </p>
         </div>
-        <div className="flex justify-evenly mt-auto">
+        <div className="flex justify-center pt-4 md:pt-0 mt-auto">
           <ButtonGithub
             link="https://github.com/fernandobouchet"
             variant="ghost"
