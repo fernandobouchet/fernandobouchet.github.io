@@ -37,7 +37,7 @@ export function useNavbar() {
 
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
-    handleScroll(); // Call once to set initial state
+    handleScroll(); // Inicializar estado
 
     return () => window.removeEventListener("scroll", handleScroll);
   }, [handleScroll]);
@@ -45,7 +45,7 @@ export function useNavbar() {
   const scrollToSection = (href: string) => {
     const targetSection = document.querySelector(href);
     if (targetSection) {
-      const navbarHeight = document.querySelector("nav")?.offsetHeight || 0;
+      const navbarHeight = document.querySelector("header")?.offsetHeight || 0;
       const targetPosition =
         (targetSection as HTMLElement).offsetTop - navbarHeight;
 
@@ -56,5 +56,9 @@ export function useNavbar() {
     }
   };
 
-  return { activeSection, isScrolled, scrollToSection };
+  return {
+    activeSection,
+    isScrolled,
+    scrollToSection,
+  };
 }
