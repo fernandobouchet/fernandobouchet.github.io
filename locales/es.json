@@ -16,27 +16,27 @@
       "Técnico Universitario en Programación",
       "Estudiante de la Licenciatura en Informática"
     ],
-    "p1": "Soy ",
-    "span1": "Técnico Universitario en Programación",
-    "p2": " y estudiante intermedio de la ",
-    "span2": "Licenciatura en Informática",
+    "p1": "Soy estudiante intermedio de la ",
+    "span1": "Licenciatura en Informática",
+    "p2": " y ",
+    "span2": "Técnico Universitario en Programación",
     "p3": ", con una fuerte pasión por el desarrollo ",
     "span3": "full-stack",
-    "p4": " .",
+    "p4": " y el aprendizaje continuo.",
     "p5": "Combino una sólida formación académica con un enfoque ",
     "span4": "autodidacta",
-    "p6": " orientado al aprendizaje continuo y la resolución de problemas, mejorando constantemente mis habilidades mediante proyectos individuales y colaborativos.",
-    "p7": "Estas son algunas de las tecnologías con las que he estado trabajando recientemente:",
+    "p6": " orientado a la mejora constante y la resolución de problemas, fortaleciendo mis habilidades a través de proyectos tanto individuales como colaborativos.",
     "resumeButton": "Descarga mi CV",
     "resumeLinkId": "1LlCYRFeAQ5b2uRnIuw4_nVFK9MMpEwCV"
   },
   "skills": {
     "title": "Habilidades",
-    "p1": "Una selección de las principales tecnologías y herramientas con las que trabajo en todo el stack.",
-    "languages": "Lenguajes de Programación",
-    "frameworks": "Frameworks y Librerías",
+    "p1": "Tecnologías y herramientas clave que utilizo para crear aplicaciones robustas y escalables.",
+    "languages": "Lenguajes",
+    "frontend": "Frontend",
+    "backend": "Backend",
     "databases": "Bases de Datos",
-    "tools": "Herramientas y Plataformas"
+    "tools": "Herramientas"
   },
   "projects": {
     "title": "Proyectos",
