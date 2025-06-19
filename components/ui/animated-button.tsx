@@ -25,7 +25,7 @@ const AnimatedButton = ({ onClick, icon, label }: Props) => {
   return (
     <motion.button
       onClick={onClick}
-      className="toggle-icon"
+      className="toggle-icon flex items-center justify-center"
       whileTap={{ scale: 0.95 }}
       whileHover={{ scale: 1.05 }}
       aria-label={label}
@@ -38,6 +38,7 @@ const AnimatedButton = ({ onClick, icon, label }: Props) => {
           animate="animate"
           exit="exit"
           transition={{ duration: 0.3 }}
+          className="flex items-center justify-center"
         >
           {icon}
         </motion.div>
