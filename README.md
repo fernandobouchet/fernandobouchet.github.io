@@ -1,8 +1,28 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Portfolio - Fernando Bouchet
 
-## Getting Started
+This is the source code for my personal portfolio website, showcasing my skills and projects as a Full Stack Developer.
 
-First, run the development server:
+Built with Next.js, Tailwind CSS, and TypeScript.
+
+## Installation
+
+1.  **Clone the repository:**
+    ```bash
+    git clone https://github.com/your-username/porfolio.git
+    cd porfolio
+    ```
+2.  **Install dependencies:**
+    ```bash
+    npm install
+    # or
+    yarn install
+    # or
+    pnpm install
+    ```
+
+## Usage
+
+### Running the development server:
 
 ```bash
 npm run dev
@@ -10,27 +30,53 @@ npm run dev
 yarn dev
 # or
 pnpm dev
-# or
-bun dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Building for production:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+npm run build
+# or
+yarn build
+# or
+pnpm build
+```
 
-## Learn More
+This will create an optimized production build in the `out` directory (since `output: "export"` is set in `next.config.ts`).
+
+## Technologies Used
+
+*   **Framework:** Next.js
+*   **Styling:** Tailwind CSS
+*   **Language:** TypeScript
+*   **Linting:** ESLint
+*   **Animations:** Motion One
+*   **UI Components:** next-themes, react-icons
+*   **Deployment:** Configured for static export (likely deployed on a static hosting provider like GitHub Pages, Vercel, or Netlify).
+
+## Project Structure
+
+*   `app/`: Contains the core application logic, pages, and layouts (using Next.js App Router).
+*   `components/`: Reusable React components.
+*   `context/`: React context providers (e.g., `LanguageContext`).
+*   `public/`: Static assets like images and favicons.
+*   `locales/`: JSON files for internationalization (i18n).
+*   `utils/`: Utility functions and data.
+*   `next.config.ts`: Next.js configuration file.
+*   `package.json`: Project metadata, dependencies, and scripts.
+*   `tsconfig.json`: TypeScript configuration.
+
+## Contributing
+
+This is a personal portfolio, so direct contributions are generally not expected. However, if you find any issues or have suggestions, feel free to open an issue.
+
+## Learn More (About Next.js)
 
 To learn more about Next.js, take a look at the following resources:
 
 - [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
 - [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
