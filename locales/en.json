@@ -1,7 +1,7 @@
 {
   "site": {
-    "title": "Fernando Bouchet | Full Stack Developer",
-    "description": "Go to the about page"
+    "title": "Fernando Bouchet | Full Stack Developer transitioning to Cybersecurity",
+    "description": "I'm Fernando Bouchet, a Programming Technician and Computer Science student. I build web applications using technologies like React, Node.js, and databases. I'm currently training in cybersecurity. This portfolio showcases my projects, skills, and education."
   },
   "navbar": {
     "about": "About me",
@@ -13,30 +13,31 @@
     "hero": "Fernando Bouchet",
     "subtitles": [
       "Full Stack Developer",
+      "Cybersecurity Enthusiast",
       "University Technician in Programming",
-      "Computer Science student"
+      "Computer Science Student"
     ],
-    "p1": "I'm a intermediate ",
+
+    "p1": "I'm a mid-level ",
     "span1": "Computer Science",
     "p2": " student with a ",
     "span2": "University Technical Degree in Programming",
-    "p3": ", driven by a strong passion for ",
-    "span3": "full-stack",
-    "p4": " development and continuous learning.",
-    "p5": "I combine a solid academic background with a ",
-    "span4": "self-taught",
-    "p6": " mindset focused on constant improvement and problem-solving, strengthening my skills through both individual and collaborative projects.",
+    "p3": ". I am passionate about technology and currently focusing my training on ",
+    "span3": "cybersecurity.",
+    "p4": " I have a solid foundation in full stack development and web technologies.",
+    "p5": "I combine a strong academic background with a ",
+    "span5": "self-taught mindset",
+    "p6": ". I am currently deepening my knowledge of cybersecurity fundamentals, Python scripting, and Linux systems.",
     "resumeButton": "Download my resume",
     "resumeLinkId": "1U6ObryGK9yXwLtXGHUxjpji0cY1MPwar"
   },
   "skills": {
-    "title": "Skills",
+    "title": "Technical Skills",
     "p1": "Key technologies and tools I use to build robust and scalable applications.",
-    "languages": "Languages",
-    "frontend": "Frontend",
-    "backend": "Backend",
-    "databases": "Databases",
-    "tools": "Tools"
+    "languages": "Programming Languages",
+    "frontend": "Frontend Development",
+    "backend": "Backend & Databases",
+    "tools": "Tools & DevOps"
   },
   "projects": {
     "title": "Projects",

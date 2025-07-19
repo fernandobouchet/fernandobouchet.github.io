@@ -26,10 +26,11 @@ const About = () => {
           {texts.about.p3}
           <span className="highlighted-text">{texts.about.span3}</span>
           {texts.about.p4}
+          <span className="highlighted-text">{texts.about.span4}</span>
         </p>
         <p>
           {texts.about.p5}
-          <span className="highlighted-text">{texts.about.span4}</span>
+          <span className="highlighted-text">{texts.about.span5}</span>
           {texts.about.p6}
         </p>
       </div>

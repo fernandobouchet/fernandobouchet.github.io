@@ -1,7 +1,7 @@
 {
   "site": {
-    "title": "Fernando Bouchet | Desarrollador Full Stack",
-    "description": "Go to the about page"
+    "title": "Fernando Bouchet | Desarrollador Full Stack en transición a Ciberseguridad",
+    "description": "Soy Fernando Bouchet, Técnico Universitario en Programación y estudiante de Licenciatura en Informática. Desarrollo aplicaciones web con tecnologías como React, Node.js y bases de datos, y actualmente me estoy formando en ciberseguridad. Este portfolio presenta mis proyectos, habilidades y formación."
   },
   "navbar": {
     "about": "Sobre mí",
@@ -13,30 +13,31 @@
     "hero": "Fernando Bouchet",
     "subtitles": [
       "Desarrollador Full Stack",
+      "Apasionado por la Ciberseguridad",
       "Técnico Universitario en Programación",
-      "Estudiante de la Licenciatura en Informática"
+      "Estudiante de Licenciatura en Informática"
     ],
     "p1": "Soy estudiante intermedio de la ",
     "span1": "Licenciatura en Informática",
     "p2": " y ",
     "span2": "Técnico Universitario en Programación",
-    "p3": ", con una fuerte pasión por el desarrollo ",
-    "span3": "full-stack",
-    "p4": " y el aprendizaje continuo.",
-    "p5": "Combino una sólida formación académica con un enfoque ",
-    "span4": "autodidacta",
-    "p6": " orientado a la mejora constante y la resolución de problemas, fortaleciendo mis habilidades a través de proyectos tanto individuales como colaborativos.",
-    "resumeButton": "Descarga mi CV",
+    "p3": ". Me apasiona la tecnología y actualmente enfoco mi formación en el área de la ",
+    "span3": "ciberseguridad.",
+    "p4": " Cuento con una base sólida en desarrollo full stack y tecnologías web.",
+    "p5": "Combino una base académica firme con una ",
+    "span5": "mentalidad autodidacta",
+    "p6": ". Actualmente profundizo mis conocimientos en fundamentos de ciberseguridad, scripting en Python y sistemas Linux.",
+
+    "resumeButton": "Descargar CV",
     "resumeLinkId": "1LlCYRFeAQ5b2uRnIuw4_nVFK9MMpEwCV"
   },
   "skills": {
-    "title": "Habilidades",
+    "title": "Habilidades Técnicas",
     "p1": "Tecnologías y herramientas clave que utilizo para crear aplicaciones robustas y escalables.",
-    "languages": "Lenguajes",
-    "frontend": "Frontend",
-    "backend": "Backend",
-    "databases": "Bases de Datos",
-    "tools": "Herramientas"
+    "languages": "Lenguajes de Programación",
+    "frontend": "Desarrollo Frontend",
+    "backend": "Backend y Bases de Datos",
+    "tools": "Herramientas y DevOps"
   },
   "projects": {
     "title": "Proyectos",
