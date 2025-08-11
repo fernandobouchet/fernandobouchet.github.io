@@ -2,7 +2,7 @@
 
 import { LanguageContext } from "@/context/language-context";
 import { useContext } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion, AnimatePresence } from "motion/react";
 
 const LanguageToggle = () => {
   const { language, handleChangeLanguage } = useContext(LanguageContext);
