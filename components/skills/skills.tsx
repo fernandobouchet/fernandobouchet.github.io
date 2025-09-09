@@ -16,7 +16,7 @@ const Skills = () => {
       id: 1,
       title: texts.skills.languages,
       icon: <HiCode />,
-      items: ["JavaScript (ES6+)", "TypeScript", "Python", "Bash", "SQL"],
+      items: ["JavaScript (ES6+)", "TypeScript", "Java", "Bash", "SQL"],
     },
     {
       id: 2,
@@ -31,11 +31,11 @@ const Skills = () => {
       items: [
         "Node.js",
         "Express.js",
+        "SpringBoot",
+        "RESTful APIs",
         "MySQL",
         "PostgreSQL",
         "MongoDB",
-        "Prisma (ORM)",
-        "Drizzle (ORM)",
       ],
     },
     {

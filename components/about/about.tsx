@@ -24,14 +24,14 @@ const About = () => {
           {texts.about.p2}
           <span className="highlighted-text">{texts.about.span2}</span>
           {texts.about.p3}
-          <span className="highlighted-text">{texts.about.span3}</span>
-          {texts.about.p4}
+          <span className="highlighted-text">{texts.about.span3}</span>.
         </p>
         <p>
-          {texts.about.p5}
+          {texts.about.p4}
           <span className="highlighted-text">{texts.about.span4}</span>
-          {texts.about.p6}
+          {texts.about.p5}
         </p>
+        <p>{texts.about.p6}</p>
       </div>
       <div className="py-4">
         <GetResumeButton />
