@@ -1,6 +1,6 @@
 {
   "site": {
-    "title": "Fernando Bouchet | Full Stack Developer",
+    "title": "Fernando Bouchet | Full Stack Developer transitioning to Cybersecurity",
     "description": "I'm Fernando Bouchet, a Programming Technician and Computer Science student. I build web applications using technologies like React, Node.js, and databases. I'm currently training in cybersecurity. This portfolio showcases my projects, skills, and education."
   },
   "navbar": {
@@ -13,20 +13,21 @@
     "hero": "Fernando Bouchet",
     "subtitles": [
       "Full Stack Developer",
+      "Cybersecurity Enthusiast",
       "University Technician in Programming",
       "Computer Science Student"
     ],
 
-    "p1": "I'm a ",
-    "span1": "Full Stack Developer",
-    "p2": " with a strong academic background, holding a ",
-    "span2": "University Technician degree in Programming",
-    "p3": " and currently pursuing a ",
-    "span3": "Bachelor's in Computer Science",
-    "p4": "My ",
-    "span4": "self-taught",
-    "p5": " mindset complements my formal education, giving me hands-on experience with modern technologies like React.js, Next.js, Node.js, and Express.js. I'm skilled in managing both SQL and NoSQL databases.",
-    "p6": "I'm currently expanding my backend expertise with Java and Spring Boot to build even more robust and scalable solutions.",
+    "p1": "I'm a mid-level ",
+    "span1": "Computer Science",
+    "p2": " student with a ",
+    "span2": "University Technical Degree in Programming",
+    "p3": ". I am passionate about technology and currently focusing my training on ",
+    "span3": "cybersecurity.",
+    "p4": " I have a solid foundation in full stack development and web technologies.",
+    "p5": "I combine a strong academic background with a ",
+    "span4": "self-taught mindset",
+    "p6": ". I am currently deepening my knowledge of cybersecurity fundamentals, Python scripting, and Linux systems.",
     "resumeButton": "Download my resume",
     "resumeLinkId": "1U6ObryGK9yXwLtXGHUxjpji0cY1MPwar"
   },
