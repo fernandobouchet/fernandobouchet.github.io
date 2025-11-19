@@ -14,22 +14,24 @@
     "subtitles": [
       "Desarrollador Full Stack",
       "Apasionado por la Ciberseguridad",
-      "Técnico Universitario en Programación",
-      "Estudiante de Licenciatura en Informática"
+      "Técnico Universitario en Programación"
     ],
-    "p1": "Soy estudiante intermedio de la ",
-    "span1": "Licenciatura en Informática",
+    "p1": "Soy ",
+    "span1": "Desarrollador Full Stack",
     "p2": " y ",
     "span2": "Técnico Universitario en Programación",
-    "p3": ". Me apasiona la tecnología y actualmente enfoco mi formación en el área de la ",
-    "span3": "ciberseguridad.",
-    "p4": " Cuento con una base sólida en desarrollo full stack y tecnologías web.",
-    "p5": "Combino una base académica firme con una ",
+    "p3": " en transición hacia la ",
+    "span3": "Ciberseguridad.",
+    "p4": " Mi experiencia construyendo aplicaciones web me otorga una perspectiva única sobre cómo asegurarlas.",
+    "p5": "Impulsado por una ",
     "span4": "mentalidad autodidacta",
-    "p6": ". Actualmente profundizo mis conocimientos en fundamentos de ciberseguridad, scripting en Python y sistemas Linux.",
-
+    "p6": " actualmente me enfoco en dominar los fundamentos de Ciberseguridad, la automatización con Python y los sistemas Linux.",
+    "p7": "Mi objetivo es cerrar la brecha entre el desarrollo y la seguridad, creando software que no solo sea funcional, sino también resiliente.",
     "resumeButton": "Descargar CV",
-    "resumeLinkId": "1LlCYRFeAQ5b2uRnIuw4_nVFK9MMpEwCV"
+    "resumeSoftwareLabel": "Full Stack",
+    "resumeLinkSoftwareId": "1LlCYRFeAQ5b2uRnIuw4_nVFK9MMpEwCV",
+    "resumeCybersecurityLabel": "Ciberseguridad",
+    "resumeLinkCybersecurityId": "1DInv_NNgDbVaH1AsDd9z6GwWS0M-nZYW"
   },
   "skills": {
     "title": "Habilidades Técnicas",

@@ -14,22 +14,25 @@
     "subtitles": [
       "Full Stack Developer",
       "Cybersecurity Enthusiast",
-      "University Technician in Programming",
-      "Computer Science Student"
+      "University Technician in Programming"
     ],
 
-    "p1": "I'm a mid-level ",
-    "span1": "Computer Science",
-    "p2": " student with a ",
-    "span2": "University Technical Degree in Programming",
-    "p3": ". I am passionate about technology and currently focusing my training on ",
+    "p1": "I am a ",
+    "span1": "Full Stack Developer",
+    "p2": " and ",
+    "span2": "University Technician in Programming",
+    "p3": " transitioning into ",
     "span3": "cybersecurity.",
-    "p4": " I have a solid foundation in full stack development and web technologies.",
-    "p5": "I combine a strong academic background with a ",
+    "p4": " My background in building web applications gives me a unique perspective on how to secure them.",
+    "p5": "Driven by a ",
     "span4": "self-taught mindset",
-    "p6": ". I am currently deepening my knowledge of cybersecurity fundamentals, Python scripting, and Linux systems.",
-    "resumeButton": "Download my resume",
-    "resumeLinkId": "1U6ObryGK9yXwLtXGHUxjpji0cY1MPwar"
+    "p6": ", I am currently focused on mastering Cybersecurity fundamentals, Python automation, and Linux systems.",
+    "p7": "I aim to bridge the gap between development and security, creating software that is not only functional but also resilient.",
+    "resumeButton": "Download resume",
+    "resumeSoftwareLabel": "Full Stack",
+    "resumeLinkSoftwareId": "1U6ObryGK9yXwLtXGHUxjpji0cY1MPwar",
+    "resumeCybersecurityLabel": "Cybersecurity",
+    "resumeLinkCybersecurityId": "126qPr2ZF6w1EkNP1txH8A2c8fYAlATv6"
   },
   "skills": {
     "title": "Technical Skills",

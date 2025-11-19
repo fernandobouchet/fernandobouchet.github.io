@@ -31,7 +31,7 @@ const CardGithub = () => {
             className="object-cover scale-105 group-hover:scale-110 brightness-95 dark:brightness-90 group-hover:brightness-100 transition-all duration-500"
           />
         </div>
-        <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/10 to-transparent dark:from-black/70 dark:via-black/20 dark:to-transparent" />
+        <div className="absolute inset-0 bg-linear-to-t from-black/60 via-black/10 to-transparent dark:from-black/70 dark:via-black/20 dark:to-transparent" />
       </div>
 
       <div className="relative z-10 p-4 flex flex-col flex-1 justify-between">
