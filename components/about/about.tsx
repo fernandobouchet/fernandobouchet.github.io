@@ -25,7 +25,6 @@ const About = () => {
           <span className="highlighted-text">{texts.about.span2}</span>
           {texts.about.p3}
           <span className="highlighted-text">{texts.about.span3}</span>
-          {texts.about.p4}
         </p>
         <p>
           {texts.about.p5}
