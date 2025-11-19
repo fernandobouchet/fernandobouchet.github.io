@@ -10,7 +10,7 @@ const GetResumeButton = () => {
   const { texts } = useContext(LanguageContext);
 
   return (
-    <div className="flex flex-col items-center gap-3 mt-8 w-full max-w-md mx-auto">
+    <div className="flex flex-col items-center gap-3 mt-4 w-full max-w-md mx-auto">
       <div className="flex items-center gap-2 text-muted-foreground/70 animate-fade-in">
         <MdFileDownload className="text-lg text-primary" />
         <span className="text-xs uppercase tracking-[0.2em] font-bold">
