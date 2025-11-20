@@ -28,9 +28,6 @@
   The default border color has changed to `currentColor` in Tailwind CSS v4,
   so we've added these compatibility styles to make sure everything still
   looks the same as it did with Tailwind CSS v3.
-
-  If we ever want to remove these styles, we need to add an explicit border
-  color utility to any element that depends on these defaults.
 */
 @layer base {
   *,
@@ -76,31 +73,49 @@
 
 @layer base {
   :root {
-    --background: #f7f9ff;
-    --foreground: #181c20;
-    --accent: #7dd3fc;
-    --primary: #2a638a;
+    --background: #f8f9ff;
+    --foreground: #191c20;
+
+    --primary: #006590;
     --primary-foreground: #ffffff;
-    --secondary: #0094ff1a;
-    --secondary-foreground: #00558bd7;
-    --muted: #d4e4f6;
-    --muted-foreground: #394856;
-    --card: #ebeef3;
-    --card-foreground: #181c20;
+
+    --accent: #0ea5e9;
+    --accent-foreground: #ffffff;
+
+    --secondary: #dde3ea;
+    --secondary-foreground: #171c20;
+
+    --card: #f0f5fa;
+    --card-foreground: #171c20;
+
+    --muted: #e0e2ec;
+    --muted-foreground: #43474e;
+    --border: #70777c;
+    --input: #70777c;
+    --ring: #006590;
   }
 
   .dark {
-    --background: #101417;
-    --foreground: #e0e3e8;
-    --accent: #003758;
-    --primary: #98ccf9;
-    --primary-foreground: #003350;
-    --secondary: #0086fc34;
-    --secondary-foreground: #75c6fffd;
-    --muted: #394856;
-    --muted-foreground: #d4e4f6;
-    --card: #1c2024;
-    --card-foreground: #e0e3e8;
+    --background: #090b0e;
+    --foreground: #e2e2e6;
+
+    --primary: #7ecaff;
+    --primary-foreground: #003256;
+
+    --accent: #38bdf8;
+    --accent-foreground: #002b3d;
+
+    --secondary: #263038;
+    --secondary-foreground: #cde5ff;
+
+    --card: #11161c;
+    --card-foreground: #e2e2e6;
+
+    --muted: #1f252b;
+    --muted-foreground: #8d9199;
+    --border: #40484f;
+    --input: #40484f;
+    --ring: #7ecaff;
   }
 }
 
