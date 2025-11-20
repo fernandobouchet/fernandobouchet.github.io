@@ -17,7 +17,7 @@ const CardGithub = () => {
         bounce: 0.1,
         duration: 0.3,
       }}
-      className="overflow-hidden transition-all duration-500 w-full relative group h-full rounded-2xl flex flex-col"
+      className="overflow-hidden transition-all duration-500 w-full relative group h-full rounded-2xl flex flex-col shadow-xl"
     >
       <CardBackground />
       <div className="absolute inset-0 bg-surface-container/40 group-hover:bg-surface-container/60 dark:bg-surface-container/20 dark:group-hover:bg-surface-container/30 transition-all duration-500 rounded-2xl" />
