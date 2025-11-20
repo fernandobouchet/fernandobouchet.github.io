@@ -10,18 +10,17 @@ const GetResumeButton = () => {
   const { texts } = useContext(LanguageContext);
 
   return (
-    <div className="flex flex-col items-center gap-3 mt-4 w-full max-w-md mx-auto">
-      <div className="flex items-center gap-2 text-muted-foreground/70 animate-fade-in">
-        <MdFileDownload className="text-lg text-primary" />
+    <div className="flex flex-col items-center gap-3 mt-4 w-full max-w-md mx-auto z-10 relative font-sans">
+      <div className="flex items-center gap-2 text-primary/90 animate-fade-in">
+        <MdFileDownload className="text-lg" />
         <span className="text-xs uppercase tracking-[0.2em] font-bold">
           {texts.about.resumeButton}
         </span>
       </div>
 
       <div
-        className="flex w-full p-1.5 rounded-full border shadow-sm backdrop-blur-sm
-                      bg-neutral-100 border-neutral-200 
-                      dark:bg-white/5 dark:border-white/10"
+        className="flex w-full p-1.5 rounded-full shadow-lg backdrop-blur-md
+                   bg-secondary/30"
       >
         <a
           href={`${RESUME_BASE_URL}${texts.about.resumeLinkSoftwareId}&export=download`}
@@ -30,11 +29,10 @@ const GetResumeButton = () => {
           className="
             flex-1 flex items-center justify-center gap-2 px-4 py-3 rounded-full 
             bg-primary text-primary-foreground shadow-md
-            transition-all duration-300 hover:scale-[1.02] active:scale-95
-            group
+            transition-opacity duration-300 hover:opacity-90
           "
         >
-          <MdCode className="text-xl group-hover:-rotate-12 transition-transform" />
+          <MdCode className="text-xl" />
           <span className="font-bold text-sm sm:text-base whitespace-nowrap">
             {texts.about.resumeSoftwareLabel}
           </span>
@@ -47,12 +45,12 @@ const GetResumeButton = () => {
           className="
             flex-1 flex items-center justify-center gap-2 px-4 py-3 rounded-full 
             font-semibold text-sm sm:text-base whitespace-nowrap
-            transition-all duration-300 active:scale-95 group
-            text-zinc-600 hover:text-black hover:bg-white
-            dark:text-zinc-400 dark:hover:text-white dark:hover:bg-white/10
+            text-secondary-foreground
+            transition-colors duration-300 group
+            hover:text-primary hover:bg-primary/5
           "
         >
-          <MdSecurity className="text-xl text-primary group-hover:scale-110 transition-transform" />
+          <MdSecurity className="text-xl text-primary/70 group-hover:text-primary transition-colors" />
           <span>{texts.about.resumeCybersecurityLabel}</span>
         </a>
       </div>

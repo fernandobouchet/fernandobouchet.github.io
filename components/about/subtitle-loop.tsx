@@ -10,7 +10,7 @@ const SubtitleLoop = () => {
       {texts.about.subtitles.map((subtitle, index) => (
         <span
           key={index}
-          className="text-lg md:text-2xl text-secondary-foreground font-semibold"
+          className="text-lg md:text-2xl text-primary font-semibold"
         >
           {subtitle}
         </span>
