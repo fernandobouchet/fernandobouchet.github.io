@@ -1,13 +1,8 @@
-"use client";
-
 import { Nav } from "./nav";
 
 const Header = () => {
   return (
-    <header
-      className={`fixed top-0 right-0 w-full flex h-12 md:h-14 z-50 p-4"
-      }`}
-    >
+    <header className="fixed top-4 left-0 right-0 z-50 flex justify-center px-4 pointer-events-none">
       <Nav />
     </header>
   );

@@ -12,7 +12,7 @@ const LanguageToggle = () => {
     <button
       onClick={handleChangeLanguage}
       aria-label={`Switch to ${nextLanguage}`}
-      className="relative w-6 h-6 overflow-hidden font-semibold cursor-pointer flex flex-col items-center"
+      className="relative w-6 h-6 overflow-hidden cursor-pointer flex flex-col items-center px-4 py-2 text-sm font-medium rounded-full bg-primary/10 text-primary border border-primary/20 hover:bg-primary/20 transition-colors"
     >
       <AnimatePresence mode="wait" initial={false}>
         <motion.span

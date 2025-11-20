@@ -30,14 +30,21 @@ const NavItem = ({
     <Link
       href={href}
       onClick={handleOnClick}
-      className={`py-2 px-4 md:px-5 rounded-full transition-all ${
-        activeSection === link.toLowerCase()
-          ? "bg-foreground/10 text-foreground"
-          : "hover:bg-foreground/20 text-foreground"
-      }`}
+      scroll={false}
+      className={`
+        py-2 px-4 md:px-5 rounded-full transition-all duration-300
+        text-sm font-medium flex items-center gap-2
+        active:scale-95
+        ${
+          activeSection === link.toLowerCase()
+            ? "text-primary bg-primary/10 font-bold shadow-sm"
+            : "text-muted-foreground hover:text-primary hover:bg-primary/10"
+        }
+      `}
     >
       {title}
     </Link>
   );
 };
+
 export { NavItem };

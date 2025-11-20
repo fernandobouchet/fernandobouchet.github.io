@@ -1,53 +1,56 @@
+"use client";
+
 import { useState, useEffect, useCallback } from "react";
 
 export function useNavbar() {
-  const [activeSection, setActiveSection] = useState("");
+  const [activeSection, setActiveSection] = useState("about");
   const [isScrolled, setIsScrolled] = useState(false);
 
   const handleScroll = useCallback(() => {
     const scrollPosition = window.scrollY;
 
-    if (scrollPosition === 0) {
-      setActiveSection("about");
+    if (scrollPosition < 20) {
       setIsScrolled(false);
-      return;
+      if (scrollPosition === 0) setActiveSection("about");
+    } else {
+      setIsScrolled(true);
     }
-
-    setIsScrolled(true);
 
     const scrollPositionWithOffset = scrollPosition + window.innerHeight / 3;
 
     const sections = document.querySelectorAll("section[id]");
-    let currentSection = "";
 
     sections.forEach((section) => {
-      const sectionTop = (section as HTMLElement).offsetTop;
-      const sectionHeight = (section as HTMLElement).offsetHeight;
+      const element = section as HTMLElement;
+      const sectionTop = element.offsetTop;
+      const sectionHeight = element.offsetHeight;
 
       if (
         scrollPositionWithOffset >= sectionTop &&
         scrollPositionWithOffset < sectionTop + sectionHeight
       ) {
-        currentSection = section.id;
+        setActiveSection(section.id);
       }
     });
-
-    setActiveSection(currentSection);
   }, []);
 
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
-    handleScroll(); // Inicializar estado
-
+    handleScroll();
     return () => window.removeEventListener("scroll", handleScroll);
   }, [handleScroll]);
 
   const scrollToSection = (href: string) => {
-    const targetSection = document.querySelector(href);
+    const id = href.replace("#", "");
+    const targetSection = document.getElementById(id);
+
     if (targetSection) {
       const navbarHeight = document.querySelector("header")?.offsetHeight || 0;
+
+      const extraBuffer = 24;
+
       const targetPosition =
-        (targetSection as HTMLElement).offsetTop - navbarHeight;
+        targetSection.offsetTop - navbarHeight - extraBuffer;
 
       window.scrollTo({
         top: targetPosition,
