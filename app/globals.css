@@ -40,7 +40,7 @@
 }
 
 @utility section-container {
-  @apply container md:max-w-7xl flex flex-col justify-center items-center p-4 min-h-[calc(100dvh-3rem)] md:min-h-[calc(100dvh-3.5rem)] mt-12 md:mt-14 scroll-mt-12 md:scroll-mt-14;
+  @apply container mx-auto flex flex-col justify-center items-center p-4 min-h-[calc(100svh-3rem)] md:min-h-[calc(100dvh-3.5rem)] mt-12 md:mt-14 scroll-mt-24 md:scroll-mt-28;
 }
 
 @utility section-title {
