@@ -6,6 +6,7 @@ import { Avatar } from "./avatar";
 import { useContext } from "react";
 import { LanguageContext } from "@/context/language-context";
 import { SubtitleLoop } from "./subtitle-loop";
+import { ScrollHint } from "../ui/scroll-hint";
 
 const About = () => {
   const { texts } = useContext(LanguageContext);
@@ -35,6 +36,9 @@ const About = () => {
       </div>
       <div className="py-4">
         <GetResumeButton />
+      </div>
+      <div className="md:hidden">
+        <ScrollHint />
       </div>
     </SectionContainer>
   );
