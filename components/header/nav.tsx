@@ -1,7 +1,6 @@
 "use client";
 import { LanguageToggle } from "../ui/language.toggle";
 import { ThemeToggle } from "../ui/theme-toggle";
-import { MobileMenu } from "./mobile-menu";
 import { useNavbar } from "@/hooks/useNavBar";
 import { NavLinks } from "./nav-links";
 
@@ -42,10 +41,6 @@ const Nav = () => {
           </li>
         </ul>
       </nav>
-      <MobileMenu
-        activeSection={activeSection}
-        scrollToSection={scrollToSection}
-      />
     </>
   );
 };
