@@ -24,9 +24,9 @@
     "span3": "Ciberseguridad.",
     "p4": " Mi experiencia construyendo aplicaciones web me otorga una perspectiva única sobre cómo asegurarlas.",
     "p5": "Impulsado por una ",
-    "span4": "mentalidad autodidacta",
+    "span4": "mentalidad de aprendizaje continuo",
     "p6": " actualmente me enfoco en dominar los fundamentos de Ciberseguridad, la automatización con Python y los sistemas Linux.",
-    "p7": "Mi objetivo es cerrar la brecha entre el desarrollo y la seguridad, creando software que no solo sea funcional, sino también resiliente.",
+    "p7": "Mi objetivo es crear software que no solo sea funcional, sino también resiliente.",
     "resumeButton": "Descargar CV",
     "resumeSoftwareLabel": "Full Stack",
     "resumeLinkSoftwareId": "1LlCYRFeAQ5b2uRnIuw4_nVFK9MMpEwCV",
@@ -47,13 +47,13 @@
   },
   "contact": {
     "title": "Contacto",
-    "p1": "Gracias por tu interés en ponerte en contacto!",
-    "p2": "La mejor manera de hacerlo es a escribiéndome a",
+    "p1": "¡Gracias por tu interés en ponerte en contacto!",
+    "p2": "La mejor manera de contactarme es escribiéndome a",
     "p3": "Responderé lo antes posible."
   },
   "notFound": {
     "title": "404 - Página no encontrada",
-    "p1": "La pagina que estás buscando no existe o ha sido movida.",
+    "p1": "La página que estás buscando no existe o ha sido movida.",
     "button": "Volver a la página principal."
   }
 }

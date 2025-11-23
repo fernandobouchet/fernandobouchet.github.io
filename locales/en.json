@@ -7,7 +7,7 @@
     "about": "About me",
     "projects": "Projects",
     "contact": "Contact",
-    "skills": " Skills"
+    "skills": "Skills"
   },
   "about": {
     "hero": "Fernando Bouchet",
@@ -25,9 +25,9 @@
     "span3": "Cybersecurity.",
     "p4": " My background in building web applications gives me a unique perspective on how to secure them.",
     "p5": "Driven by a ",
-    "span4": "self-taught mindset",
+    "span4": "continuous learning mindset",
     "p6": ", I am currently focused on mastering Cybersecurity fundamentals, Python automation, and Linux systems.",
-    "p7": "I aim to bridge the gap between development and security, creating software that is not only functional but also resilient.",
+    "p7": "I aim to create software that is not only functional but also resilient.",
     "resumeButton": "Download resume",
     "resumeSoftwareLabel": "Full Stack",
     "resumeLinkSoftwareId": "1U6ObryGK9yXwLtXGHUxjpji0cY1MPwar",
@@ -49,7 +49,7 @@
   "contact": {
     "title": "Contact",
     "p1": "Thank you for your interest in reaching out!",
-    "p2": "The best way to contact me is by email at",
+    "p2": "The best way to reach me is via email at",
     "p3": "I’ll get back to you as soon as possible."
   },
   "notFound": {

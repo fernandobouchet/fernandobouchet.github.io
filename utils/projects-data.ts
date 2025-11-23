@@ -13,9 +13,9 @@ export const ProjectsData = [
     id: 6,
     title: "TechStore",
     info_es:
-      "E-commerce ficticio con carrito, favoritos y soporte multilenguaje.",
+      "E-commerce completo con carrito, favoritos y soporte multilenguaje.",
     info_en:
-      "Fictional e-commerce with cart, favourites and multilingual support.",
+      "Full-featured e-commerce with cart, favorites and multilingual support.",
     image: "/projects-images/techstore.webp",
     demo: "https://storetechbeta.vercel.app",
     github: "https://github.com/fernandobouchet/store",
@@ -35,9 +35,9 @@ export const ProjectsData = [
     id: 3,
     title: "Twitter Clone",
     info_es:
-      "Clon de Twitter desarrollado en equipo con SCRUM, con funciones sociales completas.",
+      "Clon de Twitter con funcionalidades sociales en tiempo real, desarrollado con metodología SCRUM.",
     info_en:
-      "Twitter clone built in a team using SCRUM, with full social features.",
+      "Twitter clone with real-time social features, built using SCRUM methodology.",
     image: "/projects-images/twitter_clone.webp",
     demo: "https://s8-07-t-node-react-twitter.vercel.app",
     github: "https://github.com/fernandobouchet/s8-07-t-node-react-twitter",
@@ -45,10 +45,10 @@ export const ProjectsData = [
   },
   {
     id: 4,
-    title: "excel2docxTemplate2pdf",
+    title: "Excel to PDF Converter",
     info_es:
-      "Fusiona datos de Excel en una plantilla DOCX y permite exportar a PDF.",
-    info_en: "Merges Excel data into a DOCX template and exports to PDF.",
+      "Herramienta para fusionar datos de Excel en plantillas DOCX y exportar a PDF.",
+    info_en: "Tool to merge Excel data into DOCX templates and export to PDF.",
     image: "/projects-images/excel2docxTamplate2pfd.webp",
     demo: "https://excel2docx-template2pdf.vercel.app",
     github: "https://github.com/fernandobouchet/excel2docxTemplate2pdf",
@@ -58,8 +58,8 @@ export const ProjectsData = [
     id: 8,
     title: "SimpleTaskBoard",
     info_es:
-      "Gestor de tareas con vista en tabla y tablero Kanban interactivo.",
-    info_en: "Task manager with table view and interactive Kanban board.",
+      "Gestor de tareas integral con vistas de tabla y tablero Kanban interactivo para mejorar la productividad.",
+    info_en: "Comprehensive task manager with table views and interactive Kanban board to boost productivity.",
     image: "/projects-images/simple_task_board.webp",
     demo: "https://simpletaskboard.vercel.app",
     github: "https://github.com/fernandobouchet/tasks",
