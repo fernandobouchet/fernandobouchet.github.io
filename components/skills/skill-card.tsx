@@ -2,13 +2,14 @@
 
 import { motion } from "motion/react";
 import { CardBackground } from "../projects/card/card-background";
-import { Badge } from "../ui/badge";
-import { ReactNode } from "react";
+import { ElementType, ReactNode } from "react";
+
+export type SkillItem = string | { name: string; icon: ElementType };
 
 interface Props {
   title: string;
-  icon: ReactNode; // Usamos ReactNode que es más flexible para iconos
-  items: string[];
+  icon: ReactNode;
+  items: SkillItem[];
 }
 
 const SkillCard = ({ title, icon, items }: Props) => {
@@ -26,27 +27,17 @@ const SkillCard = ({ title, icon, items }: Props) => {
       viewport={{ once: true, margin: "-50px" }}
       className="
         relative group flex flex-col h-full overflow-hidden
-        /* FORMA: Muy redondeada estilo Android 16 */
-        rounded-[32px] p-6
-        /* GLASS: Fondo secundario translúcido + Blur fuerte */
-        bg-secondary/20 dark:bg-secondary/30 
+        rounded-4xl p-6
         backdrop-blur-2xl
-        /* BORDE: Sutil o inexistente (confiamos en la sombra/luz) */
-        border border-white/5
-        /* SOMBRA: Elevación suave */
         shadow-lg shadow-black/5
-        /* HOVER: Pequeña escala y aumento de luz */
-        transition-all duration-500 hover:scale-[1.02] hover:bg-secondary/40
+        transition-all duration-500 
       "
     >
-      {/* Fondo animado (Asumiendo que CardBackground maneja su propio posicionamiento absolute) */}
       <div className="absolute inset-0 opacity-50 group-hover:opacity-100 transition-opacity duration-500">
         <CardBackground />
       </div>
 
-      {/* Encabezado de la Tarjeta */}
       <div className="relative z-10 mb-6 flex items-center gap-4">
-        {/* ICONO ENCAPSULADO (Estilo Material You) */}
         <div
           className="
           flex items-center justify-center w-12 h-12 rounded-2xl
@@ -64,22 +55,29 @@ const SkillCard = ({ title, icon, items }: Props) => {
         </h3>
       </div>
 
-      {/* Lista de Badges */}
-      <div className="relative z-10 flex flex-wrap gap-2">
-        {items.map((item, index) => (
-          <Badge
-            key={index}
-            text={item}
-            // Pasamos estilos extra al Badge para que sea 'Glass' también
-            className="
-              bg-white/40 dark:bg-white/5 
-              hover:bg-primary/10 dark:hover:bg-primary/20
-              text-secondary-foreground font-medium
-              backdrop-blur-md border-0
-              px-3 py-1.5 rounded-lg
-            "
-          />
-        ))}
+      <div className="relative z-10 flex flex-wrap gap-2 justify-center">
+        {items.map((item, index) => {
+          const isObject = typeof item === "object";
+          const name = isObject ? item.name : item;
+          const Icon = isObject ? item.icon : null;
+
+          return (
+            <div
+              key={index}
+              className="
+                flex items-center gap-2 px-3 py-1.5 rounded-xl
+                text-sm font-medium transition-colors duration-200
+                bg-white/40 dark:bg-white/5 
+                text-secondary-foreground
+                 border border-white/5
+                cursor-default select-none
+              "
+            >
+              {Icon && <Icon className="w-4 h-4 text-primary opacity-90" />}
+              <span>{name}</span>
+            </div>
+          );
+        })}
       </div>
     </motion.div>
   );
