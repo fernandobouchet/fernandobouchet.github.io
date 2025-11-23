@@ -1,5 +1,15 @@
 export const ProjectsData = [
   {
+    id: -1,
+    title: "Github",
+    info_es:
+      "¿Quieres ver más de mi trabajo y contribuciones? Visita mi perfil de GitHub.",
+    info_en:
+      "Want to see more of my work and contributions? Visit my GitHub profile.",
+    image: "/projects-images/git_card.webp",
+    github: "https://github.com/fernandobouchet",
+  },
+  {
     id: 6,
     title: "TechStore",
     info_es:

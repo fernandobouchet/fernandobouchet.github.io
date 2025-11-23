@@ -52,10 +52,6 @@
     "p2": "The best way to contact me is by email at",
     "p3": "I’ll get back to you as soon as possible."
   },
-  "gitCard": {
-    "title": "Explore more projects on GitHub",
-    "p1": "Want to see more of my work and contributions? Visit my GitHub profile."
-  },
   "notFound": {
     "title": "404 - Page Not Found",
     "p1": "The page you are looking for doesn't exist or has been moved.",

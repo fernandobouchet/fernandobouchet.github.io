@@ -28,7 +28,6 @@ const SkillCard = ({ title, icon, items }: Props) => {
       className="
         relative group flex flex-col h-full overflow-hidden
         rounded-4xl p-6
-        backdrop-blur-2xl
         shadow-lg shadow-black/5
         transition-all duration-500 
       "

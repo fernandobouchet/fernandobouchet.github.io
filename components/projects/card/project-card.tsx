@@ -2,13 +2,11 @@
 
 import { useContext } from "react";
 import { LanguageContext } from "@/context/language-context";
-import { LuExternalLink } from "react-icons/lu";
-import { ButtonGithub } from "@/components/ui/button-github";
 import { motion } from "motion/react";
 import Image from "next/image";
 import { CardBackground } from "./card-background";
 import { ProjectTechBadge } from "./project-tech-badge";
-import { ButtonLink } from "@/components/ui/button-link";
+import { ProjectLinks } from "./project-links";
 
 interface Props {
   project: {
@@ -17,9 +15,9 @@ interface Props {
     info_es: string;
     info_en: string;
     image: string;
-    demo: string;
+    demo?: string;
     github: string;
-    techstack: string[];
+    techstack?: string[];
   };
 }
 
@@ -62,17 +60,8 @@ const ProjectCard = ({ project }: Props) => {
             {language === "ES" ? info_es : info_en}
           </p>
         </div>
-        <ProjectTechBadge techstack={techstack} />
-        <div className="flex justify-evenly mt-auto">
-          {demo && (
-            <ButtonLink link={demo} icon={<LuExternalLink />} variant="ghost">
-              Demo
-            </ButtonLink>
-          )}
-          <ButtonGithub link={github} variant="ghost">
-            Github
-          </ButtonGithub>
-        </div>
+        {techstack && <ProjectTechBadge techstack={techstack} />}
+        <ProjectLinks demo={demo} github={github} />
       </div>
     </motion.div>
   );
