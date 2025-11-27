@@ -33,6 +33,8 @@ const Technologies = [
   { id: 23, tech: TechIcons.i18n },
   { id: 24, tech: TechIcons.java },
   { id: 25, tech: TechIcons.springboot },
+  { id: 26, tech: TechIcons.python },
+  { id: 27, tech: TechIcons.pandas },
   { id: 99, tech: TechIcons.api },
 ];
 

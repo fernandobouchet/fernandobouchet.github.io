@@ -21,6 +21,8 @@ import {
   SiShadcnui,
   SiPrisma,
   SiNextui,
+  SiPython,
+  SiPandas,
 } from "react-icons/si";
 import { GrMysql } from "react-icons/gr";
 import { TbApi } from "react-icons/tb";
@@ -62,6 +64,8 @@ const TechIcons = {
   i18n: { title: "Next-intl", icon: <TfiWorld /> },
   java: { title: "Java", icon: <FaJava /> },
   springboot: { title: "Springboot", icon: <BiLogoSpringBoot /> },
+  python: { title: "Python", icon: <SiPython /> },
+  pandas: { title: "Pandas", icon: <SiPandas /> },
 };
 
 export { TechIcons };

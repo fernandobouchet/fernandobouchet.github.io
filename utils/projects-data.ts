@@ -72,4 +72,16 @@ export const ProjectsData = [
       "Next-intl",
     ],
   },
+  {
+    id: 9,
+    title: "Find My First Job",
+    info_es:
+      "Plataforma de código abierto que analiza y visualiza tendencias del mercado IT para desarrolladores junior.",
+    info_en:
+      "Open-source platform that analyzes and visualizes IT market trends for junior developers.",
+    image: "/projects-images/find-my-first-job.webp",
+    demo: "https://find-my-first-it-job.vercel.app",
+    github: "https://github.com/fernandobouchet/find-my-first-job",
+    techstack: ["Next.js", "TypeScript", "Tailwind CSS", "Firebase", "Recharts", "Python", "Pandas"],
+  },
 ];
