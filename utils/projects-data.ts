@@ -59,7 +59,8 @@ export const ProjectsData = [
     title: "SimpleTaskBoard",
     info_es:
       "Gestor de tareas integral con vistas de tabla y tablero Kanban interactivo para mejorar la productividad.",
-    info_en: "Comprehensive task manager with table views and interactive Kanban board to boost productivity.",
+    info_en:
+      "Comprehensive task manager with table views and interactive Kanban board to boost productivity.",
     image: "/projects-images/simple_task_board.webp",
     demo: "https://simpletaskboard.vercel.app",
     github: "https://github.com/fernandobouchet/tasks",
@@ -74,14 +75,22 @@ export const ProjectsData = [
   },
   {
     id: 9,
-    title: "Find My First Job",
+    title: "Tendencias IT",
     info_es:
       "Plataforma de código abierto que analiza y visualiza tendencias del mercado IT para desarrolladores junior.",
     info_en:
       "Open-source platform that analyzes and visualizes IT market trends for junior developers.",
     image: "/projects-images/find-my-first-job.webp",
-    demo: "https://find-my-first-it-job.vercel.app",
+    demo: "https://tendencias-it.vercel.app",
     github: "https://github.com/fernandobouchet/find-my-first-job",
-    techstack: ["Next.js", "TypeScript", "Tailwind CSS", "Firebase", "Recharts", "Python", "Pandas"],
+    techstack: [
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "Firebase",
+      "Recharts",
+      "Python",
+      "Pandas",
+    ],
   },
 ];
