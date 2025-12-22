@@ -1,7 +1,7 @@
 "use client";
 
 import { translations } from "@/utils/translations";
-import { createContext, useEffect, useState } from "react";
+import { createContext, useState, useMemo, useCallback } from "react";
 
 type LanguageKey = keyof typeof translations;
 
@@ -17,22 +17,24 @@ export const LanguageProvider = ({
   children: React.ReactNode;
 }) => {
   const [language, setLanguage] = useState<LanguageKey>("EN");
-  const [texts, setTexts] = useState(translations[language]);
 
-  useEffect(() => {
-    setTexts(translations[language]);
-  }, [language]);
+  const texts = translations[language];
 
-  const handleChangeLanguage = () => {
-    if (language === "EN") {
-      setLanguage("ES");
-    } else {
-      setLanguage("EN");
-    }
-  };
+  const handleChangeLanguage = useCallback(() => {
+    setLanguage((prev) => (prev === "EN" ? "ES" : "EN"));
+  }, []);
+
+  const value = useMemo(
+    () => ({
+      texts,
+      handleChangeLanguage,
+      language,
+    }),
+    [texts, handleChangeLanguage, language]
+  );
 
   return (
-    <LanguageContext.Provider value={{ texts, handleChangeLanguage, language }}>
+    <LanguageContext.Provider value={value}>
       {children}
     </LanguageContext.Provider>
   );

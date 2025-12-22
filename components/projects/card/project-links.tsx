@@ -21,6 +21,7 @@ const ProjectLinks = ({ demo, github }: Props) => {
               href={demo}
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="View Project Demo"
               className="
                 flex-1 flex items-center justify-center gap-2 px-4 py-2 rounded-full 
                 bg-secondary text-secondary-foreground shadow-sm
@@ -35,6 +36,7 @@ const ProjectLinks = ({ demo, github }: Props) => {
               href={github}
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="View Project Github"
               className="
                 flex-1 flex items-center justify-center gap-2 px-4 py-2 rounded-full 
                 text-secondary-foreground/80 font-medium text-sm
@@ -50,6 +52,7 @@ const ProjectLinks = ({ demo, github }: Props) => {
             href={github}
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="View Project Github"
             className="
               flex-1 flex items-center justify-center gap-2 px-4 py-2 rounded-full 
               bg-secondary text-secondary-foreground shadow-sm
