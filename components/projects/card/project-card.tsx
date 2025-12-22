@@ -45,6 +45,7 @@ const ProjectCard = ({ project }: Props) => {
             src={image}
             alt={title}
             fill
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
             className="object-cover scale-105 group-hover:scale-110 brightness-95 dark:brightness-90 group-hover:brightness-100 transition-all duration-500"
           />
         </div>

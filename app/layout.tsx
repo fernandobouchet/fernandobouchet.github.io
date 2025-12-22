@@ -11,7 +11,23 @@ const openSans = Open_Sans({
 
 export const metadata: Metadata = {
   title: "Fernando Bouchet | Full Stack Developer",
-  description: "Portfolio of Fernando Bouchet",
+  description: "Portfolio of Fernando Bouchet, showcasing skills and projects as a Full Stack Developer.",
+  keywords: ["Full Stack Developer", "Web Developer", "React", "Next.js", "TypeScript", "Tailwind CSS", "Fernando Bouchet"],
+  authors: [{ name: "Fernando Bouchet" }],
+  openGraph: {
+    title: "Fernando Bouchet | Full Stack Developer",
+    description: "Portfolio of Fernando Bouchet, showcasing skills and projects as a Full Stack Developer.",
+    url: "https://your-portfolio-url.com", // Replace with actual URL if known
+    siteName: "Fernando Bouchet Portfolio",
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Fernando Bouchet | Full Stack Developer",
+    description: "Portfolio of Fernando Bouchet, showcasing skills and projects as a Full Stack Developer.",
+    creator: "@yourhandle", // Replace with actual handle if known
+  },
   icons: {
     icon: [
       {
