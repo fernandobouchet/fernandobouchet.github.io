@@ -1,7 +1,7 @@
 {
   "site": {
-    "title": "Fernando Bouchet | Full Stack Developer transitioning to Cybersecurity",
-    "description": "I'm Fernando Bouchet, a Programming Technician and Computer Science student. I build web applications using technologies like React, Node.js, and databases. I'm currently training in cybersecurity. This portfolio showcases my projects, skills, and education."
+    "title": "Fernando Bouchet | Security-Focused Full Stack Developer",
+    "description": "I'm Fernando Bouchet, a Programming Technician and Full Stack Developer. I focus on building secure, functional web applications, integrating AI tools and exploring cybersecurity fundamentals."
   },
   "navbar": {
     "about": "About me",
@@ -13,21 +13,21 @@
     "hero": "Fernando Bouchet",
     "subtitles": [
       "Full Stack Developer",
-      "Cybersecurity Enthusiast",
+      "Cybersecurity Learner",
+      "AI-Assisted Development",
       "University Technician in Programming"
     ],
-
     "p1": "I am a ",
     "span1": "Full Stack Developer",
     "p2": " and ",
-    "span2": "University Technician in Programming",
-    "p3": " transitioning into ",
+    "span2": "University Programming Technician",
+    "p3": " with a strong interest in ",
     "span3": "Cybersecurity.",
-    "p4": " My background in building web applications gives me a unique perspective on how to secure them.",
+    "p4": " My experience in building web applications provides a unique perspective on how to better understand and secure software from the ground up.",
     "p5": "Driven by a ",
     "span4": "continuous learning mindset",
-    "p6": ", I am currently focused on mastering Cybersecurity fundamentals, Python automation, and Linux systems.",
-    "p7": "I aim to create software that is not only functional but also resilient.",
+    "p6": ", I am currently exploring Python automation and Linux systems, while building MicroSaaS solutions optimized with AI agents and modern code editors.",
+    "p7": "My goal is to create software that is not only functional and efficient but also inherently resilient.",
     "resumeButton": "Download resume",
     "resumeSoftwareLabel": "Full Stack",
     "resumeLinkSoftwareId": "1U6ObryGK9yXwLtXGHUxjpji0cY1MPwar",
