@@ -5,7 +5,7 @@ import { FaGithub } from "react-icons/fa";
 
 interface Props {
   demo?: string;
-  github: string;
+  github?: string;
 }
 
 const ProjectLinks = ({ demo, github }: Props) => {
@@ -31,19 +31,21 @@ const ProjectLinks = ({ demo, github }: Props) => {
               <LuExternalLink className="text-lg" />
               <span>Demo</span>
             </a>
-            <a
-              href={github}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="
+            {github && (
+              <a
+                href={github}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="
                 flex-1 flex items-center justify-center gap-2 px-4 py-2 rounded-full 
                 text-secondary-foreground/80 font-medium text-sm
                 transition-colors duration-300 hover:text-secondary-foreground hover:bg-secondary/10
               "
-            >
-              <FaGithub className="text-lg" />
-              <span>Github</span>
-            </a>
+              >
+                <FaGithub className="text-lg" />
+                <span>Github</span>
+              </a>
+            )}
           </>
         ) : (
           <a

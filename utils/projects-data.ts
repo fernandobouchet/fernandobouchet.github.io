@@ -10,28 +10,6 @@ export const ProjectsData = [
     github: "https://github.com/fernandobouchet",
   },
   {
-    id: 6,
-    title: "TechStore",
-    info_es:
-      "E-commerce completo con carrito, favoritos y soporte multilenguaje.",
-    info_en:
-      "Full-featured e-commerce with cart, favorites and multilingual support.",
-    image: "/projects-images/techstore.webp",
-    demo: "https://storetechbeta.vercel.app",
-    github: "https://github.com/fernandobouchet/store",
-    techstack: ["Next.js", "Tailwind CSS", "Next UI", "Next-intl"],
-  },
-  {
-    id: 5,
-    title: "The Office Wiki",
-    info_es: "Wiki multilenguaje sobre la serie The Office, con datos de TMDB.",
-    info_en: "Multilingual wiki about The Office, powered by the TMDB API.",
-    image: "/projects-images/the_office_wiki.webp",
-    demo: "https://officewiki.vercel.app",
-    github: "https://github.com/fernandobouchet/the_office_wiki",
-    techstack: ["Next.js", "Tailwind CSS", "Shadcn/UI", "Next-intl"],
-  },
-  {
     id: 3,
     title: "Twitter Clone",
     info_es:
@@ -91,6 +69,25 @@ export const ProjectsData = [
       "Recharts",
       "Python",
       "Pandas",
+    ],
+  },
+  {
+    id: 10,
+    title: "AlbumDrive",
+    info_es:
+      "MicroSaaS para gestión de fotos en eventos, desarrollado íntegramente mediante metodologías AI-driven.",
+    info_en:
+      "A MicroSaaS for event photo management, built using AI-driven development methodologies.",
+    image: "/projects-images/albumdrive.webp",
+    demo: "https://albumdrive.app",
+    techstack: [
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "React Query",
+      "Firebase",
+      "Shadcn/UI",
+      "Next-intl",
     ],
   },
 ];

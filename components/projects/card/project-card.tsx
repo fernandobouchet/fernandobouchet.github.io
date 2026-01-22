@@ -16,7 +16,7 @@ interface Props {
     info_en: string;
     image: string;
     demo?: string;
-    github: string;
+    github?: string;
     techstack?: string[];
   };
 }
