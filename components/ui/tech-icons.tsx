@@ -1,7 +1,7 @@
 import {
   SiBootstrap,
   SiChakraui,
-  SiCss3,
+  SiCss,
   SiExpress,
   SiFirebase,
   SiHtml5,
@@ -20,7 +20,7 @@ import {
   SiRedux,
   SiShadcnui,
   SiPrisma,
-  SiNextui,
+  SiHeroui,
   SiPython,
   SiPandas,
 } from "react-icons/si";
@@ -32,7 +32,7 @@ import { BiLogoSpringBoot } from "react-icons/bi";
 
 const TechIcons = {
   html: { title: "HTML", icon: <SiHtml5 /> },
-  css: { title: "CSS", icon: <SiCss3 /> },
+  css: { title: "CSS", icon: <SiCss /> },
   javascript: { title: "JavaScript", icon: <SiJavascript /> },
   typescript: { title: "TypeScript", icon: <SiTypescript /> },
   react: { title: "React", icon: <SiReact /> },
@@ -60,7 +60,7 @@ const TechIcons = {
   redux: { title: "Redux", icon: <SiRedux /> },
   shadcnui: { title: "Shadcn/UI", icon: <SiShadcnui /> },
   prisma: { title: "Prisma", icon: <SiPrisma /> },
-  nextUI: { title: "Next UI", icon: <SiNextui /> },
+  nextUI: { title: "Next UI", icon: <SiHeroui /> },
   i18n: { title: "Next-intl", icon: <TfiWorld /> },
   java: { title: "Java", icon: <FaJava /> },
   springboot: { title: "Springboot", icon: <BiLogoSpringBoot /> },

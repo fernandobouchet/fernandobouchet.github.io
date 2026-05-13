@@ -15,7 +15,7 @@ import {
   SiPython,
   SiGnubash,
   SiHtml5,
-  SiCss3,
+  SiCss,
   SiReact,
   SiNextdotjs,
   SiTailwindcss,
@@ -56,7 +56,7 @@ const Skills = () => {
         { name: "Next.js", icon: SiNextdotjs },
         { name: "Tailwind", icon: SiTailwindcss },
         { name: "HTML5", icon: SiHtml5 },
-        { name: "CSS3", icon: SiCss3 },
+        { name: "CSS3", icon: SiCss },
       ],
     },
     {
