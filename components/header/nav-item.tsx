@@ -33,7 +33,7 @@ const NavItem = ({
       scroll={false}
       className={`
         py-2 px-4 md:px-5 rounded-full transition-all duration-300
-        text-sm font-medium flex items-center gap-2
+        text-sm font-medium flex items-center gap-2 whitespace-nowrap
         active:scale-95
         ${
           activeSection === link.toLowerCase()

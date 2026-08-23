@@ -7,7 +7,8 @@
     "about": "Sobre mí",
     "projects": "Proyectos",
     "contact": "Contacto",
-    "skills": "Skills"
+    "skills": "Skills",
+    "experience": "Experiencia"
   },
   "about": {
     "hero": "Fernando Bouchet",
@@ -21,13 +22,15 @@
     "span1": "Desarrollador Full Stack",
     "p2": " y ",
     "span2": "Técnico Universitario en Programación",
-    "p3": " con un creciente interés en la ",
-    "span3": "Ciberseguridad.",
-    "p4": " Mi experiencia en el desarrollo de aplicaciones web me permite entender la estructura del software para aprender a protegerlo de manera más efectiva.",
-    "p5": "Impulsado por una ",
-    "span4": "mentalidad de aprendizaje continuo",
-    "p6": ", actualmente exploro la automatización con Python y el uso de Linux, mientras creo soluciones MicroSaaS optimizadas con agentes de IA.",
-    "p7": "Mi objetivo es evolucionar hacia la creación de software que no solo sea funcional, sino también resiliente.",
+    "p3": " enfocado en construir ",
+    "span3": "aplicaciones web limpias, eficientes y resilientes.",
+    "p5": "Actualmente trabajo como ",
+    "span4": "Desarrollador Full Stack",
+    "p6": " en ",
+    "span5": "EspinLabs",
+    "p7": ", desarrollando con ",
+    "span6": "React, Next.js, TypeScript y Node.js",
+    "p8": ", y explorando constantemente entornos Linux y prácticas orientadas a la seguridad.",
     "resumeButton": "Descargar CV",
     "resumeSoftwareLabel": "Full Stack",
     "resumeLinkSoftwareId": "1LlCYRFeAQ5b2uRnIuw4_nVFK9MMpEwCV",
@@ -41,6 +44,21 @@
     "frontend": "Desarrollo Frontend",
     "backend": "Backend y Bases de Datos",
     "tools": "Herramientas y DevOps"
+  },
+  "experience": {
+    "title": "Experiencia",
+    "items": [
+      {
+        "company": "EspinLabs",
+        "role": "Desarrollador Full Stack",
+        "period": "Feb 2026 — Actualidad",
+        "responsibilities": [
+          "Desarrollo y mantenimiento de aplicaciones web full stack con Next.js, TypeScript y Node.js.",
+          "Colaboración en arquitecturas frontend, integraciones de APIs y gestión de bases de datos.",
+          "Aplicación de prácticas modernas de desarrollo, estándares de calidad de código y flujos de trabajo orientados a la seguridad."
+        ]
+      }
+    ]
   },
   "projects": {
     "title": "Proyectos",

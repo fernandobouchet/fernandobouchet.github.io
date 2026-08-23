@@ -7,7 +7,8 @@
     "about": "About me",
     "projects": "Projects",
     "contact": "Contact",
-    "skills": "Skills"
+    "skills": "Skills",
+    "experience": "Experience"
   },
   "about": {
     "hero": "Fernando Bouchet",
@@ -21,13 +22,15 @@
     "span1": "Full Stack Developer",
     "p2": " and ",
     "span2": "University Programming Technician",
-    "p3": " with a strong interest in ",
-    "span3": "Cybersecurity.",
-    "p4": " My experience in building web applications provides a unique perspective on how to better understand and secure software from the ground up.",
-    "p5": "Driven by a ",
-    "span4": "continuous learning mindset",
-    "p6": ", I am currently exploring Python automation and Linux systems, while building MicroSaaS solutions optimized with AI agents and modern code editors.",
-    "p7": "My goal is to create software that is not only functional and efficient but also inherently resilient.",
+    "p3": " focused on building ",
+    "span3": "clean, efficient, and resilient web applications.",
+    "p5": "Currently working as a ",
+    "span4": "Full Stack Developer",
+    "p6": " at ",
+    "span5": "EspinLabs",
+    "p7": ", building with ",
+    "span6": "React, Next.js, TypeScript, and Node.js",
+    "p8": ", and constantly exploring Linux environments and security-driven practices.",
     "resumeButton": "Download resume",
     "resumeSoftwareLabel": "Full Stack",
     "resumeLinkSoftwareId": "1U6ObryGK9yXwLtXGHUxjpji0cY1MPwar",
@@ -41,6 +44,21 @@
     "frontend": "Frontend Development",
     "backend": "Backend & Databases",
     "tools": "Tools & DevOps"
+  },
+  "experience": {
+    "title": "Experience",
+    "items": [
+      {
+        "company": "EspinLabs",
+        "role": "Full Stack Developer",
+        "period": "Feb 2026 — Present",
+        "responsibilities": [
+          "Building and maintaining full-stack web applications using Next.js, TypeScript, and Node.js.",
+          "Collaborating on frontend architectures, API integrations, and database management.",
+          "Applying modern development practices, code quality standards, and security-focused workflows."
+        ]
+      }
+    ]
   },
   "projects": {
     "title": "Projects",

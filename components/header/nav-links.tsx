@@ -14,6 +14,7 @@ const NavLinks = ({ activeSection, scrollToSection, onClick }: Props) => {
   const Links = [
     { text: texts.navbar.about, href: "about" },
     { text: texts.navbar.skills, href: "skills" },
+    { text: texts.navbar.experience, href: "experience" },
     { text: texts.navbar.projects, href: "projects" },
     { text: texts.navbar.contact, href: "contact" },
   ];
